@@ -1,0 +1,5 @@
+#  Filosofía política - Lessnoff
+
+Las notas principalmente provienen del libro [@lessnoff2001] y los mapas mentales con [Miro](https://miro.com/app/board/uXjVKjS3LbI=/)
+
+{{< include contenido/1_CapitalismoConsumista.qmd >}} {{< include contenido/2_CiePol.qmd >}}

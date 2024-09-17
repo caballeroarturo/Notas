@@ -1,9 +1,10 @@
-# Preface {.unnumbered}
+---
+bibliography: references.bib
+---
 
-This is a Quarto book.
+# Prefacio {.unnumbered}
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+Las notas aquí contenidas solo tienen el propósito de ayudarme a recordar lo que voy viendo, escuchando, leyendo o pensando. En lo posible iré anotando las referencias. 
 
-```{r}
-1 + 1
-```
+Estas notas son elaboradas con [Quarto](https://quarto.org/docs/books), [Emacs](https://www.gnu.org/software/emacs/) y [Rstudio](https://posit.co/download/rstudio-desktop/)
+
