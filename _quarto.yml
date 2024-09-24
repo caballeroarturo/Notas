@@ -8,9 +8,12 @@ book:
   date: last-modified
   date-format: "[Actualizado en] MMMM, YYYY"
   favicon: logo_cookbook_rpolars.png
+  cover-image: logo_cookbook_rpolars.png
   publisher: "Arturo Caballero"
   description: Anotaciones aleatorias de clases y de cosas que veo o que leo. 
   keyword: notas,aleatorias,clases,varias,caballero,caballero000,investigacion,research
+  
+  reader-mode: true
   url: https://caballeroarturo.github.io/cv/
   page-navigation: true
   sharing: [twitter, linkedin]
@@ -23,15 +26,21 @@ book:
   #repo-actions: [edit, issue, source]
   downloads: [pdf,epub] #epub
   image: polar-bear-airpods-no-background.png
+  
   page-footer: 
     left: | 
       Notas de <a href="https://caballeroarturo.github.io/cv/">Caballero</a>.
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
+  
   chapters:
     - index.qmd
     - intro.qmd
-    - 1_CiePol.qmd
+    - part: 1_CiePol.qmd
+      chapters: 
+        - contenido/1_CapitalismoConsumista.qmd
+        - contenido/2_CiePol.qmd
+        - 2_Libre.qmd
     - references.qmd
 bibliography: references.bib
 
@@ -40,13 +49,16 @@ format:
     theme:
       dark: superhero
       light: cosmo
+    lang: es
     code-fold: true
+    code-link: true
     css: custom.css
     sharing: [twitter, linkedin]
     smooth-scroll: true
     author-meta: "Arturo Caballero"
   pdf:
     documentclass: scrreprt
+    lang: es
     fig-align: center
     fig-cap-location: top
     tbl-cap-location: top
