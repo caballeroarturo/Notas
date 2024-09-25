@@ -1,3 +1,26 @@
+---
+title: "Concepciones de lo político"
+bibliography: references.bib
+author: "Arturo Caballero"
+date: last-modified
+date-format: "DD [ de ] MMMM, YYYY"
+format:
+  pdf:
+    documentclass: article
+    lang: es
+    fig-align: center
+    fig-cap-location: top
+    tbl-cap-location: top
+    toc: true
+    toc-depth: 3
+    toc-title: Contenido
+    colorlinks: true
+    callout-appearance: simple
+    callout-icon: true
+---
+
+
+
 # Concepciones de lo político
 
 La fuente principal, de esta sección, es [@garcia2011].
@@ -133,3 +156,7 @@ Sería ingenuo creer que la ley se ha hecho para todo el mundo en nombre de todo
 > Every human relation is to some degree a power relation, it power is produced ... in every relation from one point to another; it is everywhere; not because it embraces everything, but because it comes from everywhere (Foucault 1981a:93).
 
 > "When power blends into desire and desire blends into power, let's forget them both" [@baudrillard2007].
+
+## Referencias
+
+

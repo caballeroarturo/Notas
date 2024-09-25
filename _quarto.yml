@@ -41,6 +41,7 @@ book:
         - contenido/1_CapitalismoConsumista.qmd
         - contenido/2_Contemporaneos.qmd
         - contenido/3_Concepciones.qmd
+        - contenido/4_Comunitarismo.qmd
     - references.qmd
 bibliography: references.bib
 
@@ -66,7 +67,7 @@ format:
     toc-depth: 3
     toc-title: Contenido
     number-sections: true
-    number-depth: 6
+    number-depth: 2
     colorlinks: true
     callout-appearance: simple
     callout-icon: true
