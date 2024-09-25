@@ -21,10 +21,11 @@ book:
     logo: logo_cookbook_rpolars.png
     search: true
   repo-url: https://caballeroarturo.github.io/cv/
+  #
   #repo-subdir: book
   #repo-branch: main
   #repo-actions: [edit, issue, source]
-  downloads: [pdf,epub] #epub
+  downloads: [pdf] #epub
   image: polar-bear-airpods-no-background.png
   
   page-footer: 
@@ -35,12 +36,11 @@ book:
   
   chapters:
     - index.qmd
-    - intro.qmd
     - part: 1_CiePol.qmd
       chapters: 
         - contenido/1_CapitalismoConsumista.qmd
-        - contenido/2_CiePol.qmd
-        - 2_Libre.qmd
+        - contenido/2_Contemporaneos.qmd
+        - contenido/3_Concepciones.qmd
     - references.qmd
 bibliography: references.bib
 
@@ -70,12 +70,12 @@ format:
     colorlinks: true
     callout-appearance: simple
     callout-icon: true
-  epub:
-    toc: true
-    epub-cover-image: logo_cookbook_rpolars.png
-  docx: 
-    toc: true
-    number-sections: true
-    highlight-style: github
+  #epub:
+  #  toc: true
+  #  epub-cover-image: logo_cookbook_rpolars.png
+  #docx: 
+  #  toc: true
+  #  number-sections: true
+  #  highlight-style: github
 editor: visual
 

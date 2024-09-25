@@ -4,6 +4,4 @@ bibliography: references.bib
 
 # Prefacio {.unnumbered}
 
-Las notas aquí contenidas solo tienen el propósito de ayudarme a recordar lo que voy viendo, escuchando, leyendo o pensando. En lo posible iré anotando las referencias.
-
-Se usa [Quarto](https://quarto.org/docs/books), [Emacs](https://www.gnu.org/software/emacs/), [Rstudio](https://posit.co/download/rstudio-desktop/) y [Miro](https://miro.com/es/)
+Las notas aquí contenidas solo tienen el propósito de ayudarme a recordar lo que voy viendo, escuchando, leyendo o pensando. En lo posible iré anotando las referencias. Se usó [Quarto](https://quarto.org/docs/books), [Emacs](https://www.gnu.org/software/emacs/), [Rstudio](https://posit.co/download/rstudio-desktop/) y [Miro](https://miro.com/es/).
