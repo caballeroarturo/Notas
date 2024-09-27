@@ -14,8 +14,8 @@
 
 ## Racionalismo crítico y la sociedad abierta
 
-> Karl Popper e Isaiah Berlin
+> Karl Popper [@fig-popper] e Isaiah Berlin [@fig-berlin]
 
-![](/www/3_2_Popper.jpg){fig-align="center"}
+![](/www/3_2_Popper.jpg){#fig-popper fig-align="center"}
 
-![](/www/3_1_IsaiahBerlin.jpg){fig-align="center"}
+![](/www/3_1_IsaiahBerlin.jpg){#fig-berlin fig-align="center"}

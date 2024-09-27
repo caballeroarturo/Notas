@@ -23,7 +23,7 @@ format:
 
 # Concepciones de lo político
 
-La fuente principal, de esta sección, es [@garcia2011].
+La fuente principal es [@garcia2011].
 
 ## Antonio Francesco Gramsci
 
