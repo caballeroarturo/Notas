@@ -1,0 +1,135 @@
+# Concepciones de lo político
+
+La fuente principal, de esta sección, es [@garcia2011].
+
+## Antonio Francesco Gramsci
+
+Born in 1981 – 1937. Gramsci died on 27 April 1937, at the age of 46. Italian marxist philosopher, linguist, journalist. He was part of the italian Communist Party and a vocal critic of Mussolini. He was in prision from 1926 – 1937. The failure of the workers' councils to develop into a national movement convinced Gramsci that a Communist party in the Leninist sense was needed.
+
+> George Orwell's novel "1984" was published in 1949 (Foucault was 23 years old at that time).
+
+### Antonio Gramsci en los estudios culturales de Raymond Williams
+
+> Fuente: [@antonio]
+
+"**For twenty years we must stop this brain from functioning"** [@gramsci2012]
+
+Do Critical Theory and Gramsci have anything in common with Foucault? Gramsci and first generation Critical Theorists were both sympathetic to the workers’ council movement of the 1920s and also accept that our ability to understand the world is rooted in the fact that we also produce that world. This idea goes back to the tradition of Vico and was elaborated in Marx’ and Engels’ German Ideology. It emphasizes, in contrast to Habermas’s misinterpretation of Marx, that such production goes beyond labour to include speaking, governing, having sex, begetting children, struggling and revolting.
+
+Foucault rejected the idea of critical theory as a theory of a social totality
+
+People could be seen as exploited and subordinated not only by the control of their work but also by and through their cultural practices. In the perspective of Walter Benjamin, Bertolt Brecht or Theodor Adorno, culture was the barbarian triumph of the ruling classes – domination includes also the power and the right to define what culture and legitimized knowledge is.
+
+#### "Ideal Average" on the economic context:
+
+Capitalism: The logic of capital in a capitalist system often prioritizes profit maximization and efficiency. This can lead to inequalities, exploitation, and environmental degradation.
+
+Socialism: In a socialist system, the logic of capital might be modified to prioritize social welfare and equality. However, the concept of capital itself may still exist, albeit in a different form.
+
+Mixed Economy: Many economies combine elements of capitalism and socialism. The "ideal average" would depend on the specific balance between these elements.
+
+#### Similiaritys between Gramsci's theory of hegemony and Orwell's dystopian novel, 1984.
+
+Cultural hegemony: Both Gramsci and Orwell highlight the importance of cultural control in maintaining power.
+
+Manipulation of language: In both cases, language is used to shape perception and control thought.
+
+Propaganda: Both emphasize the role of propaganda in maintaining the dominant ideology.
+
+Surveillance: Orwell's novel demonstrates how surveillance can be used to enforce conformity and prevent dissent.
+
+> "For many he also seems to explain why workers under advanced capitalism have not behaved the way Marx said they would and to offer a more succesful revolutionary strategy" [@lears1985]
+
+### Cultural hegemony today, from cultural studies to critical pedagogy
+
+> Fuente: [@cortés-ramírez2015]
+
+Hegemony is not equal to (….) ideology, consciousness formations of the ruling class are not reduced, but include the relations of domination and subordination, according to (…..) practical consciousness configurations, as an effective saturation of the process of life in full (...) hegemony is a body of practices and expectations regarding the whole of life. Our senses and energy (…..) define perceptions we have of ourselves and our world. It is a vivid system of meanings and values. To the extent they are experienced as practices (they) appear to confirm each other. It is a sense of reality for most people in society (...) (Williams 1977: 109).
+
+As Edward Said has argued in his book Orientalism, the suffering of the people is the direct effect of cultural exchange between partners who are aware of the inequality of this exchange (Said, 1978, p. 95).
+
+Said, E (1993). Culture and Imperialism, London: Chatto & Windus.
+
+The term hegemony derives from the Greek verb eghesthai, meaning "to drive", "to be the guide", "to be the boss"; or maybe from the verb eghemoneno, that means "to guide", "to precede", "to drive", and hence "to stay ahead", "to command", "to rule". At the time of the Peloponnesian War, reference was constantly made to the "hegemonic" city, the town that managed the alliance of Greek cities fighting each other.
+
+For Lenin, the bourgeoisie has always attempted to separate Politics from Economics, because this class understands very well that if it manages to keep the working class within the corporate framework, no serious danger may threaten its hegemony (VVAA, 1969: 20).
+
+Tthe basis of the concept of hegemony was established by the principles defined by Lenin during the Third International. Gramsci emphasized the need of concessions and sacrifices of the proletariat to its allies to be able to exert hegemonic direction over them.
+
+Coercion needs to be accompanied by consent.
+
+Commitment offers important concrete possibilities. Force can be used against enemies, but not against those allied groups that need to be quickly assimilated, and whose good faith, trust and enthusiasm are needed (Gramsci, 1975, p. 62).
+
+It may be that war is the continuation of politics by other means. But it may also be that politics is becoming the continuation of war by other means (Foucault, 1997, pp. 16 and 41; Pandolfi, 2002, pp. 391-410).
+
+## Michel Foucault
+
+He was a French historian of ideas and philosofer. Lecturer on Tunis from 1966 to 1968. He died from complications of HIV/AIDS in Paris. First cases of HIV were discovered in France at 1983 by Pasteur institute. He described himself as a "juvenile delinquent".
+
+> I wasn't always smart, I was actually very stupid in school ... There was a boy who was very attractive who was even stupider than I was. And to ingratiate myself with this boy who was very beautiful, I began to do his homework for him—and that's how I became smart, I had to do all this work to just keep ahead of him a little bit, to help him. In a sense, all the rest of my life I've been trying to do intellectual things that would attract beautiful boys \[Foucault, 1983\]
+
+### Poder, disciplina e ilegalismos
+
+1.  Power is not something you possess, power is something you wield.
+
+    No es una propiedad sino una estrategia; no es el privilegio adquirido o conservado de la clase dominante, sino el efecto de conjunto de sus posiciones estratégicas.
+
+2.  El poder no esta localizado en el Estado; por el contrario, el Estado aparece como un efecto de conjunto o una resultante de una multiplicidad de engranajes y de núcleos que se sitúan a un nivel completamente distinto y que constituyen de por sí una microfísica del poder.
+
+3.  Es falso que el poder encarnado en el Estado esté subordinado a un Modo de Producción como infraestructura.
+
+4.  El poder carece de esencia, es operatorio. No es atributo sino relación.
+
+    El poder enviste a los dominados, pasa por ellos y mediante ellos, se apoya en ellos, del mismo modo que ellos, en su lucha contra él, se apoyan a su vez en las influencias que ejerce sobre ellos.
+
+5.  El poder más que reprimir, produce realidad y, más que ideologisar, abstraer u ocultar, produce verdad.
+
+6.  El poder de Estado no se expresa en la Ley.
+
+    La ley siempre es una composición de ilegalismos que ella diferencia al formalizarlos.
+
+> El cuerpo como objeto y blanco del poder
+
+"Docilidad, combinación ingeniosa entre el cuerpo analizable y el cuerpo manipulable". Sometimiento, utilidad, transformación y perfeccionamiento se fusionan para producir los cuerpos dóciles.
+
+> "La delincuencia funciona como un observatorio político" Foucault
+
+Teorías de los ilegalismos:
+
+-   La democracia del objeto
+
+-   La estructura conceptual
+
+-   La explicación del cambio social
+
+El poder disciplinario, propio de la sociedad carcelaria y normativa y de las instituciones de encierro en general, representa un nuevo periodo de la historia punitiva donde se han colonizado los ilegalismos populares y **ha surgido un ilegalismo controlado llamado delincuencia**.
+
+*La apreciación jurídica de la propiedad originó un desplazamiento de los ilegalismos, del ataque a los cuerpos al ataque a los bienes*. La crisis de los ilegalismos populares exigió a los reformadores una nueva estrategia para redistribuir y administrar los ilegalismos.
+
+> Suavizamiento de los crímenes antes del suavizamiento de las leyes.
+
+Cuando los reformadores plantearon la abolición de la pena capital, **lo hacían, no porque querían castigar menos, sino porque querían castigar mejor**.
+
+> *los diferentes estratos sociales tenían cada cual su margen de ilegalismo tolerado. Este estaba tan profundamente anclado que tenías su coherencia y su economía propia.*
+
+Una parte de la burguesía había aceptado sin demasiados problemas el ilegalismo de los derechos, lo soportaba mal cuando se trataba de lo que consideraba sus derechos de propiedad.
+
+Ilegalismos populares:
+
+-   Político
+
+-   Resistencia al movimiento de industrialización
+
+    Las prácticas ilegalistas se oponen a la ley misma y a la justicia encargada de aplicarla, a los empresarios que multiplican las maquinas y bajan salarios; se oponen al régimen de la propiedad territorial
+
+-   Efectos de las crisis económicas
+
+    > **El lumpen** es un término que se originó en el marxismo para referirse a un sector de la sociedad que se encuentra en una posición socialmente marginal y desfavorecida.
+
+Sería ingenuo creer que la ley se ha hecho para todo el mundo en nombre de todo el mundo; es más prudente reconocer que se ha hecho para algunos y que recae sobre otros; que en principio obliga a todos los ciudadanos, pero que se dirige principalmente a las clases más numerosas y menos ilustradas, que a diferencia de lo que ocurre con las leyes políticas o civiles, su aplicación no concierne por igual a todo el mundo.
+
+> Relations of power ‘are the immediate effects of the divisions, inequalities, and disequilibriums which occur in the latter \[social relations per se\], and conversely they are the internal conditions of these differentiations’ which may be determined by law, status, economic appropriation, processes of production, language, culture, knowledge or competence [@deacon1998].
+>
+> Every human relation is to some degree a power relation, it power is produced ... in every relation from one point to another; it is everywhere; not because it embraces everything, but because it comes from everywhere (Foucault 1981a:93).
+
+> "When power blends into desire and desire blends into power, let's forget them both" [@baudrillard2007].
