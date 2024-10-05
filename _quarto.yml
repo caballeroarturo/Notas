@@ -42,6 +42,11 @@ book:
         - contenido/2_Contemporaneos.qmd
         - contenido/3_Concepciones.qmd
         - contenido/4_Comunitarismo.qmd
+        - contenido/5_Pragmatismo.qmd
+        - contenido/6_Paradojas.qmd
+        - contenido/7_Republicanas.qmd
+        - contenido/8_IdeaJusticia.qmd
+        - contenido/9_Populismo.qmd
     - references.qmd
 bibliography: references.bib
 
