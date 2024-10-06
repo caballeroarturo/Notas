@@ -130,9 +130,7 @@ Fuente principal: [@lessnoff2001]
 
 ### Jürgen Habermas: Ética del discurso y democracia
 
-De acuerdo con \[[Wikipedia, 2024](https://en.wikipedia.org/wiki/J%C3%BCrgen_Habermas "Wikipedia 09/24")\]:
-
-Nació en 1929 en Düsseldorf, Alemania. En 1933 su padre se volvió miembro del partido Nazi NSDAP. Habermas fue un *Jungvolkführer* de la Juventud de Hitler. Director del Instituo Max Planck en 1971. Elegido como *Foreign Honorary Member* de la [*American Academy of Arts and Sciences*](#0 "American Academy of Arts and Sciences") en 1984.
+Nació en 1929 en Düsseldorf, Alemania. En 1933 su padre se volvió miembro del partido Nazi NSDAP \[[Wikipedia, 2024](https://en.wikipedia.org/wiki/J%C3%BCrgen_Habermas "Wikipedia 09/24")\]. Habermas fue un *Jungvolkführer* de la Juventud de Hitler. Director del Instituo Max Planck en 1971. Elegido como *Foreign Honorary Member* de la [*American Academy of Arts and Sciences*](#0 "American Academy of Arts and Sciences") en 1984.
 
 > Habermas argues that his speech disability made him think differently about the importance of deep dependence and of communication \[(2008). "First". Between Naturalism and Religion: Philosophical Essays, Wikipedia\]
 
@@ -184,7 +182,9 @@ Nació en 1929 en Düsseldorf, Alemania. En 1933 su padre se volvió miembro del
 
 -   Libro "Crisis de legitimación del capitalismo tardío"
 
--   1984: The theory of Communicative action.
+-   1981: The theory of Communicative action.
+
+    -   El estado de bienestar es un caso modélico de la colonización del mundo de la vida por parte del sistema. Implica la claudicación de la autonomía en beneficio del bienestar.
 
     Acción teleológica en términos de Max Weber "racionalidad de fines" o "racionalidad instrumental".
 
@@ -207,17 +207,3 @@ Nació en 1929 en Düsseldorf, Alemania. En 1933 su padre se volvió miembro del
     -   En un estado de bienestar social que fundamentalmente administra, distribuye y mantiene. Los intereses "políticos" de los ciudadanos están constantemente subsumidos en actos administrativos \[p 211\].
 
 -   1992: Libro Factibilidad y validez
-
--   1981: Libro Teoría de la acción comunicativa (Vol2).
-
-    -   El estado de bienestar es un caso modélico de la colonización del mundo de la vida por parte del sistema. Implica la claudicación de la autonomía en beneficio del bienestar.
-
-### Max Weber
-
-Analiza la historia reciente de la civilización occidental a la luz de dos tipos de racionalización:
-
--   Racionalización de la acción: este forma parte de la **racionalidad instrumental, la adaptación orientada de los medios a un fin**; que se pone en manifiesto en el capitalismo de la maximización de los beneficios.
-
--   Racionalización del pensamiento
-
-La racionalización del pensamiento implica el desencantamiento del mundo(en *la visión del mundo cientificista la naturaleza es amoral, no hay valores objetivos*). De ahí que la principal víctima de la acción racionalizada o de la eficiencia haya sido la libertad individual y la autonomía. Los teóricos frankfurtianos, Horkheimer y Adorno, identificaban esto con la ilustración, por la tanto ellos, así como Marcus, fusionaron esta visión weberiana con su propia versión del marxismo. Bajo el signo de **racionalidad instrumental, la dominación de la naturaleza se relaciona con la irracionalidad de la comunicación de clase**.

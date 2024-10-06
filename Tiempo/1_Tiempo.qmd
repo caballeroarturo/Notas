@@ -1,5 +1,6 @@
 # Línea de tiempo
 
+
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 pacman::p_load(dplyr,readODS,gt,gtExtras)
 df <- readODS::read_ods("1_CiePol.ods", sheet = "Tiempo") %>% 
@@ -28,4 +29,3 @@ df %>% gt() %>%
     locations = cells_column_labels(columns = Evento)
   ) 
 ```
-
