@@ -78,8 +78,51 @@ Actualmente, se tiene un dilema, entre aceptar un gobierno más democrático, pe
 
 Frente a los partidarios de los gobiernos fuertes, la democracia del año 2000 consiste en el hecho de que el presidente o el jefe del gobierno es elegido directamente por los ciudadanos bajo la regla de la mayoría, aquí Bovero concluyé que, esa ya no es una democracia, porque allí se trastoca el sentido correcto de los verbos de la democracia, los regímenes con gobierno fuerte corren el riesgo de ser autocracias electivas, donde el parlamento ya no delibera, sino que se convierte simplemente en un contrapoder que controla la actuación del gobierno.
 
-### Teoría de juegos: juego mixto
+### Teoría de juegos
+
+> **Theory of rational choice**: the action chosen by a decision-maker is at least as good, according to her preferences, as every other available action [@osborne2004].
+
+> **Definition.** Game theory is a study of mathematical models of conflict and cooperation between rational decision makers. Rationality means that each individual's decision-making behavior would be consistent with the maximization of subjective expected utility, if the other individuals' decisions were specified. [@myerson1984]
+
+Rationality implies that individuals know the strategies available to each individual, have complete and consistent preferences over possible outcomes, and they are aware of those preferences, *we refer to the decision-makers as players*.
+
+-   Juegos cooperativos: Los jugadores actúan como grupo y coordinan sus acciones para su beneficio mutuo.
+
+-   Juegos no cooperativos: Los jugadores son rivales y cada uno actúa en su propio interés, sin pensar en la suerte de los otros jugadores.
+
+En los ***juegos mixtos*** sólo la cooperación permite asegurar la obtención de beneficios, pero el conflicto de intereses determinado por la estructura de recompensas introduce un factor de competitividad que interfiere en el proceso de coordinación, hasta el punto de que si tal conflicto no se dirime de alguna forma mediante algún procedimiento de ajuste, la cooperación y, en definitiva, el resultado positivo, pueden verse claramente en peligro.
 
 ## Republicanismo, liberalismo y comunitarismo
 
-> Fuente: Uscanga, A. (2016)
+> Fuente: [@uscangabarradas2016]
+
+El comunitarismo tuvo su auge en la decada de 1980 y se inspiró en gran medida en Aristóteles y Hegel, nació, al igual que el neorepublicanismo, como alternativa al modelo político liberal. El comunitarismo tiene como una de sus características el holismo ontológico, la realidad debe ser entendida como un todo interconectado, y la afirmación de una naturaleza humana social.
+
+Los comunitaristas apoyan políticas del bien común, conciben al individuo como un ser incompleto perfectible solo en la sociedad a partir de la participación que funciona como puente que le permite a la parte integrarse al todo.
+
+-   Individuo
+
+    -   (liberalismo) Rawls indica que *el yo antecede a sus fines*, los individuos tienen la capacidad de cuestionar su pertenencia en cualquier grupo, entidad o comunidad, hasta el punto de separarse de ella, si así lo prefieren.
+
+    -   (comunitarismo) Charles Taylor: nuestra entidad se encuentra profundamente marcada por nuestra pertenencia a ciertos grupos. El hombre es un animal social, un *zoon politikon* que requiere para su existencia de la *polis,* para afirmar su autonomía moral.
+
+> No hay un solo sujeto que pueda ser totalmente libre, sino solamente libre de elegir un entorno diferente: *“¿Podríamos imaginarnos individuos que no tuvieran vinculaciones de ningún tipo? ¿Individuos que no estuvieran determinados por la clase, la religión o el género, sino que carecieran de identidad y fueran completamente libres?”*. (Walzer, 2004, p. 35).
+
+-   Libertad
+
+    -   (republicanismo) Libertad como no dominación, ausencia de dominación.
+
+    -   (liberalismo) Libertad como no interferencia: ausencia de interferencia.
+
+    -   (comunitarismo) libertad basada en la pluralidad, es decir, la alteridad y colectividad.
+
+-   Sociedad multicultural
+
+    (comunitarismo) La sociedad multicultural ha dividido nuevamente a las sociedades, tal y como sucede con el individualismo, en cada uno con una identidad personal separada del resto: indígenas con indígenas, feministas con feministas, etc; es contraproducente que estas sociedades divididas en diversas identidades trabajen de forma aislada al resto de una comunidad en lugar de trabajar todos ellos en común, sin necesidad de perder esa identidad [@universidaddeguadalajaraméxico2021b].
+
+    <div>
+
+    > “\[…\] el que yo descubra mi propia identidad no significa que la
+    > haya elaborado en el aislamiento, sino que la he negociado por medio del diálogo \[…\], con los demás”. (Taylor, 2009, p. 65).
+
+    </div>
