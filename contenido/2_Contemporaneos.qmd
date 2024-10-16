@@ -1,8 +1,8 @@
-## Contemporáneos
+# Contemporáneos
 
 Fuente principal: [@lessnoff2001]
 
-### John Rawls: Justicia Liberal
+## John Rawls: Justicia Liberal
 
 -   1958: artículo "Justicia como equidad"
 
@@ -64,7 +64,7 @@ Fuente principal: [@lessnoff2001]
 
     -   Ética de los mínimos
 
-### Robert Nozick: El estado mínimo
+## Robert Nozick: El estado mínimo
 
 -   De 1938 a 2022. Nació en EUA de una familia descendiente de judíos (Wikipedia).
 
@@ -128,7 +128,7 @@ Fuente principal: [@lessnoff2001]
 
 -   1950: Hayek se unió a la universidad de Chicago
 
-### Jürgen Habermas: Ética del discurso y democracia
+## Jürgen Habermas: Ética del discurso y democracia
 
 Nació en 1929 en Düsseldorf, Alemania. En 1933 su padre se volvió miembro del partido Nazi NSDAP \[[Wikipedia, 2024](https://en.wikipedia.org/wiki/J%C3%BCrgen_Habermas "Wikipedia 09/24")\]. Habermas fue un *Jungvolkführer* de la Juventud de Hitler. Director del Instituo Max Planck en 1971. Elegido como *Foreign Honorary Member* de la [*American Academy of Arts and Sciences*](#0 "American Academy of Arts and Sciences") en 1984.
 
