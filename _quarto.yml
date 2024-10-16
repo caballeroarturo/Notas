@@ -47,6 +47,7 @@ book:
         - contenido/7_Republicanas.qmd
         - contenido/8_IdeaJusticia.qmd
         - contenido/9_Populismo.qmd
+        - contenido/10_Feminismo.qmd
         - Tiempo/1_Tiempo.qmd
     - references.qmd
 bibliography: references.bib
