@@ -1,3 +1,24 @@
+---
+title: "Concepciones de lo político"
+bibliography: references.bib
+author: "Arturo Caballero"
+date: last-modified
+date-format: "DD [ de ] MMMM, YYYY"
+format:
+  pdf:
+    documentclass: article
+    lang: es
+    fig-align: center
+    fig-cap-location: top
+    tbl-cap-location: top
+    toc: true
+    toc-depth: 3
+    toc-title: Contenido
+    colorlinks: true
+    callout-appearance: simple
+    callout-icon: true
+---
+
 # Comunitarismo
 
 ## Los Verbos de la democracia
@@ -78,7 +99,7 @@ Actualmente, se tiene un dilema, entre aceptar un gobierno más democrático, pe
 
 Frente a los partidarios de los gobiernos fuertes, la democracia del año 2000 consiste en el hecho de que el presidente o el jefe del gobierno es elegido directamente por los ciudadanos bajo la regla de la mayoría, aquí Bovero concluyé que, esa ya no es una democracia, porque allí se trastoca el sentido correcto de los verbos de la democracia, los regímenes con gobierno fuerte corren el riesgo de ser autocracias electivas, donde el parlamento ya no delibera, sino que se convierte simplemente en un contrapoder que controla la actuación del gobierno.
 
-### Teoría de juegos
+## Teoría de juegos
 
 > **Theory of rational choice**: the action chosen by a decision-maker is at least as good, according to her preferences, as every other available action [@osborne2004].
 
@@ -125,3 +146,6 @@ Los comunitaristas apoyan políticas del bien común, conciben al individuo como
     > “\[…\] el que yo descubra mi propia identidad no significa que la haya elaborado en el aislamiento, sino que la he negociado por medio del diálogo \[…\], con los demás”. (Taylor, 2009, p. 65).
 
     </div>
+
+
+## Referencias

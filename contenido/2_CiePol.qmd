@@ -2,7 +2,7 @@
 
 Fuente principal: [@lessnoff2001]
 
-### John Rawls: Justicia Liberal
+## John Rawls: Justicia Liberal
 
 -   1958: artículo "Justicia como equidad"
 
@@ -64,7 +64,7 @@ Fuente principal: [@lessnoff2001]
 
     -   Ética de los mínimos
 
-### Robert Nozick: El estado mínimo
+## Robert Nozick: El estado mínimo
 
 -   De 1938 a 2022. Nació en EUA de una familia descendiente de judíos (Wikipedia).
 
@@ -128,7 +128,7 @@ Fuente principal: [@lessnoff2001]
 
 -   1950: Hayek se unió a la universidad de Chicago
 
-### Jürgen Habermas: Ética del discurso y democracia
+## Jürgen Habermas: Ética del discurso y democracia
 
 De acuerdo con \[[Wikipedia, 2024](https://en.wikipedia.org/wiki/J%C3%BCrgen_Habermas "Wikipedia 09/24")\]:
 
@@ -212,7 +212,7 @@ Nació en 1929 en Düsseldorf, Alemania. En 1933 su padre se volvió miembro del
 
     -   El estado de bienestar es un caso modélico de la colonización del mundo de la vida por parte del sistema. Implica la claudicación de la autonomía en beneficio del bienestar.
 
-### Max Weber
+## Max Weber
 
 Analiza la historia reciente de la civilización occidental a la luz de dos tipos de racionalización:
 

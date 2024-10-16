@@ -60,6 +60,9 @@ format:
     code-fold: true
     code-link: true
     css: custom.css
+    toc-depth: 3
+    number-sections: true
+    number-depth: 3
     sharing: [twitter, linkedin]
     smooth-scroll: true
     author-meta: "Arturo Caballero"
@@ -73,7 +76,7 @@ format:
     toc-depth: 3
     toc-title: Contenido
     number-sections: true
-    number-depth: 2
+    number-depth: 3
     colorlinks: true
     callout-appearance: simple
     callout-icon: true
