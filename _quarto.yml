@@ -7,18 +7,18 @@ book:
   author: "Arturo Caballero"
   date: last-modified
   date-format: "[Actualizado en] MMMM, YYYY"
-  favicon: logo_cookbook_rpolars.png
-  cover-image: logo_cookbook_rpolars.png
+  favicon: sch_leyendo.jpeg
+  cover-image: sch_leyendo.jpeg
   publisher: "Arturo Caballero"
   description: Anotaciones aleatorias de clases y de cosas que veo o que leo. 
-  keyword: notas,aleatorias,clases,varias,caballero,caballero000,investigacion,research
+  keyword: politica,ciencias,uanl,clases,lessnoff,caballero000,investigacion,research
   
   reader-mode: true
   url: https://caballeroarturo.github.io/cv/
   page-navigation: true
   sharing: [twitter, linkedin]
   sidebar: 
-    logo: logo_cookbook_rpolars.png
+    logo: sch_leyendo.jpeg
     search: true
   repo-url: https://caballeroarturo.github.io/cv/
   #
@@ -60,6 +60,8 @@ format:
     lang: es
     code-fold: true
     code-link: true
+    fig-cap-location: top
+    tbl-cap-location: top
     css: custom.css
     toc-depth: 3
     number-sections: true
