@@ -74,6 +74,40 @@ Una república que se autogobierna es el único tipo de régimen bajo el cual un
 
 ## Liberalismo y republicanismo
 
-#### Republicanismo
+![](/www/6_lib_rep.jpg){#fig-6librep fig-align="center"}
 
-Se originó en la Roma clásica y fue resucitado en el Renacimiento.
+-   Libertad
+
+    > (republicanismo) Libertad como no dominación, ausencia de dominación.
+    >
+    > (liberalismo) Libertad como no interferencia: ausencia de interferencia.
+
+    Ejemplo en la relación esclavo-amo: aunque el amo tenga un carácter amable y no intervencionista, o que el esclavo sea muy astuto y siempre se salga con la suya; el hecho de depender de la gracia del amo y su favor, el hecho de vivir bajo su dominación, implica una ausencia de libertad.
+
+    Ejemplo en pago de impuestos: un individuo esta sujeto a coerción, por el estado de derecho, para pagar impuestos, pero no necesariamente esta sujeto a la voluntad arbitraria del Estado.
+
+    > "El hombre que no puede vivir por sí mismo debe ser un sirviente; pero aquel que puede vivir por sí mismo puede ser un hombre libre" Harrington
+    >
+    > "Libertad es vivir de acuerdo con los términos de uno; esclavitud es vivir a merced de otro" Treuchard y Gordon, 1971.
+
+-   Ley
+
+    -   (republicanismo) La libertad es vista como un estatus que existe solo bajo el amparo de un adecuado Estado de derecho.
+
+    -   (liberalismo) Ve la ley como una forma de invasión de la libertad del pueblo. "La libertad, para los liberales, es libertad frente al control, compulsión, restricción e interferencia por parte del Estado" Arblaster 1984.
+
+-   Votantes
+
+    -   (republicanismo) Perspectiva del juicio:
+
+        -   Los votantes concurren a las elecciones para registrar su juicio sobre que alternativa es la mejor para la sociedad en su conjunto, cualesquiera que sean sus propios criterios.
+
+    -   (liberalismo) Perspectiva de preferencias:
+
+        -   Cada partido/político ofrece un conjunto de políticas públicas y lo que hace cada votante es seleccionar que paquete es el que efectivamente quiere.
+
+-   Políticos
+
+    -   (republicanismo) Los políticos deberían dedicarse a deliberar y debatir para tomar decisiones políticas.
+
+    -   (liberalismo) Los políticos deberían dedicarse a negociar con diferentes grupos de presión, en atención a su importancia electoral y no en atención a sus argumentos.
