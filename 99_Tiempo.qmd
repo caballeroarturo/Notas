@@ -1,8 +1,8 @@
-# Línea de tiempo {#lineatempo}
+# Línea de tiempo {#lineatempo .unnumbered}
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 pacman::p_load(dplyr,readODS,gt,gtExtras)
-df <- readODS::read_ods("1_CiePol.ods", sheet = "Tiempo") %>% 
+df <- readODS::read_ods("Tiempo/1_CiePol.ods", sheet = "Tiempo") %>% 
   select(-c(Dudas, Orden, Grupo))
 df %>% gt() %>% 
   tab_header(

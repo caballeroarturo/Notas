@@ -36,7 +36,7 @@ book:
   
   chapters:
     - index.qmd
-    - part: 1_CiePol.qmd
+    - part: 00_CiePol.qmd
       chapters: 
         - contenido/1_CapitalismoConsumista.qmd
         - contenido/2_Contemporaneos.qmd
@@ -44,11 +44,11 @@ book:
         - contenido/4_Comunitarismo.qmd
         - contenido/5_Pragmatismo.qmd
         - contenido/6_Paradojas.qmd
-        - contenido/7_Republicanas.qmd
-        - contenido/8_IdeaJusticia.qmd
-        - contenido/9_Populismo.qmd
-        - contenido/10_Feminismo.qmd
-        - Tiempo/1_Tiempo.qmd
+        - contenido/07_ClasePolitica.qmd
+    - part: 10_CieSol.qmd
+      chapters: 
+        - contenido/11_Totalidad_CS.qmd
+    - 99_Tiempo.qmd
     - references.qmd
 bibliography: references.bib
 

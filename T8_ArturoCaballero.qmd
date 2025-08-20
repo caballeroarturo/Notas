@@ -1,0 +1,132 @@
+---
+title: "Libertad, republicanismo y liberalismo"
+bibliography: references.bib
+author: "Arturo Caballero"
+date: last-modified
+date-format: "DD [ de ] MMMM, YYYY"
+format:
+  pdf:
+    documentclass: article
+    lang: es
+    fig-align: center
+    fig-cap-location: top
+    tbl-cap-location: top
+    toc: true
+    toc-depth: 3
+    toc-title: Contenido
+    colorlinks: true
+    #callout-appearance: simple
+    #callout-icon: true
+---
+
++------------------------------------------------------------------------------------------------------------------------------+
+| -   "Las paradojas de la Libertad". Quentin Skinner p 93-114                                                                 |
+|                                                                                                                              |
+| -   "Liberalismo y Republicanismo". Phillip Pettit p.115-135                                                                 |
+|                                                                                                                              |
+| Ovejero Féix, Martí, José Luis, y Gargarella, Roberto (Compiladores) **Nuevas ideas republicanas. Autogobierno y Libertad**. |
++------------------------------------------------------------------------------------------------------------------------------+
+
+## Las paradojas de la libertad
+
+### Libertad negativa
+
+> La libertad política es fundamentalmente negativa: ausencia de cierto grado de coerción que le impida al agente ser capaz de actuar en pos de sus propios fines, ser capaz de buscar distintas opciones, o al menos ser capaz de elegir entre diversas alternativas. Isaiah Berlin.
+
+![](/www/6_paradoja_libneg.jpg){#fig-paradoja_libneg fig-align="center"}
+
+-   "La libertad significa (propiamente) ausencia de oposición" Hobbes, Leviatán.
+
+    > "La libertad es simple, consiste en la facultad para hacer o no hacer, para hacer o abstenerse de hacer según nuestra voluntad. Esto no se puede negar" Locke
+
+    -   Para Hobbes y Locke la libertad es un bien natural, una propiedad individual; la exigencia de que el ejercicio de la ley solo se puede justificar si se demuestra que de no existir, el efecto no sería una libertad más amplia sino una disminución de la seguridad gracias a la cual se goza de libertad (protección de derechos individuales).
+
+    <!-- -->
+
+    -   La maximización de nuestra libertad social debe depender de nuestra capacidad para maximizar el área dentro de la cual podemos reclamar inmunidad a prestar servicios a la comunidad.
+
+    -   "La libertad de participar en el proceso político" no se relaciona en ningún sentido con la libertad. Si la libertad consiste en la ausencia de restricciones, sugerir que se podría "forzar \[a un individuo\] a ser libre" ya no es de ninguna manera referirse a la libertad, sino a su opuesto. \[Oppenheim, Political Concepts\]
+
+-   Solo podemos ser libres dentro de "una sociedad con cierta forma canónica que incorpore la noción de un verdadero autogobierno" Charles Taylor
+
+    Entonces
+
+    -   debemos dedicarnos a una vida dedicada al servicio público, y
+
+    -   cultivar las virtudes cívicas necesarias para participar de manera efectiva en la vida política
+
+    Solo es racional perseguir ciertos fines
+
+-   Quizás nuestra libertad sea el fruto de la coerción
+
+### Teoría positiva de la libertad
+
+![](/www/6_paradoja_libpos.jpg){#fig-paradoja_libpos fig-align="center"}
+
+-   Somos seres morales con ciertos fines típicamente humanos
+
+-   El animal humano es *naturale sociale et politicum* y por lo tanto la naturaleza de nuestros fines debe ser, en esencia, social.
+
+    -   Entonces somos libres si realizamos solo aquellas actividades propicias para alcanzar el "florecimiento humano".
+
+    -   Si un individuo considera que aquello que le debe a la causa común es una contribución gratuita, cuya perdida sería menos dolorosa para los demás que el pago oneroso para él, entonces deberá "obligársele a ser libre", ser forzado a disfrutar de una libertad que, de lo contrario, dicho individuo permitiría que degenerara en servidumbre. (Rousseau)
+
+### Republicanismo clásico
+
+![](/www/6_paradoja_repuclas.jpg){#fig-repclas fig-align="center"}
+
+Una república que se autogobierna es el único tipo de régimen bajo el cual una comunidad puede aspirar a la grandeza al mismo tiempo que les garantiza a sus ciudadanos la libertad individual. (Fink, Classic republicans).
+
+-   Una república que se autogobierna sólo puede perdurar, si sus ciudadanos cultivan la virtud cívica, vocación pública, capacidad que nos permite por voluntad propia servir al bien común, y de este modo defender la libertad de nuestra comunidad.
+
+    -   Coraje y determinación para defender a nuestra comunidad.
+
+    -   Desempeñar un papel activo y efectivo en la vida pública.
+
+    Permitir que las decisiones políticas de un cuerpo político las determine la voluntad de cualquiera que no sea la totalidad de los miembros del cuerpo mismo significa, como en el caso de un cuerpo natural, correr el riesgo injustificado de que la conducta del cuerpo en cuestión se oriente al logro no de sus propios fines, sino solo al logro de los fines de quienes consiguieron dominarlo.
+
+    > "A veces creemos que estamos maximizando nuestra propia libertad cuando, en realidad, estamos reclamando nuestra propia ruina" Maquiavelo
+    >
+    > "Es el hambre y la pobreza lo que vuelve trabajadores a los hombres, y son las leyes las que los vuelven buenos" Maquiavelo.
+    >
+    > La justificación de la aplicación de la ley, es ejercer coerción sobre los individuos para que actúen de tal manera que defiendan las instituciones de un Estado libre.
+
+## Liberalismo y republicanismo
+
+-   Libertad
+
+    > (republicanismo) Libertad como no dominación, ausencia de dominación.
+    >
+    > (liberalismo) Libertad como no interferencia: ausencia de interferencia.
+
+    Ejemplo en la relación esclavo-amo: aunque el amo tenga un carácter amable y no intervencionista, o que el esclavo sea muy astuto y siempre se salga con la suya; el hecho de depender de la gracia del amo y su favor, el hecho de vivir bajo su dominación, implica una ausencia de libertad.
+
+    Ejemplo en pago de impuestos: un individuo esta sujeto a coerción, por el estado de derecho, para pagar impuestos, pero no necesariamente esta sujeto a la voluntad arbitraria del Estado.
+
+    > "El hombre que no puede vivir por sí mismo debe ser un sirviente; pero aquel que puede vivir por sí mismo puede ser un hombre libre" Harrington
+    >
+    > "Libertad es vivir de acuerdo con los términos de uno; esclavitud es vivir a merced de otro" Treuchard y Gordon, 1971.
+
+-   Ley
+
+    -   (republicanismo) La libertad es vista como un estatus que existe solo bajo el amparo de un adecuado Estado de derecho.
+
+    -   (liberalismo) Ve la ley como una forma de invasión de la libertad del pueblo. "La libertad, para los liberales, es libertad frente al control, compulsión, restricción e interferencia por parte del Estado" Arblaster 1984.
+
+-   Votantes
+
+    -   (republicanismo) Perspectiva del juicio:
+
+        -   Los votantes concurren a las elecciones para registrar su juicio sobre que alternativa es la mejor para la sociedad en su conjunto, cualesquiera que sean sus propios criterios.
+
+    -   (liberalismo) Perspectiva de preferencias:
+
+        -   Cada partido/político ofrece un conjunto de políticas públicas y lo que hace cada votante es seleccionar que paquete es el que efectivamente quiere.
+
+-   Políticos
+
+    -   (republicanismo) Los políticos deberían dedicarse a deliberar y debatir para tomar decisiones políticas.
+
+    -   (liberalismo) Los políticos deberían dedicarse a negociar con diferentes grupos de presión, en atención a su importancia electoral y no en atención a sus argumentos.
+
+![Republicanismo y liberalismo](/www/6_lib_rep.jpg){#fig-6librep}
