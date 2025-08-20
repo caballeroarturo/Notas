@@ -1,0 +1,31 @@
+# Línea de tiempo
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+pacman::p_load(dplyr,readODS,gt,gtExtras)
+df <- readODS::read_ods("1_CiePol.ods", sheet = "Tiempo") %>% 
+  select(-c(Dudas, Orden, Grupo))
+df %>% gt() %>% 
+  tab_header(
+    title = md("**Línea de Tiempo**"),
+    subtitle = "Fechas destacadas"
+  ) |>
+  opt_align_table_header(align = "center") %>%
+  tab_options(
+    heading.padding = px(1),
+    #table.background.color = "#FFFFFF00"
+    ) %>% 
+  opt_interactive(
+    use_search = TRUE,
+    use_filters = TRUE,
+    use_resizers = TRUE,
+    use_highlight = TRUE,
+    use_compact_mode = TRUE,
+    use_text_wrapping = TRUE,
+    use_page_size_select = TRUE
+) %>% gt_theme_espn() %>% 
+  tab_footnote(
+    footnote = "La columna de -Evento- señala lo principal a resaltar en esa fecha. -Observación- pretende ser la descripción, -contexto- son los eventos que sucedían en paralelo. ",
+    locations = cells_column_labels(columns = Evento)
+  ) 
+```

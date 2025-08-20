@@ -1,0 +1,94 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Notas"
+  author: "Arturo Caballero"
+  date: last-modified
+  date-format: "[Actualizado en] MMMM, YYYY"
+  favicon: sch_leyendo.jpeg
+  cover-image: sch_leyendo.jpeg
+  publisher: "Arturo Caballero"
+  description: Anotaciones aleatorias de clases y de cosas que veo o que leo. 
+  keyword: politica,ciencias,uanl,clases,lessnoff,caballero000,investigacion,research
+  
+  reader-mode: true
+  url: https://caballeroarturo.github.io/cv/
+  page-navigation: true
+  sharing: [twitter, linkedin]
+  sidebar: 
+    logo: sch_leyendo.jpeg
+    search: true
+  repo-url: https://caballeroarturo.github.io/cv/
+  #
+  #repo-subdir: book
+  #repo-branch: main
+  #repo-actions: [edit, issue, source]
+  downloads: [pdf] #epub
+  image: polar-bear-airpods-no-background.png
+  
+  page-footer: 
+    left: | 
+      Notas de <a href="https://caballeroarturo.github.io/cv/">Caballero</a>.
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  
+  chapters:
+    - index.qmd
+    - part: 1_CiePol.qmd
+      chapters: 
+        - contenido/1_CapitalismoConsumista.qmd
+        - contenido/2_Contemporaneos.qmd
+        - contenido/3_Concepciones.qmd
+        - contenido/4_Comunitarismo.qmd
+        - contenido/5_Pragmatismo.qmd
+        - contenido/6_Paradojas.qmd
+        - contenido/7_Republicanas.qmd
+        - contenido/8_IdeaJusticia.qmd
+        - contenido/9_Populismo.qmd
+        - contenido/10_Feminismo.qmd
+        - Tiempo/1_Tiempo.qmd
+    - references.qmd
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      dark: superhero
+      light: cosmo
+    lang: es
+    code-fold: true
+    code-link: true
+    fig-cap-location: top
+    tbl-cap-location: top
+    css: custom.css
+    toc-depth: 3
+    number-sections: true
+    number-depth: 3
+    sharing: [twitter, linkedin]
+    smooth-scroll: true
+    author-meta: "Arturo Caballero"
+  pdf:
+    documentclass: scrreprt
+    lang: es
+    fig-align: center
+    fig-cap-location: top
+    tbl-cap-location: top
+    toc: true
+    toc-depth: 3
+    toc-title: Contenido
+    number-sections: true
+    number-depth: 3
+    colorlinks: true
+    callout-appearance: simple
+    callout-icon: true
+  #epub:
+  #  toc: true
+  #  epub-cover-image: logo_cookbook_rpolars.png
+  #docx: 
+  #  toc: true
+  #  number-sections: true
+  #  highlight-style: github
+editor: visual
+

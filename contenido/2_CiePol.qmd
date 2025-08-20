@@ -1,0 +1,223 @@
+## Contemporáneos
+
+Fuente principal: [@lessnoff2001]
+
+## John Rawls: Justicia Liberal
+
+-   1958: artículo "Justicia como equidad"
+
+    Un razgo del contrato social sobre principios de justicia es que "las partes contratantes sean lo suficientemente iguales en poderes y habilidades para garantizar que nadie es capaz de dominar a los demás" Lo cual haría el contrato un contrato justo.
+
+    La razón de todos los contratantes es disfrutar , en la mayor medida posible , los llamados bienes sociales primarios.
+
+-   1971 publica el libro Una teoría de la justicia.
+
+    -   Justicia social se logra si se consigue la distribución adecuada de los beneficios y cargas de la cooperación social.
+
+    -   Estado: un contrato social sobre principios de justicia.
+
+    -   Las desigualdades son supuéstamente inevitables en la estructura básica de cualquier sociedad \[p5\].
+
+    -   Sociedad: Una empresa cooperativa para la ventaja mutua. Cada persona prefiere una participación mayor a una menor.
+
+    -   **Principios**
+
+        1.  (**Primer principio**) Toda persona ha de tener igual derecho al sistema más extenso de libertades básicas iguales que sea compatible con un sistema semejante de libertades para todos.
+
+        2.  (**Segundo principio**) Las desigualdades sociales y económicas habrán de ser ordenadas tal que:
+
+            -   Estén dirigidas hacía el mayor beneficio del menos aventajado
+
+            -   Se vinculen a cargos y posiciones abiertos a todos bajo las condiciones de una equitativa igualdad de oportunidades.
+
+        **Libertades** básicas (**negativas**): Libertad política, libertad de discurso, libertad de reunión libertad de conciencia y de pensamiento, libertad personal junto con el derecho a la propiedad personal y libertad respecto a la detención y arresto arbitrario.
+
+        **Democracia** constitucional
+
+    -   Autorealización: uno de los bienes más importantes que un individuo puede disfrutar. La igualdad de oportunidades significa tener las mismas perspectivas de éxito independientemente de su posición inicial en la clase social. Hayeck mencionaba que esto no se podía lograr porque lo que se premia son los logros no los méritos.
+
+    -   Prioridad de las necesidades materiales básicas:
+
+        -   Deben estar cubiertas para todos
+
+        -   Cualquier persona tiene igual derecho a un esquema plenamente similar de libertades para todos.
+
+        -   Las oportunidades para lograr las posiciones sociales deseadas deben ser distribuidas por el sistema social de tal modo que logre maximizar las oportunidades de las clases más desfavorecidas.
+
+        -   La **desigualdad económica** debe ser acordada de tal modo que logre maximizar la riqueza de la clase mas pobre.
+
+        -   **Estado de bienestar**
+
+            Es obligación del gobierno garantizar un mínimo social a cargo de mecanismos como la libre escolarización para todos, o bien a través de la enseñanza pública o subvencionando a las escuelas privadas.
+
+        -   Ventajas de nacimiento: naturales (dotados), familia con riqueza, suerte.
+
+-   1973 Libro Liberalismo político
+
+    -   Modificación al **Primer principio**:
+
+        Cualquier persona tiene el mismo derecho a un régimen completamente adecuado de libertades básicas, que sea compatible con un mismo esquema de libertades para todos.
+
+    -   Sociedad: un sistema justo de cooperación a lo largo de un ciclo temporal completo.
+
+    -   **Prioridad del derecho sobre el bien** (el acto correcto, lo bueno). El estado no debe apoyar una única concepción del bien (pluralidad).
+
+    -   Ética de los mínimos
+
+## Robert Nozick: El estado mínimo
+
+-   De 1938 a 2022. Nació en EUA de una familia descendiente de judíos (Wikipedia).
+
+-   Catedrático de Harvard. Coincidió con Rawls en Harvard en 1963,
+
+-   Presidente de la Asociación Filosófica Estadounidense
+
+-   1960: Un compañero de la Universidad lo presentó a las ideas de Hayek con el libro "The Consitution of Liberty".
+
+    > I also read some of the essays in "Individualism and Economic Order", especially the essays on rational calculation in a socialist society, and the impossibility of it. I thought, there must be something wrong with this and I’m going to find out what it is. The arguments bothered me. \[...\] At first, though I had decided libertarianism was intellectually correct, I thought only bad people or mostly bad people would accept it, and that all the good people were on the left. So there was a period of time when I wouldn’t tell people really quite what I believed. \[Entrevista a Nozick de 1977\]
+
+-   1974: "Anarquía, Estado y Utopía"
+
+    Respuesta a "A theory of justice" 1971 de Rawls. Defiende un libertarismo extremo.
+
+    Estado mínimo es aquel que se limita a proteger los derechos individuales y a garantizar la seguridad, sin intervenir en la economía más allá de lo necesario.Inspirado en el imperativo categórico de Kant "Los individuos son fines y no solo medios". El imperativo kantiano crea un caso "prima facie" contra la fuerza coercitiva, sin considerar quién sea el que la ejerce, o el propósito de tal fuerza. Para los anarquistas esto genera un supuesto concluyente contra el estado (intrínsecamente coercitivo).
+
+    En un estado los individuos involucrados acturán de un modo interesado y racional.
+
+    Privación del derecho natural de castigar a los que transgreden las normas (dada la tendencia de favoreserse a sí mismo cuando se es juez y parte).
+
+    Teoría del título justo (Entitlement theory) :
+
+    -   *Just acquisition of holdings*
+
+        Cualquiera que hace algo tras haber comprado o contratado los recursos que se necesitan en el proceso (...) esta legitimado a poseerlo (Locke llama a estas transacciones la mezcla del trabajo de uno con los recursos apropiados). La apropiación no debe empeorar la situación de otros. Nozick: Las operaciones libres de un sistema de mercado no llegarían realmente a chocar con la condición de Locke. Incluso si el mercado libre, por ejemplo, no suministra nada a los incapacitados, no puede empeorar su situación. No pueden pretender más de lo que tienen, incluso si no tienen nada.
+
+    -   *Just transfer of holdings*:
+
+        Una persona se convierte en el (nuevo) legítimo propietario de algo, que ya estaba legítimamente poseído, si y solo si, el propietario anterior se lo aliena libremente a él o ella - ya sea por donación, intercambio en el mercado, legado u otro procedimiento.
+
+        "Los impuestos sobre las ganancias del trabajo son equivalentes a los trabajos forzosos" (transferencia obligada).
+
+    -   **El derecho a la vida como derecho negativo:** Para Nozick, el derecho a la vida es un derecho negativo. Esto significa que otros tienen la obligación de abstenerse de quitarte la vida, pero no tienen la obligación de proporcionarte los medios para mantenerte con vida.
+
+    -   Rectification of injustice:
+
+        Una distribución de propiedades es justa sí y solo sí las propiedades fueron adquiridas por adquisición justa y transferencia justa.
+
+        -   Nozick (p231): "Uno no puede servirse del análisis y de la teoría presentada \[en este libro\] para condenar ningún esquema particular de pagos por transferencia, a no ser que quede claro que no se puede aplicar ninguna consideración acerca de la rectificación de la injusticia para justificarlo"
+
+    Utopía
+
+    El mejor de los mundos posibles es el que permite que la mayor cantidad de gente posible viva lo más cerca posible de como desea vivir.
+
+    -   Defensa de Nozick al "Estado mínimo":
+
+        La visión libertaria puede crear un espacio para todos los estilos de vida, incluidos los anti-libertarios: las comunidades particulares podrían tener restricciones internas.
+
+        "No veo muy claro mi camino a través de estas cuestiones" Nozick, The Examined Life pp 287-288.
+
+-   1981: Explicaciones filosóficas
+
+-   1989: The Examined Life
+
+    En el ensayo *The sigzag of politics* expone:
+
+    > "La posición libertaria que una vez propuse me aparece ahora seriamente incorrecta". La teoría de la justicia expuesta, en *Anarquía, Estado y Utopía*, es en su mejor momento una defensa de solo uno de los valores de competencia (alusión a Isaiah Berlin), no un absoluto, pero uno que algunas veces puede ser invalidado o disminuido dentro de los intercambios.
+
+-   2001: Invarianzas
+
+-   1950: Hayek se unió a la universidad de Chicago
+
+## Jürgen Habermas: Ética del discurso y democracia
+
+De acuerdo con \[[Wikipedia, 2024](https://en.wikipedia.org/wiki/J%C3%BCrgen_Habermas "Wikipedia 09/24")\]:
+
+Nació en 1929 en Düsseldorf, Alemania. En 1933 su padre se volvió miembro del partido Nazi NSDAP. Habermas fue un *Jungvolkführer* de la Juventud de Hitler. Director del Instituo Max Planck en 1971. Elegido como *Foreign Honorary Member* de la [*American Academy of Arts and Sciences*](#0 "American Academy of Arts and Sciences") en 1984.
+
+> Habermas argues that his speech disability made him think differently about the importance of deep dependence and of communication \[(2008). "First". Between Naturalism and Religion: Philosophical Essays, Wikipedia\]
+
+-   1968 Habermas publica "Conocimiento e interés"
+
+    Obra escrita contra el "positivismo" y la "ciencia social positivista".
+
+    El *positivismo* presupone:
+
+    -   La ciencia no aporta más que conocimiento del mundo tal como actualmente es, así como que el acercamiento científico es el mejor y único modo de acceder al conocimiento y, en esa medida ha de ser aplicado al ámbito social del mismo modo que ya lo ha sido con exito en la naturaleza, con objeto de producir ciencia social.
+
+    -   La ciencia incluyendo a la ciencia social es necesariamente una ciencia libre de valores (como Max Weber afirmaba).
+
+-   Refutación de Hebermas:
+
+    -   La ingenuidad estriba en que niega la relación existente entre conocimiento e interés, es decir, la dependencia del conocimiento humano de intereses y, por tanto, de fines y valores.
+
+    -   Si la ciencia natural se estructura de este modo es porque, más bien, esta organización es inherente a nosotros mismos y al carácter técnico de nuestro interés por la naturaleza. "**Las ciencias empíricas contienen información acerca de la realidad desde el punto de vista del posible control técnico**" \[Pierce y Dilthey\].
+
+    -   Es a través del trabajo y de sus exigencias donde el hombre llega a conocer su medio ambiente natural, acercándose a Marx. Pero rechaza la extensión de este ámbito al social, siguiendo la Escuela de Franskfurt.
+
+    -   Entendimiento mutuo orientado a la acción (Prácticamente efectivo): conocimiento e interés propio del ámbito social en lugar de ciencias sociales
+
+        -   Conocimiento constitutivo: Todos los seres humanos lo adquieren a través de los progresos en socialización, los cuales proporcionan una imagen estructurada lingüísticamente de su mundo social y les capacita para participar en él.
+
+        -   Conocimiento científico: Esfuerzo por aprender o comprender el mundo mental compartido que estructura las interacciones de los seres humanos sociales. Las ciencias hermenéuticas no están en situación de contestar a un tercero de los intereses humanos:
+
+            -   Hermenéuticas
+
+            -   Histórico-hermenéuticas y
+
+            -   Ciencias culturales
+
+    -   Tiene dos vertientes, la filosófica y la política:
+
+        -   La doctrina positivista de la ciencia libre de valores (que implica que los juicios de valor no son conocimiento, toda vez que estos no son ni siquiera objeto de estudio racional) reduce las elecciones políticas a decisiones arbitrarias en manos de líderes, en lugar de promover una discusión democrática racional y un posible acuerdo (sobre la acción ilustrada), hasta en el marco de sistemas políticos opuestamente democráticos. \[Toward a Rational Sociaety, 1971, pp67-68\]
+
+        -   Implica que la política racional debe adoptar la forma instrumental de aplicación de leyes estructuradas bajo un control técnico, presumíblemente, bajo seres humanos. La ciencia social técnica entendida en términos positivistas se convierte, a ojos de Habermas, en un instrumento para que algunas personas ejerzan un cierto poder sobre otras (casta tecnocrática). *Los tecnócratas usan la ciencia y la tecnología como una ideología*.
+
+            *El conocimiento técnico es un conocimiento que permite que el objeto cognoscitivo sea tratado como un medio para los fines de aquel que usa el conocimiento*.
+
+    -   Ciencias naturales nomológicas: ciencias sistemáticas de la acción social (economía, ciencias políticas, sociología entre otras):
+
+        -   Identifica a muchas leyes sociales como armas para el ejercicio del poder (de los poderosos sobre los más indefensos) en estructuras sociales dadas; falsa pretensión de leyes universales e inalterables como instrumentos para perpetuar la desigualdad.
+
+            Una ley sociológica del tipo *"si X se realiza, la gente hará Y":* puede ser usada para controlar o manipular a la gente y, en esa medida, expresa relaciones de dependencia. Si la gente creyera que ninguna estructura social alternativa podría modificar esa situación, o que no existiera una manera de resistir a ese resultado Y - Si se cree en esto, la ley universal podría convertirse en una suerte de profecía *self-fulfilling*, susceptible de hacerse real en virtud de sus propios presupuestos y por tanto, a congelar las relaciones de dependencia que en un principio pueden ser objeto de transformación (Leído en [@lessnoff2001] página 293, fuente inicial Hebermas [@vallance1973] p310).
+
+    -   Remedio "La conciencia Reflexiva": este tipo de auto-reflexión crítica es emancipadora: sirve al interés cognitivo emancipador porque produce un conocimiento susceptible de liberar a los hombres de la dependencia de los poderes hipostasiados.
+
+-   Libro "Crisis de legitimación del capitalismo tardío"
+
+-   1984: The theory of Communicative action.
+
+    Acción teleológica en términos de Max Weber "racionalidad de fines" o "racionalidad instrumental".
+
+    -   Acción estratégica
+
+    -   Acción comunicativa: Interacción entre, al menos, dos sujetos capaces de discurso \[...\] que establecen relaciones interpersonales \[...\] los actores buscan alcanzar un entendimiento acerca de la situación de la acción y de sus planes con objeto de coordinar estas acciones por medio de un acuerdo \[pp 10,14\]. Según [@lessnoff2001] se presupone que **la acción comunicativa se corresponda con su apropiada forma de racionalidad: la racionalidad comunicativa**; y que Habermas lo usa para plantear una crítica de la concepción sociohistórica weberiana de la racionalización característica de la civilización occidental.
+
+    -   La racionalidad comunicativa, a juicio de Habermas, es más fundamental y amplia que la instrumental analizada por Weber \[p.10\]. La racionalidad instrumental -adaptación eficiente de medios a un fin no es un logro peculiarmente humano, lo que es peculiar es el lenguaje. La racionalidad instrumental se incrementa naturalmente, gracias a la capacidad humana de hablar, discutir y convencer racionalmente.
+
+        **Validez susceptible de crítica** de tal suerte que cualquier acción orientada a fines descansa en creencias acerca del mundo que, si son verdaderas, convierten la acción en racional. **La racionalidad esta en este sentido ligada al acuerdo o al consenso**. Habermas con la idea de "corrección" cree que la racionalidad implica una orientación o una intención hacia el consenso discursivo. El uso instrumental o estratégico del lenguaje va más allá de la función original del lenguaje.
+
+-   1962: Libro "The structural transformation of the public sphere"
+
+    -   Esfera privada: vida familiar, vecindad y la asociación voluntaria.
+
+        > La esfera pública fue subsumida en el marco del consumo, una empresa conducida por el mercado que en parte consiente y en parte manipula a una masa cultural tan acrítica como apolítica. \[p160\]
+
+    -   La democracia parlamentario moderna consiste en gran medida en la manipulación de los votantes en manos de las élites políticas.
+
+    -   En un estado de bienestar social que fundamentalmente administra, distribuye y mantiene. Los intereses "políticos" de los ciudadanos están constantemente subsumidos en actos administrativos \[p 211\].
+
+-   1992: Libro Factibilidad y validez
+
+-   1981: Libro Teoría de la acción comunicativa (Vol2).
+
+    -   El estado de bienestar es un caso modélico de la colonización del mundo de la vida por parte del sistema. Implica la claudicación de la autonomía en beneficio del bienestar.
+
+## Max Weber
+
+Analiza la historia reciente de la civilización occidental a la luz de dos tipos de racionalización:
+
+-   Racionalización de la acción: este forma parte de la **racionalidad instrumental, la adaptación orientada de los medios a un fin**; que se pone en manifiesto en el capitalismo de la maximización de los beneficios.
+
+-   Racionalización del pensamiento
+
+La racionalización del pensamiento implica el desencantamiento del mundo(en *la visión del mundo cientificista la naturaleza es amoral, no hay valores objetivos*). De ahí que la principal víctima de la acción racionalizada o de la eficiencia haya sido la libertad individual y la autonomía. Los teóricos frankfurtianos, Horkheimer y Adorno, identificaban esto con la ilustración, por la tanto ellos, así como Marcus, fusionaron esta visión weberiana con su propia versión del marxismo. Bajo el signo de **racionalidad instrumental, la dominación de la naturaleza se relaciona con la irracionalidad de la comunicación de clase**.

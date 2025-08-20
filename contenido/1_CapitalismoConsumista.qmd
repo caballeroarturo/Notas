@@ -1,0 +1,21 @@
+# Capitalismo, liberalismo y totalitarismo
+
+## Críticos del Capitalismo Consumista
+
+> Herbert Marcuse, Hanna Arendt y Crawford Brough Macpherson
+
+![](/www/1_marcusarendtmac.jpg){fig-align="center"}
+
+## Liberalismo Combatiente
+
+> Michael Oakeshott y Friedrich Hayek
+
+![](/www/2_OakeshottHayek.jpg){fig-align="center"}
+
+## Racionalismo crítico y la sociedad abierta
+
+> Karl Popper [@fig-popper] e Isaiah Berlin [@fig-berlin]
+
+![](/www/3_2_Popper.jpg){#fig-popper fig-align="center"}
+
+![](/www/3_1_IsaiahBerlin.jpg){#fig-berlin fig-align="center"}

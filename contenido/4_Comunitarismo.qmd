@@ -1,0 +1,127 @@
+# Comunitarismo
+
+## Los Verbos de la democracia
+
+> Notas de sobre la ponenecia Michelangelo Bovero, traducidas al español por José Fernández Santillán, [@bovero1998]. [Bovero](https://www.eld.edu.mx/michelangelo-bovero-3/) fue alumno de Norberto Bobbio.
+
+-   **Gramática**: conjunto de los elementos fundamentales y de las nociones primarias de cualquier materia, o en el sentido más cercano al específico y literal.
+
+-   **Torre de Babel**: la humanidad intentó construir una torre que llegara al cielo y fue castigada con la confusión de lenguas, sirve como analogía para describir la situación actual de la política en muchos lugares del mundo.
+
+### Juego democrático
+
+Conjunto de las actividades interdependientes en las que se desarrolla la "vida pública" de una colectividad, las reglas democráticas son las reglas del juego.
+
+> La democrática está programada para producir decisiones "con el máximo de consenso y con el mínimo de imposición" Bobbio
+
+Según teoría de juegos *sería un "juego mixto", en el que competencia y cooperación se intersectan.*
+
+El verbo de la democracia es sustancialmente sólo uno, escalar, y su objeto es alcanzar la posición desde la que se "domina" todo.
+
+Hasta abajo de la pirámide están los ciudadanos, *el juego democrático inicia con el acto de `elegir`*. Enseguida el juego pasa a los elegidos, personas seleccionadas por los ciudadanos electores y designadas por esos ciudadanos para formar los órganos institucionales de la colectividad, al parlamento. Al papel de quienes han sido electos, en cuanto tales, es el de `representar` a los ciudadanos, ante todo en el sentido elemental de *"sustituirlos"* en las fases ulteriores del juego democrático. La función específica del parlamento consiste en `deliberar` acerca de las cuestiones públicas. `Decidir`, es la actividad final, no tendría sentido elegir, representar, deliberar, si no se llegase a decidir.
+
+La vida pública de una colectividad puede ser considerada como democracia si, las decisiones políticas *no llueven de arriba sobre los ciudadanos*, sino que brotan de *un "juego" que ellos mismos han iniciado y controlado.*
+
+> La costumbre produce ceguera: la utilización cotidianamente repetida ofusca ante nuestros ojos el sentido de las palabras, disminuye el control sobre la comunicación y favorece la difusión de los equívocos. Hegel
+
+Los cuatro verbos de la democracia:
+
+-   **Elegir** *(elegire)*: es el acto de designar y elevar.
+
+    El instituto político electoral era considerado como típico de la aristocracia; aristos en griego significa "el mejor", y aristokratía "el poder de los mejores":
+
+    > ¿Debemos concluir que en las democracias representativas, donde el juego es abierto, en realidad son (cuando todo va bien) aristocracias, o (cuando la selección se hace mal) oligarquías electivas?
+
+    El juego democrático debe ser concebido, según teoría de juegos, como un "juego repetido": la repetición de las elecciones conforme a intervalos regulares –repetición que implica la posibilidad de la reelección o revocación de los elegidos- es lo que hace compatible (en principio) con la democracia el acto de por sí aristocrático, u oligárquico, de elegir.
+
+    El acto de elegir, debe desarrollarse de acuerdo con las reglas de un juego justo, *fair play*. Ningún ciudadano debe ser excluido de él.
+
+-   **Representar** (*repraesentare*): hacer sensible o inteligible algo abstracto mediante algo concreto, p.e. un presidente, "representa" un Estado.
+
+    Representativo pero no democrático era el Estado liberal clásico, que tenía un parlamento pero éste no estaba formado con base en el sufragio universal equitativo. En un juego dmocrático, el significado de "actuar a nombre y por cuenta de" se se debe conjugar con uno de los significados originarios: reflectar, reflejar o reproducir fielmente.
+
+    > Los elegidos al parlamento "representan" a los ciudadanos, electores, en la medida en que el parlamento en su conjunto, reproduzca las diversas tendencias y orientaciones políticas presentes en el país.
+
+-   **Deliberar** (*deliberare*): ha adquirido el sentido predominante y metafórico de "ponderar".
+
+    La discusión de las diversas tesis o puntos de vista, la ponderación de los argumentos en pro o en contra, y el intento de persuasión recíproca entre los respectivos proponentes.
+
+-   **Decidir** (*decidire*): significa literalmente cortar, truncar, concluir abreviando; lo que es "abreviado", que "concluye".
+
+    > Cualquier colectividad política debe poder llegar, para todo problema de relevancia pública, a una única voluntad, válida y obligatoria para todos, superando el conflicto.
+
+La decisión es democrática, es fruto de un juego democrático, cuando en el momento de la deliberación, participaron con iguales oportunidades de valoración y persuasión recíproca los representantes de todas las opiniones políticas; y esto presupone, a su vez, que la representatividad de los órganos colegiados deliberantes esté garantizada por mecanismos electorales no distorsionantes y no penalizantes para nadie.
+
+> El principio de mayoría es un buen método para decidir, pero también puede ser un pésimo método para elegir.
+
+### Poder ejecutivo
+
+> El lenguaje mismo denuncia que hay una incongruencia: *de ninguna manera gobernar significa ejecutar*. Un poder puramente ejecutivo, por definición, no decide nada políticamente relevante; a lo más toma decisiones técnicas sobre los medios, pero no determinaciones políticas acerca de los fines colectivos.
+
+De acuerdo a Bovero, *"decidir, es una actividad, en la mayoría de los casos compartida –en modos diversos y complicados– por dos sujetos institucionales, el parlamento y el gobierno*.
+
+-   **Gobernar** (*Kybernetes*): Calcado por el latín como *gubernator*, kybernetes y gubernator significan literalmente el piloto de la nave; quien ejerce el arte de gobernar es literal y originariamente "quien lleva el timón".
+
+    Quien ejerce la actividad de regir es quien traza la línea. El verbo griego correspondiente, *árcho*, en el sentido originario indicaba "yo soy el primero de la fila y por consiguiente guío, conduzco la marcha, dirijo". Es quién establece los fines y los objetivos colectivos, y en este sentido "manda", "detenta la decisión última".
+
+Las tres metáforas canónicas de la acción de los gobernantes:
+
+-   Timonel (el jefe): quien traza la ruta, o sea, establece los fines colectivos.
+
+-   Pastor: quien guía la marcha, quien formula la orientación común.
+
+-   Tejedor: quien entrelaza los hilos de la convivencia, o sea, produce cooperación social.
+
+> Un problema político de los "gobernantes" en sentido amplio es producir decisiones colectivas coherentes.
+
+Actualmente, se tiene un dilema, entre aceptar un gobierno más democrático, pero equívoco, con consecuentes daños sociales, o bien se busca un gobierno unívoco, pero menos democrático, con consecuentes peligros de autoritarismo en las decisiones.
+
+Frente a los partidarios de los gobiernos fuertes, la democracia del año 2000 consiste en el hecho de que el presidente o el jefe del gobierno es elegido directamente por los ciudadanos bajo la regla de la mayoría, aquí Bovero concluyé que, esa ya no es una democracia, porque allí se trastoca el sentido correcto de los verbos de la democracia, los regímenes con gobierno fuerte corren el riesgo de ser autocracias electivas, donde el parlamento ya no delibera, sino que se convierte simplemente en un contrapoder que controla la actuación del gobierno.
+
+### Teoría de juegos
+
+> **Theory of rational choice**: the action chosen by a decision-maker is at least as good, according to her preferences, as every other available action [@osborne2004].
+
+> **Definition.** Game theory is a study of mathematical models of conflict and cooperation between rational decision makers. Rationality means that each individual's decision-making behavior would be consistent with the maximization of subjective expected utility, if the other individuals' decisions were specified. [@myerson1984]
+
+Rationality implies that individuals know the strategies available to each individual, have complete and consistent preferences over possible outcomes, and they are aware of those preferences, *we refer to the decision-makers as players*.
+
+-   Juegos cooperativos: Los jugadores actúan como grupo y coordinan sus acciones para su beneficio mutuo.
+
+-   Juegos no cooperativos: Los jugadores son rivales y cada uno actúa en su propio interés, sin pensar en la suerte de los otros jugadores.
+
+En los ***juegos mixtos*** sólo la cooperación permite asegurar la obtención de beneficios, pero el conflicto de intereses determinado por la estructura de recompensas introduce un factor de competitividad que interfiere en el proceso de coordinación, hasta el punto de que si tal conflicto no se dirime de alguna forma mediante algún procedimiento de ajuste, la cooperación y, en definitiva, el resultado positivo, pueden verse claramente en peligro.
+
+## Republicanismo, liberalismo y comunitarismo
+
+> Fuente: [@uscangabarradas2016]
+
+El comunitarismo tuvo su auge en la decada de 1980 y se inspiró en gran medida en Aristóteles y Hegel, nació, al igual que el neorepublicanismo, como alternativa al modelo político liberal. El comunitarismo tiene como una de sus características el holismo ontológico, la realidad debe ser entendida como un todo interconectado, y la afirmación de una naturaleza humana social.
+
+Los comunitaristas apoyan políticas del bien común, conciben al individuo como un ser incompleto perfectible solo en la sociedad a partir de la participación que funciona como puente que le permite a la parte integrarse al todo.
+
+-   Individuo
+
+    -   (liberalismo) Rawls indica que *el yo antecede a sus fines*, los individuos tienen la capacidad de cuestionar su pertenencia en cualquier grupo, entidad o comunidad, hasta el punto de separarse de ella, si así lo prefieren.
+
+    -   (comunitarismo) Charles Taylor: nuestra entidad se encuentra profundamente marcada por nuestra pertenencia a ciertos grupos. El hombre es un animal social, un *zoon politikon* que requiere para su existencia de la *polis,* para afirmar su autonomía moral.
+
+> No hay un solo sujeto que pueda ser totalmente libre, sino solamente libre de elegir un entorno diferente: *“¿Podríamos imaginarnos individuos que no tuvieran vinculaciones de ningún tipo? ¿Individuos que no estuvieran determinados por la clase, la religión o el género, sino que carecieran de identidad y fueran completamente libres?”*. (Walzer, 2004, p. 35).
+
+-   Libertad
+
+    -   (republicanismo) Libertad como no dominación, ausencia de dominación.
+
+    -   (liberalismo) Libertad como no interferencia: ausencia de interferencia.
+
+    -   (comunitarismo) libertad basada en la pluralidad, es decir, la alteridad y colectividad.
+
+-   Sociedad multicultural
+
+    (comunitarismo) La sociedad multicultural ha dividido nuevamente a las sociedades, tal y como sucede con el individualismo, en cada uno con una identidad personal separada del resto: indígenas con indígenas, feministas con feministas, etc; es contraproducente que estas sociedades divididas en diversas identidades trabajen de forma aislada al resto de una comunidad en lugar de trabajar todos ellos en común, sin necesidad de perder esa identidad [@universidaddeguadalajaraméxico2021b].
+
+    <div>
+
+    > “\[…\] el que yo descubra mi propia identidad no significa que la haya elaborado en el aislamiento, sino que la he negociado por medio del diálogo \[…\], con los demás”. (Taylor, 2009, p. 65).
+
+    </div>

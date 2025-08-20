@@ -1,0 +1,39 @@
+---
+title: "Pragmatismo"
+bibliography: references.bib
+author: "Arturo Caballero"
+date: last-modified
+date-format: "DD [ de ] MMMM, YYYY"
+format:
+  pdf:
+    documentclass: article
+    lang: es
+    fig-align: center
+    fig-cap-location: top
+    tbl-cap-location: top
+    toc: true
+    toc-depth: 3
+    toc-title: Contenido
+    colorlinks: true
+    callout-appearance: simple
+    callout-icon: true
+---
+
+# Contexto histórico
+
+> "Lo que distingue al hombre civilizado del bárbaro es advertir la validez relativa de las propias convicciones y defenderlas, sin embargo, resueltamente. Pedir más que eso es, quizás, una necesidad metafísica profunda e incurable; pero permitir que ello determine nuestra práctica es síntoma de una inmadurez moral y política igualmente profunda, y más peligrosa” [@rorty2020]
+
+
+
+
+![](/www/4_1_linea_tiempo_pragmatismo.jpg){fig-align="center"}
+
+# Mapa Conceptual 
+
+> Referencias: [@stritzky2008] - [@belloreguera2018]
+
+![](/www/4_3_pragmatismo.jpg){fig-align="center"}
+
+![](/www/4_2_autoritarismo.jpg){fig-align="center"}
+
+# Referencias
