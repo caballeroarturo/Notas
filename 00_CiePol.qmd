@@ -1,4 +1,4 @@
-# Filosofía Política {#filo_pol .unnumbered}
+# Filosofía Política {#filos_pol .unnumbered}
 
 Las notas de las primeras cuatro secciones provienen, principalmente, del libro [@lessnoff2001]; los mapas mentales se elaboraron con la aplicación [Miro](https://miro.com/es/). El incentivo de las notas es la clase Seminario de Teoría Política, que curso actualmente en la Facultad de Ciencias Políticas de la UANL, 2024.
 

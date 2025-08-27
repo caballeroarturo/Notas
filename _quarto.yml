@@ -25,6 +25,7 @@ book:
   #repo-subdir: book
   #repo-branch: main
   #repo-actions: [edit, issue, source]
+  
   downloads: [pdf] #epub
   image: polar-bear-airpods-no-background.png
   
@@ -51,6 +52,8 @@ book:
     - 99_Tiempo.qmd
     - references.qmd
 bibliography: references.bib
+csl: chicago-author-date-17th-edition.csl
+link-citations: true
 
 format:
   html:

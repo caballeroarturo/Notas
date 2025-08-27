@@ -1,17 +1,14 @@
 # La Clase Política {#clase_pol}
 
-> Basado en el capítulo "La Clase Política" [@mosca1992][^10_clasepolitica-1], incluido en el libro "Diez textos básicos de ciencia política" [@rubio1992].
+> Basado en el capítulo "La Clase Política" [@mosca1992][^07_clasepolitica-1], incluido en el libro "Diez textos básicos de ciencia política" [@rubio1992].
 
-[^10_clasepolitica-1]: Ed. original: G. Mosca, Elementi di Scienza Politica, cap. 2, La terza, Roma, 1896.
+[^07_clasepolitica-1]: Ed. original: G. Mosca, Elementi di Scienza Politica, cap. 2, La terza, Roma, 1896.
 
-Mosca describe un proceso cíclico, un determinismo organizacional, en donde en todas las sociedades, sin importar su forma de gobierno, existe una minoría oganizada llamada clase política; la cual gobierna sobre una mayoría desorganizada. El cambio social pasa a ser una lucha por la apropiación y la expropiación del poder. Tesis que se contrapone con la idea de Marx, quién cree que el conflicto de clases concluirá cuando se liquiden las clases.
+Mosca describe un proceso cíclico, un determinismo organizacional, en el cual, en todas las sociedades, sin importar su forma de gobierno, existe una minoría organizada llamada *clase política*; la cual gobierna sobre una mayoría desorganizada. El cambio social pasa a ser una lucha por la apropiación y la expropiación del poder. Tesis que se contrapone con la idea de Marx, quién cree que el conflicto de clases concluirá cuando se liquiden las clases.
 
 En el pensamiento de Mosca el cambio social va en línea con el pensamiento de Pareto quién expone que la historia es un cementerio de aristocracias [@pareto], donde, en el momento que una élite pierde su vitalidad y sus cualidades, es reemplazada por otra ascendente de las masas, es decir, "el cambio es el producto de la tendencia del poder a cambiar de dueño tras la apropiación monopolista y hereditaria de una clase, cuando ésta, incapaz de mantenerlo, tiene que trasmitirlo a otra" [@guerrero1975].
 
 -   **Gobernantes (clase política):** Siempre es la menos numerosa, desempeña todas las funciones políticas, monopoliza el poder y disfruta de las ventajas que van unidas a él. Si los individuos que la conforman desaparecen, se constituiría rápidamente otro grupo de individuos organizados que pasaría a desempeñar la función de dicha clase. Es una minoría organizada, que obedece a un único impulso, sobre la mayoría desorganizada. La fuerza de cualquier minoría es irresistible frente a cada individuo de la mayoría, que se encuentra solo ante la totalidad de la minoría organizada. Al mismo tiempo se puede decir que ésta se halla organizada precisamente porque es minoría. Entre más grande y complejo sea un Estado, más favorable serán las condiciones para la dominación de una minoría.
-
-<!-- -->
-
 -   **Gobernados**: Más numerosa, es dirigida y regulada por la primera de una manera más o menos legal, o bien de un modo más o menos arbitrario y violento, y recibe de ella, al menos aparentemente, los medios materiales de subsistencia y los indispensables para la vitalidad del organismo político. Representan una mayoría desorganizada. Entre más pequeño y simple sea un Estado, menores serán las posibilidades del gobierno de la clase política y mayor la probabilidad de organización. control y respuesta de la clase gobernada.
 
 ## Gobernantes
@@ -24,27 +21,27 @@ Las minorías gobernantes están constituidas por lo común de tal manera que lo
 
 -   En todos los pueblos que han entrado recientemente en el estadio agrícola y relativamente civilizado, encontramos el hecho constante de que la clase militar por excelencia corresponde a la clase política y dominante.
 
--   A medida que la civilización progresa y el rendimiento de las tierras aumenta, enton ces,si otras circunstancias concuerdan, puede producirse una transformación social muy importante: *la cualidad más característica de la clase dominante pasa a ser la riqueza antes que el valor militar; los gobernantes son los ricos, más que los fuerte*s. Así como el poder político produjo la riqueza, ahora la riqueza producirá el poder. En una sociedad ya bastante madura, cuyas fuerzas individuales están limitadas por la fuerza colectiva, si por un lado los poderosos son por lo general los ricos, por otro basta ser rico para convertirse en poderoso.
+-   A medida que la civilización progresa y el rendimiento de las tierras aumenta, entonces,si otras circunstancias concuerdan, puede producirse una transformación social muy importante: *la cualidad más característica de la clase dominante pasa a ser la riqueza antes que el valor militar; los gobernantes son los ricos, más que los fuerte*s. Así como el poder político produjo la riqueza, ahora la riqueza producirá el poder. En una sociedad ya bastante madura, cuyas fuerzas individuales están limitadas por la fuerza colectiva, si por un lado los poderosos son por lo general los ricos, por otro basta ser rico para convertirse en poderoso.
 
--   En las sociedades en que las creencias religiosas tienen mucha fuerza y los ministros del culto forman una clase aristocracia sacerdotal.
+-   En las sociedades en que las creencias religiosas tienen mucha fuerza, los ministros del culto forman una clase aristocrática sacerdotal.
 
--   Cuando los plutócratas suceden a los militares en el poder, aprendieron el arte del gobierno, el cual, es una práctica profesional en los Estados complejos.
+-   Cuando los plutócratas suceden a los militares en el poder, aprenden el arte del gobierno, el cual, es una práctica profesional en los Estados complejos.
+
+> Siguiendo a Gramsci: Una clase no domina solo con fuerza económica o coerción, sino organizando una totalidad social y cultural que da sentido al orden. La hegemonía hace que la visión del mundo de una clase se convierta en la visión del mundo de todos.
 
 ### Casta hereditaria
 
-Fuerza física, riqueza y saber sagrado no son poder, sino fuentes de poder. Cuando la clase política accedió al poder, hubo de aprender a conservarlo. Junto al aprendizaje de la politica se desarrolló la destreza práctica de la política.
+Fuerza física, riqueza y saber sagrado no son poder, sino fuentes de poder. Cuando la clase política accedió al poder, tuvo que aprender a conservarlo. Junto al aprendizaje de la política se desarrolló la destreza de la "práctica de la política".
 
 > Todas las clases políticas tienden a volverse hereditarias, si no de derecho, al menos de hecho. Todas las fuerzas políticas poseen esa cualidad que en física se llama inercia; es decir, la tendencia a permanecer en el punto y en el estado en que se encuentran.
 
-Y la práctica de los grandes cargos, el hábito y casi todas las aptitudes para tratar los negocios de importancia, se adquieren mucho más fácilmente cuando se ha tenido con ellos cierta familiaridad desde pequeño. Aun cuando los grados académicos, la cultura científica y las
-
-aptitudes especiales, probadas por medio de exámenes y con cursos,permiten alcanzar los cargos públicos, no desaparecen las ventajas especiales que favorecen a algunos, y que los franceses definen como las *ventajas de las posiciones adquiridas.*
+Y la práctica de los grandes cargos, el hábito y casi todas las aptitudes para tratar los negocios de importancia, se adquieren mucho más fácilmente cuando se ha tenido con ellos cierta familiaridad desde pequeño. Aun cuando los grados académicos, la cultura científica y las aptitudes especiales, probadas por medio de exámenes y con cursos, permiten alcanzar los cargos públicos, no desaparecen las ventajas especiales que favorecen a algunos, y que los franceses definen como las *ventajas de las posiciones adquiridas.*
 
 > Cuando vemos una casta hereditaria que monopoliza el poder político en un país, se puede estar seguro de que tal estado de derecho ha sido precedido por un estado de hecho.
 
-Toda clase gobemante tiende a justificar su poder de hecho, apoyándose en un principio moral de orden general. se puede poner siempre la misma objeción: que los individuos pertenecientes a estas aristocracias debían sus cualidades especiales, no tanto a la sangre que corría por sus venas, como a la esmerada educación que habían recibido y que había desarrollado en ellos ciertas tendencias intelectuales y morales con preferencia a otras. La verdad es que la posición social, las tradiciones de familia y los hábitos de la clase en que vivimos contribuyen más de lo que pudiera creerse al mayor o menor desarrollo de las cualidades señaladas.
+Toda clase gobernante tiende a justificar su poder de hecho, apoyándose en un principio moral de orden general; se puede poner siempre la misma objeción: que los individuos pertenecientes a estas aristocracias debían sus cualidades especiales, no tanto a la sangre que corría por sus venas, como a la esmerada educación que habían recibido y que había desarrollado en ellos ciertas tendencias intelectuales y morales con preferencia a otras. La verdad es que la posición social, las tradiciones de familia y los hábitos de la clase en que vivimos contribuyen más de lo que pudiera creerse al mayor o menor desarrollo de las cualidades señaladas.
 
-> La fuerza, la riqueza y el saber son el puente sólido que sirve de medio para trasmitir el poder; pero estos elementos no trasmiten la capacidad teórica y práctica de la política; la herencia más rica es la posesión del mando: el legado del poder es lo más valioso. Pero el poder no se hereda tras la muerte; se empieza a trasmitir en vida en forma de conocimiento y práctica política. El principio de hereditariedad no tiene un carácter genético, sino político. A través de la historia las clases políticas emergieron y maduraron como minorías gobernantes, gracias a la concreción de ciertas condiciones sociales que propiciaron su dominación sobre las clases gobernadas.
+> La fuerza, la riqueza y el saber son el puente sólido que sirve de medio para trasmitir el poder; pero estos elementos no trasmiten la capacidad teórica y práctica de la política; **la herencia más rica es la posesión del mando: el legado del poder es lo más valioso**. Pero el poder no se hereda tras la muerte; se empieza a trasmitir en vida en forma de conocimiento y práctica política. El principio de hereditariedad no tiene un carácter genético, sino político. A través de la historia las clases políticas emergieron y maduraron como minorías gobernantes, gracias a la concreción de ciertas condiciones sociales que propiciaron su dominación sobre las clases gobernadas.
 
 ### Ley cualitativa del desarrollo y la organización de la clase política o segunda ley de la organización de Mosca
 

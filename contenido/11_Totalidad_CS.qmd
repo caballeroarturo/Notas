@@ -1,4 +1,15 @@
-# Nuevas Ideas republicanas
+# La noción de totalidad en las ciencias sociales
 
-Más allá del resurgimiento republicano Cass R. Sunstein p.137-190\
-La crítica republicana al liberalismo Alan Patten p.235-262 Ovejero Félix, Martí, José Luis, y Gargarella, Roberto (Compiladores) Nuevas Ideas republicanas. Autogobierno y Libertad
+> Apuntes del artículo "La noción de totalidad en las ciencias sociales" [@lefebvre2011].
+
+En Feuerbach el hombre completo y total reaparece más bien como dado naturalmente que como reivindicación ética y social. El hombre total existe en nosotros, en cada uno de nosotros naturalmente. A la vez, totalidad y parte integrando la naturaleza, el hombre tiene según Feuerbach los órganos precisos y necesarios para asir el universo en su totalidad. Entre estos órganos figuran los sentidos, el su sexo, el cerebro y el pensamiento.
+
+Con Hegel, la noción de Totalidad se reencuentra con la contradicción interna puesta en evidencia por los marxistas: a veces noción abierta, cambiante, dialéctica – a veces noción cerrada, sistémica, metafísicamente impuesta desde afuera y separada del contenido viviente del pensamiento hegeliano.
+
+-   *Ningún fenómeno contiene por sí mismo a la totalidad absoluta de la realidad.* Es preciso superar dialécticamente sus sentidos formal y lógico: todo no está en todo –y cada “todo” es complejo, contradictorio. Cada totalidad (dispersa, cambiante, parcial) exige un análisis específico, aunque ligado a la metodología dialéctica general. De tal suerte que la noción de Totalidad solo se revela fecundamente a aquel que la considera dialécticamente.
+
+-   *El análisis económico-social alcanza las determinaciones esenciales, pero no las agota.* Así, yo observo esta mujer que compra azúcar, este hombre en un café. Para comprenderlos, me acerco a toda sociedad actual, a toda su historia. Descubro una confusa mezcla de causas y efectos, de acciones recíprocas, de “esferas”, de esencias ocultas: la vida de este hombre o de esta mujer, su oficio, su familia, su nivel social, su clase, su biografía, etc.... Así pues, también la “estructura global” del capitalismo. Pero el pequeño hecho inicial aparece como aún más rico y complejo,en su humildad, que las esencias, y las leyes y las profundidades implicadas.
+
+-   La noción de totalidad aparece en las obras del joven Marx, de una manera profundamente original: en la noción de que él toma de Feuerbach, hombre total pero profundizada y transformada. El individuo es social, sin que se tenga el derecho de fijarlo, por el pensamiento, a la Sociedad en una abstracción exterior a él. Ni la naturaleza y la vida biológica, ni la vida de la especie humana y su historia, ni la vida individual y la vida social, no pueden separarse. El hombre es totalidad. Por sus necesidades y sus órganos, por sus sentidos y sus manos, por su trabajo, por la que lo transforma transformando el mundo, el hombre se apropia to praxis totalmente de la naturaleza entera y de su propia naturaleza. *“El hombre se apropia de su ser universal de manera universal, pues en tanto hombre total”* (Manuscrits de 1844).
+
+-   
