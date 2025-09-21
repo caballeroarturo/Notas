@@ -46,9 +46,11 @@ book:
         - contenido/5_Pragmatismo.qmd
         - contenido/6_Paradojas.qmd
         - contenido/07_ClasePolitica.qmd
+        - contenido/08_Poliarquia.qmd
     - part: 10_CieSol.qmd
       chapters: 
         - contenido/11_Totalidad_CS.qmd
+        - contenido/12_Dialectica_C.qmd
     - 99_Tiempo.qmd
     - references.qmd
 bibliography: references.bib

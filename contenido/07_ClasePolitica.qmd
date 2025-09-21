@@ -1,48 +1,41 @@
 # La Clase Política {#clase_pol}
 
-> Basado en el capítulo "La Clase Política" [@mosca1992][^07_clasepolitica-1], incluido en el libro "Diez textos básicos de ciencia política" [@rubio1992].
+> Reporte de lectura:
+>
+> "La Clase Política" [@mosca1992][^07_clasepolitica-1], incluido en el libro "Diez textos básicos de ciencia política" [@rubio1992].
 
 [^07_clasepolitica-1]: Ed. original: G. Mosca, Elementi di Scienza Politica, cap. 2, La terza, Roma, 1896.
 
-Mosca describe un proceso cíclico, un determinismo organizacional, en el cual, en todas las sociedades, sin importar su forma de gobierno, existe una minoría organizada llamada *clase política*; la cual gobierna sobre una mayoría desorganizada. El cambio social pasa a ser una lucha por la apropiación y la expropiación del poder. Tesis que se contrapone con la idea de Marx, quién cree que el conflicto de clases concluirá cuando se liquiden las clases.
+## Síntesis
 
-En el pensamiento de Mosca el cambio social va en línea con el pensamiento de Pareto quién expone que la historia es un cementerio de aristocracias [@pareto], donde, en el momento que una élite pierde su vitalidad y sus cualidades, es reemplazada por otra ascendente de las masas, es decir, "el cambio es el producto de la tendencia del poder a cambiar de dueño tras la apropiación monopolista y hereditaria de una clase, cuando ésta, incapaz de mantenerlo, tiene que trasmitirlo a otra" [@guerrero1975].
+Mosca sustenta que, en todas las sociedades, sin importar su forma de gobierno, o que tan avanzadas sean, existe una minoría organizada llamada *clase política*; la cual gobierna sobre una mayoría desorganizada. Las minorías gobernantes, desempeñan todas las funciones políticas, monopolizan el poder y disfrutan de las ventajas que van unidas a él; además están constituidas de tal manera que los individuos que las componen se distinguen de los gobernados por algunas cualidades que les otorgan cierta superioridad material, intelectual, religiosa o moral; verdadera o aparente, que es muy apreciada y se valora mucho en la sociedad en que viven; o bien que son los herederos de quienes tenían esas cualidades.
 
--   **Gobernantes (clase política):** Siempre es la menos numerosa, desempeña todas las funciones políticas, monopoliza el poder y disfruta de las ventajas que van unidas a él. Si los individuos que la conforman desaparecen, se constituiría rápidamente otro grupo de individuos organizados que pasaría a desempeñar la función de dicha clase. Es una minoría organizada, que obedece a un único impulso, sobre la mayoría desorganizada. La fuerza de cualquier minoría es irresistible frente a cada individuo de la mayoría, que se encuentra solo ante la totalidad de la minoría organizada. Al mismo tiempo se puede decir que ésta se halla organizada precisamente porque es minoría. Entre más grande y complejo sea un Estado, más favorable serán las condiciones para la dominación de una minoría.
--   **Gobernados**: Más numerosa, es dirigida y regulada por la primera de una manera más o menos legal, o bien de un modo más o menos arbitrario y violento, y recibe de ella, al menos aparentemente, los medios materiales de subsistencia y los indispensables para la vitalidad del organismo político. Representan una mayoría desorganizada. Entre más pequeño y simple sea un Estado, menores serán las posibilidades del gobierno de la clase política y mayor la probabilidad de organización. control y respuesta de la clase gobernada.
+## Tesis
 
-## Gobernantes
+Toda sociedad, desde la más primitiva hasta la más avanzada, esta dividida en dos clases: una minoría gobernante y una mayoría gobernada. La primera, denominada *clase política*, se encuentra organizada y desempeña todas las funciones políticas, ostenta el monopolio del poder y de sus ventajas; además, posibilita a sus miembros el aprendizaje del arte de gobernar. La segunda estará desorganizada por cuanto que no posee el poder; lo que es el objeto del dominio; los hábitos de obediencia inculcados por los gobernantes les impedirán acceder a la pericia política.
 
-Las minorías gobernantes están constituidas por lo común de tal manera que los individuos que las componen se distinguen de la masa de los gobernados por algunas cualidades que les otorgan cierta superioridad material e intelectual, y hasta moral; o bien son los herederos de quienes tenían estas cualidades. En otras palabras, *deben poseer algún requisito, verdadero o aparente, que sea muy apreciado y se valore mucho en la sociedad en que viven*.
+## Ideas secundarías
 
--   En las sociedades primitivas, que están todavía en el primer estadio de su constitución, el valor militar es la cualidad que permite más fácilmente el acceso a la clase política o dirigente.
+-   Si los individuos que conforman la clase política desaparecen, se constituiría rápidamente otro grupo de individuos organizados que pasaría a desempeñar la función de dicha clase.
 
--   Se suele atribuir el dominio de una clase guerrera sobre una multitud pacífica a la supremacía de las razas, a la conquista de un pueblo relativamente débil por otro belicoso, un ejemplo es México después de la conquista española.
+-   Entre más grande y complejo sea un Estado, más favorable serán las condiciones para la dominación de una minoría y; por el contrario, entre más pequeño y simple sea, mayor será la probabilidad de organización, control y respuesta de la clase gobernada.
 
--   En todos los pueblos que han entrado recientemente en el estadio agrícola y relativamente civilizado, encontramos el hecho constante de que la clase militar por excelencia corresponde a la clase política y dominante.
+-   Todas las clases políticas tienden a volverse hereditarias, si no de derecho, al menos de hecho. La fuerza, la riqueza y el saber son el puente que sirve de medio para trasmitir el poder; pero estos elementos no trasmiten la capacidad teórica y práctica de la política; la herencia más rica es la posesión del mando: el legado del poder es lo más valioso.
 
--   A medida que la civilización progresa y el rendimiento de las tierras aumenta, entonces,si otras circunstancias concuerdan, puede producirse una transformación social muy importante: *la cualidad más característica de la clase dominante pasa a ser la riqueza antes que el valor militar; los gobernantes son los ricos, más que los fuerte*s. Así como el poder político produjo la riqueza, ahora la riqueza producirá el poder. En una sociedad ya bastante madura, cuyas fuerzas individuales están limitadas por la fuerza colectiva, si por un lado los poderosos son por lo general los ricos, por otro basta ser rico para convertirse en poderoso.
+## Reflexión
 
--   En las sociedades en que las creencias religiosas tienen mucha fuerza, los ministros del culto forman una clase aristocrática sacerdotal.
+La *teoría de las élites,* que se fundamentó sobre los trabajos de [@mosca1992], [@michels2010] y [@pareto1916], establece la inevitabilidad de una dicotomía, élite-masa, en la sociedad; una minoría gobernante y una mayoría gobernada. Plantea que la existencia de la minoría gobernante es una necesidad funcional de cualquier sociedad compleja, donde la especialización, la burocracia y la necesidad de liderazgo hacen que el poder se concentre en pocos individuos; no obstante, la composición de esta élite no es estática, se renueva o reemplaza constantemente, ya sea de forma gradual (por la cooptación de nuevos miembros) o abrupta (a través de revoluciones).
 
--   Cuando los plutócratas suceden a los militares en el poder, aprenden el arte del gobierno, el cual, es una práctica profesional en los Estados complejos.
+La élite gobernante, de acuerdo con [@mills1956], no es solo la clase política, sino que es un triunvirato compuesto por las élites política, económica y militar; además considerando el trabajo de Bourdieu [@huang2019], se podría incluir a la élite cultural; aunque propiamente él hablaba de que existen cuatro formas de capital que se retroalimentan entre sí, el capital económico, social, cultural y simbólico.
 
-> Siguiendo a Gramsci: Una clase no domina solo con fuerza económica o coerción, sino organizando una totalidad social y cultural que da sentido al orden. La hegemonía hace que la visión del mundo de una clase se convierta en la visión del mundo de todos.
+### Élites en México
 
-### Casta hereditaria
+En el caso de México, la narrativa usual es la legitimación de las élites por medio de la meritocracia, respaldando la interpretación de que la posición que ocupan y su pertenencia a esa élite es debido
 
-Fuerza física, riqueza y saber sagrado no son poder, sino fuentes de poder. Cuando la clase política accedió al poder, tuvo que aprender a conservarlo. Junto al aprendizaje de la política se desarrolló la destreza de la "práctica de la política".
+a lo que han alcanzado o hecho por mérito individual y no por el contexto en el que nacieron o en el que se desenvuelven. Mosca señalaba que los individuos pertenecientes a las aristocracias sustentaban sus cualidades especiales, no tanto a la sangre que corría por sus venas, como a la esmerada educación que habían recibido y que había desarrollado en ellos ciertas tendencias intelectuales y morales con preferencia a otras.
 
-> Todas las clases políticas tienden a volverse hereditarias, si no de derecho, al menos de hecho. Todas las fuerzas políticas poseen esa cualidad que en física se llama inercia; es decir, la tendencia a permanecer en el punto y en el estado en que se encuentran.
+En México, desde la revolución mexicana, de acuerdo con Behrend [@behrend2021], surgió un grupo de lideres pertenecientes a la *familia revolucionaria*, que ejercieron el poder político en México varios años después de la lucha revolucionaria a través del movimiento que llegaría a ser el Partido Revolucionario Institucional, PRI. Schmidt y Mendieta [@schmidt2002] señalan que la red de poder inició una bifurcación en los años cuarenta, separando a los políticos y a los financieros; en este tenor es posible que a partir de la llegada a la presidencia del partido Movimiento de Regeneración Nacional, Morena, se haya generado otra bifurcación en la red de poder en México.
 
-Y la práctica de los grandes cargos, el hábito y casi todas las aptitudes para tratar los negocios de importancia, se adquieren mucho más fácilmente cuando se ha tenido con ellos cierta familiaridad desde pequeño. Aun cuando los grados académicos, la cultura científica y las aptitudes especiales, probadas por medio de exámenes y con cursos, permiten alcanzar los cargos públicos, no desaparecen las ventajas especiales que favorecen a algunos, y que los franceses definen como las *ventajas de las posiciones adquiridas.*
+## Contexto histórico en el que vivió Gaetano Mosca (1858-1941)
 
-> Cuando vemos una casta hereditaria que monopoliza el poder político en un país, se puede estar seguro de que tal estado de derecho ha sido precedido por un estado de hecho.
-
-Toda clase gobernante tiende a justificar su poder de hecho, apoyándose en un principio moral de orden general; se puede poner siempre la misma objeción: que los individuos pertenecientes a estas aristocracias debían sus cualidades especiales, no tanto a la sangre que corría por sus venas, como a la esmerada educación que habían recibido y que había desarrollado en ellos ciertas tendencias intelectuales y morales con preferencia a otras. La verdad es que la posición social, las tradiciones de familia y los hábitos de la clase en que vivimos contribuyen más de lo que pudiera creerse al mayor o menor desarrollo de las cualidades señaladas.
-
-> La fuerza, la riqueza y el saber son el puente sólido que sirve de medio para trasmitir el poder; pero estos elementos no trasmiten la capacidad teórica y práctica de la política; **la herencia más rica es la posesión del mando: el legado del poder es lo más valioso**. Pero el poder no se hereda tras la muerte; se empieza a trasmitir en vida en forma de conocimiento y práctica política. El principio de hereditariedad no tiene un carácter genético, sino político. A través de la historia las clases políticas emergieron y maduraron como minorías gobernantes, gracias a la concreción de ciertas condiciones sociales que propiciaron su dominación sobre las clases gobernadas.
-
-### Ley cualitativa del desarrollo y la organización de la clase política o segunda ley de la organización de Mosca
-
-Una minoría estará organizada por cuanto tenga el monopolio del poder y de sus ventajas; estará organizada por cuanto su posesión y disfrute posibiliten a sus miembros el aprendizaje del arte de gobernar. La mayoría estará desorganizada por cuanto que no posee el poder; lo que es el objeto del dominio; porque los hábitos de obediencia inculcados por los gobernantes les impiden acceder a la pericia política.
+![](/www/07_ClasePolitica.png){fig-align="center"}

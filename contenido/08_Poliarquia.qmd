@@ -1,0 +1,51 @@
+# La poliarquía {#poliarquia}
+
+> Reporte de lectura:
+>
+> Dahl, Robert Alan. «La poliarquía.» En *Diez textos básicos de ciencia política*, de Albert Batlle Rubio, 77-92. Barcelona, España: Ariel, 1992.
+>
+> \* Ed. original: R. A. Dahl, *A Preface to Democratic Theory*, cap. 3, The University of Chicago Press, 1956.
+
+## Síntesis
+
+Dahl plantea que la democracia es una utopía, un ideal que los estados, que se denominan democráticos, aspiran a alcanzar; un ideal donde hay perfecta igualdad política y soberanía popular; por lo que sostiene que en la práctica los estados “democráticos” tienden a ser regímenes poliárquicos. La definición de estos regímenes la desarrolla al buscar maximizar el *gobierno del pueblo* (soberanía popular e igualdad política), lo que resulta en el establecimiento de ocho condiciones que podrían ser vistas como una definición operativa de democracia.
+
+## Tesis
+
+Al presuponer que la democracia, en su definición teórica, es una utopía, Dahl plantea las siguientes condiciones que se deberían alcanzar para, en la realidad, tratar de lograr un gobierno del pueblo:
+
+1.  Derecho a la expresión de preferencias (p.e. derecho al voto).
+
+2.  El peso de la elección de cada individuo es idéntico.
+
+3.  La alternativa más seleccionada es la ganadora.
+
+4.  Cualquiera que perciba un conjunto de alternativas, y considere al menos una de ellas preferible a las demás, puede añadirla a las seleccionadas para la votación.
+
+5.  Todos poseen idéntica información sobre las alternativas.
+
+6.  Las alternativas con más votos desplazan a las que tienen menos votos.
+
+7.  Las ordenes de los cargos electos se cumplen.
+
+8.  Las nuevas decisiones del período interelectoral están regidas por las condiciones precedentes; o que las decisiones interelectorales están subordinadas a las establecidas durante la etapa de elección o que son aplicación de éstas.
+
+## Ideas secundarías
+
+-   La poliarquía no es ni un gobierno de mayoría pura ni un gobierno unificado de una minoría. Es un sistema abierto, competitivo y pluralista de gobierno de minorías.
+
+-   El nivel de poliarquía existente dependerá de la medida en que se consideren deseables las ocho condiciones.
+
+-   La poliarquía es una función de la actividad política de los miembros.
+
+-   El nivel de instrucción social en una de las ocho condiciones aumenta también con el grado de acuerdo existente sobre ella.
+
+## Reflexión
+
+Leyendo el texto de Dahl desde la perspectiva de la teoría de la clase política de Mosca, pareciera que “la poliarquía es una negociación entre minorías organizadas” [@krouse1982] inmersas en una mayoría desorganizada, dando pie a un “juego democrático” [@bovero1998] que busca maximizar el consenso y minimizar la imposición bajo las reglas democráticas; donde la “efectividad política de cada grupo estaría en función de su potencial de control y de unidad” [@dahl1958].
+
+Desde un punto de vista práctico, la propuesta de Dahl puede brindar una escala medible para ver qué tan cerca un estado o institución se encuentra de ser democrático (poliárquico); y, aunque las condiciones o normas planteadas no dan de manera operativa un camino para alcanzar la democracia, en su definición ideal, sí permiten plantear objetivos reales para acercarse a estados más democráticos.
+
+Actualmente, El Economista plantea un índice [@theeconomistintelligenceunit2025], que mide la democracia de los países usando cinco categorías: Libertades civiles, Participación Política, Proceso electoral y pluralismo, Funcionamiento del gobierno y Cultura política; de acuerdo con los resultados, clasifica a los países en cuatro categorías que van de Democracias completas a Regímenes autoritarios. En 2024, ubicó a México como un régimen Hibrido, además ha mantenido una tendencia a la baja desde 2013, ver @fig-democracyindex . La IDEA, por su parte, plantea cuatro índices para medir el estado de la democracia [@internationalinstitutefordemocracyandelectoralassistance2025]: Representación, Derechos, Participación y Estado de Derecho; en 2024 resaltó que el índice que México tiene más bajo es el de Estado de Derecho, con 0.36 en una escala de 0-1; debido a que este índice tiene un subíndice que mide la independencia del poder judicial.
+
+![Índice de la democracia en México.](/www/08_poliarquia.png){#fig-democracyindex fig-align="center"}
