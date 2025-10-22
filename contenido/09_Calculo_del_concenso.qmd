@@ -1,0 +1,37 @@
+# La poliarquía {#poliarquia}
+
+> Reporte de lectura:
+>
+> James M. Buchanan y Gordon Tullock, *The Calculus of Consent: Logical Foundations of Constitutional Democracy*, 19. Nachdr., Ann Arbor Paperbacks (Univ. of Michigan Press, 2008).
+
+## Síntesis
+
+Se plantea un modelo proxy de sociedad, partiendo de un lienzo en blanco, con axiomas y reglas lógicas; en el cual los individuos toman desiciones que maximizan su utilidad y
+
+Construcción lógica desde la definición de "Acción colectiva"
+
+## Tesis
+
+Al presuponer que la democracia, en su definición teórica, es una utopía, Dahl plantea las siguientes condiciones que se deberían alcanzar para, en la realidad, tratar de lograr un gobierno del pueblo:
+
+## Ideas secundarías
+
+-   Collective action is viewed as the action of individuals when they choose to accomplish purposes collectively rather than individually, and the government is seen as nothing more than the set of processes, the machine, which allows such collective action to take place.
+
+-   We specify only that individuals are members of a social group in which collective action is guided by a set of rules, or one in which no such rules exist.
+
+-   we are concerned with examining proposals that will benefit each member of the social group. we turn to the unanimity rule
+
+-   the democratic State was conceived as that set of constraints appropriate to a society which managed its economic affairs largely through a competitive economic order, in which the economic interests of individuals were acknowledged to be par amount in driving men to action
+
+-   the in dividual,as he participates in collective decisions, is guided by the desire to maximize his own utility and that different individuals have different utility functions.
+
+-   However, so long as some part of all individual behavior in collective choice-making is, in fact, motivated by utility maximization, and so long as the identification of the individual with the group does not extend to the point of making all individual utility functions identical, an economic individualistmodel of political activity should be of some positive worth.
+
+-   the rational individual, when confronted with consti tutional choice, will act so as to minimize his expected costs of social inter dependence,which is equivalent to saying that he will act so as to maximize his expected "utility from social interdependence:'
+
+## Reflexión
+
+Dahl pone en la mira que los partidos buscan atraer votos.
+
+Votos en las camaras por decición de partido y no necesariamente individual.

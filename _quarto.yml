@@ -51,6 +51,7 @@ book:
       chapters: 
         - contenido/11_Totalidad_CS.qmd
         - contenido/12_Dialectica_C.qmd
+        - contenido/13_1_Coyuntura.qmd
     - 99_Tiempo.qmd
     - references.qmd
 bibliography: references.bib
