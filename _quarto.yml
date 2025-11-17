@@ -47,6 +47,7 @@ book:
         - contenido/6_Paradojas.qmd
         - contenido/07_ClasePolitica.qmd
         - contenido/08_Poliarquia.qmd
+        - contenido/09_Ing_social.qmd
     - part: 10_CieSol.qmd
       chapters: 
         - contenido/11_Totalidad_CS.qmd
