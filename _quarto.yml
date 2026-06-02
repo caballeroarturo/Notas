@@ -39,12 +39,12 @@ book:
     - index.qmd
     - part: 00_CiePol.qmd
       chapters: 
-        - contenido/1_CapitalismoConsumista.qmd
-        - contenido/2_Contemporaneos.qmd
-        - contenido/3_Concepciones.qmd
-        - contenido/4_Comunitarismo.qmd
-        - contenido/5_Pragmatismo.qmd
-        - contenido/6_Paradojas.qmd
+        - contenido/01_CapitalismoConsumista.qmd
+        - contenido/02_Contemporaneos.qmd
+        - contenido/03_Concepciones.qmd
+        - contenido/04_Comunitarismo.qmd
+        - contenido/05_Pragmatismo.qmd
+        - contenido/06_Paradojas.qmd
         - contenido/07_ClasePolitica.qmd
         - contenido/08_Poliarquia.qmd
     - part: 10_CieSol.qmd
