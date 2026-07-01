@@ -1,0 +1,49 @@
+# Ingeniería social {#ing_social}
+
+## Teóricos y defensores de la ingeniería social
+
+Creían que el conocimiento científico podía y debía ser usado para planificar y mejorar racionalmente la sociedad.
+
+### Utopistas y Positivistas
+
+-   **Auguste Comte** (1798-1857): Quizás el primer gran teórico, creía que el estudio científico de la sociedad (la "física social" o **sociología**) permitiría descubrir sus leyes y, por lo tanto, dirigir la sociedad racionalmente hacia el orden y el progreso, reemplazando a la religión. Los gobernantes deberían ser "sacerdotes" de la ciencia social.
+-   **Karl Marx** (1818-1883) **y Friedrich Engels** (1820-1895): Aunque no usaron el término, su teoría es un tipo de ingeniería social macro. Postularon que mediante la **revolución** y la **dictadura del proletariado**, se podría derrumbar la sociedad capitalista y construir conscientemente una sociedad comunista, libre de clases. La planificación económica central es una forma extrema de ingeniería social.
+-   **Los Socialistas Utopistas** (Saint-Simon, Charles Fourier, Robert Owen)**:** Predecesores de Marx, diseñaron comunidades modelo perfectas en el papel, creyendo que podían recrearlas en la realidad mediante un diseño racional.
+
+### Los pragmáticos y reformistas liberales-progresistas
+
+-   **Jeremy Bentham** (1748-1832) y los **Utilitaristas:** Su principio de "**la mayor felicidad para el mayor número**" es el motor filosófico de mucha ingeniería social. Si se puede medir la felicidad, se pueden diseñar políticas e instituciones (como su famoso **Panóptico**) para maximizarla. El estado es un ingeniero de la felicidad pública.
+-   **Los Fabianos** (Sociedad Fabiana, fundada en 1884 - Reino Unido): Think tank clave que influyó en el Partido Laborista. Abogaban por un **socialismo gradualista** y reformista, logrado no por revolución, sino mediante la "**permeación**" de las instituciones existentes. Creían en la planificación estatal y la expertise técnica para dirigir la economía y la sociedad (ejemplos: George Bernard Shaw, Sidney y Beatrice Webb).
+-   **John Dewey** (1859-1952): Filósofo pragmático estadounidense. Veía la educación no como la transmisión de conocimiento estático, sino como la herramienta principal para **construir una sociedad democrática y adaptada a los tiempos**. La escuela era el laboratorio para la ingeniería social democrática.
+
+### Planificación Central
+
+-   **Vladimir Lenin** (1870-1924) y los **Bolcheviques:** Llevaron la teoría marxista a la práctica, usando el estado de manera coercitiva para remodelar por completo la sociedad rusa, la economía e incluso la cultura y la moral ("**Hombre Soviético Nuevo**").
+-   **Tecnócratas y Planificadores Económicos:** Figuras como **John Maynard Keynes** (1883-1946), aunque no era un ingeniero social radical, defendió la **intervención estatal en la economía** (fiscal y monetaria) para suavizar los ciclos económicos y lograr el pleno empleo. Esto es una forma de "ingeniería económica macro".
+
+## Críticos: visión negativa o de advertencia
+
+Estos pensadores vieron en la ingeniería social la arrogancia del racionalismo y una amenaza directa a la libertad individual y a la evolución social espontánea.
+
+### Liberales clásicos y conservadores
+
+-   **Friedrich Hayek** (1899-1992): Su obra maestra, **"Camino de Servidumbre"** (1944), es la crítica más famosa. Argumenta que toda planificación central conduce inevitablemente a la tiranía. La sociedad es demasiado compleja para que cualquier mente o grupo la comprenda y dirija. La ingeniería social, al querer imponer un diseño racional, ignora el **conocimiento tácito y disperso** que poseen los individuos y sofoca la libertad.
+-   **Karl Popper** (1902-1994): En su libro **"La Sociedad Abierta y Sus Enemigos"** (1945), ataca a Platón, Hegel y Marx como profetas de un historicismo que justifica la ingeniería social a gran escala. Popper defiende en su lugar la **"ingeniería social gradualista o fragmentaria"**, que busca resolver problemas concretos mediante prueba y error, en lugar de intentar remodelar la sociedad entera según un plan utópico.
+-   **Michael Oakeshott** (1901-1990): Filósofo político conservador británico. Criticaba la racionalidad en política, defendiendo que la sociedad no es una empresa que pueda ser dirigida hacia un fin específico, sino una conversación continua cuyas tradiciones y prácticas no pueden ser "diseñadas" desde cero.
+
+### Los Disidentes del Totalitarismo
+
+-   **Aleksandr Solzhenitsyn** (1918-2008): A través de su literatura ("**Archipiélago Gulag**"), expuso los horrores concretos de la ingeniería social aplicada en la Unión Soviética. Mostró cómo el intento de crear un "hombre nuevo" requería la destrucción de millones de hombres reales.
+
+## Resumen
+
+| Teórico | Corriente | Postura ante la Ingeniería Social | Obra Representativa |
+|:---|:---|:---|:---|
+| Auguste Comte | Positivismo | Defensor | La sociedad debe ser dirigida por una "ciencia social". |
+| Karl Marx | Socialismo Científico | Defensor (revolucionario) | La revolución es la ingeniería para una nueva sociedad. |
+| Jeremy Bentham | Utilitarismo | Defensor (pragmático) | El estado debe maximizar la felicidad mediante diseño. |
+| Fabianos | Socialismo Gradualista | Defensores (reformistas) | Permear el estado para una transición planificada al socialismo. |
+| Friedrich Hayek | Liberalismo Clásico | Crítico Feroz | La planificación central conduce a la tiranía. |
+| Karl Popper | Racionalismo Crítico | Crítico (propone alternativa) | Rechaza la ingeniería utópica, acepta la gradual. |
+
+El debate sobre la ingeniería social es, en el fondo, el debate eterno entre **la libertad individual y la planificación colectiva**, entre el **racionalismo constructivista** y el **respeto por el orden espontáneo**.
