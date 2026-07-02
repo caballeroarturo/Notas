@@ -37,57 +37,67 @@ Para Castillo Farjat, el espacio es la **expresión geográfica de la lucha de c
 La cartografía se define como el arte, la ciencia y la técnica de confeccionar y estudiar los mapas en todos sus aspectos. Un mapa es una representación gráfica de un aspecto del mundo real, tradicionalmente visto como una "ventana transparente", aunque también puede entenderse como una construcción social cargada de intenciones. Existen conceptos clave para evaluar la calidad de la información cartográfica:
 
 - Exactitud: El grado de cercanía entre la posición de un objeto en el mapa y su ubicación real en la superficie terrestre.
-- Precisión: Se refiere a la consistencia de las medidas y al nivel de detalle o número de dígitos significativos con los que se registran los datos. Resolución espacial: Es la unidad de medida más pequeña adoptada para registrar datos (el "granulado"), que determina el nivel de detalle y nitidez de la representación
-- Entidades y Geometría: Los rasgos geográficos se representan mediante puntos (coordenadas X, Y), líneas (sucesión de puntos) y áreas (superficies cerradas), cada una asociada a atributos descriptivos en una base de datos
+- Precisión: Se refiere a la consistencia de las medidas y al nivel de detalle o número de dígitos significativos con los que se registran los datos. 
+- Resolución espacial: Es la unidad de medida más pequeña adoptada para registrar datos (el "granulado"), que determina el nivel de detalle y nitidez de la representación.
+- Entidades y Geometría: Los rasgos geográficos se representan mediante puntos (coordenadas X, Y), líneas (sucesión de puntos) y áreas (superficies cerradas), cada una asociada a atributos descriptivos en una base de datos.
 
 ### Síntesis histórica
 
-La historia de la cartografía ha evolucionado de ser una "ciencia de príncipes" utilizada para administrar el poder, la guerra y el imperio, hacia una disciplina científica y tecnológica moderna - Poder y Control: Históricamente, los mapas fueron herramientas del imperialismo para legitimar conquistas y del Estado-nación para delimitar fronteras y derechos de propiedad - Secretismo: En los siglos XVI y XVII, existieron políticas de secreto cartográfico (como en la Casa de Contratación de España) para monopolizar el conocimiento geográfico como recurso económico y estratégico - Automatización: A partir de 1930, el racionalismo y el cuantitativismo prepararon el camino para la Geografía Automatizada de los años 60, que culminó en los actuales Sistemas de Información Geográfica (SIG)
+La historia de la cartografía ha evolucionado de ser una "ciencia de príncipes" utilizada para administrar el poder, la guerra y el imperio, hacia una disciplina científica y tecnológica moderna
+
+- Poder y Control: Históricamente, los mapas fueron herramientas del imperialismo para legitimar conquistas y del Estado-nación para delimitar fronteras y derechos de propiedad.
+- Secretismo: En los siglos XVI y XVII, existieron políticas de secreto cartográfico (como en la Casa de Contratación de España) para monopolizar el conocimiento geográfico como recurso económico y estratégico.
+- Automatización: A partir de 1930, el racionalismo y el cuantitativismo prepararon el camino para la Geografía Automatizada de los años 60, que culminó en los actuales Sistemas de Información Geográfica (SIG).
 
 ### El programa cartográfico y los elementos del mapa
 
 La producción cartográfica profesional implica el ensamblaje de diversos elementos para comunicar información de manera efectiva:
 
-- Cuerpo del mapa: La parte más importante, que contiene la información geográfica 
-- Título: Sugiere el tema o contenido del mapa 
-- Leyenda: Relaciona los símbolos cartográficos con los rasgos reales del terreno 
-- Escala (gráfica o numérica): Indica la relación de reducción entre el mapa y la realidad 
-- Orientación (flecha de norte): Indica la dirección del norte 
-- Otros: Fuente de datos, nombre de la proyección, recuadros (inset maps) e información de calidad
+- Cuerpo del mapa: La parte más importante, que contiene la información geográfica
+- Título: Sugiere el tema o contenido del mapa.
+- Leyenda: Relaciona los símbolos cartográficos con los rasgos reales del terreno.
+- Escala (gráfica o numérica): Indica la relación de reducción entre el mapa y la realidad.
+- Orientación (flecha de norte): Indica la dirección del norte.
+- Otros: Fuente de datos, nombre de la proyección, recuadros (inset maps) e información de calidad.
 
 ### Simbología cartográfica
 
-La simbología permite representar características de localización y atributos mediante el uso de variables visuales aplicadas a puntos, líneas y áreas 
-- Variables visuales principales: Incluyen el tono (hue), valor (claridad/oscuridad), croma (intensidad), tamaño, forma, textura y patrón 
-- Mapas temáticos: Utilizan símbolos específicos como los coropléticos (sombreado de áreas por estadísticas), símbolos proporcionales o cartogramas (donde el tamaño de la unidad es proporcional a una variable) 
+La simbología permite representar características de localización y atributos mediante el uso de variables visuales aplicadas a puntos, líneas y áreas
+
+- Variables visuales principales: Incluyen el tono (hue), valor (claridad/oscuridad), croma (intensidad), tamaño, forma, textura y patrón
+- Mapas temáticos: Utilizan símbolos específicos como los coropléticos (sombreado de áreas por estadísticas), símbolos proporcionales o cartogramas (donde el tamaño de la unidad es proporcional a una variable)
 - Clasificación de datos: Los datos cuantitativos se agrupan mediante métodos como intervalos iguales, cuantiles, cortes naturales (Jenks) o desviación estándar para facilitar su interpretación visual
 
 ### Manejo de la escala numérica
 
-La escala es la relación matemática de proporción entre una distancia medida en el mapa y su correspondiente distancia en el terreno 
-- Representación: Se expresa como una fracción (ej. 1:50,000, donde 1 cm equivale a 50,000 cm o 500 m en la realidad) 
-- Escalas grandes vs. pequeñas: Una escala de 1:24,000 es "grande" porque muestra mucho detalle de un área pequeña, mientras que una de 1:1,000,000 es "pequeña" porque cubre áreas extensas con poco detalle 
-- Implicaciones: La elección de la escala no es neutral; es una herramienta que determina qué nivel de agregación, simplificación y límites tendrá el objeto de estudio
+La escala es la relación matemática de proporción entre una distancia medida en el mapa y su correspondiente distancia en el terreno
+
+- Representación: Se expresa como una fracción (ej. 1:50,000, donde 1 cm equivale a 50,000 cm o 500 m en la realidad).
+- Escalas grandes vs. pequeñas: Una escala de 1:24,000 es "grande" porque muestra mucho detalle de un área pequeña, mientras que una de 1:1,000,000 es "pequeña" porque cubre áreas extensas con poco detalle.
+- Implicaciones: La elección de la escala no es neutral; es una herramienta que determina qué nivel de agregación, simplificación y límites tendrá el objeto de estudio.
 
 ### Proyecciones cartográficas
 
-Una proyección es el proceso sistemático de transformar la superficie curva de la Tierra (elipsoide o esfera) en un plano bidimensional, lo cual siempre genera distorsiones - Por superficie de proyección: Se clasifican en cilíndricas, cónicas y azimitales (planas)
-Por propiedad preservada: 
-- Conformes: Preservan ángulos y formas locales (ej. Lambert o Mercator) 
-- Equivalentes (Equal-area): Mantienen las áreas en tamaño relativo correcto (ej. Albers) 
-- Equidistantes: Mantienen la escala constante a lo largo de ciertas líneas 
-- Datum: Es fundamental referenciar la proyección a un Datum (como WGS84 o NAD83), que define el tamaño, forma y posición del elipsoide respecto al centro de la Tierra
+Una proyección es el proceso sistemático de transformar la superficie curva de la Tierra (elipsoide o esfera) en un plano bidimensional, lo cual siempre genera distorsiones
+
+- Por superficie de proyección: Se clasifican en cilíndricas, cónicas y azimitales (planas) Por propiedad preservada:
+- Conformes: Preservan ángulos y formas locales (ej. Lambert o Mercator).
+- Equivalentes (Equal-area): Mantienen las áreas en tamaño relativo correcto (ej. Albers).
+- Equidistantes: Mantienen la escala constante a lo largo de ciertas líneas.
+- Datum: Es fundamental referenciar la proyección a un Datum (como WGS84 o NAD83), que define el tamaño, forma y posición del elipsoide respecto al centro de la Tierra.
 
 ### Pensamiento espacial
 
-Se refiere al desarrollo de una inteligencia espacial y a la capacidad de conceptualizar la realidad a través de componentes espaciales 
-- Conceptos base: Incluyen la localización, distribución espacial, asociación, interacción y evolución 
-- Mapas mentales: Son representaciones internas que codificamos en el cerebro basadas en nuestras actividades cotidianas y movilidad; son únicos para cada individuo y reflejan sus procesos de abstracción 
-- Utilidad: Permite resolver problemas complejos, desde encontrar una ruta óptima hasta la planificación urbana
+Se refiere al desarrollo de una inteligencia espacial y a la capacidad de conceptualizar la realidad a través de componentes espaciales
+
+- Conceptos base: Incluyen la localización, distribución espacial, asociación, interacción y evolución.
+- Mapas mentales: Son representaciones internas que codificamos en el cerebro basadas en nuestras actividades cotidianas y movilidad; son únicos para cada individuo y reflejan sus procesos de abstracción.
+- Utilidad: Permite resolver problemas complejos, desde encontrar una ruta óptima hasta la planificación urbana.
 
 ### Interpretación del territorio
 
-Interpretar el territorio a través de la cartografía va más allá de observar "accidentes geográficos"; implica entender el mapa como un discurso persuasivo y retórico 
-- Análisis socioespacial: Utiliza los mapas para analizar la eficiencia, equidad y diferencias socioespaciales con el fin de mejorar la calidad de vida 
-- Búsqueda de "silencios": La interpretación crítica requiere identificar qué elementos han sido omitidos o censurados (por razones militares, políticas o comerciales), ya que lo que no se muestra es tan significativo como lo que sí 
-- Dimensión simbólica: Los mapas actúan como metáforas de valores culturales, religiosos o nacionales, donde la precisión técnica a menudo se convierte en un símbolo de autoridad y legitimidad
+Interpretar el territorio a través de la cartografía va más allá de observar "accidentes geográficos"; implica entender el mapa como un discurso persuasivo y retórico
+
+- Análisis socioespacial: Utiliza los mapas para analizar la eficiencia, equidad y diferencias socioespaciales con el fin de mejorar la calidad de vida.
+- Búsqueda de "silencios": La interpretación crítica requiere identificar qué elementos han sido omitidos o censurados (por razones militares, políticas o comerciales), ya que lo que no se muestra es tan significativo como lo que sí.
+- Dimensión simbólica: Los mapas actúan como metáforas de valores culturales, religiosos o nacionales, donde la precisión técnica a menudo se convierte en un símbolo de autoridad y legitimidad.
