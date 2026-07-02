@@ -235,8 +235,8 @@ Estas herramientas proporcionan una visión visual rápida de las característic
 ##### histográma de frecuencias absolutas vs relativas
 
 ```{r}
-#| fig-width: 10
-#| fig-height: 12
+#| fig-width: 9
+#| fig-height: 11
 #| echo: false
 #| warning: false
 #| message: false
@@ -606,7 +606,7 @@ text(x = 0, y = -0.17, expression(bold("Conclusión sobre Valores Extremos:") * 
 text(x = 0, y = -0.27, " para desestabilizarla. En cambio, la Mediana es una medida robusta que describe mejor el centro en poblaciones sesgadas.", adj = 0, cex = 0.85, col = "darkred")
 ```
 
-### Descripción bivariada Diagramas de dispersión, covarianza, coeficiente de correlación lineal.
+### Descripción bivariada 
 
 La **descripción bivariada** (o estadística bidimensional) se encarga de estudiar simultáneamente dos variables sobre una misma población para identificar si existe una relación o asociación entre ellas. Mientras que la estadística univariada analiza las características de una sola variable, la bivariada busca comprender cómo el comportamiento de una magnitud influye o se desplaza junto a otra.
 
@@ -658,7 +658,100 @@ Para solucionar el problema de la escala de la covarianza, se utiliza el **coefi
 
   - r=0**:** No existe relación lineal entre las variables.
 
+
+```{r}
+#| message: false
+#| warning: false
+#| fig-width: 10
+#| fig-height: 8
+
+library(ggplot2)
+library(patchwork)
+
+set.seed(42)
+n <- 150
+
+# ==============================================================================
+# 1. GENERACIÓN DE LOS ESCENARIOS
+# ==============================================================================
+
+# 1. Correlación Positiva Fuerte (cercana a +1)
+x1 <- rnorm(n, mean = 10, sd = 2)
+y1 <- 2 * x1 + rnorm(n, mean = 0, sd = 1.5)
+df1 <- data.frame(x = x1, y = y1)
+r1 <- round(cor(x1, y1), 2)
+
+# 2. Correlación Negativa Fuerte (cercana a -1)
+x2 <- rnorm(n, mean = 10, sd = 2)
+y2 <- -2 * x2 + rnorm(n, mean = 0, sd = 1.5)
+df2 <- data.frame(x = x2, y = y2)
+r2 <- round(cor(x2, y2), 2)
+
+# 3. Correlación Nula o Ausente (cercana a 0)
+x3 <- rnorm(n, mean = 10, sd = 2)
+y3 <- rnorm(n, mean = 10, sd = 2)
+df3 <- data.frame(x = x3, y = y3)
+r3 <- round(cor(x3, y3), 2)
+
+# 4. Relación No Lineal (Pearson falla aquí, r cercano a 0)
+x4 <- seq(-3, 3, length.out = n)
+y4 <- x4^2 + rnorm(n, mean = 0, sd = 0.5)
+df4 <- data.frame(x = x4, y = y4)
+r4 <- round(cor(x4, y4), 2)
+
+# ==============================================================================
+# 2. CREACIÓN DE LAS GRÁFICAS
+# ==============================================================================
+
+g1 <- ggplot(df1, aes(x = x, y = y)) +
+  geom_point(color = "#1f77b4", alpha = 0.7, size = 2) +
+  geom_smooth(method = "lm", color = "#0d47a1", se = FALSE, size = 1) +
+  labs(title = paste("Correlación Positiva Fuerte (r =", r1, ")"),
+       subtitle = "Si X sube, Y sube de forma lineal.", x = "X", y = "Y") +
+  theme_minimal()
+
+g2 <- ggplot(df2, aes(x = x, y = y)) +
+  geom_point(color = "#d62728", alpha = 0.7, size = 2) +
+  geom_smooth(method = "lm", color = "#b71c1c", se = FALSE, size = 1) +
+  labs(title = paste("Correlación Negativa Fuerte (r =", r2, ")"),
+       subtitle = "Si X sube, Y baja de forma lineal.", x = "X", y = "Y") +
+  theme_minimal()
+
+g3 <- ggplot(df3, aes(x = x, y = y)) +
+  geom_point(color = "#7f7f7f", alpha = 0.7, size = 2) +
+  geom_smooth(method = "lm", color = "#424242", se = FALSE, size = 1) +
+  labs(title = paste("Correlación Nula (r =", r3, ")"),
+       subtitle = "No hay un patrón lineal entre X e Y.", x = "X", y = "Y") +
+  theme_minimal()
+
+g4 <- ggplot(df4, aes(x = x, y = y)) +
+  geom_point(color = "#ff7f0e", alpha = 0.7, size = 2) +
+  geom_smooth(method = "lm", color = "#e65100", se = FALSE, size = 1, linetype = "dashed") +
+  labs(title = paste("Relación No Lineal (r =", r4, ")"),
+       subtitle = "¡Ojo! Hay una relación (parábola), pero Pearson no la detecta.", x = "X", y = "Y") +
+  theme_minimal()
+
+# ==============================================================================
+# PANEL COMPLETO
+# ==============================================================================
+(g1 + g2) / (g3 + g4) + 
+  plot_annotation(title = "Comprendiendo el Coeficiente de Correlación de Pearson",
+                  subtitle = "El coeficiente evalúa únicamente la fuerza y dirección de relaciones estrictamente lineales.",
+                  theme = theme(plot.title = element_text(face = "bold", size = 16)))
+```
+
+
 - **Coeficiente de determinación (**$r^2$): Es el cuadrado del coeficiente de correlación y representa la proporción de la variabilidad de una variable que es explicada por la otra a través de la relación lineal. Por ejemplo, un r=0.6 implica que el 36% (0.62) de la variación total es explicada por el modelo.
+
+| Característica | Coeficiente de Pearson ($r$) | Coeficiente de Determinación ($R^2$) |
+| :--- | :--- | :--- |
+| **¿Qué mide?** | Dirección y fuerza de la relación lineal entre dos variables. | El éxito predictivo / proporción de variabilidad explicada por el modelo. |
+| **Escala / Rango** | De $-1$ a $+1$ | De $0$ a $1$ (o de $0\%$ a $100\%$) |
+| **¿Importa el signo?**| **Sí.** Indica si la relación es directa ($+$) o inversa ($-$). | **No.** Al ser un término cuadrático, siempre es positivo (no indica dirección). |
+| **Uso principal** | Exploración inicial de datos (saber si existe asociación). | Evaluación de Modelos de Regresión (saber qué tan buena es la ecuación). |
+| **Conexión Matemática**| Es la raíz cuadrada con signo de $R^2$ en modelos lineales simples: <br>$$r = \pm\sqrt{R^2}$$ | En una regresión lineal simple, es literalmente el cuadrado de Pearson:<br>$$R^2 = (r)^2$$ |
+
+
 
 En conclusión, mientras el **diagrama de dispersión** ofrece una visión intuitiva y la **covarianza** el sentido de la relación, el **coeficiente de correlación** proporciona una medida exacta y comparable de la fuerza y dirección del vínculo lineal entre dos variables.
 
