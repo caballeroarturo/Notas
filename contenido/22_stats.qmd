@@ -24,7 +24,7 @@ Para comprender el estudio de la estadística, es esencial manejar los siguiente
 
   - **Cuantitativas:** Son mediciones numéricas. Pueden ser **discretas** (cuando resultan de un conteo y tienen valores finitos o numerables) o **continuas** (cuando pueden tomar cualquier valor en un intervalo, como el peso o la altura).
 
-- **Parámetro:** Es una característica constante de la población, como la **media poblacional (**$μ$) o la varianza poblacional ($σ2$).
+- **Parámetro:** Es una característica constante de la población, como la **media poblacional (**$μ$) o la varianza poblacional ($σ^2$).
 
 - **Estadístico:** Es cualquier función de las variables aleatorias que forman una muestra. Los valores calculados de estos, como la **media muestral (**$\hat{x}$) o la varianza muestral (**s2**), se utilizan para estimar los parámetros desconocidos de la población.
 
@@ -50,7 +50,7 @@ Conceptos Estadísticos
 
 - **Parámetro:** Es una característica numérica constante que describe a una **población completa**. Se consideran "valores verdaderos" que generalmente permanecen desconocidos y deben ser estimados. Los parámetros suelen representarse con letras griegas, como μ (media poblacional) y σ2 (varianza poblacional).
 
-- **Estadístico muestral:** Es cualquier función calculada a partir de las variables que forman una **muestra**. A diferencia de los parámetros, los estadísticos son variables aleatorias porque su valor cambia de una muestra a otra. Se utilizan como **estimadores** para obtener conclusiones sobre los parámetros de la población. Comúnmente se representan con letras romanas, como xˉ (media muestral) y s2 (varianza muestral).
+- **Estadístico muestral:** Es cualquier función calculada a partir de las variables que forman una **muestra**. A diferencia de los parámetros, los estadísticos son variables aleatorias porque su valor cambia de una muestra a otra. Se utilizan como **estimadores** para obtener conclusiones sobre los parámetros de la población. Comúnmente se representan con letras romanas, como $\hat{x}$ (media muestral) y $s^2$ (varianza muestral).
 
 Conceptos de Calidad de Datos
 
