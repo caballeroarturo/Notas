@@ -508,6 +508,10 @@ window.Quarto = {
 <a href="#distribuci%C3%B3n-normal" id="toc-distribución-normal" class="nav-link" data-scroll-target="#distribuci%C3%B3n-normal"><span class="header-section-number">13.4</span> Distribución normal</a>
   <ul class="collapse">
 <li><a href="#apr%C3%B3ximaci%C3%B3n-normal-a-la-distribuci%C3%B3n-binomial" id="toc-apróximación-normal-a-la-distribución-binomial" class="nav-link" data-scroll-target="#apr%C3%B3ximaci%C3%B3n-normal-a-la-distribuci%C3%B3n-binomial"><span class="header-section-number">13.4.1</span> Apróximación normal a la distribución binomial</a></li>
+  <li><a href="#enunciado-del-teorema" id="toc-enunciado-del-teorema" class="nav-link" data-scroll-target="#enunciado-del-teorema"><span class="header-section-number">13.4.2</span> 1. Enunciado del Teorema</a></li>
+  <li><a href="#condiciones-para-la-aproximaci%C3%B3n" id="toc-condiciones-para-la-aproximación" class="nav-link" data-scroll-target="#condiciones-para-la-aproximaci%C3%B3n"><span class="header-section-number">13.4.3</span> 2. Condiciones para la aproximación</a></li>
+  <li><a href="#correcci%C3%B3n-por-continuidad-correcci%C3%B3n-de-yates" id="toc-corrección-por-continuidad-corrección-de-yates" class="nav-link" data-scroll-target="#correcci%C3%B3n-por-continuidad-correcci%C3%B3n-de-yates"><span class="header-section-number">13.4.4</span> 3. Corrección por Continuidad (Corrección de Yates)</a></li>
+  <li><a href="#importancia-hist%C3%B3rica" id="toc-importancia-histórica" class="nav-link" data-scroll-target="#importancia-hist%C3%B3rica"><span class="header-section-number">13.4.5</span> 4. Importancia Histórica</a></li>
   </ul>
 </li>
   <li>
@@ -1619,7 +1623,33 @@ window.Quarto = {
 <span class="header-section-number">13.4.1</span> Apróximación normal a la distribución binomial</h3>
 <p>La <strong>aproximación normal a la distribución binomial</strong> es un procedimiento estadístico que permite utilizar áreas bajo la curva normal para estimar probabilidades de una variable aleatoria binomial cuando el número de ensayos es grande.</p>
 <p>Este método, fundamentado en el <strong>Teorema de Moivre-Laplace</strong>, es sumamente útil en la práctica porque los cálculos exactos de la binomial (que involucran factoriales) pueden resultar extremadamente engorrosos o incluso imposibles de procesar para calculadoras convencionales cuando el tamaño de la muestra es elevado.</p>
-<section id="condiciones-para-la-aproximación" class="level5"><h5 class="anchored" data-anchor-id="condiciones-para-la-aproximación">Condiciones para la aproximación</h5>
+<p>El <strong>Teorema de De Moivre-Laplace</strong> es una de las versiones primigenias y más importantes del <em>Teorema Central del Límite</em>. Este teorema establece que, bajo ciertas condiciones, una distribución binomial (discreta) puede aproximarse mediante una distribución normal (continua) conforme el número de ensayos aumenta.</p>
+<p>A continuación se detalla su contenido y aplicación:</p>
+<hr></section><section id="enunciado-del-teorema" class="level3" data-number="13.4.2"><h3 data-number="13.4.2" class="anchored" data-anchor-id="enunciado-del-teorema">
+<span class="header-section-number">13.4.2</span> 1. Enunciado del Teorema</h3>
+<p>El teorema indica que si se tiene una sucesión infinita de ensayos independientes (como lanzar una moneda) donde un evento <span class="math inline">\(A\)</span> ocurre con probabilidad <span class="math inline">\(p\)</span>, y <span class="math inline">\(n_A\)</span> es el número de veces que ocurre ese evento en <span class="math inline">\(n\)</span> ensayos, entonces la variable estandarizada tiende a una distribución normal estándar <span class="math inline">\(N(0,1)\)</span> cuando <span class="math inline">\(n\)</span> tiende a infinito.</p>
+<p>La fórmula del estadístico estandarizado <span class="math inline">\(Z\)</span> para esta aproximación es:</p>
+<p><span class="math display">\[Z = \frac{n_A - np}{\sqrt{np(1-p)}}\]</span></p>
+<p>Donde: * <span class="math inline">\(np\)</span> es la media (<span class="math inline">\(\mu\)</span>) de la distribución binomial. * <span class="math inline">\(\sqrt{np(1-p)}\)</span> (o <span class="math inline">\(\sqrt{npq}\)</span>) es la desviación típica (<span class="math inline">\(\sigma\)</span>).</p>
+<hr></section><section id="condiciones-para-la-aproximación" class="level3" data-number="13.4.3"><h3 data-number="13.4.3" class="anchored" data-anchor-id="condiciones-para-la-aproximación">
+<span class="header-section-number">13.4.3</span> 2. Condiciones para la aproximación</h3>
+<p>Para que el uso de la curva normal sea válido y proporcione resultados de calidad al aproximar una binomial <span class="math inline">\(B(n,p)\)</span>, se deben cumplir simultáneamente las siguientes condiciones prácticas:</p>
+<p><span class="math display">\[n \cdot p \geq 5\]</span> <span class="math display">\[n \cdot (1-p) \geq 5\]</span></p>
+<p>La sencillez de estas condiciones y el ahorro operacional que supone (al evitar cálculos complejos con factoriales de números grandes como <span class="math inline">\(\binom{n}{x}\)</span>) lo convierten en uno de los resultados más utilizados e importantes en la estadística clásica.</p>
+<hr></section><section id="corrección-por-continuidad-corrección-de-yates" class="level3" data-number="13.4.4"><h3 data-number="13.4.4" class="anchored" data-anchor-id="corrección-por-continuidad-corrección-de-yates">
+<span class="header-section-number">13.4.4</span> 3. Corrección por Continuidad (Corrección de Yates)</h3>
+<p>Debido a que se está utilizando una distribución continua (la normal) para modelar una variable que es inherentemente discreta (la binomial), es necesario aplicar un ajuste llamado <strong>corrección por continuidad</strong> o <em>corrección de Yates</em>.</p>
+<p>Este procedimiento consiste en sumar o restar <span class="math inline">\(0.5\)</span> a los valores de la variable para compensar la pérdida de precisión al pasar de puntos discretos (barras aisladas) a áreas bajo una curva continua.</p>
+<ul>
+<li>
+<strong>Ejemplo:</strong> Para calcular la probabilidad puntual de un valor exacto <span class="math inline">\(k\)</span> en la binomial (<span class="math inline">\(P(X = k)\)</span>), en la aproximación normal se debe calcular el área de la curva que se encuentra en el intervalo: <span class="math display">\[P(k - 0.5 \leq X_{\text{normal}} \leq k + 0.5)\]</span>
+</li>
+</ul>
+<hr></section><section id="importancia-histórica" class="level3" data-number="13.4.5"><h3 data-number="13.4.5" class="anchored" data-anchor-id="importancia-histórica">
+<span class="header-section-number">13.4.5</span> 4. Importancia Histórica</h3>
+<p>El matemático francés <strong>Abraham de Moivre</strong> desarrolló por primera vez la ecuación de la curva normal en 1733 precisamente como un atajo para aproximar probabilidades binomiales complejas. Posteriormente, <strong>Pierre-Simon Laplace</strong> profundizó y generalizó estos estudios, sentando las bases de la estadística inductiva moderna.</p>
+<p>De hecho, este teorema es el ancestro directo del Teorema Central del Límite y explica por qué tantos procesos de la vida real que resultan de la suma de múltiples factores independientes terminan adoptando la emblemática forma de la “campana de Gauss”.</p>
+<section id="condiciones-para-la-aproximación-1" class="level5"><h5 class="anchored" data-anchor-id="condiciones-para-la-aproximación-1">Condiciones para la aproximación</h5>
 <p>Para que la aproximación sea considerada válida y de buena calidad, se deben cumplir simultáneamente las siguientes condiciones:</p>
 <ul>
 <li><p><span class="math inline">\(np≥5\)</span>: El producto del número de ensayos por la probabilidad de éxito debe ser mayor o igual a 5.</p></li>
