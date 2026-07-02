@@ -935,11 +935,11 @@ Aquí los elementos se pueden volver a usar. Cada vez que eliges uno, el abanico
 
 - **Por qué aplica:** El orden importa (no es lo mismo la contraseña `1-2-3-4` que `4-3-2-1`) y puedes repetir números (la contraseña puede ser `7-7-7-7`).
 
-- **La Fórmula:** 
+- **La Fórmula:**
 
 $n^k$ (donde $n$ son las opciones totales y $k$ los espacios a llenar).
 
-- **Cálculo:** 
+- **Cálculo:**
 
 $10^4 = 10,000$ contraseñas posibles.
 
@@ -996,15 +996,13 @@ El Ejemplo Clásico: De un grupo de 10 amigos, vas a elegir a 3 para que vayan c
 
 - Tampoco hay reemplazo (no puedes clonar a un amigo).
 
-- La Fórmula 
-$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$ 
+- La Fórmula $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 
-- Sustituyendo ($n=10$ y $k=3$):
-$$\binom{10}{3} = \frac{10!}{3!(10-3)!} = \frac{10!}{3! \times 7!}$$
+- Sustituyendo ($n=10$ y $k=3$): $$\binom{10}{3} = \frac{10!}{3!(10-3)!} = \frac{10!}{3! \times 7!}$$
+
 - El $10!$ del numerador se descompone hasta llegar al $7!$, para poder cancelarlo con el del denominador:
 
-$$\frac{10 \times 9 \times 8 \times 7!}{3! \times 7!}$$
-$$\frac{720}{6} = 120$$
+$$\frac{10 \times 9 \times 8 \times 7!}{3! \times 7!}$$ $$\frac{720}{6} = 120$$
 
 ```{r}
 #| echo: false
@@ -1035,47 +1033,40 @@ La diferencia fundamental entre la **Función de Densidad** ($f(x)$) y la **Func
 
 A continuación se detallan sus principales diferencias y su relación matemática:
 
----
+------------------------------------------------------------------------
 
 ### 1. Definición y Representación
 
-***Función de Densidad (PDF):** Se utiliza primordialmente para variables aleatorias continuas. Es una función no negativa cuya integral sobre un intervalo $[a, b]$ representa la probabilidad de que la variable tome un valor en ese rango: 
-  $$P(a \leq X \leq b) = \int_a^b f(x) \, dx$$
-  Gráficamente, se visualiza como una curva (como la "campana de Gauss") donde la probabilidad es el área bajo la curva.
-  
-* **Función de Distribución Acumulativa (CDF):** Se define para cualquier tipo de variable aleatoria (discreta o continua). Evalúa la probabilidad de que la variable tome un valor menor o igual a un número dado $x$: 
-  $$F(x) = P(X \leq x)$$
-  Gráficamente, es una función no decreciente que siempre oscila entre 0 y 1.
+\***Función de Densidad (PDF):** Se utiliza primordialmente para variables aleatorias continuas. Es una función no negativa cuya integral sobre un intervalo $[a, b]$ representa la probabilidad de que la variable tome un valor en ese rango: $$P(a \leq X \leq b) = \int_a^b f(x) \, dx$$ Gráficamente, se visualiza como una curva (como la "campana de Gauss") donde la probabilidad es el área bajo la curva.
 
----
+- **Función de Distribución Acumulativa (CDF):** Se define para cualquier tipo de variable aleatoria (discreta o continua). Evalúa la probabilidad de que la variable tome un valor menor o igual a un número dado $x$: $$F(x) = P(X \leq x)$$ Gráficamente, es una función no decreciente que siempre oscila entre 0 y 1.
+
+------------------------------------------------------------------------
 
 ### 2. Forma de calcular probabilidades
 
-* En la **Función de Densidad**, la probabilidad de un punto exacto en una variable continua es siempre cero ($P(X = x) = 0$); la probabilidad solo tiene sentido para intervalos.
-* En la **Función de Distribución**, el valor de la función en un punto $x$ es directamente una probabilidad ($P(X \leq x)$). Para variables discretas, la CDF presenta saltos en los valores que la variable puede tomar, y el tamaño de ese salto es la probabilidad puntual.
+- En la **Función de Densidad**, la probabilidad de un punto exacto en una variable continua es siempre cero ($P(X = x) = 0$); la probabilidad solo tiene sentido para intervalos.
+- En la **Función de Distribución**, el valor de la función en un punto $x$ es directamente una probabilidad ($P(X \leq x)$). Para variables discretas, la CDF presenta saltos en los valores que la variable puede tomar, y el tamaño de ese salto es la probabilidad puntual.
 
----
+------------------------------------------------------------------------
 
 ### 3. Relación Matemática
 
 Ambas funciones están íntimamente ligadas mediante el cálculo:
 
-* **De Densidad a Distribución:** Para obtener la función acumulativa a partir de la densidad, se realiza una integración desde el límite inferior hasta $x$: 
-  $$F(x) = \int_{-\infty}^x f(u) \, du$$
-* **De Distribución a Densidad:** En el caso continuo, la función de densidad es la derivada de la función de distribución: 
-  $$f(x) = F'(x)$$
+- **De Densidad a Distribución:** Para obtener la función acumulativa a partir de la densidad, se realiza una integración desde el límite inferior hasta $x$: $$F(x) = \int_{-\infty}^x f(u) \, du$$
+- **De Distribución a Densidad:** En el caso continuo, la función de densidad es la derivada de la función de distribución: $$f(x) = F'(x)$$
 
----
+------------------------------------------------------------------------
 
 ### Resumen Comparativo
 
 | Característica | Función de Densidad ($f(x)$) | Función de Distribución ($F(x)$) |
-| :--- | :--- | :--- |
+|:-----------------------|:-----------------------|:-----------------------|
 | **Concepto clave** | Distribución de la probabilidad (concentración). | Acumulación de la probabilidad. |
 | **Probabilidad** | Es el área bajo la curva en un intervalo. | Es la altura o valor de la función en un punto dado. |
 | **Rango de valores** | Debe ser no negativa ($f(x) \geq 0$) y su área total bajo la curva debe ser 1. | Su resultado siempre va de 0 a 1 y es una función no decreciente. |
 | **Uso en discretas** | Se le suele llamar "función de probabilidad" o "de masa" ($p(x)$). | Se aplica igual, sumando las probabilidades puntuales anteriores. |
-
 
 ```{r}
 #| message: false
@@ -1149,21 +1140,39 @@ g_densidad + g_acumulada +
   )
 ```
 
-
-
 ##### Valor esperado (Esperanza Matemática)
 
 El **valor esperado** $E(X)$ o $μ$ es el promedio ponderado de todos los valores posibles de una variable aleatoria. Representa el valor que se esperaría obtener "a largo plazo" si el experimento se repitiera muchas veces.
 
 - **Cálculo:** En el caso discreto es $\sum x \cdot f(x)$, y en el continuo es $$\int x \cdot f(x) \, dx$$.
 
-- **Propiedades:** Es un operador lineal, lo que significa que 
-  $$E(aX + b) = aE(X) + b$$
-  $$E(X + Y) = E(X) + E(Y)$$
+- **Propiedades:** Es un operador lineal, lo que significa que $$E(aX + b) = aE(X) + b$$ $$E(X + Y) = E(X) + E(Y)$$
 
 - **Interpretación:** Actúa como el **punto de equilibrio** o centro de gravedad de la distribución de probabilidad.
 
 ## Distribuciones de probabilidad
+
+- Distribuciones discretas
+
+### Distribuciones Discretas
+
+| Distribución | Función de Masa ($p(x)$) | Función Acumulativa ($F(x)$) | Esperanza ($E(X)$) | Desviación Estándar ($\sigma$) | Uso Común / ¿Cuándo usar? |
+|:-----------|:-----------|:-----------|:----------:|:----------:|:-----------|
+| **Bernoulli** | $p^x(1-p)^{1-x}$ <br> para $x \in \{0, 1\}$ | $\begin{cases} 0 & x < 0 \\ 1-p & 0 \leq x < 1 \\ 1 & x \geq 1 \end{cases}$ | $p$ | $\sqrt{p(1-p)}$ | Experimentos de un solo ensayo con respuesta dicotómica (Éxito/Fracaso, Sí/No). |
+| **Binomial** | $\binom{n}{x} p^x(1-p)^{n-x}$ <br> para $x \in \{0, 1, \dots, n\}$ | $\sum_{k=0}^{x} \binom{n}{k} p^k(1-p)^{n-k}$ | $n \cdot p$ | $\sqrt{n \cdot p(1-p)}$ | Contar el número de "éxitos" al repetir $n$ veces un experimento Bernoulli idéntico e independiente. |
+| **Poisson** | $\frac{\lambda^x e^{-\lambda}}{x!}$ <br> para $x \in \{0, 1, 2, \dots\}$ | $\sum_{k=0}^{x} \frac{\lambda^k e^{-\lambda}}{k!}$ | $\lambda$ | $\sqrt{\lambda}$ | Modelar el número de eventos raros que ocurren en un intervalo fijo de tiempo, espacio o volumen (ej. llamadas por hora). |
+| **Geométrica** | $(1-p)^{x-1}p$ <br> para $x \in \{1, 2, 3, \dots\}$ | $1 - (1-p)^x$ | $\frac{1}{p}$ | $\frac{\sqrt{1-p}}{p}$ | Calcular el número de ensayos necesarios o intentos requeridos hasta que ocurra el primer éxito. |
+
+- Distribuciones continuas
+
+### Distribuciones Continuas
+
+| Distribución | Función de Densidad ($f(x)$) | Función Acumulativa ($F(x)$) | Esperanza ($E(X)$) | Desviación Estándar ($\sigma$) | Uso Común / ¿Cuándo usar? |
+|:-----------|:-----------|:-----------|:---------:|:---------:|:-----------|
+| **Uniforme** | $\frac{1}{b-a}$ <br> para $x \in [a, b]$ | $\frac{x-a}{b-a}$ <br> para $x \in [a, b]$ | $\frac{a+b}{2}$ | $\frac{b-a}{\sqrt{12}}$ | Situaciones donde todos los intervalos de igual longitud dentro del rango tienen exactamente la misma probabilidad (azar puro). |
+| **Normal** | $\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | No tiene forma cerrada. <br> Se usa $\Phi\left(\frac{x-\mu}{\sigma}\right)$ | $\mu$ | $\sigma$ | Modelar fenómenos naturales, características biológicas (estatura), errores de medición y por el Teorema del Límite Central. |
+| **Exponencial** | $\lambda e^{-\lambda x}$ <br> para $x \geq 0$ | $1 - e^{-\lambda x}$ | $\frac{1}{\lambda}$ | $\frac{1}{\lambda}$ | Modelar el tiempo de espera continuo que transcurre entre dos eventos consecutivos de un proceso de Poisson. |
+| **Logística** | $\frac{e^{-\frac{x-\mu}{s}}}{s \left(1 + e^{-\frac{x-\mu}{s}}\right)^2}$ | $\frac{1}{1 + e^{-\frac{x-\mu}{s}}}$ | $\mu$ | $\frac{s \cdot \pi}{\sqrt{3}}$ | Modelar el crecimiento de poblaciones, tasas de interés o en Machine Learning (regresión logística) para calcular probabilidades de eventos binarios. |
 
 #### Distribución binomial
 

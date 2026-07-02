@@ -497,7 +497,13 @@ window.Quarto = {
   <li><a href="#resumen-comparativo" id="toc-resumen-comparativo" class="nav-link" data-scroll-target="#resumen-comparativo"><span class="header-section-number">13.2.5</span> Resumen Comparativo</a></li>
   </ul>
 </li>
-  <li><a href="#distribuciones-de-probabilidad" id="toc-distribuciones-de-probabilidad" class="nav-link" data-scroll-target="#distribuciones-de-probabilidad"><span class="header-section-number">13.3</span> Distribuciones de probabilidad</a></li>
+  <li>
+<a href="#distribuciones-de-probabilidad" id="toc-distribuciones-de-probabilidad" class="nav-link" data-scroll-target="#distribuciones-de-probabilidad"><span class="header-section-number">13.3</span> Distribuciones de probabilidad</a>
+  <ul class="collapse">
+<li><a href="#distribuciones-discretas" id="toc-distribuciones-discretas" class="nav-link" data-scroll-target="#distribuciones-discretas"><span class="header-section-number">13.3.1</span> Distribuciones Discretas</a></li>
+  <li><a href="#distribuciones-continuas" id="toc-distribuciones-continuas" class="nav-link" data-scroll-target="#distribuciones-continuas"><span class="header-section-number">13.3.2</span> Distribuciones Continuas</a></li>
+  </ul>
+</li>
   <li>
 <a href="#distribuci%C3%B3n-normal" id="toc-distribución-normal" class="nav-link" data-scroll-target="#distribuci%C3%B3n-normal"><span class="header-section-number">13.4</span> Distribución normal</a>
   <ul class="collapse">
@@ -1361,6 +1367,134 @@ window.Quarto = {
 <li><p><strong>Interpretación:</strong> Actúa como el <strong>punto de equilibrio</strong> o centro de gravedad de la distribución de probabilidad.</p></li>
 </ul></section></section></section><section id="distribuciones-de-probabilidad" class="level2" data-number="13.3"><h2 data-number="13.3" class="anchored" data-anchor-id="distribuciones-de-probabilidad">
 <span class="header-section-number">13.3</span> Distribuciones de probabilidad</h2>
+<ul>
+<li>Distribuciones discretas</li>
+</ul>
+<section id="distribuciones-discretas" class="level3" data-number="13.3.1"><h3 data-number="13.3.1" class="anchored" data-anchor-id="distribuciones-discretas">
+<span class="header-section-number">13.3.1</span> Distribuciones Discretas</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Distribución</th>
+<th style="text-align: left;">Función de Masa (<span class="math inline">\(p(x)\)</span>)</th>
+<th style="text-align: left;">Función Acumulativa (<span class="math inline">\(F(x)\)</span>)</th>
+<th style="text-align: center;">Esperanza (<span class="math inline">\(E(X)\)</span>)</th>
+<th style="text-align: center;">Desviación Estándar (<span class="math inline">\(\sigma\)</span>)</th>
+<th style="text-align: left;">Uso Común / ¿Cuándo usar?</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Bernoulli</strong></td>
+<td style="text-align: left;">
+<span class="math inline">\(p^x(1-p)^{1-x}\)</span> <br> para <span class="math inline">\(x \in \{0, 1\}\)</span>
+</td>
+<td style="text-align: left;"><span class="math inline">\(\begin{cases} 0 &amp; x &lt; 0 \\ 1-p &amp; 0 \leq x &lt; 1 \\ 1 &amp; x \geq 1 \end{cases}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(p\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sqrt{p(1-p)}\)</span></td>
+<td style="text-align: left;">Experimentos de un solo ensayo con respuesta dicotómica (Éxito/Fracaso, Sí/No).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Binomial</strong></td>
+<td style="text-align: left;">
+<span class="math inline">\(\binom{n}{x} p^x(1-p)^{n-x}\)</span> <br> para <span class="math inline">\(x \in \{0, 1, \dots, n\}\)</span>
+</td>
+<td style="text-align: left;"><span class="math inline">\(\sum_{k=0}^{x} \binom{n}{k} p^k(1-p)^{n-k}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(n \cdot p\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sqrt{n \cdot p(1-p)}\)</span></td>
+<td style="text-align: left;">Contar el número de “éxitos” al repetir <span class="math inline">\(n\)</span> veces un experimento Bernoulli idéntico e independiente.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Poisson</strong></td>
+<td style="text-align: left;">
+<span class="math inline">\(\frac{\lambda^x e^{-\lambda}}{x!}\)</span> <br> para <span class="math inline">\(x \in \{0, 1, 2, \dots\}\)</span>
+</td>
+<td style="text-align: left;"><span class="math inline">\(\sum_{k=0}^{x} \frac{\lambda^k e^{-\lambda}}{k!}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\lambda\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sqrt{\lambda}\)</span></td>
+<td style="text-align: left;">Modelar el número de eventos raros que ocurren en un intervalo fijo de tiempo, espacio o volumen (ej. llamadas por hora).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Geométrica</strong></td>
+<td style="text-align: left;">
+<span class="math inline">\((1-p)^{x-1}p\)</span> <br> para <span class="math inline">\(x \in \{1, 2, 3, \dots\}\)</span>
+</td>
+<td style="text-align: left;"><span class="math inline">\(1 - (1-p)^x\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac{1}{p}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac{\sqrt{1-p}}{p}\)</span></td>
+<td style="text-align: left;">Calcular el número de ensayos necesarios o intentos requeridos hasta que ocurra el primer éxito.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Distribuciones continuas</li>
+</ul></section><section id="distribuciones-continuas" class="level3" data-number="13.3.2"><h3 data-number="13.3.2" class="anchored" data-anchor-id="distribuciones-continuas">
+<span class="header-section-number">13.3.2</span> Distribuciones Continuas</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 17%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Distribución</th>
+<th style="text-align: left;">Función de Densidad (<span class="math inline">\(f(x)\)</span>)</th>
+<th style="text-align: left;">Función Acumulativa (<span class="math inline">\(F(x)\)</span>)</th>
+<th style="text-align: center;">Esperanza (<span class="math inline">\(E(X)\)</span>)</th>
+<th style="text-align: center;">Desviación Estándar (<span class="math inline">\(\sigma\)</span>)</th>
+<th style="text-align: left;">Uso Común / ¿Cuándo usar?</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Uniforme</strong></td>
+<td style="text-align: left;">
+<span class="math inline">\(\frac{1}{b-a}\)</span> <br> para <span class="math inline">\(x \in [a, b]\)</span>
+</td>
+<td style="text-align: left;">
+<span class="math inline">\(\frac{x-a}{b-a}\)</span> <br> para <span class="math inline">\(x \in [a, b]\)</span>
+</td>
+<td style="text-align: center;"><span class="math inline">\(\frac{a+b}{2}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac{b-a}{\sqrt{12}}\)</span></td>
+<td style="text-align: left;">Situaciones donde todos los intervalos de igual longitud dentro del rango tienen exactamente la misma probabilidad (azar puro).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Normal</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}\)</span></td>
+<td style="text-align: left;">No tiene forma cerrada. <br> Se usa <span class="math inline">\(\Phi\left(\frac{x-\mu}{\sigma}\right)\)</span>
+</td>
+<td style="text-align: center;"><span class="math inline">\(\mu\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\sigma\)</span></td>
+<td style="text-align: left;">Modelar fenómenos naturales, características biológicas (estatura), errores de medición y por el Teorema del Límite Central.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Exponencial</strong></td>
+<td style="text-align: left;">
+<span class="math inline">\(\lambda e^{-\lambda x}\)</span> <br> para <span class="math inline">\(x \geq 0\)</span>
+</td>
+<td style="text-align: left;"><span class="math inline">\(1 - e^{-\lambda x}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac{1}{\lambda}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac{1}{\lambda}\)</span></td>
+<td style="text-align: left;">Modelar el tiempo de espera continuo que transcurre entre dos eventos consecutivos de un proceso de Poisson.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Logística</strong></td>
+<td style="text-align: left;"><span class="math inline">\(\frac{e^{-\frac{x-\mu}{s}}}{s \left(1 + e^{-\frac{x-\mu}{s}}\right)^2}\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(\frac{1}{1 + e^{-\frac{x-\mu}{s}}}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\mu\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\frac{s \cdot \pi}{\sqrt{3}}\)</span></td>
+<td style="text-align: left;">Modelar el crecimiento de poblaciones, tasas de interés o en Machine Learning (regresión logística) para calcular probabilidades de eventos binarios.</td>
+</tr>
+</tbody>
+</table>
 <section id="distribución-binomial" class="level4"><h4 class="anchored" data-anchor-id="distribución-binomial">Distribución binomial</h4>
 <p>La <strong>distribución binomial</strong> es uno de los modelos de probabilidad teóricos más importantes para variables aleatorias discretas, y se utiliza para describir situaciones donde un experimento solo puede tener <strong>dos resultados posibles</strong> complementarios.</p>
 <p>A continuación se desglosan sus componentes, propiedades y aplicaciones fundamentales:</p>
@@ -1416,7 +1550,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-</section></section></section><section id="distribución-normal" class="level2" data-number="13.4"><h2 data-number="13.4" class="anchored" data-anchor-id="distribución-normal">
+</section></section></section></section><section id="distribución-normal" class="level2" data-number="13.4"><h2 data-number="13.4" class="anchored" data-anchor-id="distribución-normal">
 <span class="header-section-number">13.4</span> Distribución normal</h2>
 <p>La <strong>distribución normal</strong>, también conocida como distribución gaussiana o “campana de Gauss”, es la distribución de probabilidad continua más importante en estadística, ya que describe multitud de fenómenos naturales, industriales y científicos.</p>
 <p>A continuación se detallan sus características, parámetros y el proceso de estandarización:</p>
