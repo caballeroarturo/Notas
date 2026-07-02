@@ -1157,42 +1157,35 @@ El **valor esperado** $E(X)$ o $μ$ es el promedio ponderado de todos los valore
 ### Distribuciones Discretas
 
 | Distribución | Función de Masa ($p(x)$) | Función Acumulativa ($F(x)$) | Propiedades / Momentos | Uso Común / ¿Cuándo usar? |
-| :--- | :--- | :--- | :---: | :--- |
-| **Bernoulli** | $p^x(1-p)^{1-x}$ <br> para $x \in \{0, 1\}$ | $\begin{cases} 0 & x < 0 \\ 1-p & 0 \leq x < 1 \\ 1 & x \geq 1 \end{cases}$ | **$E(X)$:** $p$ <br> **$\sigma$:** $\sqrt{p(1-p)}$ | Experimentos de un solo ensayo con respuesta dicotómica (Éxito/Fracaso, Sí/No). |
-| **Binomial** | $\binom{n}{x} p^x(1-p)^{n-x}$ <br> para $x \in \{0, 1, \dots, n\}$ | $\sum_{k=0}^{x} \binom{n}{k} p^k(1-p)^{n-k}$ | **$E(X)$:** $n \cdot p$ <br> **$\sigma$:** $\sqrt{n \cdot p(1-p)}$ | Contar el número de "éxitos" al repetir $n$ veces un experimento Bernoulli idéntico e independiente. |
-| **Poisson** | $\frac{\lambda^x e^{-\lambda}}{x!}$ <br> para $x \in \{0, 1, 2, \dots\}$ | $\sum_{k=0}^{x} \frac{\lambda^k e^{-\lambda}}{k!}$ | **$E(X)$:** $\lambda$ <br> **$\sigma$:** $\sqrt{\lambda}$ | Modelar el número de eventos que ocurren en un intervalo fijo de tiempo o espacio (ej. llamadas por hora). |
-| **Geométrica** | $(1-p)^{x-1}p$ <br> para $x \in \{1, 2, 3, \dots\}$ | $1 - (1-p)^x$ | **$E(X)$:** $\frac{1}{p}$ <br> **$\sigma$:** $\frac{\sqrt{1-p}}{p}$ | Calcular el número de ensayos necesarios o intentos requeridos hasta que ocurra el primer éxito. |
+|:--------------|:--------------|:--------------|:-------------:|:--------------|
+| **Bernoulli** | $p^x(1-p)^{1-x}$ <br> para $x \in \{0, 1\}$ | $\begin{cases} 0 & x < 0 \\ 1-p & 0 \leq x < 1 \\ 1 & x \geq 1 \end{cases}$ | $E(X)$: $p$ <br> $\sigma$: $\sqrt{p(1-p)}$ | Experimentos de un solo ensayo con respuesta dicotómica (Éxito/Fracaso, Sí/No). |
+| **Binomial** | $\binom{n}{x} p^x(1-p)^{n-x}$ <br> para $x \in \{0, 1, \dots, n\}$ | $\sum_{k=0}^{x} \binom{n}{k} p^k(1-p)^{n-k}$ | $E(X)$: $n \cdot p$ <br> $\sigma$: $\sqrt{n \cdot p(1-p)}$ | Contar el número de "éxitos" al repetir $n$ veces un experimento Bernoulli idéntico e independiente. |
+| **Poisson** | $\frac{\lambda^x e^{-\lambda}}{x!}$ <br> para $x \in \{0, 1, 2, \dots\}$ | $\sum_{k=0}^{x} \frac{\lambda^k e^{-\lambda}}{k!}$ | $E(X)$: $\lambda$ <br> $\sigma$: $\sqrt{\lambda}$ | Modelar el número de eventos que ocurren en un intervalo fijo de tiempo o espacio (ej. llamadas por hora). |
+| **Geométrica** | $(1-p)^{x-1}p$ <br> para $x \in \{1, 2, 3, \dots\}$ | $1 - (1-p)^x$ | $E(X)$: $\frac{1}{p}$ <br> $\sigma$: $\frac{\sqrt{1-p}}{p}$ | Calcular el número de ensayos necesarios o intentos requeridos hasta que ocurra el primer éxito. |
 
 - Distribuciones continuas
 
 ### Distribuciones Continuas
 
 | Distribución | Función de Densidad ($f(x)$) | Función Acumulativa ($F(x)$) | Propiedades / Momentos | Uso Común / ¿Cuándo usar? |
-| :--- | :--- | :--- | :---: | :--- |
-| **Uniforme** | $\frac{1}{b-a}$ <br> para $x \in [a, b]$ | $\frac{x-a}{b-a}$ <br> para $x \in [a, b]$ | **$E(X)$:** $\frac{a+b}{2}$ <br><br> **$\sigma$:** $\frac{b-a}{\sqrt{12}}$ | Situaciones donde todos los intervalos de igual longitud dentro del rango tienen exactamente la misma probabilidad. |
-| **Normal** | $\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | No tiene forma cerrada. <br> Se usa $\Phi\left(\frac{x-\mu}{\sigma}\right)$ | **$E(X)$:** $\mu$ <br><br> **$\sigma$:** $\sigma$ | Modelar fenómenos naturales, características biológicas, errores de medición y por el Teorema del Límite Central. |
-| **Exponencial**| $\lambda e^{-\lambda x}$ <br> para $x \geq 0$ | $1 - e^{-\lambda x}$ | **$E(X)$:** $\frac{1}{\lambda}$ <br><br> **$\sigma$:** $\frac{1}{\lambda}$ | Modelar el tiempo de espera continuo que transcurre entre dos eventos consecutivos de un proceso de Poisson. |
-| **Logística** | $\frac{e^{-\frac{x-\mu}{s}}}{s \left(1 + e^{-\frac{x-\mu}{s}}\right)^2}$ | $\frac{1}{1 + e^{-\frac{x-\mu}{s}}}$ | **$E(X)$:** $\mu$ <br><br> **$\sigma$:** $\frac{s \cdot \pi}{\sqrt{3}}$ | Modelar el crecimiento de poblaciones o en Machine Learning (regresión logística) para probabilidades binarias. |
+|:--------------|:--------------|:--------------|:-------------:|:--------------|
+| **Uniforme** | $\frac{1}{b-a}$ <br> para $x \in [a, b]$ | $\frac{x-a}{b-a}$ <br> para $x \in [a, b]$ | $E(X)$: $\frac{a+b}{2}$ <br><br> $\sigma$: $\frac{b-a}{\sqrt{12}}$ | Situaciones donde todos los intervalos de igual longitud dentro del rango tienen exactamente la misma probabilidad. |
+| **Normal** | $\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | No tiene forma cerrada. <br> Se usa $\Phi\left(\frac{x-\mu}{\sigma}\right)$ | $E(X)$: $\mu$ <br><br> $\sigma$: $\sigma$ | Modelar fenómenos naturales, características biológicas, errores de medición y por el Teorema del Límite Central. |
+| **Exponencial** | $\lambda e^{-\lambda x}$ <br> para $x \geq 0$ | $1 - e^{-\lambda x}$ | $E(X)$: $\frac{1}{\lambda}$ <br><br> $\sigma$: $\frac{1}{\lambda}$ | Modelar el tiempo de espera continuo que transcurre entre dos eventos consecutivos de un proceso de Poisson. |
+| **Logística** | $\frac{e^{-\frac{x-\mu}{s}}}{s \left(1 + e^{-\frac{x-\mu}{s}}\right)^2}$ | $\frac{1}{1 + e^{-\frac{x-\mu}{s}}}$ | $E(X)$: $\mu$ <br><br> $\sigma$: $\frac{s \cdot \pi}{\sqrt{3}}$ | Modelar el crecimiento de poblaciones o en Machine Learning (regresión logística) para probabilidades binarias. |
 
-la Exponencial es la versión continua de la Geométrica:
-Ambas miden exactamente lo mismo: 
+la Exponencial es la versión continua de la Geométrica: Ambas miden exactamente lo mismo:
 
 - "Tiempo de espera"
-    - Geométrica (Discreta): Cuenta el número de intentos o ensayos discretos que tienes que acumular antes de ver el primer éxito (ej. cuántas veces tienes que lanzar una moneda hasta que salga cara).
-    - Exponencial (Continua): Mide la cantidad de tiempo continuo (o espacio) que tienes que esperar antes de que ocurra el primer evento (ej. cuántos minutos tienes que esperar hasta que llegue el próximo autobús).
-- Ambas comparten la propiedad de "Falta de Memoria" (Memorylessness).
-  Esta es la propiedad estadística más rara y fascinante que comparten, y solo ellas dos la tienen en sus respectivos mundos:
-    - En la Geométrica: Si has lanzado una moneda 10 veces y no ha salido cara, la probabilidad de obtener cara en el lanzamiento número 11 sigue siendo exactamente la misma. A la moneda "no le importa" el pasado.
-    - En la Exponencial: Si estás esperando el autobús y ya pasaron 15 minutos sin que llegue, la probabilidad de que llegue en los próximos 5 minutos es exactamente la misma que si acabaras de llegar a la parada. El tiempo transcurrido no altera la probabilidad del futuro.
+  - Geométrica (Discreta): Cuenta el número de intentos o ensayos discretos que tienes que acumular antes de ver el primer éxito (ej. cuántas veces tienes que lanzar una moneda hasta que salga cara).
+  - Exponencial (Continua): Mide la cantidad de tiempo continuo (o espacio) que tienes que esperar antes de que ocurra el primer evento (ej. cuántos minutos tienes que esperar hasta que llegue el próximo autobús).
+- Ambas comparten la propiedad de "Falta de Memoria" (Memorylessness). Esta es la propiedad estadística más rara y fascinante que comparten, y solo ellas dos la tienen en sus respectivos mundos:
+  - En la Geométrica: Si has lanzado una moneda 10 veces y no ha salido cara, la probabilidad de obtener cara en el lanzamiento número 11 sigue siendo exactamente la misma. A la moneda "no le importa" el pasado.
+  - En la Exponencial: Si estás esperando el autobús y ya pasaron 15 minutos sin que llegue, la probabilidad de que llegue en los próximos 5 minutos es exactamente la misma que si acabaras de llegar a la parada. El tiempo transcurrido no altera la probabilidad del futuro.
 - Su conexión matemática exacta
-    - Si tomas la fórmula de la distribución Geométrica y haces que los intervalos de tiempo
-    entre cada intento se vuelvan infinitesimalmente pequeños (es decir, aplicas un límite
-    cuando el tiempo tiende a ser continuo), la fórmula discreta se transforma matemáticamente
-    en la ecuación de la distribución Exponencial. 
+  - Si tomas la fórmula de la distribución Geométrica y haces que los intervalos de tiempo entre cada intento se vuelvan infinitesimalmente pequeños (es decir, aplicas un límite cuando el tiempo tiende a ser continuo), la fórmula discreta se transforma matemáticamente en la ecuación de la distribución Exponencial.
 
 Por eso, en el diseño de modelos: Si cuentas tus esperas en pasos enteros ($1, 2, 3 \dots$), usas la Geométrica. Si mides tu espera con un cronómetro ($1.45\text{ s}, 2.3\text{ min} \dots$), usas la Exponencial.
-
-
 
 #### Distribución binomial
 
@@ -1476,7 +1469,7 @@ El **Teorema de De Moivre-Laplace** es una de las versiones primigenias y más i
 
 A continuación se detalla su contenido y aplicación:
 
----
+------------------------------------------------------------------------
 
 ### 1. Enunciado del Teorema
 
@@ -1486,40 +1479,35 @@ La fórmula del estadístico estandarizado $Z$ para esta aproximación es:
 
 $$Z = \frac{n_A - np}{\sqrt{np(1-p)}}$$
 
-Donde:
-* $np$ es la media ($\mu$) de la distribución binomial.
-* $\sqrt{np(1-p)}$ (o $\sqrt{npq}$) es la desviación típica ($\sigma$).
+Donde: \* $np$ es la media ($\mu$) de la distribución binomial. \* $\sqrt{np(1-p)}$ (o $\sqrt{npq}$) es la desviación típica ($\sigma$).
 
----
+------------------------------------------------------------------------
 
 ### 2. Condiciones para la aproximación
 
 Para que el uso de la curva normal sea válido y proporcione resultados de calidad al aproximar una binomial $B(n,p)$, se deben cumplir simultáneamente las siguientes condiciones prácticas:
 
-$$n \cdot p \geq 5$$
-$$n \cdot (1-p) \geq 5$$
+$$n \cdot p \geq 5$$ $$n \cdot (1-p) \geq 5$$
 
 La sencillez de estas condiciones y el ahorro operacional que supone (al evitar cálculos complejos con factoriales de números grandes como $\binom{n}{x}$) lo convierten en uno de los resultados más utilizados e importantes en la estadística clásica.
 
----
+------------------------------------------------------------------------
 
 ### 3. Corrección por Continuidad (Corrección de Yates)
 
-Debido a que se está utilizando una distribución continua (la normal) para modelar una variable que es inherentemente discreta (la binomial), es necesario aplicar un ajuste llamado **corrección por continuidad** o *corrección de Yates*. 
+Debido a que se está utilizando una distribución continua (la normal) para *modelar una variable que es inherentemente discreta (la binomial)*, es necesario aplicar un ajuste llamado **corrección por continuidad** o *corrección de Yates*.
 
 Este procedimiento consiste en sumar o restar $0.5$ a los valores de la variable para compensar la pérdida de precisión al pasar de puntos discretos (barras aisladas) a áreas bajo una curva continua.
 
-* **Ejemplo:** Para calcular la probabilidad puntual de un valor exacto $k$ en la binomial ($P(X = k)$), en la aproximación normal se debe calcular el área de la curva que se encuentra en el intervalo:
-  $$P(k - 0.5 \leq X_{\text{normal}} \leq k + 0.5)$$
+- **Ejemplo:** Para calcular la probabilidad puntual de un valor exacto $k$ en la binomial ($P(X = k)$), en la aproximación normal se debe calcular el área de la curva que se encuentra en el intervalo: $$P(k - 0.5 \leq X_{\text{normal}} \leq k + 0.5)$$
 
----
+------------------------------------------------------------------------
 
 ### 4. Importancia Histórica
 
-El matemático francés **Abraham de Moivre** desarrolló por primera vez la ecuación de la curva normal en 1733 precisamente como un atajo para aproximar probabilidades binomiales complejas. Posteriormente, **Pierre-Simon Laplace** profundizó y generalizó estos estudios, sentando las bases de la estadística inductiva moderna. 
+El matemático francés **Abraham de Moivre** desarrolló por primera vez la ecuación de la curva normal en 1733 precisamente como un atajo para aproximar probabilidades binomiales complejas. Posteriormente, **Pierre-Simon Laplace** profundizó y generalizó estos estudios, sentando las bases de la estadística inductiva moderna.
 
 De hecho, este teorema es el ancestro directo del Teorema Central del Límite y explica por qué tantos procesos de la vida real que resultan de la suma de múltiples factores independientes terminan adoptando la emblemática forma de la "campana de Gauss".
-
 
 ##### Condiciones para la aproximación
 
@@ -1564,9 +1552,9 @@ La base teórica de esta aproximación es el **Teorema Central del Límite**, el
 
 ## Distribución $t$ the Student
 
-La **distribución t de Student** es una distribución de probabilidad continua que surge del problema de estimar la media de una población con distribución normal cuando el tamaño de la muestra es pequeño y la desviación estándar poblacional ($σ$) es desconocida.
+La **distribución t de Student** es una *distribución de probabilidad continua que surge del problema de estimar la media de una población con distribución normal cuando el tamaño de la muestra es pequeño y la desviación estándar poblacional (*$σ$) es desconocida.
 
-A continuación se detallan sus características, propiedades y aplicaciones principales según las fuentes:
+A continuación se detallan sus características, propiedades y aplicaciones principales:
 
 ### Origen e Historia
 
@@ -1610,6 +1598,14 @@ Es la herramienta fundamental para realizar inferencias sobre la media poblacion
 ### 5. Consideraciones Importantes
 
 - **Robustez:** Aunque su derivación formal supone que la muestra proviene de una población estrictamente normal, la prueba $t$ es robusta. Esto significa que proporciona resultados confiables incluso si la población se desvía moderadamente de la normalidad, siempre que el tamaño de la muestra sea aceptable y la distribución original sea aproximadamente en forma de campana.
+
+Aunque el mínimo matemático sea $n = 2$, el tamaño de muestra adecuado para una prueba de hipótesis depende de otros factores críticos:
+
+- **Potencia de la prueba:** Muestras muy pequeñas (como $n \leq 10$) suelen tener muy poca potencia estadística. Esto significa que pueden no ser concluyentes y generar valores $p$ altos que no permiten rechazar la hipótesis nula, incluso cuando existe un efecto o sesgo real en la población.
+
+- **Error estándar:** El error estándar de la media se calcula como: $$EE = \frac{s}{\sqrt{n}}$$ Por lo tanto, conforme el tamaño de la muestra ($n$) crece, el error disminuye, la precisión de la estimación aumenta y el radio del intervalo de confianza se vuelve más estrecho (preciso).
+
+- **Robustez:** La prueba $t$ de Student es considerada una prueba "robusta". Esto significa que funciona razonablemente bien e introduce muy poco error incluso si la población de origen se desvía moderadamente de la normalidad, siempre y cuando el tamaño de la muestra no sea excesivamente pequeño y no existan valores atípicos (*outliers*) severos.
 
 - **Uso de Tablas y Valores Críticos:** Los valores críticos de $t$ ($t_{\alpha}$) están tabulados en función del área en la cola derecha y los grados de libertad. Debido a la simetría de la campana, el valor crítico que deja un área $\alpha$ a la izquierda es simplemente el negativo del valor que deja esa misma área a la derecha: $$t_{1-\alpha} = -t_{\alpha}$$
 
