@@ -1810,41 +1810,23 @@ El procedimiento compara una hipótesis nula ($H_0: \mu = \mu_0$), que represent
 > **Ejemplo sencillo (La máquina de café):** \> Una máquina automática sirve tazas de café que teóricamente deben promediar $\mu_0 = 200\text{ ml}$. Sospechas que la máquina está sirviendo menos cantidad. Tomas una muestra de $n = 35$ tazas y calculas la media de tu muestra ($\bar{X} = 195\text{ ml}$) con una desviación estándar $s = 10\text{ ml}$.
 >
 > - $H_0: \mu = 200\text{ ml}$ (La máquina funciona perfectamente).
-> - $H_1: \mu < 200\text{ ml}$ (La máquina está sirviendo menos, nuestra sospecha).
-> Calculamos el estadístico $t$ de Student. Esta fórmula mide a cuántas "unidades de azar" (errores estándar) se encuentra tu muestra del valor ideal.
-> La fórmula es: $$t = \frac{\bar{X} - \mu_0}{\frac{s}{\sqrt{n}}}$$
-Calculamos la parte de abajo (El Error Estándar): Nos dice cuánto suele variar el promedio de 35 tazas por puro azar.
-$$EE = \frac{10}{\sqrt{35}} = \frac{10}{5.916} = 1.69\text{ ml}$$
-- Esto significa que, por pura fluctuación normal de la máquina, un grupo de 35 tazas suele variar de arriba a abajo unos $1.69\text{ ml}$ respecto al promedio real.
-- Calculamos la $t$ completa:$$t = \frac{195 - 200}{1.69} = \frac{-5}{1.69} = -2.95$$
-- ¿Qué significa que $t = -2.95$?
+> - $H_1: \mu < 200\text{ ml}$ (La máquina está sirviendo menos, nuestra sospecha). Calculamos el estadístico $t$ de Student. Esta fórmula mide a cuántas "unidades de azar" (errores estándar) se encuentra tu muestra del valor ideal. La fórmula es: $$t = \frac{\bar{X} - \mu_0}{\frac{s}{\sqrt{n}}}$$ Calculamos la parte de abajo (El Error Estándar): Nos dice cuánto suele variar el promedio de 35 tazas por puro azar. $$EE = \frac{10}{\sqrt{35}} = \frac{10}{5.916} = 1.69\text{ ml}$$
+> - Esto significa que, por pura fluctuación normal de la máquina, un grupo de 35 tazas suele variar de arriba a abajo unos $1.69\text{ ml}$ respecto al promedio real.
+> - Calculamos la $t$ completa:$$t = \frac{195 - 200}{1.69} = \frac{-5}{1.69} = -2.95$$
+> - ¿Qué significa que $t = -2.95$?
 
-Significa que tu promedio de $195\text{ ml}$ está a casi 3 desviaciones estándar por debajo de lo que el fabricante prometió.
-- Si la máquina estuviera bien calibrada ($H_0$ verdadera), por azar las muestras de 35 tazas deberían dar promedios muy cercanos a $200\text{ ml}$ (quizás $199\text{ ml}$, o $201\text{ ml}$). 
-Que te haya dado $195\text{ ml}$ ($t = -2.95$) en el mundo de la probabilidad es el equivalente a que lances una moneda 10 veces y las 10 veces salga cara: es teóricamente posible por azar, pero es tan ridículamente improbable que prefieres no creer en esa coincidencia.
-> - Al calcular el estadístico de prueba $t$, si el resultado es un número muy negativo (por ejemplo, $-2.95$), significa que obtener un promedio de $195\text{ ml}$ de forma pura y natural por azar es extremadamente improbable. Por lo tanto, **rechazas** $H_0$ y concluyes que la máquina está descalibrada.
+Significa que tu promedio de $195\text{ ml}$ está a casi 3 desviaciones estándar por debajo de lo que el fabricante prometió. - Si la máquina estuviera bien calibrada ($H_0$ verdadera), por azar las muestras de 35 tazas deberían dar promedios muy cercanos a $200\text{ ml}$ (quizás $199\text{ ml}$, o $201\text{ ml}$). Que te haya dado $195\text{ ml}$ ($t = -2.95$) en el mundo de la probabilidad es el equivalente a que lances una moneda 10 veces y las 10 veces salga cara: es teóricamente posible por azar, pero es tan ridículamente improbable que prefieres no creer en esa coincidencia. \> - Al calcular el estadístico de prueba $t$, si el resultado es un número muy negativo (por ejemplo, $-2.95$), significa que obtener un promedio de $195\text{ ml}$ de forma pura y natural por azar es extremadamente improbable. Por lo tanto, **rechazas** $H_0$ y concluyes que la máquina está descalibrada.
 
-- Para buscar en la tabla $t$, se necesitan calcular los grados de libertad, que para este caso es simplemente el tamaño de la muestra menos uno:
-$$gl = n - 1 = 35 - 1 = 34$$. 
-- Buscar en la tabla (El "Punto de Corte")
-Antes del experimento, tú decides un nivel de exigencia llamado nivel de significancia ($\alpha$), que casi siempre se fija en el $5\%$ ($0.05$). Esto significa: "Solo creeré que la máquina está rota si la probabilidad de que sea un error por azar sea menor al 5%".
+- Para buscar en la tabla $t$, se necesitan calcular los grados de libertad, que para este caso es simplemente el tamaño de la muestra menos uno: $$gl = n - 1 = 35 - 1 = 34$$.
+- Buscar en la tabla (El "Punto de Corte") Antes del experimento, tú decides un nivel de exigencia llamado nivel de significancia ($\alpha$), que casi siempre se fija en el $5\%$ ($0.05$). Esto significa: "Solo creeré que la máquina está rota si la probabilidad de que sea un error por azar sea menor al 5%".
 - Vas a la tabla t de Student, buscas la fila de $34$ grados de libertad bajo la columna de una sola cola de $0.05$, y la tabla te dará un número llamado Valor Crítico:
 - El valor crítico en la tabla es $-1.691$ (negativo porque estamos evaluando si sirve de menos).
 - La regla de decisión: Las tablas dividen el mundo en dos zonas: la Zona de Aceptación (lo normal por azar) y la Zona de Rechazo (lo estadísticamente imposible de creer).
 
-ZONA DE RECHAZO          │        ZONA DE ACEPTACIÓN
-         (La máquina está rota)         │    (La máquina funciona bien)
-────────────────────────────────────────┼───────────────────────────────
-                                     -1.691                            0
-                                 (Valor Crítico)
-                 ▲
-                 │
-              -2.95 
-       (Tu resultado "t")
+ZONA DE RECHAZO │ ZONA DE ACEPTACIÓN (La máquina está rota) │ (La máquina funciona bien) ────────────────────────────────────────┼─────────────────────────────── -1.691 0 (Valor Crítico) ▲ │ -2.95 (Tu resultado "t")
 
 - Si $t$ cae antes del valor crítico (hacia el 0): La diferencia es pequeña, se la perdonamos al azar. No se rechaza $H_0$.
 - Si tu $t$ cae más allá del valor crítico (más a la izquierda): El resultado es demasiado extremo. Se rechaza $H_0$. Como $t = -2.95$ es mucho menor (más extremo) que el $-1.691$ de la tabla, cayó profundamente en la Zona de Rechazo.
-
 
 ```{r}
 #| fig-width: 6
@@ -1895,48 +1877,23 @@ Este análisis permite comparar dos poblaciones distintas para ver si difieren s
 
 ##### Ejemplo sencillo (Curso de preparación):
 
-> Quieres saber si un nuevo curso en línea mejora las calificaciones en un examen. Tomas a $10$ alumnos y registras su calificación antes de tomar el curso y después de tomarlo. Esto es una muestra pareada (cada dato del "Antes" está amarrado o emparejado exactamente con el mismo alumno en el "Después"). 
-- $H_0: \mu_d = 0$ (El curso no tiene ningún efecto; las calificaciones promedio siguen iguales). 
-- $H_1: \mu_d > 0$ (Las calificaciones aumentaron después del curso). 
-- Si el promedio de las diferencias individuales da positivo y lo suficientemente alto, la prueba te dirá que rechaces $H_0$, lo que demuestra científicamente que el curso funciona.
+> Quieres saber si un nuevo curso en línea mejora las calificaciones en un examen. Tomas a $10$ alumnos y registras su calificación antes de tomar el curso y después de tomarlo. Esto es una muestra pareada (cada dato del "Antes" está amarrado o emparejado exactamente con el mismo alumno en el "Después"). - $H_0: \mu_d = 0$ (El curso no tiene ningún efecto; las calificaciones promedio siguen iguales). - $H_1: \mu_d > 0$ (Las calificaciones aumentaron después del curso). - Si el promedio de las diferencias individuales da positivo y lo suficientemente alto, la prueba te dirá que rechaces $H_0$, lo que demuestra científicamente que el curso funciona.
 
-  - La media de las diferencias ($\bar{d}$): Supongamos que el promedio de mejora fue de $+5\text{ puntos}$.
-  - La desviación estándar de las diferencias ($s_d$): Qué tanto variaron esas mejoras entre alumnos. Supongamos que dio $4\text{ puntos}$.
+- La media de las diferencias ($\bar{d}$): Supongamos que el promedio de mejora fue de $+5\text{ puntos}$.
+
+- La desviación estándar de las diferencias ($s_d$): Qué tanto variaron esas mejoras entre alumnos. Supongamos que dio $4\text{ puntos}$.
 
 - El Juicio (Las Hipótesis)
 
-Aquí planteamos qué significa matemáticamente que el curso funcione o no usando la media poblacional de las diferencias ($\mu_d$):
-- $H_0$ (Hipótesis Nula - El curso es una estafa): $\mu_d = 0$. Dice que si promediaras a millones de alumnos, la mejora real sería cero. Si tus 10 alumnos mejoraron 5 puntos en promedio, $H_0$ dice que fue por pura "suerte en el examen", no por el curso.
-- $H_1$ (Hipótesis Alternativa - Tu sospecha): $\mu_d > 0$. El curso sí aporta. La verdadera media de mejora es mayor que cero (por eso es una prueba de una sola cola, nos interesa ver si aumentaron).
+Aquí planteamos qué significa matemáticamente que el curso funcione o no usando la media poblacional de las diferencias ($\mu_d$): - $H_0$ (Hipótesis Nula - El curso es una estafa): $\mu_d = 0$. Dice que si promediaras a millones de alumnos, la mejora real sería cero. Si tus 10 alumnos mejoraron 5 puntos en promedio, $H_0$ dice que fue por pura "suerte en el examen", no por el curso. - $H_1$ (Hipótesis Alternativa - Tu sospecha): $\mu_d > 0$. El curso sí aporta. La verdadera media de mejora es mayor que cero (por eso es una prueba de una sola cola, nos interesa ver si aumentaron).
 
-Paso 3: El Cálculo Matemático
-- Pasamos nuestros datos por la fórmula de la t pareada:
-$$t = \frac{\bar{d} - \mu_d}{\frac{s_d}{\sqrt{n}}}$$
-Calculamos el Error Estándar abajo: 
-$$\frac{4}{\sqrt{10}} = \frac{4}{3.162} = 1.265$$
+Paso 3: El Cálculo Matemático - Pasamos nuestros datos por la fórmula de la t pareada: $$t = \frac{\bar{d} - \mu_d}{\frac{s_d}{\sqrt{n}}}$$ Calculamos el Error Estándar abajo: $$\frac{4}{\sqrt{10}} = \frac{4}{3.162} = 1.265$$
 
-Calculamos la $t$:
-$$t = \frac{5 - 0}{1.265} = 3.95$$
-Este $3.95$ positivo significa que la mejora de tus alumnos está a casi 4 desviaciones estándar por encima de la hipótesis del "no hace nada".
-- El uso de la Tabla (La decisión final)
+Calculamos la $t$: $$t = \frac{5 - 0}{1.265} = 3.95$$ Este $3.95$ positivo significa que la mejora de tus alumnos está a casi 4 desviaciones estándar por encima de la hipótesis del "no hace nada". - El uso de la Tabla (La decisión final)
 
-Para saber si ese $3.95$ es suficiente para cantar victoria, vamos a la tabla t de Student:
-- Grados de libertad: $gl = n - 1 = 10 - 1 = 9$.
-- Nivel de exigencia ($\alpha$): $5\%$ ($0.05$).
-- Buscamos en la tabla en la fila de 9 grados de libertad y columna de una cola para $0.05$. La tabla nos devuelve el Valor Crítico = $1.833$.
-- La Regla del Juego: Como tu resultado calculado ($t = 3.95$) es mayor que el valor de la tabla ($1.833$), tu resultado cayó en la Zona de Rechazo.
+Para saber si ese $3.95$ es suficiente para cantar victoria, vamos a la tabla t de Student: - Grados de libertad: $gl = n - 1 = 10 - 1 = 9$. - Nivel de exigencia ($\alpha$): $5\%$ ($0.05$). - Buscamos en la tabla en la fila de 9 grados de libertad y columna de una cola para $0.05$. La tabla nos devuelve el Valor Crítico = $1.833$. - La Regla del Juego: Como tu resultado calculado ($t = 3.95$) es mayor que el valor de la tabla ($1.833$), tu resultado cayó en la Zona de Rechazo.
 
-│       ZONA DE RECHAZO
-              ZONA DE ACEPTACIÓN         │   (El curso es un éxito)
-       (La mejora es una casualidad)     │
-─────────────────────────────────────────┼───────────────────────────────
-      0                                1.833
-                                  (Valor Crítico)
-                                                 ▲
-                                                 │
-                                                3.95
-                                         (Tu resultado "t")
-
+│ ZONA DE RECHAZO ZONA DE ACEPTACIÓN │ (El curso es un éxito) (La mejora es una casualidad) │ ─────────────────────────────────────────┼─────────────────────────────── 0 1.833 (Valor Crítico) ▲ │ 3.95 (Tu resultado "t")
 
 ```{r}
 #| fig-width: 6
@@ -1977,30 +1934,17 @@ La estimación puntual es $\hat{p} = \frac{x}{n}$. Para muestras grandes ($n\hat
 
 Para contrastar $H_0: p = p_0$ en muestras grandes, se utiliza el estadístico $Z$:$$Z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1 - p_0)}{n}}}$$
 
->💡 Ejemplo sencillo (Lanzamiento de un nuevo producto): 
-> Históricamente, el porcentaje de clientes satisfechos con la versión anterior de una app es del $p_0 = 70\%$ ($0.70$). 
+> 💡 Ejemplo sencillo (Lanzamiento de un nuevo producto): Históricamente, el porcentaje de clientes satisfechos con la versión anterior de una app es del $p_0 = 70\%$ ($0.70$).
 
-> Lanzas una nueva actualización y quieres probar si la satisfacción aumentó. Encuestas a $n = 100$ usuarios y descubres que $80$ están contentos ($\hat{p} = 0.80$). 
-- $H_0: p = 0.70$ (La satisfacción sigue exactamente igual que antes). 
-- $H_1: p > 0.70$ (La nueva actualización incrementó la proporción de clientes felices). 
-- Si al resolver la ecuación del estadístico $Z$ el resultado supera el valor crítico (típicamente $1.645$ para una cola), se concluye con bases estadísticas sólidas que la actualización fue un éxito rotundo.
+> Lanzas una nueva actualización y quieres probar si la satisfacción aumentó. Encuestas a $n = 100$ usuarios y descubres que $80$ están contentos ($\hat{p} = 0.80$). - $H_0: p = 0.70$ (La satisfacción sigue exactamente igual que antes). - $H_1: p > 0.70$ (La nueva actualización incrementó la proporción de clientes felices). - Si al resolver la ecuación del estadístico $Z$ el resultado supera el valor crítico (típicamente $1.645$ para una cola), se concluye con bases estadísticas sólidas que la actualización fue un éxito rotundo.
 
-Antes de tocar cualquier fórmula, anotamos lo que sabemos: 
-- $p_0 = 0.70$ (Proporción histórica): El $70\%$ tradicional de satisfacción.
-- $q_0 = 1 - p_0 = 0.30$: El porcentaje histórico de clientes no satisfechos ($30\%$).
-- $n = 100$: El tamaño de la muestra (usuarios encuestados).
-- $x = 80$: El número de usuarios felices en la muestra.
-- $\hat{p}$ (Proporción muestral): El porcentaje de éxito en tu experimento. Se calcula dividiendo los éxitos entre el total:
-$$\hat{p} = \frac{x}{n} = \frac{80}{100} = 0.80 \quad (80\%)$$
+Antes de tocar cualquier fórmula, anotamos lo que sabemos: - $p_0 = 0.70$ (Proporción histórica): El $70\%$ tradicional de satisfacción. - $q_0 = 1 - p_0 = 0.30$: El porcentaje histórico de clientes no satisfechos ($30\%$). - $n = 100$: El tamaño de la muestra (usuarios encuestados). - $x = 80$: El número de usuarios felices en la muestra. - $\hat{p}$ (Proporción muestral): El porcentaje de éxito en tu experimento. Se calcula dividiendo los éxitos entre el total: $$\hat{p} = \frac{x}{n} = \frac{80}{100} = 0.80 \quad (80\%)$$
 
-
-¿Cómo se saca el Estadístico $Z$?
-La fórmula para calcular el estadístico $Z$ en una prueba de proporciones es la siguiente:
+¿Cómo se saca el Estadístico $Z$? La fórmula para calcular el estadístico $Z$ en una prueba de proporciones es la siguiente:
 
 $$Z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0 \cdot q_0}{n}}}$$
 
-- Calculamos el denominador (El Error Estándar de la proporción): Nos dice cuánto suele variar por puro azar el porcentaje de satisfacción al encuestar grupos de 100 personas bajo el esquema viejo.
-$$\text{Error Estándar} = \sqrt{\frac{0.70 \cdot 0.30}{100}} = \sqrt{\frac{0.21}{100}} = \sqrt{0.0021} \approx 0.0458$$
+- Calculamos el denominador (El Error Estándar de la proporción): Nos dice cuánto suele variar por puro azar el porcentaje de satisfacción al encuestar grupos de 100 personas bajo el esquema viejo. $$\text{Error Estándar} = \sqrt{\frac{0.70 \cdot 0.30}{100}} = \sqrt{\frac{0.21}{100}} = \sqrt{0.0021} \approx 0.0458$$
 - Calculamos el valor de $Z$ completo: Restamos nuestra muestra menos el dato histórico y lo dividimos entre el error estándar:$$Z = \frac{0.80 - 0.70}{0.0458} = \frac{0.10}{0.0458} \approx 2.18$$
 - El estadístico $Z$ calculado es $2.18$.
 
@@ -2016,16 +1960,6 @@ Para tomar la decisión final, acudimos a la tabla de la Distribución Normal Es
 
 El $1.645$ es la frontera invisible. Cualquier resultado que de una $Z$ más grande que eso entra en la "Zona de Rechazo".
 
-ZONA DE ACEPTACIÓN         │       ZONA DE RECHAZO
-          (La app sigue igual que antes)  │     (La app es un éxito)
-──────────────────────────────────────────┼───────────────────────────────
-                                        1.645
-                                   (Valor Crítico)
-                                                  ▲
-                                                  │
-                                                 2.18
-                                          (Tu resultado "Z")
-                                          
 ```{r}
 # Ejecutar una prueba real de proporción con los datos del ejemplo
 # n = 100 usuarios, éxitos = 80, hipótesis nula p_0 = 0.70
@@ -2055,14 +1989,15 @@ La regla para una función constante establece que si $f(x) = c$, donde $c$ es u
 - **Fórmula:** $$\frac{d}{dx}(c) = 0$$
 - **Interpretación geométrica:** La gráfica de una función constante es una recta horizontal, la cual tiene una pendiente de cero en todos sus puntos.
 
-### 2. Regla del producto
+### Regla del producto
 
 La derivada del producto de dos funciones derivables no es simplemente el producto de sus derivadas. La regla correcta indica que la derivada de un producto es igual a la primera función por la derivada de la segunda, más la segunda función por la derivada de la primera.
 
 - **Fórmula:** $$\frac{d}{dx}[f(x) \cdot g(x)] = f(x) \cdot g'(x) + g(x) \cdot f'(x)$$
-- **Ejemplo:** Para derivar $f(x) = x \cdot e^x$, se aplica la regla obteniendo $x(e^x) + e^x(1)$, lo que se simplifica a $e^x(x + 1)$.
+- **Ejemplo:** Para derivar $f(x) = x \cdot e^x$, se aplica la regla obteniendo 
+$$x(e^x) + e^x(1)$$, lo que se simplifica a $e^x(x + 1)$.
 
-### 3. Derivada de funciones exponenciales
+### Derivada de funciones exponenciales
 
 El cálculo varía dependiendo de si la base es el número natural $e$ o una constante $a$ cualquiera:
 
@@ -2072,8 +2007,8 @@ El cálculo varía dependiendo de si la base es el número natural $e$ o una con
 - **Función exponencial general (**$a^x$): Cuando la base $a$ es una constante positiva diferente de 1, la derivada incluye el logaritmo natural de la base.
   - **Fórmula básica:** $$\frac{d}{dx}(a^x) = a^x \ln(a)$$
   - **Ejemplo:** La derivada de $2^x$ es $2^x \ln(2)$.
-  - $$a^x = e^{x \ln(a)}$$
-  - **Con regla de la cadena:** $$\frac{d}{dx}\left[a^{g(x)}\right] = a^{g(x)} \ln(a) \cdot g'(x)$$
+    $$a^x = e^{x \ln(a)}$$
+    **Con regla de la cadena:** $$\frac{d}{dx}\left[a^{g(x)}\right] = a^{g(x)} \ln(a) \cdot g'(x)$$
 
 ------------------------------------------------------------------------
 
@@ -2090,7 +2025,9 @@ El cálculo varía dependiendo de si la base es el número natural $e$ o una con
 
 $$\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)$$ Ejemplo:
 
-Imagina que quieres derivar la función: $$y = \ln(x^2 + 5)$$ Aquí tenemos dos capas: - Función externa $f(u)$: $\ln(u)$ → (Su derivada es $\frac{1}{u}$) - Función interna $g(x)$: $x^2 + 5$ → (Su derivada es $2x$)
+Imagina que quieres derivar la función: $$y = \ln(x^2 + 5)$$ Aquí tenemos dos capas: 
+- Función externa $f(u)$: $\ln(u)$ → (Su derivada es $\frac{1}{u}$) 
+- Función interna $g(x)$: $x^2 + 5$ → (Su derivada es $2x$)
 
 Aplicamos la regla de la cadena: - Derivamos la parte externa manteniendo intacto el centro:$$\frac{1}{x^2 + 5}$$ - Multiplicamos por la derivada del centro:$$\frac{1}{x^2 + 5} \cdot (2x)$$ - Resultado final:$$\frac{d}{dx}[\ln(x^2 + 5)] = \frac{2x}{x^2 + 5}$$
 

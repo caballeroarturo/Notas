@@ -53,6 +53,7 @@ book:
         - contenido/11_Totalidad_CS.qmd
         - contenido/12_Dialectica_C.qmd
         - contenido/13_1_Coyuntura.qmd
+        - contenido/21_Def_espacial.qmd
         - contenido/22_stats.qmd
     - 99_Tiempo.qmd
     - references.qmd
