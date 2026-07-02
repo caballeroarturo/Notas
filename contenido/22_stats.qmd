@@ -227,7 +227,6 @@ g_curtosis <- ggplot(df_curtosis, aes(x = x, y = y, fill = Tipo)) +
 g_sesgo / plot_spacer() / g_curtosis + plot_layout(heights = c(1, 0.1, 1))
 ```
 
-
 ### Interpretación de histogramas y diagramas de caja
 
 Estas herramientas proporcionan una visión visual rápida de las características elementales de una distribución.
@@ -402,13 +401,16 @@ Reflejan de forma simple cinco estadísticas clave: el **mínimo, primer cuartil
 
 - **Valores atípicos (Outliers):** Se representan como puntos aislados fuera de los bigotes. Un criterio común es considerar atípico cualquier valor que esté a más de **1.5 veces el rango intercuartil** de los extremos de la caja. Estos valores pueden ser errores de registro o indicar fenómenos inusuales de gran interés científico.
 
-- Los bigotes representan el rango de los datos que se consideran "normales" o esperados, extendiéndose hacia los valores máximos y mínimos antes de toparse con los valores atípicos (outliers).
-Técnicamente, no se dibujan simplemente hasta los extremos absolutos de tus datos. Tienen una regla matemática muy clara basada en el Rango Intercuartílico ($RIC = Q_3 - Q_1$):
+- Los bigotes representan el rango de los datos que se consideran "normales" o esperados, extendiéndose hacia los valores máximos y mínimos antes de toparse con los valores atípicos (outliers). Técnicamente, no se dibujan simplemente hasta los extremos absolutos de tus datos. Tienen una regla matemática muy clara basada en el Rango Intercuartílico ($RIC = Q_3 - Q_1$):
+
 - El bigote superior: Se extiende desde el tercer cuartil ($Q_3$) hasta el valor máximo real de tus datos, pero con un límite: no puede superar el valor de $Q_3 + 1.5 \times RIC$.
-- El bigote inferior: Se extiende desde el primer cuartil ($Q_1$) hasta el valor mínimo real de tus datos, con el límite inverso: no puede bajar más allá de $Q_1 - 1.5 \times RIC$.
-¿Cómo interpretarlo visualmente en tus análisis?
+
+- El bigote inferior: Se extiende desde el primer cuartil ($Q_1$) hasta el valor mínimo real de tus datos, con el límite inverso: no puede bajar más allá de $Q_1 - 1.5 \times RIC$. ¿Cómo interpretarlo visualmente en tus análisis?
+
 - Si un dato está dentro de los bigotes: Se considera parte de la variabilidad común y corriente de tu muestra.
+
 - Si un dato se sale de los bigotes: Verás que R los dibuja como puntos o asteriscos aislados. Esos son los valores atípicos (outliers), es decir, datos extremadamente raros, errores de dedo o anomalías que merecen ser estudiadas aparte.
+
 - La longitud de los bigotes: Te dice qué tan dispersos están tus datos en los extremos. Si el bigote superior es mucho más largo que el inferior, es una señal visual directa de que tus datos tienen un sesgo positivo (a la derecha).
 
 ```{r}
@@ -458,8 +460,6 @@ text(x = 0.58, y = (estadisticos$stats[2] + estadisticos$stats[4])/2, "RIC\n(Caj
 
 
 ```
-
-
 
 ### Distribuciones simétricas y sesgadas, valores extremos, relación entre medidas de tendencia central en distribuciones simétricas y sesgadas.
 
@@ -606,7 +606,7 @@ text(x = 0, y = -0.17, expression(bold("Conclusión sobre Valores Extremos:") * 
 text(x = 0, y = -0.27, " para desestabilizarla. En cambio, la Mediana es una medida robusta que describe mejor el centro en poblaciones sesgadas.", adj = 0, cex = 0.85, col = "darkred")
 ```
 
-### Descripción bivariada 
+### Descripción bivariada
 
 La **descripción bivariada** (o estadística bidimensional) se encarga de estudiar simultáneamente dos variables sobre una misma población para identificar si existe una relación o asociación entre ellas. Mientras que la estadística univariada analiza las características de una sola variable, la bivariada busca comprender cómo el comportamiento de una magnitud influye o se desplaza junto a otra.
 
@@ -657,7 +657,6 @@ Para solucionar el problema de la escala de la covarianza, se utiliza el **coefi
   - r=−1**:** Correlación lineal negativa perfecta (puntos sobre una recta decreciente).
 
   - r=0**:** No existe relación lineal entre las variables.
-
 
 ```{r}
 #| message: false
@@ -740,18 +739,15 @@ g4 <- ggplot(df4, aes(x = x, y = y)) +
                   theme = theme(plot.title = element_text(face = "bold", size = 16)))
 ```
 
-
 - **Coeficiente de determinación (**$r^2$): Es el cuadrado del coeficiente de correlación y representa la proporción de la variabilidad de una variable que es explicada por la otra a través de la relación lineal. Por ejemplo, un r=0.6 implica que el 36% (0.62) de la variación total es explicada por el modelo.
 
 | Característica | Coeficiente de Pearson ($r$) | Coeficiente de Determinación ($R^2$) |
-| :--- | :--- | :--- |
+|:-----------------------|:-----------------------|:-----------------------|
 | **¿Qué mide?** | Dirección y fuerza de la relación lineal entre dos variables. | El éxito predictivo / proporción de variabilidad explicada por el modelo. |
 | **Escala / Rango** | De $-1$ a $+1$ | De $0$ a $1$ (o de $0\%$ a $100\%$) |
-| **¿Importa el signo?**| **Sí.** Indica si la relación es directa ($+$) o inversa ($-$). | **No.** Al ser un término cuadrático, siempre es positivo (no indica dirección). |
+| **¿Importa el signo?** | **Sí.** Indica si la relación es directa ($+$) o inversa ($-$). | **No.** Al ser un término cuadrático, siempre es positivo (no indica dirección). |
 | **Uso principal** | Exploración inicial de datos (saber si existe asociación). | Evaluación de Modelos de Regresión (saber qué tan buena es la ecuación). |
-| **Conexión Matemática**| Es la raíz cuadrada con signo de $R^2$ en modelos lineales simples: <br>$$r = \pm\sqrt{R^2}$$ | En una regresión lineal simple, es literalmente el cuadrado de Pearson:<br>$$R^2 = (r)^2$$ |
-
-
+| **Conexión Matemática** | Es la raíz cuadrada con signo de $R^2$ en modelos lineales simples: <br>$$r = \pm\sqrt{R^2}$$ | En una regresión lineal simple, es literalmente el cuadrado de Pearson:<br>$$R^2 = (r)^2$$ |
 
 En conclusión, mientras el **diagrama de dispersión** ofrece una visión intuitiva y la **covarianza** el sentido de la relación, el **coeficiente de correlación** proporciona una medida exacta y comparable de la fuerza y dirección del vínculo lineal entre dos variables.
 
@@ -892,11 +888,39 @@ De estos axiomas se derivan propiedades fundamentales:
 
 - **Teorema de la Probabilidad Total:** Permite calcular la probabilidad de un suceso a partir de una partición del espacio muestral.
 
+Dado un espacio muestral dividido en varios eventos $A_1, A_2, \dots, A_n$ que son mutuamente excluyentes (no pueden ocurrir al mismo tiempo) y exhaustivos (cubren todas las posibilidades), la probabilidad de que ocurra un evento cualquiera $B$ se calcula como:
+$$P(B) = \sum_{i=1}^{n} P(B|A_i)P(A_i)$$
+
 - **Teorema de Bayes:** Es fundamental para actualizar la probabilidad de una causa (hipótesis) dado que se ha observado un efecto $(dato)$.
 
-3.3 Conteo de eventos (Combinatoria)
+Dados dos eventos, $A$ y $B$, donde la probabilidad de que ocurra $B$ es mayor a cero ($P(B) > 0$):
 
-Para aplicar la definición clásica de probabilidad, es esencial saber contar casos. El **Principio General de Recuento** establece que si un experimento tiene n formas y otro tiene m, ambos juntos tienen n×m formas. Las técnicas principales incluyen:
+$$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
+Si el espacio muestral está dividido en un conjunto de eventos mutuamente excluyentes y exhaustivos $A_1, A_2, \dots, A_k$ (es decir, las distintas causas posibles para que ocurra $B$), la fórmula para una causa específica $A_i$ se escribe así:
+$$P(A_i|B) = \frac{P(B|A_i)P(A_i)}{\sum_{j=1}^{k} P(B|A_j)P(A_j)}$$
+
+En palabras simples, el **Teorema de Bayes** es una máquina matemática para **actualizar tus creencias cuando aparece nueva evidencia**. 
+
+Imagínalo así: tienes una sospecha inicial de que algo es cierto (por ejemplo, *"creo que tengo un resfriado"*). De repente, aparece un síntoma o evidencia (*"me dio tos"*). El Teorema de Bayes te ayuda a calcular la probabilidad matemática real de tener ese resfriado **tomando en cuenta** que ahora tienes tos.
+
+El Teorema de la Probabilidad Total va hacia adelante: une las causas para encontrar la probabilidad del resultado final. El Teorema de Bayes va hacia atrás: sabe el resultado final y quiere averiguar la causa original
+
+---
+
+### La Fórmula Matemática
+
+$$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$$
+
+Donde cada parte tiene un nombre técnico y un significado muy intuitivo:
+* **$P(A|B)$ (Probabilidad Posterior):** La probabilidad de que ocurra $A$ (Resfriado) **dado que** ya observamos $B$ (Tos). Esto es lo que queremos descubrir.
+* **$P(A)$ (Probabilidad Prior / A Priori):** Tu creencia inicial antes de ver la evidencia. ¿Qué tan común es tener un resfriado en la población?
+* **$P(B|A)$ (Verosimilitud / Likelihood):** Si asumimos que efectivamente tienes un resfriado ($A$), ¿qué tan probable es que cause tos ($B$)?
+* **$P(B)$ (Probabilidad Marginal):** La probabilidad total de tener tos en el mundo, por cualquier causa (alergias, fumar, frío, etc.). Funciona como un factor de normalización.
+
+
+## Conteo de eventos (Combinatoria)
+
+Para aplicar la definición clásica de probabilidad, es esencial saber contar casos. El **Principio General de Recuento** establece que si un experimento tiene n formas y otro tiene m, juntos tienen $n×m$ formas. Las técnicas principales incluyen:
 
 - **Variaciones:** Importa el orden. Pueden ser **ordinarias** (sin repetición) o **con repetición** ($nk$).
 
