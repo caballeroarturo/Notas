@@ -37,7 +37,7 @@ Para Castillo Farjat, el espacio es la **expresión geográfica de la lucha de c
 La cartografía se define como el arte, la ciencia y la técnica de confeccionar y estudiar los mapas en todos sus aspectos. Un mapa es una representación gráfica de un aspecto del mundo real, tradicionalmente visto como una "ventana transparente", aunque también puede entenderse como una construcción social cargada de intenciones. Existen conceptos clave para evaluar la calidad de la información cartográfica:
 
 - Exactitud: El grado de cercanía entre la posición de un objeto en el mapa y su ubicación real en la superficie terrestre.
-- Precisión: Se refiere a la consistencia de las medidas y al nivel de detalle o número de dígitos significativos con los que se registran los datos. 
+- Precisión: Se refiere a la consistencia de las medidas y al nivel de detalle o número de dígitos significativos con los que se registran los datos.
 - Resolución espacial: Es la unidad de medida más pequeña adoptada para registrar datos (el "granulado"), que determina el nivel de detalle y nitidez de la representación.
 - Entidades y Geometría: Los rasgos geográficos se representan mediante puntos (coordenadas X, Y), líneas (sucesión de puntos) y áreas (superficies cerradas), cada una asociada a atributos descriptivos en una base de datos.
 
@@ -88,7 +88,7 @@ Una proyección es el proceso sistemático de transformar la superficie curva de
 
 ### Pensamiento espacial
 
-Se refiere al desarrollo de una inteligencia espacial y a la capacidad de conceptualizar la realidad a través de componentes espaciales
+Se refiere al desarrollo de una inteligencia espacial y a la capacidad de conceptualizar la realidad a través de componentes espaciales. Es el conocimiento que un individuo utiliza para resolver problemas espaciales o de imágenes espaciales. De acuerdo a Piaget, el espacio práctico y socio-motor genera intuiciones espaciales básicas, permitiendo que los niños representen mejor los espacios que ya conocen.
 
 - Conceptos base: Incluyen la localización, distribución espacial, asociación, interacción y evolución.
 - Mapas mentales: Son representaciones internas que codificamos en el cerebro basadas en nuestras actividades cotidianas y movilidad; son únicos para cada individuo y reflejan sus procesos de abstracción.
@@ -101,3 +101,11 @@ Interpretar el territorio a través de la cartografía va más allá de observar
 - Análisis socioespacial: Utiliza los mapas para analizar la eficiencia, equidad y diferencias socioespaciales con el fin de mejorar la calidad de vida.
 - Búsqueda de "silencios": La interpretación crítica requiere identificar qué elementos han sido omitidos o censurados (por razones militares, políticas o comerciales), ya que lo que no se muestra es tan significativo como lo que sí.
 - Dimensión simbólica: Los mapas actúan como metáforas de valores culturales, religiosos o nacionales, donde la precisión técnica a menudo se convierte en un símbolo de autoridad y legitimidad.
+
+## Metadatos
+
+En el análisis espacial, los metadatos se definen fundamentalmente como "datos sobre los datos"; es decir, información estructurada que describe el contenido, la calidad, la condición y otras características de un conjunto de datos para facilitar su búsqueda, recuperación y gestión.
+
+- Dublin Core: Es un estándar de metadatos interoperable diseñado específicamente para la descripción y recuperación de recursos en red (Internet)
+- CSDGM (Content Standard for Digital Geospatial Metadata): Desarrollado por el FGDC de Estados Unidos, proporciona una terminología y definiciones comunes para documentar datos geoespaciales digitales, cubriendo aspectos como calidad, organización espacial y referencia técnica
+- ISO 19115: Es la norma internacional que establece el marco para describir la información geográfica y sus servicios, detallando la identificación, extensión, calidad y los derechos de uso de los datos digitales

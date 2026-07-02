@@ -1823,8 +1823,6 @@ Significa que tu promedio de $195\text{ ml}$ está a casi 3 desviaciones estánd
 - El valor crítico en la tabla es $-1.691$ (negativo porque estamos evaluando si sirve de menos).
 - La regla de decisión: Las tablas dividen el mundo en dos zonas: la Zona de Aceptación (lo normal por azar) y la Zona de Rechazo (lo estadísticamente imposible de creer).
 
-ZONA DE RECHAZO │ ZONA DE ACEPTACIÓN (La máquina está rota) │ (La máquina funciona bien) ────────────────────────────────────────┼─────────────────────────────── -1.691 0 (Valor Crítico) ▲ │ -2.95 (Tu resultado "t")
-
 - Si $t$ cae antes del valor crítico (hacia el 0): La diferencia es pequeña, se la perdonamos al azar. No se rechaza $H_0$.
 - Si tu $t$ cae más allá del valor crítico (más a la izquierda): El resultado es demasiado extremo. Se rechaza $H_0$. Como $t = -2.95$ es mucho menor (más extremo) que el $-1.691$ de la tabla, cayó profundamente en la Zona de Rechazo.
 
@@ -1893,7 +1891,6 @@ Calculamos la $t$: $$t = \frac{5 - 0}{1.265} = 3.95$$ Este $3.95$ positivo signi
 
 Para saber si ese $3.95$ es suficiente para cantar victoria, vamos a la tabla t de Student: - Grados de libertad: $gl = n - 1 = 10 - 1 = 9$. - Nivel de exigencia ($\alpha$): $5\%$ ($0.05$). - Buscamos en la tabla en la fila de 9 grados de libertad y columna de una cola para $0.05$. La tabla nos devuelve el Valor Crítico = $1.833$. - La Regla del Juego: Como tu resultado calculado ($t = 3.95$) es mayor que el valor de la tabla ($1.833$), tu resultado cayó en la Zona de Rechazo.
 
-│ ZONA DE RECHAZO ZONA DE ACEPTACIÓN │ (El curso es un éxito) (La mejora es una casualidad) │ ─────────────────────────────────────────┼─────────────────────────────── 0 1.833 (Valor Crítico) ▲ │ 3.95 (Tu resultado "t")
 
 ```{r}
 #| fig-width: 6
