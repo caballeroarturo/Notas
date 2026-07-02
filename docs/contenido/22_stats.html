@@ -1499,6 +1499,27 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
+<p>la Exponencial es la versión continua de la Geométrica: Ambas miden exactamente lo mismo:</p>
+<ul>
+<li>“Tiempo de espera”
+<ul>
+<li>Geométrica (Discreta): Cuenta el número de intentos o ensayos discretos que tienes que acumular antes de ver el primer éxito (ej. cuántas veces tienes que lanzar una moneda hasta que salga cara).</li>
+<li>Exponencial (Continua): Mide la cantidad de tiempo continuo (o espacio) que tienes que esperar antes de que ocurra el primer evento (ej. cuántos minutos tienes que esperar hasta que llegue el próximo autobús).</li>
+</ul>
+</li>
+<li>Ambas comparten la propiedad de “Falta de Memoria” (Memorylessness). Esta es la propiedad estadística más rara y fascinante que comparten, y solo ellas dos la tienen en sus respectivos mundos:
+<ul>
+<li>En la Geométrica: Si has lanzado una moneda 10 veces y no ha salido cara, la probabilidad de obtener cara en el lanzamiento número 11 sigue siendo exactamente la misma. A la moneda “no le importa” el pasado.</li>
+<li>En la Exponencial: Si estás esperando el autobús y ya pasaron 15 minutos sin que llegue, la probabilidad de que llegue en los próximos 5 minutos es exactamente la misma que si acabaras de llegar a la parada. El tiempo transcurrido no altera la probabilidad del futuro.</li>
+</ul>
+</li>
+<li>Su conexión matemática exacta
+<ul>
+<li>Si tomas la fórmula de la distribución Geométrica y haces que los intervalos de tiempo entre cada intento se vuelvan infinitesimalmente pequeños (es decir, aplicas un límite cuando el tiempo tiende a ser continuo), la fórmula discreta se transforma matemáticamente en la ecuación de la distribución Exponencial.</li>
+</ul>
+</li>
+</ul>
+<p>Por eso, en el diseño de modelos: Si cuentas tus esperas en pasos enteros (<span class="math inline">\(1, 2, 3 \dots\)</span>), usas la Geométrica. Si mides tu espera con un cronómetro (<span class="math inline">\(1.45\text{ s}, 2.3\text{ min} \dots\)</span>), usas la Exponencial.</p>
 <section id="distribución-binomial" class="level4"><h4 class="anchored" data-anchor-id="distribución-binomial">Distribución binomial</h4>
 <p>La <strong>distribución binomial</strong> es uno de los modelos de probabilidad teóricos más importantes para variables aleatorias discretas, y se utiliza para describir situaciones donde un experimento solo puede tener <strong>dos resultados posibles</strong> complementarios.</p>
 <p>A continuación se desglosan sus componentes, propiedades y aplicaciones fundamentales:</p>
