@@ -1818,10 +1818,33 @@ $$EE = \frac{10}{\sqrt{35}} = \frac{10}{5.916} = 1.69\text{ ml}$$
 - Esto significa que, por pura fluctuación normal de la máquina, un grupo de 35 tazas suele variar de arriba a abajo unos $1.69\text{ ml}$ respecto al promedio real.
 - Calculamos la $t$ completa:$$t = \frac{195 - 200}{1.69} = \frac{-5}{1.69} = -2.95$$
 - ¿Qué significa que $t = -2.95$?
+
 Significa que tu promedio de $195\text{ ml}$ está a casi 3 desviaciones estándar por debajo de lo que el fabricante prometió.
 - Si la máquina estuviera bien calibrada ($H_0$ verdadera), por azar las muestras de 35 tazas deberían dar promedios muy cercanos a $200\text{ ml}$ (quizás $199\text{ ml}$, o $201\text{ ml}$). 
 Que te haya dado $195\text{ ml}$ ($t = -2.95$) en el mundo de la probabilidad es el equivalente a que lances una moneda 10 veces y las 10 veces salga cara: es teóricamente posible por azar, pero es tan ridículamente improbable que prefieres no creer en esa coincidencia.
 > - Al calcular el estadístico de prueba $t$, si el resultado es un número muy negativo (por ejemplo, $-2.95$), significa que obtener un promedio de $195\text{ ml}$ de forma pura y natural por azar es extremadamente improbable. Por lo tanto, **rechazas** $H_0$ y concluyes que la máquina está descalibrada.
+
+- Para buscar en la tabla $t$, se necesitan calcular los grados de libertad, que para este caso es simplemente el tamaño de la muestra menos uno:
+$$gl = n - 1 = 35 - 1 = 34$$. 
+- Buscar en la tabla (El "Punto de Corte")
+Antes del experimento, tú decides un nivel de exigencia llamado nivel de significancia ($\alpha$), que casi siempre se fija en el $5\%$ ($0.05$). Esto significa: "Solo creeré que la máquina está rota si la probabilidad de que sea un error por azar sea menor al 5%".
+- Vas a la tabla t de Student, buscas la fila de $34$ grados de libertad bajo la columna de una sola cola de $0.05$, y la tabla te dará un número llamado Valor Crítico:
+- El valor crítico en la tabla es $-1.691$ (negativo porque estamos evaluando si sirve de menos).
+- La regla de decisión: Las tablas dividen el mundo en dos zonas: la Zona de Aceptación (lo normal por azar) y la Zona de Rechazo (lo estadísticamente imposible de creer).
+
+ZONA DE RECHAZO          │        ZONA DE ACEPTACIÓN
+         (La máquina está rota)         │    (La máquina funciona bien)
+────────────────────────────────────────┼───────────────────────────────
+                                     -1.691                            0
+                                 (Valor Crítico)
+                 ▲
+                 │
+              -2.95 
+       (Tu resultado "t")
+
+- Si $t$ cae antes del valor crítico (hacia el 0): La diferencia es pequeña, se la perdonamos al azar. No se rechaza $H_0$.
+- Si tu $t$ cae más allá del valor crítico (más a la izquierda): El resultado es demasiado extremo. Se rechaza $H_0$. Como $t = -2.95$ es mucho menor (más extremo) que el $-1.691$ de la tabla, cayó profundamente en la Zona de Rechazo.
+
 
 ```{r}
 #| fig-width: 6
