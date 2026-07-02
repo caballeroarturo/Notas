@@ -1,31 +1,1544 @@
-Análisis geoespacial
+# Resumen general
 
-El espacio no es un área vacía donde suceden cosas, sino que es producido a partir de las relaciones sociales de producción, las cuales se reconfiguran y reconstituyen permanentemente de forma dialéctica [@lefebvre2013].
+La **estadística** es la ciencia que se encarga de **recolectar, organizar, resumir y analizar datos** para, posteriormente, obtener conclusiones y realizar juicios científicos basados en ellos. Su propósito fundamental es ayudar en la toma de decisiones frente a la **incertidumbre y la variación** inherentes a los fenómenos naturales, industriales y científicos.
 
-Podemos pensar en el espacio como producto de las relaciones sociales, pero también como productor de esas relaciones sociales que lo originan. Desde este punto de vista, las relaciones sociales no simplemente se producen en el espacio, sino que producen espacio [@castillofarjat2026].
+Las dos principales ramas de la estadística
 
-1.  El Espacio como "Socionaturaleza"
+De acuerdo con las fuentes, la estadística se divide en dos grandes áreas:
 
-    La sociedad y la naturaleza no pueden analizarse de forma separada ya que son dialécticamente coproducidas [@bear2017]. El análisis socioespacial debe abordar cómo el capitalismo actúa como una **manera de organizar la naturaleza**, convirtiendo elementos vitales (como el agua) en mercancías mediante infraestructura y discursos de poder.
+1.  **Estadística Descriptiva:** Consiste en una colección de métodos para la **organización, resumen y presentación de datos**. Su función es proporcionar un sentido de la ubicación del centro de los datos, su variabilidad y la naturaleza general de su distribución a través de números (como la media o la desviación estándar) y herramientas gráficas (como histogramas o diagramas de caja).
 
-2.  Noción de "Rugosidades"
+2.  **Estadística Inferencial:** Comprende el conjunto de técnicas que permiten obtener conclusiones o **generalizaciones acerca de una población** con un determinado grado de confianza, basándose únicamente en la información de una **muestra**. Mientras que la descriptiva solo reporta lo que hay en los datos, la inferencial va más allá para sacar conclusiones sobre el sistema científico completo.
 
-    Basándose en Milton Santos, Castillo propone que el espacio es **historia acumulada**. El análisis socioespacial debe identificar las **"rugosidades"**, que son lo que permanece del pasado como forma, espacio construido, paisaje, lo que resta del proceso de supresión, acumulación, superposición, a través del cual las cosas se sustituyen y acumulan en todos los lugares” [@santos2005a]. Estas rugosidades alimentan una **memoria geográfica** que las comunidades utilizan como defensa política frente a nuevas amenazas de despojo [@castillofarjat2023].
+Terminología y conceptos básicos
 
-3.  Memoria geográfica
+Para comprender el estudio de la estadística, es esencial manejar los siguientes términos definidos en los textos:
 
-    Producción social de carácter político que las poblaciones esgrimen ante una propuesta o proyecto que amenaza reproducir un proceso previo de despojo por parte del gobierno o de alguna dependencia, proceso que ha dejado un sentimiento de valoración negativa en la comunidad [@peñagarcía2019, p. 38]. Ello sugiere la existencia de una suerte de memoria de los agravios que deriva en distintas prácticas espaciales de resistencia o contrahegemónicas [@castillofarjat2023a].
+- **Población:** Es la totalidad de los individuos, elementos u observaciones que son de interés en un estudio específico. Puede ser **finita** (como el número de estudiantes en una escuela) o **infinita** (como todas las posibles mediciones de la profundidad de un lago).
 
-4.  La Colonialidad del Salario y el Trabajo
+- **Muestra:** Es un subconjunto de una población. Para que las inferencias sean válidas, debe ser una **muestra aleatoria**, lo que significa que sus elementos se eligen de forma independiente y al azar para evitar sesgos.
 
-    Un aporte distintivo en su visión es el análisis de la **división racial y de género del trabajo** inscrita en el espacio. Acuña el concepto de **"colonialidad del salario"** para explicar cómo el sistema capitalista excluye a la población racializada y feminizada de las relaciones salariales formales, apropiándose de su trabajo no remunerado para sostener la acumulación de capital en los centros de poder.
+- **Variable:** Es una característica de interés de un elemento de la población. Se clasifican en:
 
-5\. Territorios Autónomos y Autogestión
+  - **Cualitativas:** Registran una cualidad o atributo (ej. sexo, estado civil).
 
-Para Castillo Farjat, el espacio es la **expresión geográfica de la lucha de clases**. Por ello, su análisis se enfoca en los **espacios de resistencia** y los **territorios autónomos**, definidos por la capacidad de las comunidades para:
+  - **Cuantitativas:** Son mediciones numéricas. Pueden ser **discretas** (cuando resultan de un conteo y tienen valores finitos o numerables) o **continuas** (cuando pueden tomar cualquier valor en un intervalo, como el peso o la altura).
 
-• **Autogestionarse y autogobernarse** sin jerarquías institucionalizadas.
+- **Parámetro:** Es una característica constante de la población, como la **media poblacional (**$μ$) o la varianza poblacional ($σ2$).
 
-• Poner la **reproducción de la vida** y el bien común por encima de la acumulación de capital.
+- **Estadístico:** Es cualquier función de las variables aleatorias que forman una muestra. Los valores calculados de estos, como la **media muestral (**$\hat{x}$) o la varianza muestral (**s2**), se utilizan para estimar los parámetros desconocidos de la población.
 
-• Generar una **espacialidad contrahegemónica** mediante el trabajo colectivo (como el tequio) y la búsqueda de autosuficiencia.
+- **Observación:** Se refiere a cualquier registro de información, ya sea numérico o categórico.
+
+- **Experimento:** Los estadísticos usan esta palabra para describir cualquier proceso que genere un conjunto de datos, incluso si se trata de observar datos históricos o realizar estudios de campo.
+
+Medidas fundamentales de análisis
+
+El análisis estadístico descriptivo utiliza principalmente dos tipos de medidas:
+
+- **Medidas de Localización (o Tendencia Central):** Indican el centro de los datos. Las más comunes son la **media** (promedio aritmético), la **mediana** (valor central que divide los datos en dos partes iguales) y la **moda** (el valor que más se repite).
+
+- **Medidas de Variabilidad (o Dispersión):** Reflejan qué tan esparcidos están los datos. Incluyen el **rango** (diferencia entre el valor máximo y el mínimo), la **varianza** (promedio de los cuadrados de las desviaciones respecto a la media) y la **desviación estándar** (la raíz cuadrada de la varianza).
+
+A continuación, se presentan las definiciones de estos conceptos fundamentales de la estadística y la cartografía, fundamentadas en las fuentes proporcionadas:
+
+Conceptos Estadísticos
+
+- **Población:** Se define como la **totalidad de los individuos**, elementos u observaciones de un tipo específico que son de interés en un estudio determinado. Las poblaciones pueden ser **finitas** (un número limitado de elementos) e **infinitas** (cuando el número de observaciones no tiene límite predecible, como mediciones sucesivas de un fenómeno natural).
+
+- **Muestra:** Es un **subconjunto representativo** de una población. Dado que suele ser imposible o poco práctico medir a cada integrante de una población completa, se trabaja con una muestra para inferir las características del grupo mayor. Una muestra se considera **aleatoria** si sus elementos se eligen de forma independiente y al azar para evitar sesgos.
+
+- **Parámetro:** Es una característica numérica constante que describe a una **población completa**. Se consideran "valores verdaderos" que generalmente permanecen desconocidos y deben ser estimados. Los parámetros suelen representarse con letras griegas, como μ (media poblacional) y σ2 (varianza poblacional).
+
+- **Estadístico muestral:** Es cualquier función calculada a partir de las variables que forman una **muestra**. A diferencia de los parámetros, los estadísticos son variables aleatorias porque su valor cambia de una muestra a otra. Se utilizan como **estimadores** para obtener conclusiones sobre los parámetros de la población. Comúnmente se representan con letras romanas, como xˉ (media muestral) y s2 (varianza muestral).
+
+Conceptos de Calidad de Datos
+
+- **Exactitud:** Se refiere al grado de **cercanía o coincidencia** entre un valor medido (u observado) y su valor real o verdadero. En el ámbito geoespacial, la exactitud mide qué tan próxima está la localización registrada de un rasgo respecto a su ubicación real sobre la superficie de la Tierra.
+
+- **Precisión:** Describe la **consistencia o dispersión** de medidas repetidas de un mismo valor; es decir, qué tan parecidos son los resultados entre sí cuando se repite un proceso. También se refiere al **nivel de detalle** o la unidad más pequeña con la que se registran los datos (por ejemplo, el número de dígitos decimales).
+
+**Diferencia clave:** Es posible tener una **alta precisión pero baja exactitud**; esto ocurre cuando las mediciones son muy consistentes entre sí (están agrupadas), pero están alejadas sistemáticamente del valor real.
+
+## Estadística descriptiva
+
+La **estadística descriptiva** es la rama de la estadística que se encarga de la recopilación, organización, resumen y presentación de datos, permitiendo describir las características fundamentales de una población o muestra mediante números y herramientas gráficas sin realizar generalizaciones más allá de los datos mismos. Su objetivo principal es ofrecer un sentido de la ubicación del **centro de los datos**, su **variabilidad** y la naturaleza de su distribución.
+
+2.1 Medidas de tendencia central
+
+Estas medidas están diseñadas para proporcionar valores cuantitativos que identifiquen el punto central o la ubicación típica de un conjunto de datos.
+
+- **Media aritmética (**$\hat{x}$): Es el promedio numérico que se obtiene sumando todos los valores de la muestra y dividiendo el resultado entre el número total de observaciones (n). En términos físicos, actúa como el **centroide** o punto de equilibrio del sistema de datos.
+
+  - **Propiedad clave:** Es muy sensible a valores extremos (atípicos), los cuales pueden desplazarla significativamente del centro real del conjunto.
+
+  - **Cálculo:** $$\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}$$
+
+- **Mediana (**$\hat{x}$ **o** $Q_{x}$**):** Es el valor que ocupa la posición central cuando los datos están ordenados de forma ascendente, dividiendo la distribución en dos partes iguales (corresponde al **percentil 50**).
+
+  - **Propiedad clave:** A diferencia de la media, no se ve influida por valores extremos, por lo que a menudo refleja mejor el "centro" en distribuciones asimétricas.
+
+  - **Cálculo:** Si el número de datos es impar, es el dato central; si es par, es el promedio de los dos datos centrales.
+
+- **Moda:** Se define como el valor que ocurre con **mayor frecuencia** absoluta en la distribución.
+
+  - **Tipos:** Una distribución puede ser unimodal (una moda), bimodal (dos modas) o multimodal (más de dos).
+
+  - **Propiedad clave:** Es el único parámetro de tendencia central que tiene sentido para variables cualitativas o nominales.
+
+2.2 Medidas de dispersión
+
+Estas medidas indican qué tan agrupados o esparcidos están los datos alrededor de las medidas de tendencia central, especialmente respecto a la media.
+
+- **Rango:** Es la medida de variabilidad más simple y se calcula como la **diferencia entre el valor máximo y el valor mínimo** del conjunto de datos. Indica la longitud total del intervalo en el que se hallan las observaciones.
+
+- **Varianza (**s2 **o** σ2**):** Es el promedio de los cuadrados de las desviaciones de cada dato respecto a la media aritmética.
+
+  - **Concepto de** n−1**:** En la varianza muestral, se divide entre n−1 (grados de libertad) en lugar de n para obtener un estimador insesgado de la varianza poblacional.
+
+  - **Inconveniente:** Se expresa en unidades al cuadrado respecto a los datos originales, lo que dificulta su interpretación directa.
+
+- **Desviación estándar (**s **o** σ**):** Es la raíz cuadrada positiva de la varianza.
+
+  - **Ventaja:** Al expresarse en las **mismas unidades que los datos originales**, es la medida de dispersión más utilizada en aplicaciones prácticas. Una desviación estándar pequeña indica que los datos están muy cerca de la media; una grande indica mayor dispersión.
+
+En el contexto del **análisis espacial**, estas medidas pueden aplicarse gráficamente para obtener un "centro medio" o promedio espacial basándose en las coordenadas X e Y de una distribución de puntos.
+
+### Las medidas de forma
+
+Las **medidas de forma** y las herramientas gráficas permiten describir la naturaleza de una distribución de datos más allá de su tendencia central y dispersión, ofreciendo una "huella digital" de la muestra.
+
+2.3 Medidas de la forma: Coeficiente de sesgo y curtosis
+
+Estas medidas describen cómo se distribuyen las observaciones en relación con su centro:
+
+- **Sesgo (Skewness / Asimetría):** Indica la falta de simetría de una distribución respecto a un eje vertical.
+
+  - **Distribución Simétrica:** Se puede doblar por el eje vertical (media) y ambos lados coinciden.
+
+  - **Sesgo a la derecha (Positivo):** Presenta una "cola" derecha larga y una izquierda corta; los datos se concentran en valores bajos.
+
+  - **Sesgo a la izquierda (Negativo):** Presenta una "cola" izquierda larga; los datos se concentran en valores altos.
+
+- **Curtosis:** Aunque las fuentes no proporcionan una fórmula específica para el coeficiente, describen la forma de la curva en términos de su concentración. Una distribución normal tiene forma de campana, mientras que una mayor variabilidad (desviación estándar alta) genera una curva más baja y extendida (platicúrtica), y una variabilidad baja genera una curva más estrecha y alta (leptocúrtica).
+
+- **Nota sobre el término "Sesgo":** Es importante distinguir entre el sesgo de una forma de distribución (asimetría) y el **sesgo de un estimador**, que ocurre cuando el valor esperado de un estadístico no coincide con el parámetro poblacional (sobreestima o subestima de forma consistente).
+
+### Interpretación de histogramas y diagramas de caja
+
+Estas herramientas proporcionan una visión visual rápida de las características elementales de una distribución.
+
+#### Interpretación de Histogramas
+
+- **Definición:** Gráfico de barras para variables cuantitativas continuas donde la base es la amplitud del intervalo y la altura es la frecuencia absoluta o relativa.
+
+- **Forma de la distribución:** Permiten identificar visualmente si una población es simétrica o sesgada y si se aproxima a una distribución normal (forma de campana).
+
+- **Tendencia:** Si se aumenta el número de observaciones y se reduce la amplitud de los intervalos, el polígono de frecuencias del histograma tiende a una curva suave llamada **función de densidad**.
+
+```{r}
+#| fig-width: 8
+#| fig-height: 9
+#| echo: false
+#| warning: false
+#| message: false
+
+# 1. Simular datos que sigan una distribución normal
+set.seed(42)
+pesos <- rnorm(150, mean = 70, sd = 5)
+
+# 2. Configurar la pantalla en 2 filas (la de arriba es mucho más alta)
+layout(matrix(c(1, 2), nrow = 2, ncol = 1), heights = c(2.5, 1))
+
+# 3. PARTE SUPERIOR: DIBUJAR EL HISTOGRAMA
+par(mar = c(4.5, 4.5, 2.5, 1)) 
+h <- hist(pesos, 
+          breaks = 10, 
+          col = "skyblue", 
+          border = "white",
+          main = "Anatomía de un Histograma",
+          xlab = "Variable Cuantitativa Continua (Ej: Peso en kg)",
+          ylab = "Frecuencia Absoluta (Conteo)",
+          las = 1)
+
+# Línea de densidad (curva suave)
+lines(density(pesos), col = "darkred", lwd = 2)
+
+# --- ANOTACIONES VISUALES CORREGIDAS ---
+# Barra resaltada y base
+rect(h$breaks[4], 0, h$breaks[5], h$counts[4], col = "steelblue1", border = "white") 
+arrows(x0 = h$breaks[4], y0 = -1, x1 = h$breaks[5], y1 = -1, code = 3, angle = 90, length = 0.05, col = "blue", lwd = 2, xpd = TRUE)
+text(x = mean(h$breaks[4:5]), y = 4, "BASE =\nAmplitud del\nIntervalo", cex = 0.85, col = "blue", font = 2)
+
+# Flecha y texto de la altura
+arrows(x0 = 56, y0 = h$counts[4], x1 = h$breaks[4], y1 = h$counts[4], code = 2, length = 0.1, col = "darkgreen", lwd = 2)
+text(x = 55, y = h$counts[4], "ALTURA = Frecuencia\n(Cuántos datos caen aquí)", adj = 1, cex = 0.85, col = "darkgreen", font = 2)
+
+# Texto de la curva
+text(x = 78, y = 18, "Polígono suavizado\n(Tiende a una\nCurva de Densidad)", col = "darkred", cex = 0.85, font = 2, adj = 0)
+
+
+# 4. PARTE INFERIOR: TEXTO INFORMATIVO (TEORÍA)
+par(mar = c(0, 1, 1, 1)) 
+plot.new() 
+
+text(x = 0, y = 0.95, "INTERPRETACIÓN DE HISTOGRAMAS", adj = 0, font = 2, cex = 1.1, col = "darkblue")
+
+text(x = 0, y = 0.72, expression(bold("Definición:") * " Gráfico de barras para variables cuantitativas continuas donde la"), adj = 0, cex = 0.9)
+text(x = 0, y = 0.60, "base es la amplitud del intervalo y la altura es la frecuencia absoluta o relativa.", adj = 0, cex = 0.9)
+
+text(x = 0, y = 0.40, expression(bold("Forma de la distribución:") * " Permiten identificar visualmente si una población es simétrica"), adj = 0, cex = 0.9)
+text(x = 0, y = 0.28, "o sesgada y si se aproxima a una distribución normal (forma de campana de Gauss).", adj = 0, cex = 0.9)
+
+text(x = 0, y = 0.08, expression(bold("Tendencia:") * " Si se aumenta el número de observaciones y se reduce la amplitud de los"), adj = 0, cex = 0.9)
+text(x = 0, y = -0.04, "intervalos, el polígono de frecuencias tiende a una curva suave llamada función de densidad.", adj = 0, cex = 0.9)
+```
+
+##### ¿Qué es cada cosa en esta gráfica y qué te está diciendo?
+
+1.  **El eje horizontal (X):** Representa tu variable continua (en este ejemplo, el peso de las personas). A diferencia de una gráfica de barras común donde cada barra es una "categoría" (como países o meses), aquí el eje es una línea numérica continua dividida en "cajas" o intervalos (por ejemplo, de 65 a 68 kg).
+
+2.  **La Base de las barras:** Es la **amplitud del intervalo**. Te dice qué tan ancho es el rango de valores agrupados en esa barra en específico. Todas suelen medir lo mismo.
+
+3.  **El eje vertical (Y) y la Altura de las barras:** Representan la **frecuencia**. Te dice *cuántas* observaciones de tu muestra cayeron exactamente dentro de ese intervalo. Si la barra es muy alta, significa que ese rango de valores es muy común en tu población.
+
+4.  **La forma de "Campana" (Línea roja):** Al ver la silueta del histograma, notarás que las barras del centro son las más altas y van bajando simétricamente hacia los lados. Esto te dice visualmente que tus datos tienen una **distribución normal**, donde la mayoría de la gente pesa cerca de los 70 kg y es raro encontrar extremos (gente que pese 50 kg o 90 kg).
+
+#### Interpretación de Diagramas de Caja (Box-Whisker)
+
+Reflejan de forma simple cinco estadísticas clave: el **mínimo, primer cuartil (Q1), mediana, tercer cuartil (Q3) y máximo**.
+
+- **Localización y dispersión:** La "caja" encierra el **rango intercuartil** (el 50% central de los datos), y la línea interna representa la **mediana**.
+
+- **Identificación del sesgo:**
+
+  - Si la mediana está centrada y los "bigotes" tienen longitudes similares, la distribución es simétrica.
+
+  - Si la mediana está desplazada hacia un extremo o los bigotes son de longitud desigual, la distribución es sesgada.
+
+- **Valores atípicos (Outliers):** Se representan como puntos aislados fuera de los bigotes. Un criterio común es considerar atípico cualquier valor que esté a más de **1.5 veces el rango intercuartil** de los extremos de la caja. Estos valores pueden ser errores de registro o indicar fenómenos inusuales de gran interés científico.
+
+```{r}
+#| fig-width: 9
+#| fig-height: 12
+#| echo: false
+#| warning: false
+#| message: false
+# ==============================================================================
+# CÓDIGO DE R CON MÁRGENES AMPLIADOS PARA ETIQUETAS COMPLETAS
+# ==============================================================================
+
+# 1. Datos de prueba
+horas_redes <- c(12, 15, 14, 18, 22, 25, 11, 30, 28, 19, 16, 21, 24, 13, 17, 20, 23, 15, 14, 38)
+estadisticos <- boxplot.stats(horas_redes)
+
+# 2. AJUSTAR MÁRGENES DEL LIENZO
+# El cuarto número (14) le da un espacio gigante al margen derecho para que quepa el texto
+par(mar = c(5, 4, 4, 14) + 0.1)
+
+# 3. Dibujar el diagrama de caja
+boxplot(horas_redes, 
+        main = "Interpretación de un Diagrama de Caja",
+        ylab = "Horas semanales",
+        col = "lightblue",         
+        border = "darkblue",       
+        pch = 19,                  
+        cex = 1.5,                 
+        col.axes = "black",
+        las = 1,                   
+        ylim = c(8, 42))           
+
+# 4. AÑADIR TEXTOS EN EL ESPACIO DERECHO (Sin cortarse)
+# Usamos 'xpd = TRUE' para permitir que R dibuje texto fuera de los ejes del gráfico
+text(x = 1.25, y = estadisticos$stats[5], "<- BIGOTE SUPERIOR \n (Máximo común)", adj = 0, xpd = TRUE)
+text(x = 1.25, y = estadisticos$stats[4], "<- TERCER CUARTIL  (Q3 / Techo)", adj = 0, xpd = TRUE)
+text(x = 1.25, y = estadisticos$stats[3], "<- MEDIANA (Centro de los datos)", adj = 0, col = "darkgreen", font = 2, xpd = TRUE)
+text(x = 1.25, y = estadisticos$stats[2], "<- PRIMER CUARTIL (Q1 / Base)", adj = 0, xpd = TRUE)
+text(x = 1.25, y = estadisticos$stats[1], "<- BIGOTE INFERIOR (Mínimo común)", adj = 0, xpd = TRUE)
+
+# Texto para el valor atípico
+text(x = 1.15, y = estadisticos$out[1], "<- VALOR ATÍPICO \n(Dato inusual: 38)", adj = 0, col = "red", font = 2, xpd = TRUE)
+
+# Etiqueta interna para el Rango Intercuartílico (RIC)
+arrows(x0 = 0.65, y0 = estadisticos$stats[2], x1 = 0.65, y1 = estadisticos$stats[4], code = 3, angle = 90, length = 0.05, col = "purple", lwd = 2)
+text(x = 0.58, y = (estadisticos$stats[2] + estadisticos$stats[4])/2, "RIC\n(Caja)", col = "purple", cex = 0.8, font = 2)
+
+
+```
+
+##### histográma de frecuencias absolutas vs relativas
+
+```{r}
+#| fig-width: 10
+#| fig-height: 12
+#| echo: false
+#| warning: false
+#| message: false
+
+# 1. Simular datos (Pesos de 150 personas)
+set.seed(42)
+pesos <- rnorm(150, mean = 70, sd = 5)
+
+# 2. Configurar la pantalla: 
+# Fila 1: Dos columnas para los gráficos (Gráfica 1 y Gráfica 2)
+# Fila 2: Una columna ancha para el texto explicativo inferior
+layout(matrix(c(1, 2, 3, 3), nrow = 2, ncol = 2, byrow = TRUE), heights = c(2.2, 1))
+
+# --- GRÁFICA 1: FRECUENCIAS ABSOLUTAS (IZQUIERDA) ---
+par(mar = c(4.5, 4.5, 3, 1))
+h_abs <- hist(pesos, breaks = 10, plot = FALSE)
+hist(pesos, 
+     breaks = 10, 
+     col = "skyblue", 
+     border = "white",
+     main = "Histograma de Frecuencia Absoluta",
+     xlab = "Variable Continua (Peso en kg)",
+     ylab = "Frecuencia Absoluta (Conteo real)",
+     las = 1)
+
+# Anotación explicativa de Absoluta
+rect(h_abs$breaks[4], 0, h_abs$breaks[5], h_abs$counts[4], col = "steelblue1", border = "white")
+text(x = 55, y = h_abs$counts[4], 
+     paste("ALTURA =\nNÚMERO REAL\nde datos (", h_abs$counts[4], " personas)", sep=""), 
+     adj = 0, cex = 0.8, col = "darkgreen", font = 2)
+arrows(x0 = 62, y0 = h_abs$counts[4], x1 = h_abs$breaks[4], y1 = h_abs$counts[4], code = 2, length = 0.08, col = "darkgreen", lwd = 1.5)
+
+
+# --- GRÁFICA 2: FRECUENCIAS RELATIVAS (DERECHA) ---
+par(mar = c(4.5, 4.5, 3, 1))
+h_rel <- hist(pesos, breaks = 10, plot = FALSE)
+# Al activar prob = TRUE, el eje Y cambia automáticamente a densidad/proporción
+hist(pesos, 
+     breaks = 10, 
+     prob = TRUE,
+     col = "lightgreen", 
+     border = "white",
+     main = "Histograma de Frecuencia Relativa",
+     xlab = "Variable Continua (Peso en kg)",
+     ylab = "Frecuencia Relativa (Proporción / Densidad)",
+     las = 1)
+
+# Anotación explicativa de Relativa
+# Calculamos la altura de densidad de esa barra
+densidad_barra <- h_rel$density[4]
+proporcion_porcentaje <- round((h_rel$counts[4] / length(pesos)) * 100, 1)
+
+rect(h_rel$breaks[4], 0, h_rel$breaks[5], densidad_barra, col = "seagreen3", border = "white")
+text(x = 55, y = densidad_barra, 
+     paste("ALTURA =\nPROPORCIÓN o %\ndel total (", proporcion_porcentaje, "%)", sep=""), 
+     adj = 0, cex = 0.8, col = "darkblue", font = 2)
+arrows(x0 = 62, y0 = densidad_barra, x1 = h_rel$breaks[4], y1 = densidad_barra, code = 2, length = 0.08, col = "darkblue", lwd = 1.5)
+
+
+# --- 3. PARTE INFERIOR: TEXTO EXPLICATIVO COMPLETO ---
+par(mar = c(0, 1, 1, 1)) 
+plot.new() 
+
+text(x = 0, y = 0.95, "DIFERENCIA ENTRE FRECUENCIA ABSOLUTA Y RELATIVA", adj = 0, font = 2, cex = 1.1, col = "black")
+
+text(x = 0, y = 0.70, expression(bold("Frecuencia Absoluta (Gráfica Azul):") * " El eje vertical muestra el conteo puro y duro (número de observaciones)."), adj = 0, cex = 0.9)
+text(x = 0, y = 0.55, "Te dice exactamente cuántos individuos o elementos caen dentro de cada rango (ej: 25 personas pesan entre 66 y 68 kg).", adj = 0, cex = 0.9)
+
+text(x = 0, y = 0.30, expression(bold("Frecuencia Relativa (Gráfica Verde):") * " El eje vertical se transforma en una proporción, densidad o porcentaje."), adj = 0, cex = 0.9)
+text(x = 0, y = 0.15, "Te dice qué parte del total representa ese grupo (ej: ese mismo grupo equivale al 16.7% de todos los estudiantes analizados).", adj = 0, cex = 0.9)
+
+text(x = 0, y = -0.10, expression(bold("Dato clave:") * " La forma de las barras es EXACTAMENTE la misma en ambos gráficos. Lo único que cambia es la escala"), adj = 0, cex = 0.9, font = 3, col = "gray30")
+text(x = 0, y = -0.22, "del eje Y. El de frecuencia relativa es ideal para comparar muestras de diferentes tamaños.", adj = 0, cex = 0.9, font = 3, col = "gray30")
+```
+
+### Distribuciones simétricas y sesgadas, valores extremos, relación entre medidas de tendencia central en distribuciones simétricas y sesgadas.
+
+La posición relativa de la media, la mediana y la moda cambia según la forma de la distribución: En Distribuciones Simétricas: La media, la mediana y la moda coinciden en el mismo punto central
+
+En un diagrama de caja, la mediana aparecerá equidistante de los extremos y los "bigotes" tendrán longitudes similares
+
+En Distribuciones Sesgadas: La Media: Es la medida más sensible a los valores extremos - En una distribución sesgada, la media es "arrastrada" hacia la cola larga - Por ejemplo, en un sesgo positivo, la media será mayor que la mediana
+
+La Mediana: Es una medida robusta, lo que significa que no se ve influida significativamente por valores extremos, ya que prioriza la posición central del dato y no su magnitud absoluta
+
+La Moda: Se mantiene en el punto de mayor frecuencia (el pico de la curva)
+
+Orden típico en sesgo positivo (derecha): Moda \< Mediana \< Media
+
+Orden típico en sesgo negativo (izquierda): Media \< Mediana \< Moda
+
+En conclusión, cuando existen valores extremos o sesgo marcado, la mediana suele ser una medida más descriptiva del "centro" de los datos que la media aritmética, ya que esta última ofrece una visión distorsionada por los valores atípicos.
+
+En estadística hay una regla de oro visual:
+
+- En una distribución **Simétrica**, la media, la mediana y la moda valen lo mismo y están en el centro.
+
+- En una distribución con **Sesgo a la Derecha (Positivo)**, los valores extremos altos "jalan" a la media hacia la derecha, dejando la relación: $\text{Moda} < \text{Mediana} < \text{Media}$.
+
+- En una distribución con **Sesgo a la Izquierda (Negativo)**, los valores extremos bajos "jalan" a la media hacia la izquierda, dejando la relación: $\text{Media} < \text{Mediana} < \text{Moda}$.
+
+```{r}
+#| fig-width: 12
+#| fig-height: 12
+#| echo: false
+#| warning: false
+#| message: false
+
+# 1. GENERAR LOS DATOS DE LOS TRES ESCENARIOS
+set.seed(123)
+n <- 2000
+
+# Escenario A: Simétrica (Distribución Normal)
+datos_simetrica <- rnorm(n, mean = 50, sd = 10)
+
+# Escenario B: Sesgo a la Derecha (Exponencial / Valores extremos altos)
+datos_sesgo_der <- rexp(n, rate = 0.1)
+
+# Escenario C: Sesgo a la Izquierda (Invertida / Valores extremos bajos)
+datos_sesgo_izq <- 50 - rexp(n, rate = 0.1)
+
+
+# 2. CONFIGURAR PANEL DE GRÁFICOS (3 columnas arriba para gráficos, 1 bloque abajo para texto)
+layout(matrix(c(1, 2, 3, 4, 4, 4), nrow = 2, ncol = 3, byrow = TRUE), heights = c(2.2, 1.2))
+par(mar = c(4.5, 4, 3, 1))
+
+# --- FUNCIÓN AUXILIAR PARA CALCULAR LA MODA APROXIMADA EN DATOS CONTINUOS ---
+get_mode <- function(v) {
+  d <- density(v)
+  return(d$x[which.max(d$y)])
+}
+
+# ==========================================
+# GRÁFICA 1: DISTRIBUCIÓN SIMÉTRICA
+# ==========================================
+h1 <- hist(datos_simetrica, breaks = 30, plot = FALSE)
+plot(density(datos_simetrica), main = "Distribución Simétrica\n(Sin Sesgo)", 
+     xlab = "Valores", ylab = "Densidad", col = "darkblue", lwd = 2, las = 1)
+polygon(density(datos_simetrica), col = rgb(0,0,1,0.1), border = NA)
+
+# Calcular medidas
+m1_media  <- mean(datos_simetrica)
+m1_mediana <- median(datos_simetrica)
+m1_moda    <- get_mode(datos_simetrica)
+
+# Dibujar líneas (Coinciden casi en el mismo punto)
+abline(v = m1_media, col = "red", lwd = 2, lty = 1)
+abline(v = m1_mediana, col = "green3", lwd = 2, lty = 2)
+abline(v = m1_moda, col = "purple", lwd = 2, lty = 3)
+
+legend("topright", legend = c("Media", "Mediana", "Moda"), 
+       col = c("red", "green3", "purple"), lty = 1:3, lwd = 2, cex = 0.8)
+text(m1_media, max(density(datos_simetrica)$y)*0.2, "Media = Mediana = Moda\n(Centro perfecto)", col = "darkgray", cex = 0.8)
+
+
+# ==========================================
+# GRÁFICA 2: SESGO A LA DERECHA (POSITIVO)
+# ==========================================
+plot(density(datos_sesgo_der), main = "Sesgo a la Derecha\n(Valores Extremos Altos)", 
+     xlab = "Valores", ylab = "Densidad", col = "darkblue", lwd = 2, las = 1, xlim = c(0, 60))
+polygon(density(datos_sesgo_der), col = rgb(0,0,1,0.1), border = NA)
+
+# Calcular medidas
+m2_media  <- mean(datos_sesgo_der)
+m2_mediana <- median(datos_sesgo_der)
+m2_moda    <- get_mode(datos_sesgo_der)
+
+# Dibujar líneas (Se separan por culpa del sesgo)
+abline(v = m2_moda, col = "purple", lwd = 2, lty = 3)
+abline(v = m2_mediana, col = "green3", lwd = 2, lty = 2)
+abline(v = m2_media, col = "red", lwd = 2, lty = 1)
+
+# Flecha indicando hacia dónde jalan los valores extremos
+arrows(x0 = 30, y0 = 0.02, x1 = 50, y1 = 0.005, col = "darkorange", lwd = 2, code = 2, length = 0.1)
+text(x = 45, y = 0.025, "Valores extremos\njalan la Media", col = "darkorange", cex = 0.8, font = 2)
+
+
+# ==========================================
+# GRÁFICA 3: SESGO A LA IZQUIERDA (NEGATIVO)
+# ==========================================
+plot(density(datos_sesgo_izq), main = "Sesgo a la Izquierda\n(Valores Extremos Bajos)", 
+     xlab = "Valores", ylab = "Densidad", col = "darkblue", lwd = 2, las = 1, xlim = c(-10, 50))
+polygon(density(datos_sesgo_izq), col = rgb(0,0,1,0.1), border = NA)
+
+# Calcular medidas
+m3_media  <- mean(datos_sesgo_izq)
+m3_mediana <- median(datos_sesgo_izq)
+m3_moda    <- get_mode(datos_sesgo_izq)
+
+# Dibujar líneas
+abline(v = m3_media, col = "red", lwd = 2, lty = 1)
+abline(v = m3_mediana, col = "green3", lwd = 2, lty = 2)
+abline(v = m3_moda, col = "purple", lwd = 2, lty = 3)
+
+# Flecha indicando hacia dónde jalan los valores extremos
+arrows(x0 = 20, y0 = 0.02, x1 = 0, y1 = 0.005, col = "darkorange", lwd = 2, code = 2, length = 0.1)
+text(x = 5, y = 0.025, "Valores extremos\njalan la Media", col = "darkorange", cex = 0.8, font = 2)
+
+
+# ==========================================
+# 4. PARTE INFERIOR: TEXTO EXPLICATIVO
+# ==========================================
+par(mar = c(0, 1, 1, 1)) 
+plot.new() 
+
+text(x = 0, y = 0.95, "RELACIÓN ENTRE MEDIDAS DE TENDENCIA CENTRAL Y FORMA DE DISTRIBUCIÓN", adj = 0, font = 2, cex = 1.1, col = "darkblue")
+
+text(x = 0, y = 0.73, expression(bold("1. Distribución Simétrica:") * " Ambas mitades del gráfico reflejan lo mismo. Al no haber valores extremos en ningún lado,"), adj = 0, cex = 0.85)
+text(x = 0, y = 0.63, " las tres medidas coinciden en el punto más alto: Media = Mediana = Moda.", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = 0.43, expression(bold("2. Sesgo a la Derecha (Positivo):") * " La cola se extiende hacia valores muy altos (la derecha). La Moda se queda en el pico,"), adj = 0, cex = 0.85)
+text(x = 0, y = 0.33, " la Mediana resiste el impacto, pero la Media es 'jalada' fuertemente por los valores extremos. Relación: Moda < Mediana < Media.", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = 0.13, expression(bold("3. Sesgo a la Izquierda (Negativo):") * " La cola se extiende hacia valores muy bajos (la izquierda). Nuevamente los valores extremos"), adj = 0, cex = 0.85)
+text(x = 0, y = 0.03, " afectan de forma severa a la Media, restándole valor y arrastrándola al fondo. Relación: Media < Mediana < Moda.", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = -0.17, expression(bold("Conclusión sobre Valores Extremos:") * " La Media es una medida altamente sensible a outliers; basta con unos pocos datos anormales"), adj = 0, cex = 0.85, col = "darkred")
+text(x = 0, y = -0.27, " para desestabilizarla. En cambio, la Mediana es una medida robusta que describe mejor el centro en poblaciones sesgadas.", adj = 0, cex = 0.85, col = "darkred")
+```
+
+### Descripción bivariada Diagramas de dispersión, covarianza, coeficiente de correlación lineal.
+
+La **descripción bivariada** (o estadística bidimensional) se encarga de estudiar simultáneamente dos variables sobre una misma población para identificar si existe una relación o asociación entre ellas. Mientras que la estadística univariada analiza las características de una sola variable, la bivariada busca comprender cómo el comportamiento de una magnitud influye o se desplaza junto a otra.
+
+Los tres pilares fundamentales para este análisis son:
+
+1\. Diagramas de dispersión (Nube de puntos)
+
+Es la herramienta gráfica primaria para visualizar la relación entre dos variables cuantitativas.
+
+- **Representación:** Consiste en un plano cartesiano donde cada par de valores (x,y) de un individuo se representa como un punto en las coordenadas correspondientes.
+
+- **Utilidad:** Permite detectar visualmente patrones, tendencias y la forma de la relación (lineal, curvilínea o ausencia de correlación).
+
+- **Interpretación:**
+
+  - Si los puntos forman una banda estrecha y alargada, la relación es **fuerte**.
+
+  - Si los puntos parecen dispersos de forma circular o aleatoria, existe **ausencia de correlación**.
+
+  - Si al aumentar X también aumenta Y, la relación es **directa**; si Y disminuye, es **inversa**.
+
+2\. Covarianza
+
+Es una medida numérica que indica el sentido de la asociación lineal entre dos variables.
+
+- **Definición:** Se define como el valor esperado del producto de las desviaciones de cada variable respecto a su media: $$\sigma_{xy} = E[(X - \mu_x)(Y - \mu_y)]$$
+
+- **Interpretación del signo:**
+
+  - **Positiva:** Las variables tienden a moverse en la misma dirección (valores grandes de X con valores grandes de Y).
+
+  - **Negativa:** Las variables se mueven en direcciones opuestas (valores grandes de X con valores pequeños de Y).
+
+  - **Cero:** Indica que no hay una relación lineal, aunque podría existir una relación no lineal.
+
+- **Limitación:** Su magnitud depende de las unidades de medida de las variables, lo que impide comparar la fuerza de la relación entre distintos conjuntos de datos.
+
+##### Coeficiente de correlación lineal (Pearson)
+
+Para solucionar el problema de la escala de la covarianza, se utiliza el **coeficiente de correlación de Pearson (**r**)**, que es una versión estandarizada o "sin unidades" de la asociación lineal.
+
+- **Cálculo:** Se obtiene dividiendo la covarianza entre el producto de las desviaciones estándar de ambas variables: $$r = \frac{\sigma_{xy}}{\sigma_x \cdot \sigma_y}$$
+
+- **Rango de valores:** Siempre oscila entre **-1 y +1**.
+
+  - r=1**:** Correlación lineal positiva perfecta (todos los puntos están sobre una línea recta creciente).
+
+  - r=−1**:** Correlación lineal negativa perfecta (puntos sobre una recta decreciente).
+
+  - r=0**:** No existe relación lineal entre las variables.
+
+- **Coeficiente de determinación (**$r^2$): Es el cuadrado del coeficiente de correlación y representa la proporción de la variabilidad de una variable que es explicada por la otra a través de la relación lineal. Por ejemplo, un r=0.6 implica que el 36% (0.62) de la variación total es explicada por el modelo.
+
+En conclusión, mientras el **diagrama de dispersión** ofrece una visión intuitiva y la **covarianza** el sentido de la relación, el **coeficiente de correlación** proporciona una medida exacta y comparable de la fuerza y dirección del vínculo lineal entre dos variables.
+
+```{r}
+#| fig-width: 12
+#| fig-height: 9
+#| echo: false
+#| warning: false
+#| message: false
+
+# 1. SIMULAR TRES ESCENARIOS BIVARIADOS
+set.seed(42)
+n <- 100
+
+# Escenario A: Relación Lineal Positiva (Ej: Horas de estudio vs Calificación)
+X_pos <- runif(n, 1, 10)
+Y_pos <- 2 * X_pos + rnorm(n, mean = 0, sd = 2)
+
+# Escenario B: Relación Lineal Negativa (Ej: Horas de juego vs Calificación)
+X_neg <- runif(n, 1, 10)
+Y_neg <- 20 - 1.5 * X_neg + rnorm(n, mean = 0, sd = 1.5)
+
+# Escenario C: Sin Relación Lineal (Ej: Estatura vs Calificación)
+X_nula <- runif(n, 150, 190)
+Y_nula <- runif(n, 0, 10)
+
+
+# 2. CONFIGURAR PANEL DE GRÁFICOS (3 columnas arriba para gráficos, 1 bloque abajo para texto)
+layout(matrix(c(1, 2, 3, 4, 4, 4), nrow = 2, ncol = 3, byrow = TRUE), heights = c(2.2, 1.2))
+par(mar = c(4.5, 4.5, 3, 1))
+
+# ==========================================
+# GRÁFICA 1: RELACIÓN LINEAL POSITIVA
+# ==========================================
+cov_pos <- round(cov(X_pos, Y_pos), 2)
+cor_pos <- round(cor(X_pos, Y_pos), 2)
+
+plot(X_pos, Y_pos, pch = 19, col = "royalblue", las = 1,
+     main = "Relación Lineal Positiva",
+     xlab = "Variable X (Independiente)", ylab = "Variable Y (Dependiente)")
+abline(lm(Y_pos ~ X_pos), col = "darkblue", lwd = 2) # Línea de tendencia
+
+# Añadir indicadores estadísticos en la gráfica
+text(x = 1.5, y = 18, paste("Covarianza =", cov_pos), adj = 0, font = 2)
+text(x = 1.5, y = 16, paste("Correlación (r) =", cor_pos), adj = 0, col = "darkgreen", font = 2)
+
+
+# ==========================================
+# GRÁFICA 2: RELACIÓN LINEAL NEGATIVA
+# ==========================================
+cov_neg <- round(cov(X_neg, Y_neg), 2)
+cor_neg <- round(cor(X_neg, Y_neg), 2)
+
+plot(X_neg, Y_neg, pch = 19, col = "firebrick", las = 1,
+     main = "Relación Lineal Negativa",
+     xlab = "Variable X (Independiente)", ylab = "Variable Y (Dependiente)")
+abline(lm(Y_neg ~ X_neg), col = "darkred", lwd = 2) # Línea de tendencia
+
+# Añadir indicadores estadísticos en la gráfica
+text(x = 5.5, y = 18, paste("Covarianza =", cov_neg), adj = 0, font = 2)
+text(x = 5.5, y = 16, paste("Correlación (r) =", cor_neg), adj = 0, col = "darkgreen", font = 2)
+
+
+# ==========================================
+# GRÁFICA 3: SIN RELACIÓN LINEAL (NULA)
+# ==========================================
+cov_nula <- round(cov(X_nula, Y_nula), 2)
+cor_nula <- round(cor(X_nula, Y_nula), 2)
+
+plot(X_nula, Y_nula, pch = 19, col = "gray40", las = 1,
+     main = "Sin Relación Lineal (Nula)",
+     xlab = "Variable X (Independiente)", ylab = "Variable Y (Dependiente)")
+abline(lm(Y_nula ~ X_nula), col = "black", lwd = 1, lty = 2) # Línea plana simulada
+
+# Añadir indicadores estadísticos en la gráfica
+text(x = 152, y = 9, paste("Covarianza =", cov_nula), adj = 0, font = 2)
+text(x = 152, y = 8.2, paste("Correlación (r) =", cor_nula), adj = 0, col = "darkgreen", font = 2)
+
+
+# ==========================================
+# 4. PARTE INFERIOR: TEXTO EXPLICATIVO
+# ==========================================
+par(mar = c(0, 1, 1, 1)) 
+plot.new() 
+
+text(x = 0, y = 0.95, "DESCRIPCIÓN BIVARIADA: DIAGRAMAS DE DISPERSIÓN Y CORRELACIÓN", adj = 0, font = 2, cex = 1.1, col = "darkblue")
+
+text(x = 0, y = 0.73, expression(bold("1. Diagrama de Dispersión:") * " Representa gráficamente los pares ordenados (X, Y). Permite observar de forma visual si los"), adj = 0, cex = 0.85)
+text(x = 0, y = 0.63, " puntos siguen un patrón geométrico reconocible (como una línea recta, una curva o una nube sin forma).", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = 0.43, expression(bold("2. Covarianza (Sxy):") * " Mide la variación conjunta de las variables. Si es positiva, indica que cuando X crece, Y también tiende"), adj = 0, cex = 0.85)
+text(x = 0, y = 0.33, " a crecer. El gran inconveniente es que su magnitud cambia según la escala (por eso da valores muy diferentes entre los gráficos).", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = 0.13, expression(bold("3. Coeficiente de Correlación Lineal (r de Pearson):") * " Soluciona el problema de la covarianza al estandarizar el resultado."), adj = 0, cex = 0.85)
+text(x = 0, y = 0.03, " Mide con precisión la fuerza de la relación lineal en un rango estricto de -1 a 1, eliminando el efecto de las unidades de medida.", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = -0.17, expression(bold("Lectura rápida de 'r':") * " Proximidad a 1 = Fuerte relación positiva (Línea sube). Proximidad a -1 = Fuerte relación negativa"), adj = 0, cex = 0.85, col = "darkred")
+text(x = 0, y = -0.27, " (Línea baja). Proximidad a 0 = Ausencia de asociación lineal (Nube de puntos dispersa y caótica sin tendencia).", adj = 0, cex = 0.85, col = "darkred")
+```
+
+### Introducción a la teoría de la probabilidad
+
+La **probabilidad** es la rama de las matemáticas que modela experimentos aleatorios, es decir, aquellos cuyo resultado no es predecible bajo las mismas condiciones iniciales. Se define formalmente como un número real en el intervalo que mide la frecuencia con la que ocurre un evento. Existen tres enfoques principales para definirla:
+
+- **Clásica (Laplace):** Se basa en el cociente entre casos favorables y casos posibles, asumiendo que todos son equiprobables.
+
+- **Frecuentista (Bernoulli):** Es el límite al que se aproximan las frecuencias relativas de un suceso cuando el experimento se repite indefinidamente.
+
+- **Axiomática (Kolmogorov):** Establece reglas matemáticas precisas (axiomas) que toda medida de probabilidad debe cumplir.
+
+3.1 Propiedades de la probabilidad
+
+Toda medida de probabilidad debe satisfacer los **Axiomas de Kolmogorov**:
+
+1.  **No negatividad:** $P(A)≥0$
+
+2.  **Certidumbre:** La probabilidad del espacio muestral completo ($E$ o $Ω$) es $1$.
+
+3.  **Aditividad:** Para eventos incompatibles (disjuntos), la probabilidad de su unión es la suma de sus probabilidades individuales.
+
+De estos axiomas se derivan propiedades fundamentales:
+
+- **Suceso contrario:** $P(Ac)=1−P(A)$.
+
+- **Suceso imposible:** La probabilidad del conjunto vacío es cero $P(∅)=0$.
+
+- **Monotonía:** Si un evento A está contenido en B, entonces $P(A)≤P(B)$.
+
+- **Regla de la suma general:** Para eventos compatibles, $P(A∪B)=P(A)+P(B)−P(A∩B)$.
+
+3.2 Reglas probabilísticas
+
+- **Probabilidad Condicionada:** Es la probabilidad de que ocurra un evento A sabiendo que ya ha ocurrido un evento B. Se calcula como $P(A∣B)=P(B)P(A∩B)$.
+
+- **Regla del Producto:** Permite hallar la probabilidad de que ocurran dos eventos simultáneamente: $P(A∩B)=P(A)⋅P(B∣A)$.
+
+- **Independencia:** Dos sucesos son independientes si la ocurrencia de uno no afecta al otro, es decir, $P(A∩B)=P(A)⋅P(B)$.
+
+- **Teorema de la Probabilidad Total:** Permite calcular la probabilidad de un suceso a partir de una partición del espacio muestral.
+
+- **Teorema de Bayes:** Es fundamental para actualizar la probabilidad de una causa (hipótesis) dado que se ha observado un efecto $(dato)$.
+
+3.3 Conteo de eventos (Combinatoria)
+
+Para aplicar la definición clásica de probabilidad, es esencial saber contar casos. El **Principio General de Recuento** establece que si un experimento tiene n formas y otro tiene m, ambos juntos tienen n×m formas. Las técnicas principales incluyen:
+
+- **Variaciones:** Importa el orden. Pueden ser **ordinarias** (sin repetición) o **con repetición** ($nk$).
+
+- **Permutaciones:** Son variaciones donde intervienen todos los elementos del conjunto ($n!$).
+
+- **Combinaciones:** El orden **no importa**. Se utilizan para seleccionar subconjuntos. Su fórmula es \textbf{Combinaciones:} El orden \textbf{no importa}. Se utilizan para seleccionar subconjuntos. Su fórmula es: $$C_{n,k} = \binom{n}{k} = \frac{n!}{k!(n-k)!}$$
+
+| ¿Importa el orden? | ¿Se pueden repetir? | Nombre Técnico | Operación Matemática | Razonamiento: ¿Cuándo usar? |
+|:----------:|:----------:|:-----------|:-----------|:-----------------------|
+| **SÍ** | **SÍ** | Variación con repetición | **Potencia**<br>$$n^k$$ | Cuando estás **armando códigos o secuencias** donde las posiciones importan y los elementos pueden reaparecer (ej. contraseñas, lanzar monedas o dados varias veces). |
+| **SÍ** | **NO** | Permutación (o Variación) | **Factorial / Permutaciones**<br>$$\frac{n!}{(n-k)!}$$ | Cuando estás **repartiendo puestos únicos, premios escalonados o filas** donde el rol de cada quien cambia el resultado y nadie puede duplicarse (ej. podios de carreras, elecciones de presidente/secretario). |
+| **NO** | **NO** | Combinación estándar | **Coeficiente Binomial**<br>$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$ | Cuando estás **armando equipos, comités o subconjuntos** donde lo único que te importa es quiénes integran el grupo final, sin importar el orden en que los llamaste (ej. manos de cartas, elegir delegados). |
+| **NO** | **SÍ** | Combinación con repetición | **Coeficiente Binomial Modificado**<br>$$\binom{n+k-1}{k}$$ | Cuando estás **repartiendo objetos idénticos en categorías** o comprando un surtido de cosas donde el orden no importa, pero puedes elegir varias del mismo tipo (ej. comprar 5 donas en una tienda que tiene 3 sabores disponibles). |
+
+### Ordenamientos CON Reemplazo (Importa el orden y SÍ se puede repetir)
+
+Aquí los elementos se pueden volver a usar. Cada vez que eliges uno, el abanico de opciones sigue siendo el mismo.
+
+- **El Ejemplo Clásico:** Crear una contraseña de 4 dígitos usando los números del 0 al 9.
+
+- **Por qué aplica:** El orden importa (no es lo mismo la contraseña `1-2-3-4` que `4-3-2-1`) y puedes repetir números (la contraseña puede ser `7-7-7-7`).
+
+- **La Fórmula:** $n^k$ (donde $n$ son las opciones totales y $k$ los espacios a llenar).
+
+- **Cálculo:** $10^4 = 10,000$ contraseñas posibles.
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| 
+# Calcular el número total directamente
+n_opciones <- 10^4
+print(n_opciones)
+
+# Si quieres ver un ejemplo de cómo se generan (usando el paquete gtools)
+# install.packages("gtools")
+library(gtools)
+combinaciones <- permutations(n = 10, r = 4, v = 0:9, repeats.allowed = TRUE)
+head(combinaciones) # Muestra las primeras opciones
+```
+
+##### 2. Ordenamientos SIN Reemplazo (Importa el orden pero NO se puede repetir)
+
+También conocidos como Permutaciones. Una vez que eliges un elemento, este queda descartado para la siguiente posición.
+
+###### El Ejemplo Clásico:
+
+Una carrera donde compiten 8 atletas y queremos saber de cuántas formas se pueden repartir las medallas de Oro, Plata y Bronce.Por qué aplica: El orden importa por completo (no es lo mismo ganar Oro que Bronce) y no hay reemplazo (un mismo atleta no puede ganar Oro y Plata a la vez). - La Fórmula:$$P(n, k) = \frac{n!}{(n-k)!}$$ - Cálculo: Para el primer puesto hay 8 opciones, para el segundo quedan 7, y para el tercero quedan 6. $$8 \times 7 \times 6 = 336 \text{ formas distintas.}$$
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| 
+# Calcular el número total usando factoriales
+total_permutaciones <- factorial(8) / factorial(8 - 3)
+print(total_permutaciones)
+
+# Generar todas las opciones posibles con nombres
+atletas <- c("Ana", "Ben", "Carlos", "Diana", "Eli", "Fer", "Gaby", "Hugo")
+podios <- permutations(n = 8, r = 3, v = atletas, repeats.allowed = FALSE)
+head(podios)
+```
+
+##### 3. Opciones que NO necesitan orden (Sin reemplazo y NO importa el orden)
+
+También conocidas como Combinaciones. Aquí lo único que te importa es quiénes forman el grupo, no en qué orden fueron elegidos.
+
+El Ejemplo Clásico: De un grupo de 10 amigos, vas a elegir a 3 para que vayan contigo en el auto a comprar pizzas. - Por qué aplica: No importa el orden (si elijo a Ana, Ben y Carlos, es exactamente el mismo grupo de viaje que si elijo a Carlos, Ben y Ana). - Tampoco hay reemplazo (no puedes clonar a un amigo). - La Fórmula:$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$ - Cálculo: El famoso coeficiente binomial. En R se calcula directamente con la función choose().
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| 
+# Calcular el número total de grupos posibles
+total_grupos <- choose(10, 3)
+print(total_grupos) # Da como resultado 120
+
+# Generar y ver los grupos reales de amigos
+amigos <- paste("Amigo", 1:10)
+grupos_auto <- combinations(n = 10, r = 3, v = amigos, repeats.allowed = FALSE)
+head(grupos_auto)
+```
+
+
+#### Función probabilística
+
+Asocia valores numéricos a los resultados de un experimento mediante una **variable aleatoria (v.a.)**.
+
+- **Variables Discretas:** Utilizan una **Función de Masa de Probabilidad** f(x), donde cada valor tiene una probabilidad específica y la suma de todas es 1.
+
+- **Variables Continuas:** Utilizan una **Función de Densidad** f(x). Aquí, la probabilidad de un punto exacto es cero; la probabilidad se mide como el **área bajo la curva** en un intervalo.
+
+- **Función de Distribución Acumulativa** $F(x)$**:** Indica la probabilidad de que la v.a. tome un valor menor o igual a $x$ es $P(X≤x)$.
+
+3.5 Valor esperado (Esperanza Matemática)
+
+El **valor esperado** $E(X)$ o $μ$ es el promedio ponderado de todos los valores posibles de una variable aleatoria. Representa el valor que se esperaría obtener "a largo plazo" si el experimento se repitiera muchas veces.
+
+- **Cálculo:** En el caso discreto es $\sum x \cdot f(x)$, y en el continuo es $$\int x \cdot f(x) \, dx$$.
+
+- **Propiedades:** Es un operador lineal, lo que significa que $$E(aX+b)=aE(X)+b y E(X+Y)=E(X)+E(Y)$$.
+
+- **Interpretación:** Actúa como el **punto de equilibrio** o centro de gravedad de la distribución de probabilidad.
+
+## Distribuciones de probabilidad
+
+#### Distribución binomial
+
+La **distribución binomial** es uno de los modelos de probabilidad teóricos más importantes para variables aleatorias discretas, y se utiliza para describir situaciones donde un experimento solo puede tener **dos resultados posibles** complementarios.
+
+A continuación se desglosan sus componentes, propiedades y aplicaciones fundamentales:
+
+##### El experimento de Bernoulli
+
+La base de la distribución binomial es el **experimento de Bernoulli**, que es un proceso aleatorio que da lugar a una dicotomía: **éxito** o **fracaso**. Ejemplos comunes incluyen si una pieza es defectuosa o no, si una persona está infectada por un virus o no, o si un votante está a favor de un candidato.
+
+##### Características de la distribución binomial
+
+Para que una variable aleatoria X siga una distribución binomial, denotada como B(n,p), debe cumplir las siguientes condiciones:
+
+- **Ensayos repetidos:** El experimento consta de un número fijo "n" de pruebas idénticas.
+
+- **Resultados dicotómicos:** Cada prueba solo tiene dos resultados posibles: éxito (E) y fracaso (F).
+
+- **Independencia:** El resultado de cada prueba es independiente de las anteriores.
+
+- **Probabilidad constante:** La probabilidad de éxito, denotada como p, permanece constante en cada prueba. Por consecuencia, la probabilidad de fracaso es q=1−p.
+
+##### Función de probabilidad
+
+La variable aleatoria X representa el **número de éxitos** obtenidos en los n ensayos realizados. Su función de probabilidad se define mediante la fórmula:
+
+$$P(X=x) = \binom{n}{x} p^x q^{n-x}$$
+
+Donde:
+
+- $x$: Es el valor que toma la variable (número de éxitos, de $0$ a $n$).
+
+- $\binom{n}{x}$: Es el **coeficiente binomial**, que representa el número de combinaciones o formas en que los $x$ éxitos pueden distribuirse en los n ensayos.
+
+##### Parámetros estadísticos
+
+La distribución binomial está completamente determinada por sus parámetros $n$ y $p$. Sus medidas de tendencia central y dispersión son:
+
+- Media (Esperanza matemática): $$\mu = E(X) = np$$
+- Varianza: $$\sigma^2 = npq = np(1-p)$$
+- Desviación típica: $$\sigma = \sqrt{npq}$$
+
+##### Aproximaciones y relaciones
+
+- **Aproximación por la Normal:** Cuando el tamaño de la muestra n es suficientemente grande y p no está cerca de los extremos (0 o 1), específicamente si np≥5 **y** nq≥5, la distribución binomial puede aproximarse a una **distribución normal**.
+
+- **Aproximación por Poisson:** Si n es muy grande y p es muy pequeño (cercano a 0), la binomial se puede aproximar mediante una **distribución de Poisson** con μ=np.
+
+- **Relación con la Hipergeométrica:** Si el muestreo se realiza **con reemplazo**, se usa la binomial; si es **sin reemplazo** en una población pequeña, se usa la hipergeométrica. Sin embargo, si la población es muy grande, la binomial sirve como una buena aproximación para la hipergeométrica.
+
+##### Áreas de aplicación
+
+Este modelo es sumamente versátil y se aplica en:
+
+- **Ingeniería industrial:** En el control de calidad para determinar la proporción de artículos defectuosos en una línea de ensamble.
+
+- **Medicina:** Para medir la eficacia de un fármaco (cura o no cura).
+
+- **Militar:** En pruebas de precisión de proyectiles (dar en el blanco o fallar).
+
+- **Encuestas de opinión:** Para clasificar a la población a favor o en contra de una propuesta.
+
+En la distribución binomial, tres conceptos clave se visualizan de inmediato:
+
+- El valor esperado o Media ($\mu = n \cdot p$): Es el punto de equilibrio, donde se concentra la mayor probabilidad de éxito.
+
+- La probabilidad de cada barra: Representa $P(X = x)$, las combinaciones
+
+- El soporte discreto: Las barras están separadas porque no puedes tener "2.5 éxitos"; o tienes 2 o tienes 3.
+
+```{r}
+#| fig-width: 12
+#| fig-height: 14
+#| echo: false
+#| warning: false
+#| message: false
+
+# 1. PARÁMETROS DE LA DISTRIBUCIÓN BINOMIAL
+# Imaginemos lanzar una moneda sesgada (p=0.6 de cara) 20 veces (n=20)
+n <- 20
+p <- 0.6
+x <- 0:n  # Número de éxitos posibles (de 0 a 20)
+
+# Calcular las probabilidades exactas para cada éxito
+probabilidades <- dbinom(x, size = n, prob = p)
+
+# 2. CONFIGURAR PANEL (Gráfica grande arriba, texto abajo)
+layout(matrix(c(1, 2), nrow = 2, ncol = 1), heights = c(2.3, 1))
+par(mar = c(4.5, 4.5, 3, 1))
+
+# 3. PARTE SUPERIOR: DIBUJAR LA DISTRIBUCIÓN
+# Usamos type="h" para las líneas verticales y luego añadimos puntos para enfatizar que es DISCRETA
+plot(x, probabilidades, type = "h", lwd = 5, col = "skyblue", las = 1,
+     main = expression(bold("Distribución Binomial: ") * "B(n = 20, p = 0.6)"),
+     xlab = "Número de Éxitos (x)", 
+     ylab = "Probabilidad P(X = x)",
+     ylim = c(0, max(probabilidades) * 1.15))
+
+# Añadir los puntos superiores de las barras
+points(x, probabilidades, pch = 19, col = "dodgerblue", cex = 1.3)
+
+# Calcular la Media (Valor Esperado)
+media <- n * p
+abline(v = media, col = "darkred", lwd = 2, lty = 2)
+
+# --- ANOTACIONES VISUALES DENTRO DE LA GRÁFICA ---
+# Identificar el punto más alto (Moda / Media)
+text(x = media + 0.5, y = max(probabilidades) * 1.05, 
+     paste("MEDIA (Valor Esperado):\n\u03bc = n \u22c5 p = ", media, sep=""), 
+     adj = 0, col = "darkred", font = 2, cex = 0.85)
+
+# Señalar una barra específica para explicar qué significa la altura
+barra_ejemplo <- 14
+arrows(x0 = 17, y0 = probabilidades[barra_ejemplo+1], x1 = barra_ejemplo, y1 = probabilidades[barra_ejemplo+1], 
+       code = 2, length = 0.1, col = "darkgreen", lwd = 1.5)
+text(x = 17.2, y = probabilidades[barra_ejemplo+1], 
+     paste("ALTURA DE LA BARRA:\nProbabilidad exacta de\ntener ", barra_ejemplo, " éxitos.\nP(X = 14) = ", round(probabilidades[barra_ejemplo+1], 3), sep=""), 
+     adj = 0, col = "darkgreen", font = 2, cex = 0.8)
+
+# Nota sobre el carácter discreto de los datos
+text(x = 1, y = 0.15, "SOPORTE DISCRETO:\nSolo hay barras en números enteros\n(No existen los 'éxitos decimales')", 
+     adj = 0, col = "gray40", cex = 0.8, font = 3)
+
+
+# ==========================================
+# 4. PARTE INFERIOR: TEXTO EXPLICATIVO
+# ==========================================
+par(mar = c(0, 1, 1, 1)) 
+plot.new() 
+
+text(x = 0, y = 0.95, "PROPIEDADES DE LA DISTRIBUCIÓN BINOMIAL", adj = 0, font = 2, cex = 1.1, col = "darkblue")
+
+text(x = 0, y = 0.72, expression(bold("1. ¿Cuándo se aplica?:") * " Modela el número de éxitos al realizar 'n' experimentos independientes."), adj = 0, cex = 0.85)
+text(x = 0, y = 0.62, " Cada experimento solo tiene dos resultados posibles: Éxito (con prob. p) o Fracaso (con prob. 1 - p).", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = 0.40, expression(bold("2. Forma y Simetría:") * " Depende directamente de 'p'. Si p = 0.5, la distribución será perfectamente simétrica."), adj = 0, cex = 0.85)
+text(x = 0, y = 0.30, " En esta gráfica (p = 0.6), nota cómo la campana se sesga ligeramente hacia la derecha debido a que el éxito es más probable.", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = 0.08, expression(bold("3. Cálculo Matemático:") * " Cada barra se calcula combinando las formas posibles de ordenar los éxitos:"), adj = 0, cex = 0.85)
+text(x = 0, y = -0.02, " P(X = x) = C(n,x) \u22c5 p^x \u22c5 (1-p)^(n-x). La suma de todas las barras de la gráfica siempre da exactamente 1 (100%).", adj = 0, cex = 0.85, font = 3, col = "gray20")
+```
+
+## Distribución normal
+
+La **distribución normal**, también conocida como distribución gaussiana o "campana de Gauss", es la distribución de probabilidad continua más importante en estadística, ya que describe multitud de fenómenos naturales, industriales y científicos.
+
+A continuación se detallan sus características, parámetros y el proceso de estandarización:
+
+1\. Características y parámetros básicos
+
+Una variable aleatoria normal X queda completamente determinada por dos parámetros fundamentales:
+
+- **Media (**μ**):** Indica el **centro de la distribución** (localización). Es el punto de equilibrio donde se sitúa el máximo de la curva.
+
+- **Desviación estándar (**σ**):** Determina la **dispersión o forma** de la campana. Una σ pequeña genera una curva estrecha y alta, mientras que una σ grande produce una curva baja y extendida.
+
+**Propiedades de la curva normal:**
+
+- **Simetría:** La curva es perfectamente simétrica respecto a la media (μ).
+
+- **Coincidencia central:** En una distribución normal, la **media, la mediana y la moda coinciden** en el mismo punto central.
+
+- **Área total:** El área total bajo la curva y sobre el eje horizontal es exactamente **1** (o 100%).
+
+- **Asintótica:** La curva se aproxima al eje horizontal de manera asintótica, extendiéndose de −∞ a +∞ sin tocarlo nunca.
+
+- **Puntos de inflexión:** Se encuentran en los valores μ±σ.
+
+#### Distribución normal estándar
+
+Es un caso especial y fundamental de la familia de distribuciones normales donde la **media es cero (**μ=0**)** y la **desviación estándar es uno (**σ=1**)**.
+
+- Se denota comúnmente como N(0,1).
+
+- Su importancia radica en que aparece **totalmente tabulada** en las tablas de probabilidad, lo que permite calcular áreas y probabilidades sin necesidad de resolver integrales complejas.
+
+#### El estadístico Z (Tipificación o Estandarización)
+
+La estandarización es el procedimiento que permite transformar cualquier variable aleatoria normal X (con cualquier μ y σ) en una variable normal estándar Z.
+
+**La fórmula del estadístico Z es:** $$Z = \frac{X - \mu}{\sigma}$$
+
+**Utilidad y significado:**
+
+- **Interpretación:** El valor de $Z$ especifica a cuántas **desviaciones estándar** se encuentra un valor X respecto de la media.
+
+- **Cálculo de probabilidades:** Gracias a esta transformación, cualquier problema de probabilidad normal se reduce a buscar valores en la tabla de la normal estándar $N(0,1)$.
+
+- **Comparabilidad:** Permite comparar datos que provienen de distintas poblaciones con diferentes medias y varianzas al llevarlos a una escala común.
+
+```{r}
+#| fig-width: 12
+#| fig-height: 13
+#| echo: false
+#| warning: false
+#| message: false
+
+# 1. GENERAR PUNTOS PARA LAS CURVAS
+# Datos para una Normal General (Ej: Coeficiente Intelectual: Media=100, SD=15)
+mu <- 100
+sigma <- 15
+x_gen <- seq(55, 145, length = 200)
+y_gen <- dnorm(x_gen, mean = mu, sd = sigma)
+
+# Datos para la Normal Estándar (Media=0, SD=1)
+x_std <- seq(-3, 3, length = 200)
+y_std <- dnorm(x_std, mean = 0, sd = 1)
+
+
+# 2. CONFIGURAR PANEL (2 columnas arriba para gráficos, 1 bloque abajo para texto)
+layout(matrix(c(1, 2, 3, 3), nrow = 2, ncol = 2, byrow = TRUE), heights = c(2.2, 1.2))
+par(mar = c(4.5, 4.5, 3, 1))
+
+
+# ==============================================================================
+# GRÁFICA 1: DISTRIBUCIÓN NORMAL GENERAL X ~ N(100, 15)
+# ==============================================================================
+plot(x_gen, y_gen, type = "l", lwd = 3, col = "darkblue", las = 1,
+     main = expression(bold("Distribución Normal General ") * "X ~ N(" * mu * " = 100, " * sigma * " = 15)"),
+     xlab = "Valores de la Variable Original (X)", ylab = "Densidad")
+polygon(x_gen, y_gen, col = rgb(0, 0, 1, 0.08), border = NA)
+
+# Línea de la Media
+abline(v = mu, col = "red", lwd = 2, lty = 2)
+text(x = mu + 2, y = max(y_gen) * 0.8, expression(bold("Media (") * mu * bold("): Centro")), col = "red", adj = 0, cex = 0.85)
+
+# Mostrar una Desviación Típica (Puntos de inflexión)
+arrows(x0 = mu, y0 = dnorm(mu + sigma, mu, sigma), x1 = mu + sigma, y1 = dnorm(mu + sigma, mu, sigma), 
+       code = 3, angle = 90, length = 0.05, col = "purple", lwd = 2)
+text(x = mu + 3, y = dnorm(mu + sigma, mu, sigma) * 1.2, expression(bold("Parámetro ") * sigma * " = 15"), col = "purple", adj = 0, cex = 0.85)
+
+
+# ==============================================================================
+# GRÁFICA 2: DISTRIBUCIÓN NORMAL ESTÁNDAR Z ~ N(0, 1)
+# ==============================================================================
+plot(x_std, y_std, type = "l", lwd = 3, col = "darkgreen", las = 1,
+     main = expression(bold("Distribución Normal Estándar ") * "Z ~ N(" * mu * " = 0, " * sigma * " = 1)"),
+     xlab = "Valores Estandarizados (Estadístico Z)", ylab = "Densidad")
+polygon(x_std, y_std, col = rgb(0, 1, 0, 0.08), border = NA)
+
+# Línea de la Media Estandarizada
+abline(v = 0, col = "red", lwd = 2, lty = 2)
+text(x = 0.1, y = max(y_std) * 0.8, expression(bold("Media (") * mu * bold(") = 0")), col = "red", adj = 0, cex = 0.85)
+
+# Sombrear la zona entre Z = -1 y Z = 1 (Regla Empírica: ~68.3%)
+x_68 <- seq(-1, 1, length = 100)
+y_68 <- dnorm(x_68, mean = 0, sd = 1)
+polygon(c(-1, x_68, 1), c(0, y_68, 0), col = rgb(0, 1, 0, 0.15), border = NA)
+text(x = 0, y = 0.15, "68.27% de los datos\ncaen entre -1 y 1", col = "darkgreen", font = 2, cex = 0.85)
+
+
+# ==============================================================================
+# 3. PARTE INFERIOR: TEXTO EXPLICATIVO
+# ==============================================================================
+par(mar = c(0, 1, 1, 1)) 
+plot.new() 
+
+text(x = 0, y = 0.95, "4.2 CARACTERÍSTICAS DE LA DISTRIBUCIÓN NORMAL Y EL ESTADÍSTICO Z", adj = 0, font = 2, cex = 1.1, col = "darkblue")
+
+text(x = 0, y = 0.73, expression(bold("1. Características Básicas:") * " Es una distribución continua, perfectamente simétrica y con forma de campana (Campana de Gauss)."), adj = 0, cex = 0.85)
+text(x = 0, y = 0.63, " Sus dos parámetros determinan todo: la Media (\u03bc) fija el centro exacto y la Desviación Típica (\u03c3) determina qué tan ancha o alta es la curva.", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = 0.43, expression(bold("2. Distribución Normal Estándar:") * " Es un caso especial y universal donde la Media se fuerza a ser 0 y la Desviación Típica a ser 1."), adj = 0, cex = 0.85)
+text(x = 0, y = 0.33, " Permite comparar variables que originalmente venían en distintas unidades (como comparar peso en kg con estatura en cm).", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = 0.13, expression(bold("3. El Estadístico Z (Estandarización):") * " Es el puente matemático que transforma la gráfica izquierda en la gráfica derecha."), adj = 0, cex = 0.85)
+text(x = 0, y = 0.03, " Su fórmula es Z = (X - \u03bc) / \u03c3. Nos dice a cuántas desviaciones típicas de distancia se encuentra un dato respecto a su media central.", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = -0.17, expression(bold("Regla Empírica Clave:") * " En cualquier distribución normal: el 68.27% de las observaciones están a \u00b11 \u03c3 de la media; el 95.45%"), adj = 0, cex = 0.85, col = "darkred")
+text(x = 0, y = -0.27, " están a \u00b12 \u03c3, y el 99.73% están a \u00b13 \u03c3 (por eso la gráfica estándar casi siempre se dibuja únicamente desde -3 hasta 3).", adj = 0, cex = 0.85, col = "darkred")
+```
+
+### Apróximación normal a la distribución binomial
+
+La **aproximación normal a la distribución binomial** es un procedimiento estadístico que permite utilizar áreas bajo la curva normal para estimar probabilidades de una variable aleatoria binomial cuando el número de ensayos es grande.
+
+Este método, fundamentado en el **Teorema de Moivre-Laplace**, es sumamente útil en la práctica porque los cálculos exactos de la binomial (que involucran factoriales) pueden resultar extremadamente engorrosos o incluso imposibles de procesar para calculadoras convencionales cuando el tamaño de la muestra es elevado.
+
+##### Condiciones para la aproximación
+
+Para que la aproximación sea considerada válida y de buena calidad, se deben cumplir simultáneamente las siguientes condiciones:
+
+- $np≥5$: El producto del número de ensayos por la probabilidad de éxito debe ser mayor o igual a 5.
+
+- $n(1−p)≥5$: El producto del número de ensayos por la probabilidad de fracaso también debe ser mayor o igual a $5$.
+
+Si la probabilidad p **está cerca de** $0.5$, la aproximación suele ser razonablemente buena incluso con tamaños de muestra moderados o pequeños debido a la simetría de la distribución.
+
+##### Parámetros de la distribución normal aproximada
+
+Si una variable aleatoria $X$ sigue una distribución binomial $X \sim B(n,p)$, se puede aproximar mediante una distribución normal $N(\mu,\sigma)$ utilizando los siguientes parámetros:
+
+- **Media (**$\mu$): $$\mu = np$$
+- **Desviación típica (**$\sigma$): $$\sigma = \sqrt{npq}$$
+
+Así, el estadístico estandarizado toma la forma: $$Z = \frac{X - np}{\sqrt{np(1-p)}}$$
+
+Conforme $n$ tiende a infinito ($n \to \infty$), la distribución de este estadístico $Z$ converge a una **distribución normal estándar** $N(0,1)$.
+
+3\. Corrección por continuidad (Corrección de Yates)
+
+Dado que se está aproximando una distribución **discreta** (la binomial) mediante una **continua** (la normal), es necesario realizar un ajuste conocido como "corrección por continuidad" para compensar el hecho de que en la normal la probabilidad de un punto exacto es cero.
+
+Bajo esta corrección, se suma o resta 0.5 al valor de interés según el caso:
+
+- **Probabilidad puntual:** $$P(X = k) \approx P(k - 0.5 < X' < k + 0.5)$$
+
+- **Menor o igual:** $$P(X \le k) \approx P(X' \le k + 0.5)$$
+
+- **Menor estricto:** $$P(X < k) \approx P(X' < k - 0.5)$$
+
+- **Mayor o igual:** $$P(X \ge k) \approx P(X' \ge k - 0.5)$$
+
+- **Mayor estricto:** $$P(X > k) \approx P(X' > k + 0.5)$$
+
+4\. Relación con el Teorema Central del Límite
+
+La base teórica de esta aproximación es el **Teorema Central del Límite**, el cual establece que la suma de un gran número de variables independientes e idénticamente distribuidas (como los ensayos de Bernoulli en una binomial) tiende a distribuirse de forma normal, independientemente de la forma de la distribución original. En este contexto, la proporción de éxitos $X/n$ también se aproxima a una normal con media $p$ y varianza $pq/n$ si $n$ es suficientemente grande.
+
+## Distribución $t$ the Student
+
+La **distribución t de Student** es una distribución de probabilidad continua que surge del problema de estimar la media de una población con distribución normal cuando el tamaño de la muestra es pequeño y la desviación estándar poblacional ($σ$) es desconocida.
+
+A continuación se detallan sus características, propiedades y aplicaciones principales según las fuentes:
+
+### Origen e Historia
+
+Esta distribución fue establecida por **William Sealy Gosset**, quien publicó sus hallazgos en 1908 bajo el seudónimo de **"Student"** debido a que la cervecera irlandesa para la que trabajaba prohibía a sus empleados publicar investigaciones propias. Su trabajo permitió modelar el comportamiento del cociente esperado en muestras pequeñas, donde la variabilidad es mayor que en una distribución normal estándar.
+
+### Definición Matemática y Parámetros
+
+La distribución queda definida por un único parámetro llamado grados de libertad ($\nu$ o $n$). Se dice que una variable aleatoria $T$ sigue una distribución $t$ de Student ($T \sim t_{\nu}$) si puede expresarse como el cociente de una variable normal estándar ($Z$) y la raíz cuadrada de una variable chi-cuadrada ($V$) dividida entre sus grados de libertad:
+
+$$T = \frac{Z}{\sqrt{\frac{V}{\nu}}}$$
+
+Donde $Z$ y $V$ son estadísticamente independientes.
+
+- **Media:** Es igual a $0$ (siempre que $\nu > 1$).
+- **Varianza:** Se define como: $$\sigma^2 = \frac{\nu}{\nu - 2}$$
+
+(para $\nu > 2$). Debido a esto, la distribución $t$ siempre es más variable que la normal estándar (cuya varianza es $1$), aunque dicha variabilidad disminuye al aumentar los grados de libertad.
+
+3\. Características de la Curva
+
+- **Forma:** Tiene forma de campana, muy similar a la normal estándar, pero es **más baja y ancha** (tiene "colas más pesadas"). Esto refleja la incertidumbre adicional que surge al estimar la desviación estándar a partir de la muestra (s) en lugar de conocer el valor poblacional (σ).
+
+- **Simetría:** Es perfectamente simétrica alrededor de su media de **cero**.
+
+- **Convergencia:** A medida que los grados de libertad aumentan (n→∞), la distribución t **converge a la distribución normal estándar**. En la práctica, para muestras de n≥30, la diferencia entre ambas es mínima.
+
+4\. Aplicaciones en Inferencia Estadística
+
+Es la herramienta fundamental para realizar inferencias sobre la media poblacional ($μ$) cuando la varianza es desconocida:
+
+- **Intervalos de Confianza:** Se utiliza para construir intervalos de confianza para la media cuando la varianza poblacional es desconocida. El intervalo se calcula como: $$\bar{x} \pm t_{\alpha/2} \cdot \frac{s}{\sqrt{n}}$$ Donde $t_{\alpha/2}$ se busca en las tablas de la distribución utilizando $n-1$ grados de libertad.
+
+- **Pruebas de Hipótesis:** Permite probar si una media muestral difiere significativamente de un valor hipotético ($\mu_0$), o para comparar las medias de dos poblaciones independientes (prueba $t$ de dos muestras) o pareadas.
+
+- **Análisis de Regresión:** En los modelos de regresión lineal, se emplea para realizar pruebas de significancia estadística sobre los coeficientes estimados (como la pendiente $\beta_1$ o la intersección $\beta_0$) y para construir intervalos de predicción.
+
+- **Diagnóstico de Datos:** Se utiliza en el cálculo de residuales estudentizados o valores "R de Student" para detectar observaciones influyentes o valores atípicos (*outliers*) en un conjunto de datos.
+
+------------------------------------------------------------------------
+
+### 5. Consideraciones Importantes
+
+- **Robustez:** Aunque su derivación formal supone que la muestra proviene de una población estrictamente normal, la prueba $t$ es robusta. Esto significa que proporciona resultados confiables incluso si la población se desvía moderadamente de la normalidad, siempre que el tamaño de la muestra sea aceptable y la distribución original sea aproximadamente en forma de campana.
+
+- **Uso de Tablas y Valores Críticos:** Los valores críticos de $t$ ($t_{\alpha}$) están tabulados en función del área en la cola derecha y los grados de libertad. Debido a la simetría de la campana, el valor crítico que deja un área $\alpha$ a la izquierda es simplemente el negativo del valor que deja esa misma área a la derecha: $$t_{1-\alpha} = -t_{\alpha}$$
+
+```{r}
+#| fig-width: 10
+#| fig-height: 12
+#| echo: false
+#| warning: false
+#| message: false
+
+# 1. GENERAR PUNTOS PARA LAS CURVAS (Eje X de -4 a 4)
+x <- seq(-4, 4, length = 300)
+
+# Calcular densidades para distintas distribuciones
+y_normal <- dnorm(x, mean = 0, sd = 1)      # Normal Estándar
+y_t2     <- dt(x, df = 2)                   # t de Student con 2 gl
+y_t10    <- dt(x, df = 10)                  # t de Student con 10 gl
+
+# 2. CONFIGURAR PANEL (Gráfica arriba, texto explicativo abajo)
+layout(matrix(c(1, 2), nrow = 2, ncol = 1), heights = c(2.2, 1))
+par(mar = c(4.5, 4.5, 3, 1))
+
+# 3. PARTE SUPERIOR: DIBUJAR LAS CURVAS
+# Curva base: Normal Estándar (Línea discontinua negra)
+plot(x, y_normal, type = "l", lwd = 3, lty = 2, col = "black", las = 1,
+     main = expression(bold("Distribución t de Student vs. Normal Estándar")),
+     xlab = "Valores de t (o Z)", ylab = "Densidad")
+
+# Añadir t con 10 grados de libertad (Línea azul oscuro)
+lines(x, y_t10, lwd = 2.5, col = "darkblue")
+
+# Añadir t con sólo 2 grados de libertad (Línea roja, colas pesadas)
+lines(x, y_t2, lwd = 2.5, col = "firebrick")
+
+# Agregar leyenda interactiva visual
+legend("topright", 
+       legend = c("Normal Estándar (Z)", "t de Student (gl = 10)", "t de Student (gl = 2)"),
+       col = c("black", "darkblue", "firebrick"), 
+       lwd = c(3, 2.5, 2.5), lty = c(2, 1, 1), bty = "n", cex = 0.9)
+
+# --- ANOTACIONES VISUALES ---
+# Señalar el comportamiento de las colas pesadas
+arrows(x0 = -3.5, y0 = 0.08, x1 = -3.1, y1 = dt(-3.1, df = 2), code = 2, length = 0.08, col = "firebrick")
+text(x = -3.6, y = 0.09, "Colas más pesadas\n(gl pequeños = más incertidumbre)", col = "firebrick", adj = 0, cex = 0.8)
+
+# Señalar el centro
+text(x = 0.2, y = max(y_normal) * 0.95, "Media = 0\n(Todas son simétricas)", col = "gray30", adj = 0, cex = 0.8)
+
+
+# ==============================================================================
+# 4. PARTE INFERIOR: TEXTO EXPLICATIVO
+# ==============================================================================
+par(mar = c(0, 1, 1, 1)) 
+plot.new() 
+
+text(x = 0, y = 0.95, "CARACTERÍSTICAS DE LA DISTRIBUCIÓN T DE STUDENT", adj = 0, font = 2, cex = 1.1, col = "darkblue")
+
+text(x = 0, y = 0.72, expression(bold("1. ¿Cuándo se utiliza?:") * " Se usa en estimación e inferencia cuando se desconoce la desviación típica"), adj = 0, cex = 0.85)
+text(x = 0, y = 0.62, " poblacional (\u03c3) y el tamaño de la muestra 'n' es pequeño (típicamente n < 30). Usa la desviación muestral (s).", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = 0.40, expression(bold("2. Grados de Libertad (gl):") * " Definidos como gl = n - 1. Determinan directamente la forma de la curva."), adj = 0, cex = 0.85)
+text(x = 0, y = 0.30, " A menor cantidad de datos (como gl = 2), hay mayor variabilidad en los extremos y la campana se aplasta en el centro.", adj = 0, cex = 0.85, font = 3, col = "gray20")
+
+text(x = 0, y = 0.08, expression(bold("3. Convergencia a la Normal:") * " Observa cómo la línea azul (gl = 10) ya está muy cerca de la normal (negra)."), adj = 0, cex = 0.85)
+text(x = 0, y = -0.02, " Cuando n tiende a infinito (o gl > 30), la distribución t de Student se vuelve matemáticamente idéntica a la Normal Estándar.", adj = 0, cex = 0.85, font = 3, col = "gray20")
+```
+
+## Inferencia estadística
+
+### Teorema del límite central
+
+El **Teorema del Límite Central (TLC)** es considerado el resultado más importante en el estudio del muestreo y de las distribuciones muestrales. Este teorema establece que, bajo ciertas condiciones, la suma o el promedio de un gran número de variables aleatorias tiende a distribuirse de forma normal, independientemente de la forma de la distribución original de la población.
+
+A continuación se desglosan sus características fundamentales, propiedades y aplicaciones:
+
+### 1. Definición matemática
+
+Si $X_1, X_2, \dots, X_n$ es una sucesión de variables aleatorias independientes e idénticamente distribuidas (i.i.d.), con media $\mu$ y varianza finita $\sigma^2$, entonces la función de distribución de la variable estandarizada $Z_n$ tiende a la distribución normal estándar $\mathcal{N}(0,1)$ conforme el tamaño de la muestra ($n$) tiende a infinito:
+
+$$Z_n = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}}$$
+
+Donde $\bar{X}$ es la media muestral, calculada como $\bar{X} = \frac{1}{n}\sum_{i=1}^{n}X_i$.
+
+### 2. Propiedades de la distribución muestral de medias
+
+De acuerdo con el teorema, la distribución de las medias muestrales de tamaño $n$ posee las siguientes características:
+
+- **Media:** La media de las medias muestrales es igual a la media de la población original ($\mu_{\bar{X}} = \mu$).
+- **Varianza y Desviación Típica:** La varianza de la media muestral es $\sigma^2 / n$, y su desviación típica (conocida como *error estándar*) es: $$\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}$$ Esto implica que a medida que aumenta el tamaño de la muestra, la dispersión de las medias muestrales disminuye.
+
+### 3. Condiciones y tamaño de la muestra
+
+- **Poblaciones normales:** Si se sabe que la población de partida es normal, la distribución de las medias muestrales será normal para cualquier tamaño de muestra.
+- **Poblaciones no normales:** Si la población original no es normal, la aproximación a la normalidad suele considerarse válida y con "ciertas garantías" cuando el tamaño muestral es $n \geq 30$.
+- **Afinación de la aproximación:** La suposición de normalidad se vuelve más precisa a medida que $n$ crece. Incluso para poblaciones moderadamente sesgadas, una muestra de 30 suele ser suficiente, aunque si la población es aproximadamente simétrica, la aproximación puede ser buena incluso con muestras más pequeñas.
+
+### 4. Importancia y aplicaciones
+
+- **Inferencia estadística:** Es la base para determinar valores razonables de la media poblacional mediante pruebas de hipótesis e intervalos de confianza.
+- **Simplificación de cálculos:** Permite aproximar probabilidades de eventos que involucran sumas de variables aleatorias complejas utilizando únicamente las tablas de la normal estándar.
+- **Modelado de fenómenos:** Explica por qué muchos fenómenos naturales y científicos (donde el resultado es la suma de muchos factores independientes) se comportan de forma "gaussiana" o normal.
+- **Aproximaciones:** Es el fundamento detrás de la aproximación normal a la distribución binomial (Teorema de De Moivre-Laplace), la cual es válida cuando $np \geq 5$ y $nq \geq 5$ (donde $q = 1 - p$).
+
+En resumen, el Teorema del Límite Central actúa como un "puente" que permite aplicar técnicas paramétricas (que asumen normalidad) a datos provenientes de poblaciones con distribuciones desconocidas o no normales, siempre que se cuente con un tamaño de muestra razonable.
+
+```{r}
+#| fig-width: 9
+#| fig-height: 9
+#| echo: false
+#| warning: false
+#| message: false
+# Instala los paquetes si no los tienes:
+# install.packages("ggplot2")
+# install.packages("patchwork")
+
+library(ggplot2)
+library(patchwork)
+
+# Configuración de reproducibilidad
+set.seed(42)
+
+# ==========================================
+# 1. LA POBLACIÓN ORIGINAL (No Normal)
+# ==========================================
+# Creamos una población con una distribución exponencial (muy sesgada)
+poblacion <- rexp(10000, rate = 0.2)
+
+df_poblacion <- data.frame(valores = poblacion)
+
+g1 <- ggplot(df_poblacion, aes(x = valores)) +
+  geom_histogram(aes(y = ..density..), bins = 40, fill = "#1f77b4", color = "white", alpha = 0.7) +
+  geom_density(color = "#0d47a1", size = 1) +
+  labs(title = "1. Distribución de la Población",
+       subtitle = "Distribución Exponencial (Original)",
+       x = "Valores", y = "Densidad") +
+  theme_minimal()
+
+# ==========================================
+# 2. SIMULACIÓN DEL TLC (Muestreo)
+# ==========================================
+# Vamos a tomar muestras de diferentes tamaños (n) para ver la evolución
+simular_tlc <- function(n_tamano, n_simulaciones = 1000) {
+  # Tomamos 'n_simulaciones' muestras de tamaño 'n_tamano' y calculamos su media
+  medias <- replicate(n_simulaciones, mean(sample(poblacion, size = n_tamano, replace = TRUE)))
+  return(data.frame(medias = medias, tamano = as.factor(n_tamano)))
+}
+
+# Simulamos con muestras pequeñas (n = 5) y grandes (n = 50)
+df_n5  <- simular_tlc(5)
+df_n50 <- simular_tlc(50)
+
+# Gráfica para n = 5 (Apenas empieza a cambiar)
+g2 <- ggplot(df_n5, aes(x = medias)) +
+  geom_histogram(aes(y = ..density..), bins = 30, fill = "#ff7f0e", color = "white", alpha = 0.7) +
+  geom_density(color = "#e65100", size = 1) +
+  labs(title = "2. Medias de Muestras Pequeñas",
+       subtitle = "Tamaño de muestra n = 5",
+       x = "Valor de las Medias", y = "Densidad") +
+  theme_minimal()
+
+# Gráfica para n = 50 (¡Aparece la campana de Gauss!)
+g3 <- ggplot(df_n50, aes(x = medias)) +
+  geom_histogram(aes(y = ..density..), bins = 30, fill = "#2ca02c", color = "white", alpha = 0.7) +
+  geom_density(color = "#1b5e20", size = 1) +
+  labs(title = "3. Medias de Muestras Grandes",
+       subtitle = "Tamaño de muestra n = 50 (Efecto TLC)",
+       x = "Valor de las Medias", y = "Densidad") +
+  theme_minimal()
+
+# ==========================================
+# 3. MOSTRAR EL PANEL COMPLETO
+# ==========================================
+# Usamos patchwork para alinear las gráficas
+g1 / (g2 + g3)
+```
+
+## Pruebas de hipótesis
+
+La **inferencia estadística** es el conjunto de métodos mediante los cuales se realizan generalizaciones o predicciones sobre una población a partir de los datos de una muestra. Se divide principalmente en dos áreas: la **estimación de parámetros**, que busca determinar valores probables para características desconocidas de la población (como la media o la proporción), y las **pruebas de hipótesis**, que consisten en procedimientos de decisión para aceptar o rechazar conjeturas sobre dichas características.
+
+------------------------------------------------------------------------
+
+### 5.2.1 Pruebas de hipótesis y estimación sobre la media ($\mu$)
+
+La estimación puntual de la media poblacional ($\mu$) se realiza a través de la media muestral ($\bar{X}$), la cual se considera un estimador insesgado y razonable.
+
+#### Estimación por intervalos de confianza
+
+El intervalo de confianza representa un rango de valores donde se espera que resida el parámetro con un determinado nivel de confianza ($1-\alpha$), usualmente del 95% o 99%.
+
+- **Varianza poblacional (**$\sigma^2$) conocida: Se utiliza el estadístico $Z$. El intervalo se calcula como: $$\bar{X} \pm z_{\alpha/2} \frac{\sigma}{\sqrt{n}}$$
+- **Varianza poblacional (**$\sigma^2$) desconocida: Se sustituye $\sigma$ por la desviación estándar de la muestra ($s$) y se emplea la distribución $t$ de Student con $n-1$ grados de libertad: $$\bar{X} \pm t_{\alpha/2, n-1} \frac{s}{\sqrt{n}}$$
+- **Muestras grandes (**$n \geq 30$): Por el Teorema del Límite Central, incluso si la población no es normal, se puede usar la aproximación normal reemplazando $\sigma$ por $s$.
+
+#### Pruebas de hipótesis
+
+El procedimiento compara una hipótesis nula ($H_0: \mu = \mu_0$), que representa el estado actual, el estándar histórico o de "no efecto", contra una hipótesis alternativa ($H_1$), que refleja la nueva teoría que se quiere probar ($H_1: \mu \neq \mu_0$, $H_1: \mu > \mu_0$ o $H_1: \mu < \mu_0$).
+
+- **Estadístico de prueba:** Se calcula: $$Z = \frac{\bar{X} - \mu_0}{\sigma / \sqrt{n}} \quad \text{(si } \sigma \text{ es conocida)} \qquad \text{o} \qquad t = \frac{\bar{X} - \mu_0}{s / \sqrt{n}} \quad \text{(si } \sigma \text{ es desconocida)}$$
+- **Regla de decisión:** Si el valor calculado cae en la región crítica (determinada por el nivel de significancia $\alpha$, típicamente $0.05$), se rechaza $H_0$ a favor de $H_1$.
+
+> **Ejemplo sencillo (La máquina de café):** \> Una máquina automática sirve tazas de café que teóricamente deben promediar $\mu_0 = 200\text{ ml}$. Sospechas que la máquina está sirviendo menos cantidad. Tomas una muestra de $n = 35$ tazas y calculas la media de tu muestra ($\bar{X} = 195\text{ ml}$) con una desviación estándar $s = 10\text{ ml}$.
+>
+> - $H_0: \mu = 200\text{ ml}$ (La máquina funciona perfectamente).
+> - $H_1: \mu < 200\text{ ml}$ (La máquina está sirviendo menos, nuestra sospecha).
+> - Al calcular el estadístico de prueba $t$, si el resultado es un número muy negativo (por ejemplo, $-2.95$), significa que obtener un promedio de $195\text{ ml}$ de forma pura y natural por azar es extremadamente improbable. Por lo tanto, **rechazas** $H_0$ y concluyes que la máquina está descalibrada.
+
+```{r}
+#| fig-width: 6
+#| fig-height: 4
+#| echo: false
+#| warning: false
+#| message: false
+library(ggplot2)
+
+# Parámetros del ejemplo
+mu_0 <- 200
+x_barra <- 195
+s <- 10
+n <- 35
+alpha <- 0.05
+
+# Calcular estadístico t y valor crítico
+t_calc <- (x_barra - mu_0) / (s / sqrt(n))
+t_critico <- qt(alpha, df = n - 1)
+
+# Gráfico
+x_vals <- seq(-4, 4, length.out = 1000)
+y_vals <- dt(x_vals, df = n - 1)
+df <- data.frame(x = x_vals, y = y_vals)
+
+ggplot(df, aes(x = x, y = y)) +
+  geom_line(size = 1) +
+  geom_area(data = subset(df, x <= t_critico), aes(y = y), fill = "red", alpha = 0.5) +
+  geom_vline(xintercept = t_calc, color = "darkblue", size = 1.2, linetype = "dashed") +
+  annotate("text", x = t_critico - 0.5, y = 0.1, label = "Región de\nRechazo (Red)", color = "red") +
+  annotate("text", x = t_calc - 0.6, y = 0.25, label = paste("Tu Muestra\nt =", round(t_calc, 2)), color = "darkblue") +
+  labs(title = "Prueba de Hipótesis para la Media del Café",
+       subtitle = "El valor observado cae profundamente en la región de rechazo",
+       x = "Estadístico t", y = "Densidad") +
+  theme_minimal()
+```
+
+## Pruebas de hipótesis para la diferencia de medias ($\mu_1 - \mu_2$)
+
+Este análisis permite comparar dos poblaciones distintas para ver si difieren significativamente en sus promedios.
+
+#### Estimación por intervalos de confianza.
+
+- Muestras independientes con varianzas conocidas: Se utiliza la distribución normal para el intervalo:$$(\bar{X}_1 - \bar{X}_2) \pm z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}$$
+- Varianzas desconocidas pero iguales: Se utiliza una varianza agrupada ($s_p^2$) y la distribución $t$ con $n_1 + n_2 - 2$ grados de libertad.
+- Varianzas desconocidas y distintas: Se emplea la aproximación de Satterthwaite para calcular grados de libertad corregidos.
+- Observaciones pareadas: Cuando las muestras no son independientes (ej. el mismo sujeto "antes y después"), se analiza la media de las diferencias individuales ($\bar{d}$):$$\bar{d} \pm t_{\alpha/2, n-1} \frac{s_d}{\sqrt{n}}$$💡
+
+##### Ejemplo sencillo (Curso de preparación):
+
+> Quieres saber si un nuevo curso en línea mejora las calificaciones en un examen. Tomas a $10$ alumnos y registras su calificación antes de tomar el curso y después de tomarlo. Esto es una muestra pareada. - $H_0: \mu_d = 0$ (El curso no tiene ningún efecto; las calificaciones promedio siguen iguales). - $H_1: \mu_d > 0$ (Las calificaciones aumentaron después del curso). - Si el promedio de las diferencias individuales da positivo y lo suficientemente alto, la prueba te dirá que rechaces $H_0$, lo que demuestra científicamente que el curso funciona.
+
+```{r}
+#| fig-width: 6
+#| fig-height: 4
+#| echo: false
+#| warning: false
+#| message: false
+# Visualización de una prueba de dos colas (Diferencia de medias)
+alpha <- 0.05
+z_critico_izq <- qnorm(alpha/2)
+z_critico_der <- qnorm(1 - alpha/2)
+z_calc <- 2.35 # Supongamos un valor calculado de ejemplo
+
+x_vals <- seq(-4, 4, length.out = 1000)
+y_vals <- dnorm(x_vals)
+df_D <- data.frame(x = x_vals, y = y_vals)
+
+ggplot(df_D, aes(x = x, y = y)) +
+  geom_line(size = 1) +
+  geom_area(data = subset(df_D, x <= z_critico_izq), aes(y = y), fill = "red", alpha = 0.5) +
+  geom_area(data = subset(df_D, x >= z_critico_der), aes(y = y), fill = "red", alpha = 0.5) +
+  geom_vline(xintercept = z_calc, color = "darkgreen", size = 1.2, linetype = "dashed") +
+  labs(title = "Prueba de Dos Colas (Comparación de Dos Grupos)",
+       subtitle = "El valor verde cae en la región de rechazo derecha",
+       x = "Estadístico Z", y = "Densidad") +
+  theme_minimal()
+```
+
+### Pruebas de hipótesis y estimación para la proporción ($p$)
+
+Se utiliza cuando nos interesa la tasa o frecuencia relativa de "éxitos" en una población (datos cualitativos binarios).
+
+#### Estimación por intervalos de confianza
+
+La estimación puntual es $\hat{p} = \frac{x}{n}$. Para muestras grandes ($n\hat{p} \geq 5$ y $n(1-\hat{p}) \geq 5$), el intervalo aproximado es:$$\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}$$
+
+#### Pruebas de hipótesis
+
+Para contrastar $H_0: p = p_0$ en muestras grandes, se utiliza el estadístico $Z$:$$Z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1 - p_0)}{n}}}$$
+
+💡 Ejemplo sencillo (Lanzamiento de un nuevo producto): \> Históricamente, el porcentaje de clientes satisfechos con la versión anterior de una app es del $p_0 = 70\%$ ($0.70$). Lanzas una nueva actualización y quieres probar si la satisfacción aumentó. Encuestas a $n = 100$ usuarios y descubres que $80$ están contentos ($\hat{p} = 0.80$). - $H_0: p = 0.70$ (La satisfacción sigue exactamente igual que antes). - $H_1: p > 0.70$ (La nueva actualización incrementó la proporción de clientes felices). - Si al resolver la ecuación del estadístico $Z$ el resultado supera el valor crítico (típicamente $1.645$ para una cola), se concluye con bases estadísticas sólidas que la actualización fue un éxito rotundo.
+
+```{r}
+# Ejecutar una prueba real de proporción con los datos del ejemplo
+# n = 100 usuarios, éxitos = 80, hipótesis nula p_0 = 0.70
+prueba_prop <- prop.test(x = 80, n = 100, p = 0.70, alternative = "greater", correct = FALSE)
+
+# Imprimir resultado en consola
+print(prueba_prop)
+
+# Guardar el valor p para análisis
+cat("El p-valor es:", prueba_prop$p.value, "\n")
+# Si el p-valor es menor a 0.05, se descarta H0.
+```
+
+| Si el Estadístico Calculado... | El valor $P$ será... | Decisión sobre $H_0$ | Conclusión |
+|:-----------------|:-----------------:|:----------------:|:-----------------|
+| Cae **dentro** de las zonas rojas críticas | Menor que $\alpha$ ($< 0.05$) | **Rechazar** $H_0$ | Hay suficiente evidencia a favor de tu teoría ($H_1$). |
+| Cae **fuera** de las zonas rojas críticas | Mayor que $\alpha$ ($\geq 0.05$) | **No rechazar** $H_0$ | No hay pruebas suficientes para cambiar el estándar actual. |
+
+# Derivadas
+
+Para el cálculo de derivadas de funciones constantes, productos y exponenciales, las fuentes proporcionan las siguientes reglas y procedimientos:
+
+### 1. Derivada de una función constante
+
+La regla para una función constante establece que si $f(x) = c$, donde $c$ es un número real, entonces su derivada es siempre cero.
+
+- **Fórmula:** $$\frac{d}{dx}(c) = 0$$
+- **Interpretación geométrica:** La gráfica de una función constante es una recta horizontal, la cual tiene una pendiente de cero en todos sus puntos.
+
+### 2. Regla del producto
+
+La derivada del producto de dos funciones derivables no es simplemente el producto de sus derivadas. La regla correcta indica que la derivada de un producto es igual a la primera función por la derivada de la segunda, más la segunda función por la derivada de la primera.
+
+- **Fórmula:** $$\frac{d}{dx}[f(x) \cdot g(x)] = f(x) \cdot g'(x) + g(x) \cdot f'(x)$$
+- **Ejemplo:** Para derivar $f(x) = x \cdot e^x$, se aplica la regla obteniendo $x(e^x) + e^x(1)$, lo que se simplifica a $e^x(x + 1)$.
+
+### 3. Derivada de funciones exponenciales
+
+El cálculo varía dependiendo de si la base es el número natural $e$ o una constante $a$ cualquiera:
+
+- **Función exponencial natural (**$e^x$): Es un caso notable en matemáticas ya que la función $e^x$ es su propia derivada.
+  - **Fórmula básica:** $$\frac{d}{dx}(e^x) = e^x$$
+  - **Con regla de la cadena:** Si el exponente es una función $g(x)$, la derivada es: $$\frac{d}{dx}\left[e^{g(x)}\right] = e^{g(x)} \cdot g'(x)$$
+- **Función exponencial general (**$a^x$): Cuando la base $a$ es una constante positiva diferente de 1, la derivada incluye el logaritmo natural de la base.
+  - **Fórmula básica:** $$\frac{d}{dx}(a^x) = a^x \ln(a)$$
+  - **Ejemplo:** La derivada de $2^x$ es $2^x \ln(2)$.
+  - $$a^x = e^{x \ln(a)}$$
+  - **Con regla de la cadena:** $$\frac{d}{dx}\left[a^{g(x)}\right] = a^{g(x)} \ln(a) \cdot g'(x)$$
+
+------------------------------------------------------------------------
+
+### Resumen de fórmulas clave
+
+| Tipo de Función         | Función $f(x)$ |     Derivada $f'(x)$      |
+|:------------------------|:--------------:|:-------------------------:|
+| **Constante**           |      $c$       |            $0$            |
+| **Producto**            |  $u \cdot v$   | $u \cdot v' + v \cdot u'$ |
+| **Exponencial natural** |     $e^x$      |           $e^x$           |
+| **Exponencial general** |     $a^x$      |       $a^x \ln(a)$        |
+
+#### Regla de la Cadena
+
+$$\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)$$ Ejemplo:
+
+Imagina que quieres derivar la función: $$y = \ln(x^2 + 5)$$ Aquí tenemos dos capas: - Función externa $f(u)$: $\ln(u)$ → (Su derivada es $\frac{1}{u}$) - Función interna $g(x)$: $x^2 + 5$ → (Su derivada es $2x$)
+
+Aplicamos la regla de la cadena: - Derivamos la parte externa manteniendo intacto el centro:$$\frac{1}{x^2 + 5}$$ - Multiplicamos por la derivada del centro:$$\frac{1}{x^2 + 5} \cdot (2x)$$ - Resultado final:$$\frac{d}{dx}[\ln(x^2 + 5)] = \frac{2x}{x^2 + 5}$$
+
+Ejemplo 2.
+
+- Seno $$\frac{d}{dx}(\operatorname{sen}(x)) = \cos(x)$$
+- Tangente $$\frac{d}{dx}(\tan(x)) = \sec^2(x)$$
+
+(Nota: También la puedes encontrar escrita en los libros como $\frac{1}{\cos^2(x)}$ o como $1 + \tan^2(x)$, ya que todas son identidades trigonométricas equivalentes).
+
+Ejemplo 3. La derivada de $k x^n$ combina dos reglas básicas del cálculo: la regla de la potencia y la regla del factor constante. Básicamente, el exponente $n$ "baja" a multiplicar al frente y se le resta uno a su exponente original, mientras que la constante $k$ se queda ahí multiplicando el resultado.
+
+$$\frac{d}{dx}\left(k x^n\right) = k \cdot n x^{n-1}$$ Ejemplos: - Con números enteros: Si tienes $f(x) = 5x^3$, el $3$ baja a multiplicar al $5$ y al exponente le restas $1$$$\frac{d}{dx}\left(5x^3\right) = 5 \cdot 3x^{3-1} = 15x^2$$ - Con exponentes negativos: Si tienes $f(x) = 2x^{-4}$, el $-4$ baja multiplicando$$\frac{d}{dx}\left(2x^{-4}\right) = 2 \cdot (-4)x^{-4-1} = -8x^{-5}$$ - Con fracciones (raíces): Si tienes $f(x) = 4x^{1/2}$ (que es lo mismo que $4\sqrt{x}$)$$\frac{d}{dx}\left(4x^{1/2}\right) = 4 \cdot \left(\frac{1}{2}\right)x^{1/2 - 1} = 2x^{-1/2} = \frac{2}{\sqrt{x}}$$
