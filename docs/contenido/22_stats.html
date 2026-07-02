@@ -1073,12 +1073,12 @@ window.Quarto = {
 <hr></section><section id="la-fórmula-matemática" class="level3" data-number="13.1.8"><h3 data-number="13.1.8" class="anchored" data-anchor-id="la-fórmula-matemática">
 <span class="header-section-number">13.1.8</span> La Fórmula Matemática</h3>
 <p><span class="math display">\[P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}\]</span></p>
-<p>Donde cada parte tiene un nombre técnico y un significado muy intuitivo: * <strong><span class="math inline">\(P(A|B)\)</span> (Probabilidad Posterior):</strong> La probabilidad de que ocurra <span class="math inline">\(A\)</span> (Resfriado) <strong>dado que</strong> ya observamos <span class="math inline">\(B\)</span> (Tos). Esto es lo que queremos descubrir. * <strong><span class="math inline">\(P(A)\)</span> (Probabilidad Prior / A Priori):</strong> Tu creencia inicial antes de ver la evidencia. ¿Qué tan común es tener un resfriado en la población? * <strong><span class="math inline">\(P(B|A)\)</span> (Verosimilitud / Likelihood):</strong> Si asumimos que efectivamente tienes un resfriado (<span class="math inline">\(A\)</span>), ¿qué tan probable es que cause tos (<span class="math inline">\(B\)</span>)? * <strong><span class="math inline">\(P(B)\)</span> (Probabilidad Marginal):</strong> La probabilidad total de tener tos en el mundo, por cualquier causa (alergias, fumar, frío, etc.). Funciona como un factor de normalización.</p>
+<p>Donde cada parte tiene un nombre técnico y un significado muy intuitivo: * <span class="math inline">\(P(A|B)\)</span> (Probabilidad Posterior): La probabilidad de que ocurra <span class="math inline">\(A\)</span> (Resfriado) <strong>dado que</strong> ya observamos <span class="math inline">\(B\)</span> (Tos). Esto es lo que queremos descubrir. * <span class="math inline">\(P(A)\)</span> (Probabilidad Prior / A Priori): Tu creencia inicial antes de ver la evidencia. ¿Qué tan común es tener un resfriado en la población? * <span class="math inline">\(P(B|A)\)</span> (Verosimilitud / Likelihood): Si asumimos que efectivamente tienes un resfriado (<span class="math inline">\(A\)</span>), ¿qué tan probable es que cause tos (<span class="math inline">\(B\)</span>)? * <span class="math inline">\(P(B)\)</span> (Probabilidad Marginal): La probabilidad total de tener tos en el mundo, por cualquier causa (alergias, fumar, frío, etc.). Funciona como un factor de normalización.</p>
 </section></section><section id="conteo-de-eventos-combinatoria" class="level2" data-number="13.2"><h2 data-number="13.2" class="anchored" data-anchor-id="conteo-de-eventos-combinatoria">
 <span class="header-section-number">13.2</span> Conteo de eventos (Combinatoria)</h2>
-<p>Para aplicar la definición clásica de probabilidad, es esencial saber contar casos. El <strong>Principio General de Recuento</strong> establece que si un experimento tiene n formas y otro tiene m, juntos tienen <span class="math inline">\(n×m\)</span> formas. Las técnicas principales incluyen:</p>
+<p>Para aplicar la definición clásica de probabilidad, es esencial saber contar casos. El <strong>Principio General de Recuento</strong> establece que si un experimento tiene n formas y otro tiene m, juntos tienen <span class="math inline">\(n × m\)</span> formas. Las técnicas principales incluyen:</p>
 <ul>
-<li><p><strong>Variaciones:</strong> Importa el orden. Pueden ser <strong>ordinarias</strong> (sin repetición) o <strong>con repetición</strong> (<span class="math inline">\(nk\)</span>).</p></li>
+<li><p><strong>Variaciones:</strong> Importa el orden. Pueden ser <strong>ordinarias</strong> (sin repetición) o <strong>con repetición</strong> (<span class="math inline">\(n^k\)</span>).El Teorema de la Probabilidad Total va hacia adelante: une las causas para encontrar la probabilidad del resultado final (<span class="math inline">\(P(\text{Defectuosa})\)</span>).El Teorema de Bayes va hacia atrás: sabe el resultado final y quiere averiguar la causa original</p></li>
 <li><p><strong>Permutaciones:</strong> Son variaciones donde intervienen todos los elementos del conjunto (<span class="math inline">\(n!\)</span>).</p></li>
 <li><p><strong>Combinaciones:</strong> El orden <strong>no importa</strong>. Se utilizan para seleccionar subconjuntos. Su fórmula es El orden . Se utilizan para seleccionar subconjuntos. Su fórmula es: <span class="math display">\[C_{n,k} = \binom{n}{k} = \frac{n!}{k!(n-k)!}\]</span></p></li>
 </ul>
@@ -1142,9 +1142,13 @@ window.Quarto = {
 <ul>
 <li><p><strong>El Ejemplo Clásico:</strong> Crear una contraseña de 4 dígitos usando los números del 0 al 9.</p></li>
 <li><p><strong>Por qué aplica:</strong> El orden importa (no es lo mismo la contraseña <code>1-2-3-4</code> que <code>4-3-2-1</code>) y puedes repetir números (la contraseña puede ser <code>7-7-7-7</code>).</p></li>
-<li><p><strong>La Fórmula:</strong> <span class="math inline">\(n^k\)</span> (donde <span class="math inline">\(n\)</span> son las opciones totales y <span class="math inline">\(k\)</span> los espacios a llenar).</p></li>
-<li><p><strong>Cálculo:</strong> <span class="math inline">\(10^4 = 10,000\)</span> contraseñas posibles.</p></li>
+<li><p><strong>La Fórmula:</strong></p></li>
 </ul>
+<p><span class="math inline">\(n^k\)</span> (donde <span class="math inline">\(n\)</span> son las opciones totales y <span class="math inline">\(k\)</span> los espacios a llenar).</p>
+<ul>
+<li><strong>Cálculo:</strong></li>
+</ul>
+<p><span class="math inline">\(10^4 = 10,000\)</span> contraseñas posibles.</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 10000</code></pre>
@@ -1162,7 +1166,9 @@ window.Quarto = {
 <section id="ordenamientos-sin-reemplazo-importa-el-orden-pero-no-se-puede-repetir" class="level5"><h5 class="anchored" data-anchor-id="ordenamientos-sin-reemplazo-importa-el-orden-pero-no-se-puede-repetir">2. Ordenamientos SIN Reemplazo (Importa el orden pero NO se puede repetir)</h5>
 <p>También conocidos como Permutaciones. Una vez que eliges un elemento, este queda descartado para la siguiente posición.</p>
 <section id="el-ejemplo-clásico" class="level6"><h6 class="anchored" data-anchor-id="el-ejemplo-clásico">El Ejemplo Clásico:</h6>
-<p>Una carrera donde compiten 8 atletas y queremos saber de cuántas formas se pueden repartir las medallas de Oro, Plata y Bronce.Por qué aplica: El orden importa por completo (no es lo mismo ganar Oro que Bronce) y no hay reemplazo (un mismo atleta no puede ganar Oro y Plata a la vez). - La Fórmula:<span class="math display">\[P(n, k) = \frac{n!}{(n-k)!}\]</span> - Cálculo: Para el primer puesto hay 8 opciones, para el segundo quedan 7, y para el tercero quedan 6. <span class="math display">\[8 \times 7 \times 6 = 336 \text{ formas distintas.}\]</span></p>
+<p>Una carrera donde compiten 8 atletas y queremos saber de cuántas formas se pueden repartir las medallas de Oro, Plata y Bronce.Por qué aplica: El orden importa por completo (no es lo mismo ganar Oro que Bronce) y no hay reemplazo (un mismo atleta no puede ganar Oro y Plata a la vez). - La Fórmula:<span class="math display">\[P(n, k) = \frac{n!}{(n-k)!}\]</span> - - Cálculo: Para el primer puesto hay 8 opciones, para el segundo quedan 7, y para el tercero quedan 6.</p>
+<p><span class="math display">\[P(8, 3) = \frac{8 \times 7 \times 6 \times (5 \times 4 \times 3 \times 2 \times 1)}{5 \times 4 \times 3 \times 2 \times 1}\]</span></p>
+<p><span class="math display">\[8 \times 7 \times 6 = 336 \text{ formas distintas.}\]</span></p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 336</code></pre>
@@ -1179,7 +1185,15 @@ window.Quarto = {
 </div>
 </section></section><section id="opciones-que-no-necesitan-orden-sin-reemplazo-y-no-importa-el-orden" class="level5"><h5 class="anchored" data-anchor-id="opciones-que-no-necesitan-orden-sin-reemplazo-y-no-importa-el-orden">3. Opciones que NO necesitan orden (Sin reemplazo y NO importa el orden)</h5>
 <p>También conocidas como Combinaciones. Aquí lo único que te importa es quiénes forman el grupo, no en qué orden fueron elegidos.</p>
-<p>El Ejemplo Clásico: De un grupo de 10 amigos, vas a elegir a 3 para que vayan contigo en el auto a comprar pizzas. - Por qué aplica: No importa el orden (si elijo a Ana, Ben y Carlos, es exactamente el mismo grupo de viaje que si elijo a Carlos, Ben y Ana). - Tampoco hay reemplazo (no puedes clonar a un amigo). - La Fórmula:<span class="math display">\[\binom{n}{k} = \frac{n!}{k!(n-k)!}\]</span> - Cálculo: El famoso coeficiente binomial. En R se calcula directamente con la función choose().</p>
+<p>El Ejemplo Clásico: De un grupo de 10 amigos, vas a elegir a 3 para que vayan contigo en el auto a comprar pizzas.</p>
+<ul>
+<li><p>Por qué aplica: No importa el orden (si elijo a Ana, Ben y Carlos, es exactamente el mismo grupo de viaje que si elijo a Carlos, Ben y Ana).</p></li>
+<li><p>Tampoco hay reemplazo (no puedes clonar a un amigo).</p></li>
+<li><p>La Fórmula <span class="math display">\[\binom{n}{k} = \frac{n!}{k!(n-k)!}\]</span></p></li>
+<li><p>Sustituyendo (<span class="math inline">\(n=10\)</span> y <span class="math inline">\(k=3\)</span>): <span class="math display">\[\binom{10}{3} = \frac{10!}{3!(10-3)!} = \frac{10!}{3! \times 7!}\]</span></p></li>
+<li><p>El <span class="math inline">\(10!\)</span> del numerador se descompone hasta llegar al <span class="math inline">\(7!\)</span>, para poder cancelarlo con el del denominador:</p></li>
+</ul>
+<p><span class="math display">\[\frac{10 \times 9 \times 8 \times 7!}{3! \times 7!}\]</span> <span class="math display">\[\frac{720}{6} = 120\]</span></p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 120</code></pre>
