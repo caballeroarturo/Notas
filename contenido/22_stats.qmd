@@ -104,6 +104,28 @@ Estas medidas indican qué tan agrupados o esparcidos están los datos alrededor
 
 En el contexto del **análisis espacial**, estas medidas pueden aplicarse gráficamente para obtener un "centro medio" o promedio espacial basándose en las coordenadas X e Y de una distribución de puntos.
 
+### 1. Fórmulas Poblacionales (Cuando tienes los datos de TODO el grupo)
+
+Se utilizan letras griegas ($\sigma^2$ y $\sigma$) porque representan los parámetros reales de toda la población.
+
+- **Varianza Poblacional (**$\sigma^2$): $$\sigma^2 = \frac{\sum_{i=1}^{n} (X_i - \mu)^2}{n}$$
+
+- **Desviación Estándar Poblacional (**$\sigma$): Es simplemente la raíz cuadrada de la varianza. $$\sigma = \sqrt{\frac{\sum_{i=1}^{n} (X_i - \mu)^2}{n}}$$
+
+Donde: $\mu$ es la media de la población y $n$ es el tamaño de la población.
+
+------------------------------------------------------------------------
+
+### 2. Fórmulas Muestrales (Cuando usas una muestra para estimar a la población)
+
+Se utilizan letras latinas ($s^2$ y $s$). Nota que aquí se divide entre $n-1$ (conocido como *corrección de Bessel*) para que el cálculo sea un estimador insesgado y más preciso.
+
+- **Varianza Muestral (**$s^2$): $$s^2 = \frac{\sum_{i=1}^{n} (X_i - \bar{X})^2}{n - 1}$$
+
+- **Desviación Estándar Muestral (**$s$): $$s = \sqrt{\frac{\sum_{i=1}^{n} (X_i - \bar{X})^2}{n - 1}}$$
+
+Donde: $\bar{X}$ es la media de la muestra. $n$ es el tamaño de la muestra.
+
 ### Las medidas de forma
 
 Las **medidas de forma** y las herramientas gráficas permiten describir la naturaleza de una distribución de datos más allá de su tendencia central y dispersión, ofreciendo una "huella digital" de la muestra.
@@ -697,7 +719,7 @@ Para aplicar la definición clásica de probabilidad, es esencial saber contar c
 - **Combinaciones:** El orden **no importa**. Se utilizan para seleccionar subconjuntos. Su fórmula es \textbf{Combinaciones:} El orden \textbf{no importa}. Se utilizan para seleccionar subconjuntos. Su fórmula es: $$C_{n,k} = \binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 
 | ¿Importa el orden? | ¿Se pueden repetir? | Nombre Técnico | Operación Matemática | Razonamiento: ¿Cuándo usar? |
-|:----------:|:----------:|:-----------|:-----------|:-----------------------|
+|:--:|:--:|:---|:---|:---|
 | **SÍ** | **SÍ** | Variación con repetición | **Potencia**<br>$$n^k$$ | Cuando estás **armando códigos o secuencias** donde las posiciones importan y los elementos pueden reaparecer (ej. contraseñas, lanzar monedas o dados varias veces). |
 | **SÍ** | **NO** | Permutación (o Variación) | **Factorial / Permutaciones**<br>$$\frac{n!}{(n-k)!}$$ | Cuando estás **repartiendo puestos únicos, premios escalonados o filas** donde el rol de cada quien cambia el resultado y nadie puede duplicarse (ej. podios de carreras, elecciones de presidente/secretario). |
 | **NO** | **NO** | Combinación estándar | **Coeficiente Binomial**<br>$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$ | Cuando estás **armando equipos, comités o subconjuntos** donde lo único que te importa es quiénes integran el grupo final, sin importar el orden en que los llamaste (ej. manos de cartas, elegir delegados). |
@@ -774,7 +796,6 @@ amigos <- paste("Amigo", 1:10)
 grupos_auto <- combinations(n = 10, r = 3, v = amigos, repeats.allowed = FALSE)
 head(grupos_auto)
 ```
-
 
 #### Función probabilística
 
@@ -1478,7 +1499,7 @@ cat("El p-valor es:", prueba_prop$p.value, "\n")
 ```
 
 | Si el Estadístico Calculado... | El valor $P$ será... | Decisión sobre $H_0$ | Conclusión |
-|:-----------------|:-----------------:|:----------------:|:-----------------|
+|:---|:--:|:--:|:---|
 | Cae **dentro** de las zonas rojas críticas | Menor que $\alpha$ ($< 0.05$) | **Rechazar** $H_0$ | Hay suficiente evidencia a favor de tu teoría ($H_1$). |
 | Cae **fuera** de las zonas rojas críticas | Mayor que $\alpha$ ($\geq 0.05$) | **No rechazar** $H_0$ | No hay pruebas suficientes para cambiar el estándar actual. |
 
