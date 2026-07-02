@@ -232,6 +232,86 @@ g_sesgo / plot_spacer() / g_curtosis + plot_layout(heights = c(1, 0.1, 1))
 
 Estas herramientas proporcionan una visión visual rápida de las características elementales de una distribución.
 
+##### histográma de frecuencias absolutas vs relativas
+
+```{r}
+#| fig-width: 10
+#| fig-height: 12
+#| echo: false
+#| warning: false
+#| message: false
+
+# 1. Simular datos (Pesos de 150 personas)
+set.seed(42)
+pesos <- rnorm(150, mean = 70, sd = 5)
+
+# 2. Configurar la pantalla: 
+# Fila 1: Dos columnas para los gráficos (Gráfica 1 y Gráfica 2)
+# Fila 2: Una columna ancha para el texto explicativo inferior
+layout(matrix(c(1, 2, 3, 3), nrow = 2, ncol = 2, byrow = TRUE), heights = c(2.2, 1))
+
+# --- GRÁFICA 1: FRECUENCIAS ABSOLUTAS (IZQUIERDA) ---
+par(mar = c(4.5, 4.5, 3, 1))
+h_abs <- hist(pesos, breaks = 10, plot = FALSE)
+hist(pesos, 
+     breaks = 10, 
+     col = "skyblue", 
+     border = "white",
+     main = "Histograma de Frecuencia Absoluta",
+     xlab = "Variable Continua (Peso en kg)",
+     ylab = "Frecuencia Absoluta (Conteo real)",
+     las = 1)
+
+# Anotación explicativa de Absoluta
+rect(h_abs$breaks[4], 0, h_abs$breaks[5], h_abs$counts[4], col = "steelblue1", border = "white")
+text(x = 55, y = h_abs$counts[4], 
+     paste("ALTURA =\nNÚMERO REAL\nde datos (", h_abs$counts[4], " personas)", sep=""), 
+     adj = 0, cex = 0.8, col = "darkgreen", font = 2)
+arrows(x0 = 62, y0 = h_abs$counts[4], x1 = h_abs$breaks[4], y1 = h_abs$counts[4], code = 2, length = 0.08, col = "darkgreen", lwd = 1.5)
+
+
+# --- GRÁFICA 2: FRECUENCIAS RELATIVAS (DERECHA) ---
+par(mar = c(4.5, 4.5, 3, 1))
+h_rel <- hist(pesos, breaks = 10, plot = FALSE)
+# Al activar prob = TRUE, el eje Y cambia automáticamente a densidad/proporción
+hist(pesos, 
+     breaks = 10, 
+     prob = TRUE,
+     col = "lightgreen", 
+     border = "white",
+     main = "Histograma de Frecuencia Relativa",
+     xlab = "Variable Continua (Peso en kg)",
+     ylab = "Frecuencia Relativa (Proporción / Densidad)",
+     las = 1)
+
+# Anotación explicativa de Relativa
+# Calculamos la altura de densidad de esa barra
+densidad_barra <- h_rel$density[4]
+proporcion_porcentaje <- round((h_rel$counts[4] / length(pesos)) * 100, 1)
+
+rect(h_rel$breaks[4], 0, h_rel$breaks[5], densidad_barra, col = "seagreen3", border = "white")
+text(x = 55, y = densidad_barra, 
+     paste("ALTURA =\nPROPORCIÓN o %\ndel total (", proporcion_porcentaje, "%)", sep=""), 
+     adj = 0, cex = 0.8, col = "darkblue", font = 2)
+arrows(x0 = 62, y0 = densidad_barra, x1 = h_rel$breaks[4], y1 = densidad_barra, code = 2, length = 0.08, col = "darkblue", lwd = 1.5)
+
+
+# --- 3. PARTE INFERIOR: TEXTO EXPLICATIVO COMPLETO ---
+par(mar = c(0, 1, 1, 1)) 
+plot.new() 
+
+text(x = 0, y = 0.95, "DIFERENCIA ENTRE FRECUENCIA ABSOLUTA Y RELATIVA", adj = 0, font = 2, cex = 1.1, col = "black")
+
+text(x = 0, y = 0.70, expression(bold("Frecuencia Absoluta (Gráfica Azul):") * " El eje vertical muestra el conteo puro y duro (número de observaciones)."), adj = 0, cex = 0.9)
+text(x = 0, y = 0.55, "Te dice exactamente cuántos individuos o elementos caen dentro de cada rango (ej: 25 personas pesan entre 66 y 68 kg).", adj = 0, cex = 0.9)
+
+text(x = 0, y = 0.30, expression(bold("Frecuencia Relativa (Gráfica Verde):") * " El eje vertical se transforma en una proporción, densidad o porcentaje."), adj = 0, cex = 0.9)
+text(x = 0, y = 0.15, "Te dice qué parte del total representa ese grupo (ej: ese mismo grupo equivale al 16.7% de todos los estudiantes analizados).", adj = 0, cex = 0.9)
+
+text(x = 0, y = -0.10, expression(bold("Dato clave:") * " La forma de las barras es EXACTAMENTE la misma en ambos gráficos. Lo único que cambia es la escala"), adj = 0, cex = 0.9, font = 3, col = "gray30")
+text(x = 0, y = -0.22, "del eje Y. El de frecuencia relativa es ideal para comparar muestras de diferentes tamaños.", adj = 0, cex = 0.9, font = 3, col = "gray30")
+```
+
 #### Interpretación de Histogramas
 
 - **Definición:** Gráfico de barras para variables cuantitativas continuas donde la base es la amplitud del intervalo y la altura es la frecuencia absoluta o relativa.
@@ -379,85 +459,7 @@ text(x = 0.58, y = (estadisticos$stats[2] + estadisticos$stats[4])/2, "RIC\n(Caj
 
 ```
 
-##### histográma de frecuencias absolutas vs relativas
 
-```{r}
-#| fig-width: 10
-#| fig-height: 12
-#| echo: false
-#| warning: false
-#| message: false
-
-# 1. Simular datos (Pesos de 150 personas)
-set.seed(42)
-pesos <- rnorm(150, mean = 70, sd = 5)
-
-# 2. Configurar la pantalla: 
-# Fila 1: Dos columnas para los gráficos (Gráfica 1 y Gráfica 2)
-# Fila 2: Una columna ancha para el texto explicativo inferior
-layout(matrix(c(1, 2, 3, 3), nrow = 2, ncol = 2, byrow = TRUE), heights = c(2.2, 1))
-
-# --- GRÁFICA 1: FRECUENCIAS ABSOLUTAS (IZQUIERDA) ---
-par(mar = c(4.5, 4.5, 3, 1))
-h_abs <- hist(pesos, breaks = 10, plot = FALSE)
-hist(pesos, 
-     breaks = 10, 
-     col = "skyblue", 
-     border = "white",
-     main = "Histograma de Frecuencia Absoluta",
-     xlab = "Variable Continua (Peso en kg)",
-     ylab = "Frecuencia Absoluta (Conteo real)",
-     las = 1)
-
-# Anotación explicativa de Absoluta
-rect(h_abs$breaks[4], 0, h_abs$breaks[5], h_abs$counts[4], col = "steelblue1", border = "white")
-text(x = 55, y = h_abs$counts[4], 
-     paste("ALTURA =\nNÚMERO REAL\nde datos (", h_abs$counts[4], " personas)", sep=""), 
-     adj = 0, cex = 0.8, col = "darkgreen", font = 2)
-arrows(x0 = 62, y0 = h_abs$counts[4], x1 = h_abs$breaks[4], y1 = h_abs$counts[4], code = 2, length = 0.08, col = "darkgreen", lwd = 1.5)
-
-
-# --- GRÁFICA 2: FRECUENCIAS RELATIVAS (DERECHA) ---
-par(mar = c(4.5, 4.5, 3, 1))
-h_rel <- hist(pesos, breaks = 10, plot = FALSE)
-# Al activar prob = TRUE, el eje Y cambia automáticamente a densidad/proporción
-hist(pesos, 
-     breaks = 10, 
-     prob = TRUE,
-     col = "lightgreen", 
-     border = "white",
-     main = "Histograma de Frecuencia Relativa",
-     xlab = "Variable Continua (Peso en kg)",
-     ylab = "Frecuencia Relativa (Proporción / Densidad)",
-     las = 1)
-
-# Anotación explicativa de Relativa
-# Calculamos la altura de densidad de esa barra
-densidad_barra <- h_rel$density[4]
-proporcion_porcentaje <- round((h_rel$counts[4] / length(pesos)) * 100, 1)
-
-rect(h_rel$breaks[4], 0, h_rel$breaks[5], densidad_barra, col = "seagreen3", border = "white")
-text(x = 55, y = densidad_barra, 
-     paste("ALTURA =\nPROPORCIÓN o %\ndel total (", proporcion_porcentaje, "%)", sep=""), 
-     adj = 0, cex = 0.8, col = "darkblue", font = 2)
-arrows(x0 = 62, y0 = densidad_barra, x1 = h_rel$breaks[4], y1 = densidad_barra, code = 2, length = 0.08, col = "darkblue", lwd = 1.5)
-
-
-# --- 3. PARTE INFERIOR: TEXTO EXPLICATIVO COMPLETO ---
-par(mar = c(0, 1, 1, 1)) 
-plot.new() 
-
-text(x = 0, y = 0.95, "DIFERENCIA ENTRE FRECUENCIA ABSOLUTA Y RELATIVA", adj = 0, font = 2, cex = 1.1, col = "black")
-
-text(x = 0, y = 0.70, expression(bold("Frecuencia Absoluta (Gráfica Azul):") * " El eje vertical muestra el conteo puro y duro (número de observaciones)."), adj = 0, cex = 0.9)
-text(x = 0, y = 0.55, "Te dice exactamente cuántos individuos o elementos caen dentro de cada rango (ej: 25 personas pesan entre 66 y 68 kg).", adj = 0, cex = 0.9)
-
-text(x = 0, y = 0.30, expression(bold("Frecuencia Relativa (Gráfica Verde):") * " El eje vertical se transforma en una proporción, densidad o porcentaje."), adj = 0, cex = 0.9)
-text(x = 0, y = 0.15, "Te dice qué parte del total representa ese grupo (ej: ese mismo grupo equivale al 16.7% de todos los estudiantes analizados).", adj = 0, cex = 0.9)
-
-text(x = 0, y = -0.10, expression(bold("Dato clave:") * " La forma de las barras es EXACTAMENTE la misma en ambos gráficos. Lo único que cambia es la escala"), adj = 0, cex = 0.9, font = 3, col = "gray30")
-text(x = 0, y = -0.22, "del eje Y. El de frecuencia relativa es ideal para comparar muestras de diferentes tamaños.", adj = 0, cex = 0.9, font = 3, col = "gray30")
-```
 
 ### Distribuciones simétricas y sesgadas, valores extremos, relación entre medidas de tendencia central en distribuciones simétricas y sesgadas.
 
