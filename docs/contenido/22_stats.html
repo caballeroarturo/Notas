@@ -535,7 +535,7 @@ window.Quarto = {
   <li>
 <a href="#pruebas-de-hip%C3%B3tesis" id="toc-pruebas-de-hipótesis" class="nav-link" data-scroll-target="#pruebas-de-hip%C3%B3tesis"><span class="header-section-number">13.7</span> Pruebas de hipótesis</a>
   <ul class="collapse">
-<li><a href="#pruebas-de-hip%C3%B3tesis-y-estimaci%C3%B3n-sobre-la-media-mu" id="toc-pruebas-de-hipótesis-y-estimación-sobre-la-media-mu" class="nav-link" data-scroll-target="#pruebas-de-hip%C3%B3tesis-y-estimaci%C3%B3n-sobre-la-media-mu"><span class="header-section-number">13.7.1</span> 5.2.1 Pruebas de hipótesis y estimación sobre la media (<span class="math inline">\(\mu\)</span>)</a></li>
+<li><a href="#pruebas-de-hip%C3%B3tesis-y-estimaci%C3%B3n-sobre-la-media-mu" id="toc-pruebas-de-hipótesis-y-estimación-sobre-la-media-mu" class="nav-link" data-scroll-target="#pruebas-de-hip%C3%B3tesis-y-estimaci%C3%B3n-sobre-la-media-mu"><span class="header-section-number">13.7.1</span> Pruebas de hipótesis y estimación sobre la media (<span class="math inline">\(\mu\)</span>)</a></li>
   </ul>
 </li>
   <li>
@@ -1789,7 +1789,7 @@ window.Quarto = {
 <p>La <strong>inferencia estadística</strong> es el conjunto de métodos mediante los cuales se realizan generalizaciones o predicciones sobre una población a partir de los datos de una muestra. Se divide principalmente en dos áreas: la <strong>estimación de parámetros</strong>, que busca determinar valores probables para características desconocidas de la población (como la media o la proporción), y las <strong>pruebas de hipótesis</strong>, que consisten en procedimientos de decisión para aceptar o rechazar conjeturas sobre dichas características.</p>
 <hr>
 <section id="pruebas-de-hipótesis-y-estimación-sobre-la-media-mu" class="level3" data-number="13.7.1"><h3 data-number="13.7.1" class="anchored" data-anchor-id="pruebas-de-hipótesis-y-estimación-sobre-la-media-mu">
-<span class="header-section-number">13.7.1</span> 5.2.1 Pruebas de hipótesis y estimación sobre la media (<span class="math inline">\(\mu\)</span>)</h3>
+<span class="header-section-number">13.7.1</span> Pruebas de hipótesis y estimación sobre la media (<span class="math inline">\(\mu\)</span>)</h3>
 <p>La estimación puntual de la media poblacional (<span class="math inline">\(\mu\)</span>) se realiza a través de la media muestral (<span class="math inline">\(\bar{X}\)</span>), la cual se considera un estimador insesgado y razonable.</p>
 <section id="estimación-por-intervalos-de-confianza" class="level4"><h4 class="anchored" data-anchor-id="estimación-por-intervalos-de-confianza">Estimación por intervalos de confianza</h4>
 <p>El intervalo de confianza representa un rango de valores donde se espera que resida el parámetro con un determinado nivel de confianza (<span class="math inline">\(1-\alpha\)</span>), usualmente del 95% o 99%.</p>
@@ -1817,7 +1817,13 @@ window.Quarto = {
 <li>
 <span class="math inline">\(H_0: \mu = 200\text{ ml}\)</span> (La máquina funciona perfectamente).</li>
 <li>
-<span class="math inline">\(H_1: \mu &lt; 200\text{ ml}\)</span> (La máquina está sirviendo menos, nuestra sospecha).</li>
+<span class="math inline">\(H_1: \mu &lt; 200\text{ ml}\)</span> (La máquina está sirviendo menos, nuestra sospecha). Calculamos el estadístico <span class="math inline">\(t\)</span> de Student. Esta fórmula mide a cuántas “unidades de azar” (errores estándar) se encuentra tu muestra del valor ideal. La fórmula es: <span class="math display">\[t = \frac{\bar{X} - \mu_0}{\frac{s}{\sqrt{n}}}\]</span> Calculamos la parte de abajo (El Error Estándar): Nos dice cuánto suele variar el promedio de 35 tazas por puro azar. <span class="math display">\[EE = \frac{10}{\sqrt{35}} = \frac{10}{5.916} = 1.69\text{ ml}\]</span>
+</li>
+<li>Esto significa que, por pura fluctuación normal de la máquina, un grupo de 35 tazas suele variar de arriba a abajo unos <span class="math inline">\(1.69\text{ ml}\)</span> respecto al promedio real.</li>
+<li>Calculamos la <span class="math inline">\(t\)</span> completa:<span class="math display">\[t = \frac{195 - 200}{1.69} = \frac{-5}{1.69} = -2.95\]</span>
+</li>
+<li>¿Qué significa que <span class="math inline">\(t = -2.95\)</span>?Significa que tu promedio de <span class="math inline">\(195\text{ ml}\)</span> está a casi 3 desviaciones estándar por debajo de lo que el fabricante prometió.</li>
+<li>Si la máquina estuviera bien calibrada (<span class="math inline">\(H_0\)</span> verdadera), por azar las muestras de 35 tazas deberían dar promedios muy cercanos a <span class="math inline">\(200\text{ ml}\)</span> (quizás <span class="math inline">\(199\text{ ml}\)</span>, o <span class="math inline">\(201\text{ ml}\)</span>). Que te haya dado <span class="math inline">\(195\text{ ml}\)</span> (<span class="math inline">\(t = -2.95\)</span>) en el mundo de la probabilidad es el equivalente a que lances una moneda 10 veces y las 10 veces salga cara: es teóricamente posible por azar, pero es tan ridículamente improbable que prefieres no creer en esa coincidencia.</li>
 <li>Al calcular el estadístico de prueba <span class="math inline">\(t\)</span>, si el resultado es un número muy negativo (por ejemplo, <span class="math inline">\(-2.95\)</span>), significa que obtener un promedio de <span class="math inline">\(195\text{ ml}\)</span> de forma pura y natural por azar es extremadamente improbable. Por lo tanto, <strong>rechazas</strong> <span class="math inline">\(H_0\)</span> y concluyes que la máquina está descalibrada.</li>
 </ul>
 </blockquote>

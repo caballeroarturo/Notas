@@ -1788,7 +1788,7 @@ La **inferencia estadística** es el conjunto de métodos mediante los cuales se
 
 ------------------------------------------------------------------------
 
-### 5.2.1 Pruebas de hipótesis y estimación sobre la media ($\mu$)
+### Pruebas de hipótesis y estimación sobre la media ($\mu$)
 
 La estimación puntual de la media poblacional ($\mu$) se realiza a través de la media muestral ($\bar{X}$), la cual se considera un estimador insesgado y razonable.
 
@@ -1811,6 +1811,15 @@ El procedimiento compara una hipótesis nula ($H_0: \mu = \mu_0$), que represent
 >
 > - $H_0: \mu = 200\text{ ml}$ (La máquina funciona perfectamente).
 > - $H_1: \mu < 200\text{ ml}$ (La máquina está sirviendo menos, nuestra sospecha).
+> Calculamos el estadístico $t$ de Student. Esta fórmula mide a cuántas "unidades de azar" (errores estándar) se encuentra tu muestra del valor ideal.
+> La fórmula es: $$t = \frac{\bar{X} - \mu_0}{\frac{s}{\sqrt{n}}}$$
+Calculamos la parte de abajo (El Error Estándar): Nos dice cuánto suele variar el promedio de 35 tazas por puro azar.
+$$EE = \frac{10}{\sqrt{35}} = \frac{10}{5.916} = 1.69\text{ ml}$$
+- Esto significa que, por pura fluctuación normal de la máquina, un grupo de 35 tazas suele variar de arriba a abajo unos $1.69\text{ ml}$ respecto al promedio real.
+- Calculamos la $t$ completa:$$t = \frac{195 - 200}{1.69} = \frac{-5}{1.69} = -2.95$$
+- ¿Qué significa que $t = -2.95$?Significa que tu promedio de $195\text{ ml}$ está a casi 3 desviaciones estándar por debajo de lo que el fabricante prometió.
+- Si la máquina estuviera bien calibrada ($H_0$ verdadera), por azar las muestras de 35 tazas deberían dar promedios muy cercanos a $200\text{ ml}$ (quizás $199\text{ ml}$, o $201\text{ ml}$). 
+Que te haya dado $195\text{ ml}$ ($t = -2.95$) en el mundo de la probabilidad es el equivalente a que lances una moneda 10 veces y las 10 veces salga cara: es teóricamente posible por azar, pero es tan ridículamente improbable que prefieres no creer en esa coincidencia.
 > - Al calcular el estadístico de prueba $t$, si el resultado es un número muy negativo (por ejemplo, $-2.95$), significa que obtener un promedio de $195\text{ ml}$ de forma pura y natural por azar es extremadamente improbable. Por lo tanto, **rechazas** $H_0$ y concluyes que la máquina está descalibrada.
 
 ```{r}
