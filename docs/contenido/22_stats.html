@@ -1374,19 +1374,17 @@ window.Quarto = {
 <span class="header-section-number">13.3.1</span> Distribuciones Discretas</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
-<col style="width: 16%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 23%">
+<col style="width: 19%">
 </colgroup>
 <thead><tr class="header">
 <th style="text-align: left;">Distribución</th>
 <th style="text-align: left;">Función de Masa (<span class="math inline">\(p(x)\)</span>)</th>
 <th style="text-align: left;">Función Acumulativa (<span class="math inline">\(F(x)\)</span>)</th>
-<th style="text-align: center;">Esperanza (<span class="math inline">\(E(X)\)</span>)</th>
-<th style="text-align: center;">Desviación Estándar (<span class="math inline">\(\sigma\)</span>)</th>
+<th style="text-align: center;">Propiedades / Momentos</th>
 <th style="text-align: left;">Uso Común / ¿Cuándo usar?</th>
 </tr></thead>
 <tbody>
@@ -1396,8 +1394,9 @@ window.Quarto = {
 <span class="math inline">\(p^x(1-p)^{1-x}\)</span> <br> para <span class="math inline">\(x \in \{0, 1\}\)</span>
 </td>
 <td style="text-align: left;"><span class="math inline">\(\begin{cases} 0 &amp; x &lt; 0 \\ 1-p &amp; 0 \leq x &lt; 1 \\ 1 &amp; x \geq 1 \end{cases}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(p\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\sqrt{p(1-p)}\)</span></td>
+<td style="text-align: center;">
+<strong><span class="math inline">\(E(X)\)</span>:</strong> <span class="math inline">\(p\)</span> <br><strong><span class="math inline">\(\sigma\)</span>:</strong> <span class="math inline">\(\sqrt{p(1-p)}\)</span>
+</td>
 <td style="text-align: left;">Experimentos de un solo ensayo con respuesta dicotómica (Éxito/Fracaso, Sí/No).</td>
 </tr>
 <tr class="even">
@@ -1406,8 +1405,9 @@ window.Quarto = {
 <span class="math inline">\(\binom{n}{x} p^x(1-p)^{n-x}\)</span> <br> para <span class="math inline">\(x \in \{0, 1, \dots, n\}\)</span>
 </td>
 <td style="text-align: left;"><span class="math inline">\(\sum_{k=0}^{x} \binom{n}{k} p^k(1-p)^{n-k}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(n \cdot p\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\sqrt{n \cdot p(1-p)}\)</span></td>
+<td style="text-align: center;">
+<strong><span class="math inline">\(E(X)\)</span>:</strong> <span class="math inline">\(n \cdot p\)</span> <br><strong><span class="math inline">\(\sigma\)</span>:</strong> <span class="math inline">\(\sqrt{n \cdot p(1-p)}\)</span>
+</td>
 <td style="text-align: left;">Contar el número de “éxitos” al repetir <span class="math inline">\(n\)</span> veces un experimento Bernoulli idéntico e independiente.</td>
 </tr>
 <tr class="odd">
@@ -1416,9 +1416,10 @@ window.Quarto = {
 <span class="math inline">\(\frac{\lambda^x e^{-\lambda}}{x!}\)</span> <br> para <span class="math inline">\(x \in \{0, 1, 2, \dots\}\)</span>
 </td>
 <td style="text-align: left;"><span class="math inline">\(\sum_{k=0}^{x} \frac{\lambda^k e^{-\lambda}}{k!}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\lambda\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\sqrt{\lambda}\)</span></td>
-<td style="text-align: left;">Modelar el número de eventos raros que ocurren en un intervalo fijo de tiempo, espacio o volumen (ej. llamadas por hora).</td>
+<td style="text-align: center;">
+<strong><span class="math inline">\(E(X)\)</span>:</strong> <span class="math inline">\(\lambda\)</span> <br><strong><span class="math inline">\(\sigma\)</span>:</strong> <span class="math inline">\(\sqrt{\lambda}\)</span>
+</td>
+<td style="text-align: left;">Modelar el número de eventos que ocurren en un intervalo fijo de tiempo o espacio (ej. llamadas por hora).</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Geométrica</strong></td>
@@ -1426,8 +1427,9 @@ window.Quarto = {
 <span class="math inline">\((1-p)^{x-1}p\)</span> <br> para <span class="math inline">\(x \in \{1, 2, 3, \dots\}\)</span>
 </td>
 <td style="text-align: left;"><span class="math inline">\(1 - (1-p)^x\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\frac{1}{p}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\frac{\sqrt{1-p}}{p}\)</span></td>
+<td style="text-align: center;">
+<strong><span class="math inline">\(E(X)\)</span>:</strong> <span class="math inline">\(\frac{1}{p}\)</span> <br><strong><span class="math inline">\(\sigma\)</span>:</strong> <span class="math inline">\(\frac{\sqrt{1-p}}{p}\)</span>
+</td>
 <td style="text-align: left;">Calcular el número de ensayos necesarios o intentos requeridos hasta que ocurra el primer éxito.</td>
 </tr>
 </tbody>
@@ -1438,19 +1440,17 @@ window.Quarto = {
 <span class="header-section-number">13.3.2</span> Distribuciones Continuas</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 17%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 23%">
+<col style="width: 19%">
 </colgroup>
 <thead><tr class="header">
 <th style="text-align: left;">Distribución</th>
 <th style="text-align: left;">Función de Densidad (<span class="math inline">\(f(x)\)</span>)</th>
 <th style="text-align: left;">Función Acumulativa (<span class="math inline">\(F(x)\)</span>)</th>
-<th style="text-align: center;">Esperanza (<span class="math inline">\(E(X)\)</span>)</th>
-<th style="text-align: center;">Desviación Estándar (<span class="math inline">\(\sigma\)</span>)</th>
+<th style="text-align: center;">Propiedades / Momentos</th>
 <th style="text-align: left;">Uso Común / ¿Cuándo usar?</th>
 </tr></thead>
 <tbody>
@@ -1462,18 +1462,20 @@ window.Quarto = {
 <td style="text-align: left;">
 <span class="math inline">\(\frac{x-a}{b-a}\)</span> <br> para <span class="math inline">\(x \in [a, b]\)</span>
 </td>
-<td style="text-align: center;"><span class="math inline">\(\frac{a+b}{2}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\frac{b-a}{\sqrt{12}}\)</span></td>
-<td style="text-align: left;">Situaciones donde todos los intervalos de igual longitud dentro del rango tienen exactamente la misma probabilidad (azar puro).</td>
+<td style="text-align: center;">
+<strong><span class="math inline">\(E(X)\)</span>:</strong> <span class="math inline">\(\frac{a+b}{2}\)</span> <br><br><strong><span class="math inline">\(\sigma\)</span>:</strong> <span class="math inline">\(\frac{b-a}{\sqrt{12}}\)</span>
+</td>
+<td style="text-align: left;">Situaciones donde todos los intervalos de igual longitud dentro del rango tienen exactamente la misma probabilidad.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Normal</strong></td>
 <td style="text-align: left;"><span class="math inline">\(\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}\)</span></td>
 <td style="text-align: left;">No tiene forma cerrada. <br> Se usa <span class="math inline">\(\Phi\left(\frac{x-\mu}{\sigma}\right)\)</span>
 </td>
-<td style="text-align: center;"><span class="math inline">\(\mu\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\sigma\)</span></td>
-<td style="text-align: left;">Modelar fenómenos naturales, características biológicas (estatura), errores de medición y por el Teorema del Límite Central.</td>
+<td style="text-align: center;">
+<strong><span class="math inline">\(E(X)\)</span>:</strong> <span class="math inline">\(\mu\)</span> <br><br><strong><span class="math inline">\(\sigma\)</span>:</strong> <span class="math inline">\(\sigma\)</span>
+</td>
+<td style="text-align: left;">Modelar fenómenos naturales, características biológicas, errores de medición y por el Teorema del Límite Central.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Exponencial</strong></td>
@@ -1481,17 +1483,19 @@ window.Quarto = {
 <span class="math inline">\(\lambda e^{-\lambda x}\)</span> <br> para <span class="math inline">\(x \geq 0\)</span>
 </td>
 <td style="text-align: left;"><span class="math inline">\(1 - e^{-\lambda x}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\frac{1}{\lambda}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\frac{1}{\lambda}\)</span></td>
+<td style="text-align: center;">
+<strong><span class="math inline">\(E(X)\)</span>:</strong> <span class="math inline">\(\frac{1}{\lambda}\)</span> <br><br><strong><span class="math inline">\(\sigma\)</span>:</strong> <span class="math inline">\(\frac{1}{\lambda}\)</span>
+</td>
 <td style="text-align: left;">Modelar el tiempo de espera continuo que transcurre entre dos eventos consecutivos de un proceso de Poisson.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Logística</strong></td>
 <td style="text-align: left;"><span class="math inline">\(\frac{e^{-\frac{x-\mu}{s}}}{s \left(1 + e^{-\frac{x-\mu}{s}}\right)^2}\)</span></td>
 <td style="text-align: left;"><span class="math inline">\(\frac{1}{1 + e^{-\frac{x-\mu}{s}}}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\mu\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\frac{s \cdot \pi}{\sqrt{3}}\)</span></td>
-<td style="text-align: left;">Modelar el crecimiento de poblaciones, tasas de interés o en Machine Learning (regresión logística) para calcular probabilidades de eventos binarios.</td>
+<td style="text-align: center;">
+<strong><span class="math inline">\(E(X)\)</span>:</strong> <span class="math inline">\(\mu\)</span> <br><br><strong><span class="math inline">\(\sigma\)</span>:</strong> <span class="math inline">\(\frac{s \cdot \pi}{\sqrt{3}}\)</span>
+</td>
+<td style="text-align: left;">Modelar el crecimiento de poblaciones o en Machine Learning (regresión logística) para probabilidades binarias.</td>
 </tr>
 </tbody>
 </table>

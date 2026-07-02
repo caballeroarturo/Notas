@@ -1156,23 +1156,23 @@ El **valor esperado** $E(X)$ o $μ$ es el promedio ponderado de todos los valore
 
 ### Distribuciones Discretas
 
-| Distribución | Función de Masa ($p(x)$) | Función Acumulativa ($F(x)$) | Esperanza ($E(X)$) | Desviación Estándar ($\sigma$) | Uso Común / ¿Cuándo usar? |
-|:-----------|:-----------|:-----------|:----------:|:----------:|:-----------|
-| **Bernoulli** | $p^x(1-p)^{1-x}$ <br> para $x \in \{0, 1\}$ | $\begin{cases} 0 & x < 0 \\ 1-p & 0 \leq x < 1 \\ 1 & x \geq 1 \end{cases}$ | $p$ | $\sqrt{p(1-p)}$ | Experimentos de un solo ensayo con respuesta dicotómica (Éxito/Fracaso, Sí/No). |
-| **Binomial** | $\binom{n}{x} p^x(1-p)^{n-x}$ <br> para $x \in \{0, 1, \dots, n\}$ | $\sum_{k=0}^{x} \binom{n}{k} p^k(1-p)^{n-k}$ | $n \cdot p$ | $\sqrt{n \cdot p(1-p)}$ | Contar el número de "éxitos" al repetir $n$ veces un experimento Bernoulli idéntico e independiente. |
-| **Poisson** | $\frac{\lambda^x e^{-\lambda}}{x!}$ <br> para $x \in \{0, 1, 2, \dots\}$ | $\sum_{k=0}^{x} \frac{\lambda^k e^{-\lambda}}{k!}$ | $\lambda$ | $\sqrt{\lambda}$ | Modelar el número de eventos raros que ocurren en un intervalo fijo de tiempo, espacio o volumen (ej. llamadas por hora). |
-| **Geométrica** | $(1-p)^{x-1}p$ <br> para $x \in \{1, 2, 3, \dots\}$ | $1 - (1-p)^x$ | $\frac{1}{p}$ | $\frac{\sqrt{1-p}}{p}$ | Calcular el número de ensayos necesarios o intentos requeridos hasta que ocurra el primer éxito. |
+| Distribución | Función de Masa ($p(x)$) | Función Acumulativa ($F(x)$) | Propiedades / Momentos | Uso Común / ¿Cuándo usar? |
+| :--- | :--- | :--- | :---: | :--- |
+| **Bernoulli** | $p^x(1-p)^{1-x}$ <br> para $x \in \{0, 1\}$ | $\begin{cases} 0 & x < 0 \\ 1-p & 0 \leq x < 1 \\ 1 & x \geq 1 \end{cases}$ | **$E(X)$:** $p$ <br> **$\sigma$:** $\sqrt{p(1-p)}$ | Experimentos de un solo ensayo con respuesta dicotómica (Éxito/Fracaso, Sí/No). |
+| **Binomial** | $\binom{n}{x} p^x(1-p)^{n-x}$ <br> para $x \in \{0, 1, \dots, n\}$ | $\sum_{k=0}^{x} \binom{n}{k} p^k(1-p)^{n-k}$ | **$E(X)$:** $n \cdot p$ <br> **$\sigma$:** $\sqrt{n \cdot p(1-p)}$ | Contar el número de "éxitos" al repetir $n$ veces un experimento Bernoulli idéntico e independiente. |
+| **Poisson** | $\frac{\lambda^x e^{-\lambda}}{x!}$ <br> para $x \in \{0, 1, 2, \dots\}$ | $\sum_{k=0}^{x} \frac{\lambda^k e^{-\lambda}}{k!}$ | **$E(X)$:** $\lambda$ <br> **$\sigma$:** $\sqrt{\lambda}$ | Modelar el número de eventos que ocurren en un intervalo fijo de tiempo o espacio (ej. llamadas por hora). |
+| **Geométrica** | $(1-p)^{x-1}p$ <br> para $x \in \{1, 2, 3, \dots\}$ | $1 - (1-p)^x$ | **$E(X)$:** $\frac{1}{p}$ <br> **$\sigma$:** $\frac{\sqrt{1-p}}{p}$ | Calcular el número de ensayos necesarios o intentos requeridos hasta que ocurra el primer éxito. |
 
 - Distribuciones continuas
 
 ### Distribuciones Continuas
 
-| Distribución | Función de Densidad ($f(x)$) | Función Acumulativa ($F(x)$) | Esperanza ($E(X)$) | Desviación Estándar ($\sigma$) | Uso Común / ¿Cuándo usar? |
-|:-----------|:-----------|:-----------|:---------:|:---------:|:-----------|
-| **Uniforme** | $\frac{1}{b-a}$ <br> para $x \in [a, b]$ | $\frac{x-a}{b-a}$ <br> para $x \in [a, b]$ | $\frac{a+b}{2}$ | $\frac{b-a}{\sqrt{12}}$ | Situaciones donde todos los intervalos de igual longitud dentro del rango tienen exactamente la misma probabilidad (azar puro). |
-| **Normal** | $\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | No tiene forma cerrada. <br> Se usa $\Phi\left(\frac{x-\mu}{\sigma}\right)$ | $\mu$ | $\sigma$ | Modelar fenómenos naturales, características biológicas (estatura), errores de medición y por el Teorema del Límite Central. |
-| **Exponencial** | $\lambda e^{-\lambda x}$ <br> para $x \geq 0$ | $1 - e^{-\lambda x}$ | $\frac{1}{\lambda}$ | $\frac{1}{\lambda}$ | Modelar el tiempo de espera continuo que transcurre entre dos eventos consecutivos de un proceso de Poisson. |
-| **Logística** | $\frac{e^{-\frac{x-\mu}{s}}}{s \left(1 + e^{-\frac{x-\mu}{s}}\right)^2}$ | $\frac{1}{1 + e^{-\frac{x-\mu}{s}}}$ | $\mu$ | $\frac{s \cdot \pi}{\sqrt{3}}$ | Modelar el crecimiento de poblaciones, tasas de interés o en Machine Learning (regresión logística) para calcular probabilidades de eventos binarios. |
+| Distribución | Función de Densidad ($f(x)$) | Función Acumulativa ($F(x)$) | Propiedades / Momentos | Uso Común / ¿Cuándo usar? |
+| :--- | :--- | :--- | :---: | :--- |
+| **Uniforme** | $\frac{1}{b-a}$ <br> para $x \in [a, b]$ | $\frac{x-a}{b-a}$ <br> para $x \in [a, b]$ | **$E(X)$:** $\frac{a+b}{2}$ <br><br> **$\sigma$:** $\frac{b-a}{\sqrt{12}}$ | Situaciones donde todos los intervalos de igual longitud dentro del rango tienen exactamente la misma probabilidad. |
+| **Normal** | $\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | No tiene forma cerrada. <br> Se usa $\Phi\left(\frac{x-\mu}{\sigma}\right)$ | **$E(X)$:** $\mu$ <br><br> **$\sigma$:** $\sigma$ | Modelar fenómenos naturales, características biológicas, errores de medición y por el Teorema del Límite Central. |
+| **Exponencial**| $\lambda e^{-\lambda x}$ <br> para $x \geq 0$ | $1 - e^{-\lambda x}$ | **$E(X)$:** $\frac{1}{\lambda}$ <br><br> **$\sigma$:** $\frac{1}{\lambda}$ | Modelar el tiempo de espera continuo que transcurre entre dos eventos consecutivos de un proceso de Poisson. |
+| **Logística** | $\frac{e^{-\frac{x-\mu}{s}}}{s \left(1 + e^{-\frac{x-\mu}{s}}\right)^2}$ | $\frac{1}{1 + e^{-\frac{x-\mu}{s}}}$ | **$E(X)$:** $\mu$ <br><br> **$\sigma$:** $\frac{s \cdot \pi}{\sqrt{3}}$ | Modelar el crecimiento de poblaciones o en Machine Learning (regresión logística) para probabilidades binarias. |
 
 #### Distribución binomial
 
