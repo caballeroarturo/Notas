@@ -1031,7 +1031,127 @@ Asocia valores numéricos a los resultados de un experimento mediante una **vari
 
 - **Función de Distribución Acumulativa** $F(x)$**:** Indica la probabilidad de que la v.a. tome un valor menor o igual a $x$ es $P(X≤x)$.
 
-3.5 Valor esperado (Esperanza Matemática)
+La diferencia fundamental entre la **Función de Densidad** ($f(x)$) y la **Función de Distribución Acumulativa** ($F(x)$) radica en que la primera describe cómo se distribuye la probabilidad a lo largo de los posibles valores de una variable, mientras que la segunda representa la probabilidad acumulada hasta un valor específico.
+
+A continuación se detallan sus principales diferencias y su relación matemática:
+
+---
+
+### 1. Definición y Representación
+
+* **Función de Densidad (PDF):** Se utiliza primordialmente para variables aleatorias continuas. Es una función no negativa cuya integral sobre un intervalo $[a, b]$ representa la probabilidad de que la variable tome un valor en ese rango: 
+  $$P(a \leq X \leq b) = \int_a^b f(x) \, dx$$
+  Gráficamente, se visualiza como una curva (como la "campana de Gauss") donde la probabilidad es el área bajo la curva.
+  
+* **Función de Distribución Acumulativa (CDF):** Se define para cualquier tipo de variable aleatoria (discreta o continua). Evalúa la probabilidad de que la variable tome un valor menor o igual a un número dado $x$: 
+  $$F(x) = P(X \leq x)$$
+  Gráficamente, es una función no decreciente que siempre oscila entre 0 y 1.
+
+---
+
+### 2. Forma de calcular probabilidades
+
+* En la **Función de Densidad**, la probabilidad de un punto exacto en una variable continua es siempre cero ($P(X = x) = 0$); la probabilidad solo tiene sentido para intervalos.
+* En la **Función de Distribución**, el valor de la función en un punto $x$ es directamente una probabilidad ($P(X \leq x)$). Para variables discretas, la CDF presenta saltos en los valores que la variable puede tomar, y el tamaño de ese salto es la probabilidad puntual.
+
+---
+
+### 3. Relación Matemática
+
+Ambas funciones están íntimamente ligadas mediante el cálculo:
+
+* **De Densidad a Distribución:** Para obtener la función acumulativa a partir de la densidad, se realiza una integración desde el límite inferior hasta $x$: 
+  $$F(x) = \int_{-\infty}^x f(u) \, du$$
+* **De Distribución a Densidad:** En el caso continuo, la función de densidad es la derivada de la función de distribución: 
+  $$f(x) = F'(x)$$
+
+---
+
+### Resumen Comparativo
+
+| Característica | Función de Densidad ($f(x)$) | Función de Distribución ($F(x)$) |
+| :--- | :--- | :--- |
+| **Concepto clave** | Distribución de la probabilidad (concentración). | Acumulación de la probabilidad. |
+| **Probabilidad** | Es el área bajo la curva en un intervalo. | Es la altura o valor de la función en un punto dado. |
+| **Rango de valores** | Debe ser no negativa ($f(x) \geq 0$) y su área total bajo la curva debe ser 1. | Su resultado siempre va de 0 a 1 y es una función no decreciente. |
+| **Uso en discretas** | Se le suele llamar "función de probabilidad" o "de masa" ($p(x)$). | Se aplica igual, sumando las probabilidades puntuales anteriores. |
+
+
+```{r}
+#| message: false
+#| warning: false
+#| fig-width: 10
+#| fig-height: 5
+
+library(ggplot2)
+library(patchwork)
+
+# Configuración de los datos para una Normal Estándar
+x_vals <- seq(-3.5, 3.5, length.out = 1000)
+punto_critico <- 1 # Evaluaremos P(X <= 1)
+
+df_dist <- data.frame(
+  x = x_vals,
+  densidad = dnorm(x_vals),       # f(x) -> Densidad
+  acumulada = pnorm(x_vals)       # F(x) -> Acumulada
+)
+
+# Valor exacto de la probabilidad acumulada hasta 1
+prob_acumulada <- pnorm(punto_critico)
+
+# ==============================================================================
+# 1. GRÁFICA DE LA FUNCIÓN DE DENSIDAD (f(x))
+# ==============================================================================
+g_densidad <- ggplot(df_dist, aes(x = x, y = densidad)) +
+  geom_line(color = "#1f77b4", size = 1.2) +
+  # Pintar el área bajo la curva hasta el punto crítico
+  geom_area(data = subset(df_dist, x <= punto_critico), aes(y = densidad), 
+            fill = "#1f77b4", alpha = 0.4) +
+  geom_vline(xintercept = punto_critico, linetype = "dashed", color = "red", size = 0.8) +
+  annotate("text", x = -0.5, y = 0.15, 
+           label = paste0("Área = ", round(prob_acumulada * 100, 1), "%"), 
+           fontface = "bold", color = "#0d47a1") +
+  labs(
+    title = "Función de Densidad (PDF)",
+    subtitle = "La probabilidad es el ÁREA bajo la curva.",
+    x = "Valor de la variable (X)", y = "Densidad f(x)"
+  ) +
+  theme_minimal()
+
+# ==============================================================================
+# 2. GRÁFICA DE LA FUNCIÓN DE DISTRIBUCIÓN ACUMULATIVA (F(X))
+# ==============================================================================
+g_acumulada <- ggplot(df_dist, aes(x = x, y = acumulada)) +
+  geom_line(color = "#2ca02c", size = 1.2) +
+  geom_vline(xintercept = punto_critico, linetype = "dashed", color = "red", size = 0.8) +
+  # Líneas guías para leer el eje Y
+  geom_segment(aes(x = -3.5, xend = punto_critico, y = prob_acumulada, yend = prob_acumulada), 
+               linetype = "dotted", color = "darkgreen") +
+  annotate("point", x = punto_critico, y = prob_acumulada, color = "red", size = 3) +
+  annotate("text", x = -1.8, y = prob_acumulada + 0.05, 
+           label = paste0("Altura = ", round(prob_acumulada * 100, 1), "%"), 
+           fontface = "bold", color = "darkgreen") +
+  labs(
+    title = "Función Acumulativa (CDF)",
+    subtitle = "La probabilidad es la ALTURA en el eje Y.",
+    x = "Valor de la variable (X)", y = "Probabilidad Acumulada F(x)"
+  ) +
+  theme_minimal()
+
+# ==============================================================================
+# PANEL COMPLETO SIDE-BY-SIDE
+# ==============================================================================
+g_densidad + g_acumulada + 
+  plot_annotation(
+    title = "¿Cómo se calcula P(X ≤ 1)?",
+    subtitle = "Ambas gráficas contienen exactamente la misma información, pero la muestran de forma distinta.",
+    theme = theme(plot.title = element_text(face = "bold", size = 16))
+  )
+```
+
+
+
+##### Valor esperado (Esperanza Matemática)
 
 El **valor esperado** $E(X)$ o $μ$ es el promedio ponderado de todos los valores posibles de una variable aleatoria. Representa el valor que se esperaría obtener "a largo plazo" si el experimento se repitiera muchas veces.
 

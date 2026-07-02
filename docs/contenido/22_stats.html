@@ -491,6 +491,10 @@ window.Quarto = {
 <a href="#conteo-de-eventos-combinatoria" id="toc-conteo-de-eventos-combinatoria" class="nav-link" data-scroll-target="#conteo-de-eventos-combinatoria"><span class="header-section-number">13.2</span> Conteo de eventos (Combinatoria)</a>
   <ul class="collapse">
 <li><a href="#ordenamientos-con-reemplazo-importa-el-orden-y-s%C3%AD-se-puede-repetir" id="toc-ordenamientos-con-reemplazo-importa-el-orden-y-sí-se-puede-repetir" class="nav-link" data-scroll-target="#ordenamientos-con-reemplazo-importa-el-orden-y-s%C3%AD-se-puede-repetir"><span class="header-section-number">13.2.1</span> Ordenamientos CON Reemplazo (Importa el orden y SÍ se puede repetir)</a></li>
+  <li><a href="#definici%C3%B3n-y-representaci%C3%B3n" id="toc-definición-y-representación" class="nav-link" data-scroll-target="#definici%C3%B3n-y-representaci%C3%B3n"><span class="header-section-number">13.2.2</span> 1. Definición y Representación</a></li>
+  <li><a href="#forma-de-calcular-probabilidades" id="toc-forma-de-calcular-probabilidades" class="nav-link" data-scroll-target="#forma-de-calcular-probabilidades"><span class="header-section-number">13.2.3</span> 2. Forma de calcular probabilidades</a></li>
+  <li><a href="#relaci%C3%B3n-matem%C3%A1tica" id="toc-relación-matemática" class="nav-link" data-scroll-target="#relaci%C3%B3n-matem%C3%A1tica"><span class="header-section-number">13.2.4</span> 3. Relación Matemática</a></li>
+  <li><a href="#resumen-comparativo" id="toc-resumen-comparativo" class="nav-link" data-scroll-target="#resumen-comparativo"><span class="header-section-number">13.2.5</span> Resumen Comparativo</a></li>
   </ul>
 </li>
   <li><a href="#distribuciones-de-probabilidad" id="toc-distribuciones-de-probabilidad" class="nav-link" data-scroll-target="#distribuciones-de-probabilidad"><span class="header-section-number">13.3</span> Distribuciones de probabilidad</a></li>
@@ -1215,7 +1219,140 @@ window.Quarto = {
 <li><p><strong>Variables Continuas:</strong> Utilizan una <strong>Función de Densidad</strong> f(x). Aquí, la probabilidad de un punto exacto es cero; la probabilidad se mide como el <strong>área bajo la curva</strong> en un intervalo.</p></li>
 <li><p><strong>Función de Distribución Acumulativa</strong> <span class="math inline">\(F(x)\)</span><strong>:</strong> Indica la probabilidad de que la v.a. tome un valor menor o igual a <span class="math inline">\(x\)</span> es <span class="math inline">\(P(X≤x)\)</span>.</p></li>
 </ul>
-<p>3.5 Valor esperado (Esperanza Matemática)</p>
+<p>La diferencia fundamental entre la <strong>Función de Densidad</strong> (<span class="math inline">\(f(x)\)</span>) y la <strong>Función de Distribución Acumulativa</strong> (<span class="math inline">\(F(x)\)</span>) radica en que la primera describe cómo se distribuye la probabilidad a lo largo de los posibles valores de una variable, mientras que la segunda representa la probabilidad acumulada hasta un valor específico.</p>
+<p>A continuación se detallan sus principales diferencias y su relación matemática:</p>
+<hr></section></section><section id="definición-y-representación" class="level3" data-number="13.2.2"><h3 data-number="13.2.2" class="anchored" data-anchor-id="definición-y-representación">
+<span class="header-section-number">13.2.2</span> 1. Definición y Representación</h3>
+<ul>
+<li><p><strong>Función de Densidad (PDF):</strong> Se utiliza primordialmente para variables aleatorias continuas. Es una función no negativa cuya integral sobre un intervalo <span class="math inline">\([a, b]\)</span> representa la probabilidad de que la variable tome un valor en ese rango: <span class="math display">\[P(a \leq X \leq b) = \int_a^b f(x) \, dx\]</span> Gráficamente, se visualiza como una curva (como la “campana de Gauss”) donde la probabilidad es el área bajo la curva.</p></li>
+<li><p><strong>Función de Distribución Acumulativa (CDF):</strong> Se define para cualquier tipo de variable aleatoria (discreta o continua). Evalúa la probabilidad de que la variable tome un valor menor o igual a un número dado <span class="math inline">\(x\)</span>: <span class="math display">\[F(x) = P(X \leq x)\]</span> Gráficamente, es una función no decreciente que siempre oscila entre 0 y 1.</p></li>
+</ul>
+<hr></section><section id="forma-de-calcular-probabilidades" class="level3" data-number="13.2.3"><h3 data-number="13.2.3" class="anchored" data-anchor-id="forma-de-calcular-probabilidades">
+<span class="header-section-number">13.2.3</span> 2. Forma de calcular probabilidades</h3>
+<ul>
+<li>En la <strong>Función de Densidad</strong>, la probabilidad de un punto exacto en una variable continua es siempre cero (<span class="math inline">\(P(X = x) = 0\)</span>); la probabilidad solo tiene sentido para intervalos.</li>
+<li>En la <strong>Función de Distribución</strong>, el valor de la función en un punto <span class="math inline">\(x\)</span> es directamente una probabilidad (<span class="math inline">\(P(X \leq x)\)</span>). Para variables discretas, la CDF presenta saltos en los valores que la variable puede tomar, y el tamaño de ese salto es la probabilidad puntual.</li>
+</ul>
+<hr></section><section id="relación-matemática" class="level3" data-number="13.2.4"><h3 data-number="13.2.4" class="anchored" data-anchor-id="relación-matemática">
+<span class="header-section-number">13.2.4</span> 3. Relación Matemática</h3>
+<p>Ambas funciones están íntimamente ligadas mediante el cálculo:</p>
+<ul>
+<li>
+<strong>De Densidad a Distribución:</strong> Para obtener la función acumulativa a partir de la densidad, se realiza una integración desde el límite inferior hasta <span class="math inline">\(x\)</span>: <span class="math display">\[F(x) = \int_{-\infty}^x f(u) \, du\]</span>
+</li>
+<li>
+<strong>De Distribución a Densidad:</strong> En el caso continuo, la función de densidad es la derivada de la función de distribución: <span class="math display">\[f(x) = F'(x)\]</span>
+</li>
+</ul>
+<hr></section><section id="resumen-comparativo" class="level3" data-number="13.2.5"><h3 data-number="13.2.5" class="anchored" data-anchor-id="resumen-comparativo">
+<span class="header-section-number">13.2.5</span> Resumen Comparativo</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead><tr class="header">
+<th style="text-align: left;">Característica</th>
+<th style="text-align: left;">Función de Densidad (<span class="math inline">\(f(x)\)</span>)</th>
+<th style="text-align: left;">Función de Distribución (<span class="math inline">\(F(x)\)</span>)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Concepto clave</strong></td>
+<td style="text-align: left;">Distribución de la probabilidad (concentración).</td>
+<td style="text-align: left;">Acumulación de la probabilidad.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Probabilidad</strong></td>
+<td style="text-align: left;">Es el área bajo la curva en un intervalo.</td>
+<td style="text-align: left;">Es la altura o valor de la función en un punto dado.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Rango de valores</strong></td>
+<td style="text-align: left;">Debe ser no negativa (<span class="math inline">\(f(x) \geq 0\)</span>) y su área total bajo la curva debe ser 1.</td>
+<td style="text-align: left;">Su resultado siempre va de 0 a 1 y es una función no decreciente.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Uso en discretas</strong></td>
+<td style="text-align: left;">Se le suele llamar “función de probabilidad” o “de masa” (<span class="math inline">\(p(x)\)</span>).</td>
+<td style="text-align: left;">Se aplica igual, sumando las probabilidades puntuales anteriores.</td>
+</tr>
+</tbody>
+</table>
+<div class="cell">
+<details class="code-fold"><summary>Código</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://patchwork.data-imaginist.com">patchwork</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Configuración de los datos para una Normal Estándar</span></span>
+<span><span class="va">x_vals</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">3.5</span>, <span class="fl">3.5</span>, length.out <span class="op">=</span> <span class="fl">1000</span><span class="op">)</span></span>
+<span><span class="va">punto_critico</span> <span class="op">&lt;-</span> <span class="fl">1</span> <span class="co"># Evaluaremos P(X &lt;= 1)</span></span>
+<span></span>
+<span><span class="va">df_dist</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span></span>
+<span>  x <span class="op">=</span> <span class="va">x_vals</span>,</span>
+<span>  densidad <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">dnorm</a></span><span class="op">(</span><span class="va">x_vals</span><span class="op">)</span>,       <span class="co"># f(x) -&gt; Densidad</span></span>
+<span>  acumulada <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="va">x_vals</span><span class="op">)</span>       <span class="co"># F(x) -&gt; Acumulada</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Valor exacto de la probabilidad acumulada hasta 1</span></span>
+<span><span class="va">prob_acumulada</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="va">punto_critico</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># ==============================================================================</span></span>
+<span><span class="co"># 1. GRÁFICA DE LA FUNCIÓN DE DENSIDAD (f(x))</span></span>
+<span><span class="co"># ==============================================================================</span></span>
+<span><span class="va">g_densidad</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">df_dist</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">x</span>, y <span class="op">=</span> <span class="va">densidad</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">"#1f77b4"</span>, size <span class="op">=</span> <span class="fl">1.2</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="co"># Pintar el área bajo la curva hasta el punto crítico</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span><span class="op">(</span>data <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/subset.html">subset</a></span><span class="op">(</span><span class="va">df_dist</span>, <span class="va">x</span> <span class="op">&lt;=</span> <span class="va">punto_critico</span><span class="op">)</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>y <span class="op">=</span> <span class="va">densidad</span><span class="op">)</span>, </span>
+<span>            fill <span class="op">=</span> <span class="st">"#1f77b4"</span>, alpha <span class="op">=</span> <span class="fl">0.4</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="va">punto_critico</span>, linetype <span class="op">=</span> <span class="st">"dashed"</span>, color <span class="op">=</span> <span class="st">"red"</span>, size <span class="op">=</span> <span class="fl">0.8</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/annotate.html">annotate</a></span><span class="op">(</span><span class="st">"text"</span>, x <span class="op">=</span> <span class="op">-</span><span class="fl">0.5</span>, y <span class="op">=</span> <span class="fl">0.15</span>, </span>
+<span>           label <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span><span class="op">(</span><span class="st">"Área = "</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">prob_acumulada</span> <span class="op">*</span> <span class="fl">100</span>, <span class="fl">1</span><span class="op">)</span>, <span class="st">"%"</span><span class="op">)</span>, </span>
+<span>           fontface <span class="op">=</span> <span class="st">"bold"</span>, color <span class="op">=</span> <span class="st">"#0d47a1"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
+<span>    title <span class="op">=</span> <span class="st">"Función de Densidad (PDF)"</span>,</span>
+<span>    subtitle <span class="op">=</span> <span class="st">"La probabilidad es el ÁREA bajo la curva."</span>,</span>
+<span>    x <span class="op">=</span> <span class="st">"Valor de la variable (X)"</span>, y <span class="op">=</span> <span class="st">"Densidad f(x)"</span></span>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_minimal</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># ==============================================================================</span></span>
+<span><span class="co"># 2. GRÁFICA DE LA FUNCIÓN DE DISTRIBUCIÓN ACUMULATIVA (F(X))</span></span>
+<span><span class="co"># ==============================================================================</span></span>
+<span><span class="va">g_acumulada</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="va">df_dist</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">x</span>, y <span class="op">=</span> <span class="va">acumulada</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">"#2ca02c"</span>, size <span class="op">=</span> <span class="fl">1.2</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_abline.html">geom_vline</a></span><span class="op">(</span>xintercept <span class="op">=</span> <span class="va">punto_critico</span>, linetype <span class="op">=</span> <span class="st">"dashed"</span>, color <span class="op">=</span> <span class="st">"red"</span>, size <span class="op">=</span> <span class="fl">0.8</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="co"># Líneas guías para leer el eje Y</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_segment.html">geom_segment</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="op">-</span><span class="fl">3.5</span>, xend <span class="op">=</span> <span class="va">punto_critico</span>, y <span class="op">=</span> <span class="va">prob_acumulada</span>, yend <span class="op">=</span> <span class="va">prob_acumulada</span><span class="op">)</span>, </span>
+<span>               linetype <span class="op">=</span> <span class="st">"dotted"</span>, color <span class="op">=</span> <span class="st">"darkgreen"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/annotate.html">annotate</a></span><span class="op">(</span><span class="st">"point"</span>, x <span class="op">=</span> <span class="va">punto_critico</span>, y <span class="op">=</span> <span class="va">prob_acumulada</span>, color <span class="op">=</span> <span class="st">"red"</span>, size <span class="op">=</span> <span class="fl">3</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/annotate.html">annotate</a></span><span class="op">(</span><span class="st">"text"</span>, x <span class="op">=</span> <span class="op">-</span><span class="fl">1.8</span>, y <span class="op">=</span> <span class="va">prob_acumulada</span> <span class="op">+</span> <span class="fl">0.05</span>, </span>
+<span>           label <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span><span class="op">(</span><span class="st">"Altura = "</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">prob_acumulada</span> <span class="op">*</span> <span class="fl">100</span>, <span class="fl">1</span><span class="op">)</span>, <span class="st">"%"</span><span class="op">)</span>, </span>
+<span>           fontface <span class="op">=</span> <span class="st">"bold"</span>, color <span class="op">=</span> <span class="st">"darkgreen"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
+<span>    title <span class="op">=</span> <span class="st">"Función Acumulativa (CDF)"</span>,</span>
+<span>    subtitle <span class="op">=</span> <span class="st">"La probabilidad es la ALTURA en el eje Y."</span>,</span>
+<span>    x <span class="op">=</span> <span class="st">"Valor de la variable (X)"</span>, y <span class="op">=</span> <span class="st">"Probabilidad Acumulada F(x)"</span></span>
+<span>  <span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_minimal</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># ==============================================================================</span></span>
+<span><span class="co"># PANEL COMPLETO SIDE-BY-SIDE</span></span>
+<span><span class="co"># ==============================================================================</span></span>
+<span><span class="va">g_densidad</span> <span class="op">+</span> <span class="va">g_acumulada</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://patchwork.data-imaginist.com/reference/plot_annotation.html">plot_annotation</a></span><span class="op">(</span></span>
+<span>    title <span class="op">=</span> <span class="st">"¿Cómo se calcula P(X ≤ 1)?"</span>,</span>
+<span>    subtitle <span class="op">=</span> <span class="st">"Ambas gráficas contienen exactamente la misma información, pero la muestran de forma distinta."</span>,</span>
+<span>    theme <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span>plot.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html">element_text</a></span><span class="op">(</span>face <span class="op">=</span> <span class="st">"bold"</span>, size <span class="op">=</span> <span class="fl">16</span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="op">)</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details><div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="valor-esperado-esperanza-matemática" class="level5"><h5 class="anchored" data-anchor-id="valor-esperado-esperanza-matemática">Valor esperado (Esperanza Matemática)</h5>
 <p>El <strong>valor esperado</strong> <span class="math inline">\(E(X)\)</span> o <span class="math inline">\(μ\)</span> es el promedio ponderado de todos los valores posibles de una variable aleatoria. Representa el valor que se esperaría obtener “a largo plazo” si el experimento se repitiera muchas veces.</p>
 <ul>
 <li><p><strong>Cálculo:</strong> En el caso discreto es <span class="math inline">\(\sum x \cdot f(x)\)</span>, y en el continuo es <span class="math display">\[\int x \cdot f(x) \, dx\]</span>.</p></li>
@@ -1273,7 +1410,7 @@ window.Quarto = {
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="1152"></p>
+<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="1152"></p>
 </figure>
 </div>
 </div>
@@ -1313,7 +1450,7 @@ window.Quarto = {
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="1152"></p>
+<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="1152"></p>
 </figure>
 </div>
 </div>
@@ -1396,7 +1533,7 @@ window.Quarto = {
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="960"></p>
+<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="960"></p>
 </figure>
 </div>
 </div>
@@ -1445,7 +1582,7 @@ window.Quarto = {
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="864"></p>
+<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="864"></p>
 </figure>
 </div>
 </div>
@@ -1490,7 +1627,7 @@ window.Quarto = {
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="576"></p>
+<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
 </div>
 </div>
@@ -1513,7 +1650,7 @@ window.Quarto = {
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="576"></p>
+<figure class="figure"><p><img src="22_stats_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="576"></p>
 </figure>
 </div>
 </div>
@@ -1527,7 +1664,7 @@ window.Quarto = {
 <p>Para contrastar <span class="math inline">\(H_0: p = p_0\)</span> en muestras grandes, se utiliza el estadístico <span class="math inline">\(Z\)</span>:<span class="math display">\[Z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1 - p_0)}{n}}}\]</span></p>
 <p>💡 Ejemplo sencillo (Lanzamiento de un nuevo producto): &gt; Históricamente, el porcentaje de clientes satisfechos con la versión anterior de una app es del <span class="math inline">\(p_0 = 70\%\)</span> (<span class="math inline">\(0.70\)</span>). Lanzas una nueva actualización y quieres probar si la satisfacción aumentó. Encuestas a <span class="math inline">\(n = 100\)</span> usuarios y descubres que <span class="math inline">\(80\)</span> están contentos (<span class="math inline">\(\hat{p} = 0.80\)</span>). - <span class="math inline">\(H_0: p = 0.70\)</span> (La satisfacción sigue exactamente igual que antes). - <span class="math inline">\(H_1: p &gt; 0.70\)</span> (La nueva actualización incrementó la proporción de clientes felices). - Si al resolver la ecuación del estadístico <span class="math inline">\(Z\)</span> el resultado supera el valor crítico (típicamente <span class="math inline">\(1.645\)</span> para una cola), se concluye con bases estadísticas sólidas que la actualización fue un éxito rotundo.</p>
 <div class="cell">
-<details class="code-fold"><summary>Código</summary><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Ejecutar una prueba real de proporción con los datos del ejemplo</span></span>
+<details class="code-fold"><summary>Código</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Ejecutar una prueba real de proporción con los datos del ejemplo</span></span>
 <span><span class="co"># n = 100 usuarios, éxitos = 80, hipótesis nula p_0 = 0.70</span></span>
 <span><span class="va">prueba_prop</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/prop.test.html">prop.test</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">80</span>, n <span class="op">=</span> <span class="fl">100</span>, p <span class="op">=</span> <span class="fl">0.70</span>, alternative <span class="op">=</span> <span class="st">"greater"</span>, correct <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
 <span></span>
@@ -1546,12 +1683,12 @@ sample estimates:
   p 
 0.8 </code></pre>
 </div>
-<details class="code-fold"><summary>Código</summary><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Guardar el valor p para análisis</span></span>
+<details class="code-fold"><summary>Código</summary><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Guardar el valor p para análisis</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/cat.html">cat</a></span><span class="op">(</span><span class="st">"El p-valor es:"</span>, <span class="va">prueba_prop</span><span class="op">$</span><span class="va">p.value</span>, <span class="st">"\n"</span><span class="op">)</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
 <pre><code>El p-valor es: 0.01454817 </code></pre>
 </div>
-<details class="code-fold"><summary>Código</summary><div class="sourceCode" id="cb13"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Si el p-valor es menor a 0.05, se descarta H0.</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold"><summary>Código</summary><div class="sourceCode" id="cb14"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Si el p-valor es menor a 0.05, se descarta H0.</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <table class="caption-top table">
