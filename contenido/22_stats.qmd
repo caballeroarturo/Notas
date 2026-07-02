@@ -322,6 +322,15 @@ Reflejan de forma simple cinco estadísticas clave: el **mínimo, primer cuartil
 
 - **Valores atípicos (Outliers):** Se representan como puntos aislados fuera de los bigotes. Un criterio común es considerar atípico cualquier valor que esté a más de **1.5 veces el rango intercuartil** de los extremos de la caja. Estos valores pueden ser errores de registro o indicar fenómenos inusuales de gran interés científico.
 
+- Los bigotes representan el rango de los datos que se consideran "normales" o esperados, extendiéndose hacia los valores máximos y mínimos antes de toparse con los valores atípicos (outliers).
+Técnicamente, no se dibujan simplemente hasta los extremos absolutos de tus datos. Tienen una regla matemática muy clara basada en el Rango Intercuartílico ($RIC = Q_3 - Q_1$):
+- El bigote superior: Se extiende desde el tercer cuartil ($Q_3$) hasta el valor máximo real de tus datos, pero con un límite: no puede superar el valor de $Q_3 + 1.5 \times RIC$.
+- El bigote inferior: Se extiende desde el primer cuartil ($Q_1$) hasta el valor mínimo real de tus datos, con el límite inverso: no puede bajar más allá de $Q_1 - 1.5 \times RIC$.
+¿Cómo interpretarlo visualmente en tus análisis?
+- Si un dato está dentro de los bigotes: Se considera parte de la variabilidad común y corriente de tu muestra.
+- Si un dato se sale de los bigotes: Verás que R los dibuja como puntos o asteriscos aislados. Esos son los valores atípicos (outliers), es decir, datos extremadamente raros, errores de dedo o anomalías que merecen ser estudiadas aparte.
+- La longitud de los bigotes: Te dice qué tan dispersos están tus datos en los extremos. Si el bigote superior es mucho más largo que el inferior, es una señal visual directa de que tus datos tienen un sesgo positivo (a la derecha).
+
 ```{r}
 #| fig-width: 9
 #| fig-height: 12

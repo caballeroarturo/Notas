@@ -794,6 +794,12 @@ window.Quarto = {
 </ul>
 </li>
 <li><p><strong>Valores atípicos (Outliers):</strong> Se representan como puntos aislados fuera de los bigotes. Un criterio común es considerar atípico cualquier valor que esté a más de <strong>1.5 veces el rango intercuartil</strong> de los extremos de la caja. Estos valores pueden ser errores de registro o indicar fenómenos inusuales de gran interés científico.</p></li>
+<li><p>Los bigotes representan el rango de los datos que se consideran “normales” o esperados, extendiéndose hacia los valores máximos y mínimos antes de toparse con los valores atípicos (outliers). Técnicamente, no se dibujan simplemente hasta los extremos absolutos de tus datos. Tienen una regla matemática muy clara basada en el Rango Intercuartílico (<span class="math inline">\(RIC = Q_3 - Q_1\)</span>):</p></li>
+<li><p>El bigote superior: Se extiende desde el tercer cuartil (<span class="math inline">\(Q_3\)</span>) hasta el valor máximo real de tus datos, pero con un límite: no puede superar el valor de <span class="math inline">\(Q_3 + 1.5 \times RIC\)</span>.</p></li>
+<li><p>El bigote inferior: Se extiende desde el primer cuartil (<span class="math inline">\(Q_1\)</span>) hasta el valor mínimo real de tus datos, con el límite inverso: no puede bajar más allá de <span class="math inline">\(Q_1 - 1.5 \times RIC\)</span>. ¿Cómo interpretarlo visualmente en tus análisis?</p></li>
+<li><p>Si un dato está dentro de los bigotes: Se considera parte de la variabilidad común y corriente de tu muestra.</p></li>
+<li><p>Si un dato se sale de los bigotes: Verás que R los dibuja como puntos o asteriscos aislados. Esos son los valores atípicos (outliers), es decir, datos extremadamente raros, errores de dedo o anomalías que merecen ser estudiadas aparte.</p></li>
+<li><p>La longitud de los bigotes: Te dice qué tan dispersos están tus datos en los extremos. Si el bigote superior es mucho más largo que el inferior, es una señal visual directa de que tus datos tienen un sesgo positivo (a la derecha).</p></li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
