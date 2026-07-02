@@ -64,7 +64,7 @@ Conceptos de Calidad de Datos
 
 La **estadística descriptiva** es la rama de la estadística que se encarga de la recopilación, organización, resumen y presentación de datos, permitiendo describir las características fundamentales de una población o muestra mediante números y herramientas gráficas sin realizar generalizaciones más allá de los datos mismos. Su objetivo principal es ofrecer un sentido de la ubicación del **centro de los datos**, su **variabilidad** y la naturaleza de su distribución.
 
-2.1 Medidas de tendencia central
+### Medidas de tendencia central
 
 Estas medidas están diseñadas para proporcionar valores cuantitativos que identifiquen el punto central o la ubicación típica de un conjunto de datos.
 
@@ -86,25 +86,25 @@ Estas medidas están diseñadas para proporcionar valores cuantitativos que iden
 
   - **Propiedad clave:** Es el único parámetro de tendencia central que tiene sentido para variables cualitativas o nominales.
 
-2.2 Medidas de dispersión
+### Medidas de dispersión
 
 Estas medidas indican qué tan agrupados o esparcidos están los datos alrededor de las medidas de tendencia central, especialmente respecto a la media.
 
 - **Rango:** Es la medida de variabilidad más simple y se calcula como la **diferencia entre el valor máximo y el valor mínimo** del conjunto de datos. Indica la longitud total del intervalo en el que se hallan las observaciones.
 
-- **Varianza (**s2 **o** σ2**):** Es el promedio de los cuadrados de las desviaciones de cada dato respecto a la media aritmética.
+- **Varianza (**$s^2$ **o** $σ^2$**):** Es el promedio de los cuadrados de las desviaciones de cada dato respecto a la media aritmética.
 
   - **Concepto de** n−1**:** En la varianza muestral, se divide entre n−1 (grados de libertad) en lugar de n para obtener un estimador insesgado de la varianza poblacional.
 
   - **Inconveniente:** Se expresa en unidades al cuadrado respecto a los datos originales, lo que dificulta su interpretación directa.
 
-- **Desviación estándar (**s **o** σ**):** Es la raíz cuadrada positiva de la varianza.
+- **Desviación estándar (**$s$ **o** $σ$**):** Es la raíz cuadrada positiva de la varianza.
 
   - **Ventaja:** Al expresarse en las **mismas unidades que los datos originales**, es la medida de dispersión más utilizada en aplicaciones prácticas. Una desviación estándar pequeña indica que los datos están muy cerca de la media; una grande indica mayor dispersión.
 
 En el contexto del **análisis espacial**, estas medidas pueden aplicarse gráficamente para obtener un "centro medio" o promedio espacial basándose en las coordenadas X e Y de una distribución de puntos.
 
-### 1. Fórmulas Poblacionales (Cuando tienes los datos de TODO el grupo)
+### 1. Fórmulas poblacionales (cuando se tienen los datos de todo el grupo)
 
 Se utilizan letras griegas ($\sigma^2$ y $\sigma$) porque representan los parámetros reales de toda la población.
 
@@ -116,7 +116,7 @@ Donde: $\mu$ es la media de la población y $n$ es el tamaño de la población.
 
 ------------------------------------------------------------------------
 
-### 2. Fórmulas Muestrales (Cuando usas una muestra para estimar a la población)
+### 2. Fórmulas muestrales (cuando se usa una muestra para estimar a la población)
 
 Se utilizan letras latinas ($s^2$ y $s$). Nota que aquí se divide entre $n-1$ (conocido como *corrección de Bessel*) para que el cálculo sea un estimador insesgado y más preciso.
 
@@ -149,7 +149,7 @@ Estas medidas describen cómo se distribuyen las observaciones en relación con 
 ```{r}
 #| message: false
 #| warning: false
-#| fig-width: 10
+#| fig-width: 9
 #| fig-height: 8
 
 # Instala los paquetes si no los tienes:
@@ -235,7 +235,7 @@ Estas herramientas proporcionan una visión visual rápida de las característic
 
 ```{r}
 #| fig-width: 9
-#| fig-height: 11
+#| fig-height: 9
 #| echo: false
 #| warning: false
 #| message: false
@@ -320,7 +320,7 @@ text(x = 0, y = -0.22, "del eje Y. El de frecuencia relativa es ideal para compa
 - **Tendencia:** Si se aumenta el número de observaciones y se reduce la amplitud de los intervalos, el polígono de frecuencias del histograma tiende a una curva suave llamada **función de densidad**.
 
 ```{r}
-#| fig-width: 8
+#| fig-width: 9
 #| fig-height: 9
 #| echo: false
 #| warning: false
@@ -415,7 +415,7 @@ Reflejan de forma simple cinco estadísticas clave: el **mínimo, primer cuartil
 
 ```{r}
 #| fig-width: 9
-#| fig-height: 12
+#| fig-height: 9
 #| echo: false
 #| warning: false
 #| message: false
@@ -488,8 +488,8 @@ En estadística hay una regla de oro visual:
 - En una distribución con **Sesgo a la Izquierda (Negativo)**, los valores extremos bajos "jalan" a la media hacia la izquierda, dejando la relación: $\text{Media} < \text{Mediana} < \text{Moda}$.
 
 ```{r}
-#| fig-width: 12
-#| fig-height: 12
+#| fig-width: 9
+#| fig-height: 9
 #| echo: false
 #| warning: false
 #| message: false
@@ -646,22 +646,22 @@ Es una medida numérica que indica el sentido de la asociación lineal entre dos
 
 ##### Coeficiente de correlación lineal (Pearson)
 
-Para solucionar el problema de la escala de la covarianza, se utiliza el **coeficiente de correlación de Pearson (**r**)**, que es una versión estandarizada o "sin unidades" de la asociación lineal.
+Para solucionar el problema de la escala de la covarianza, se utiliza el **coeficiente de correlación de Pearson (**$r$**)**, que es una versión estandarizada o "sin unidades" de la asociación lineal.
 
 - **Cálculo:** Se obtiene dividiendo la covarianza entre el producto de las desviaciones estándar de ambas variables: $$r = \frac{\sigma_{xy}}{\sigma_x \cdot \sigma_y}$$
 
 - **Rango de valores:** Siempre oscila entre **-1 y +1**.
 
-  - r=1**:** Correlación lineal positiva perfecta (todos los puntos están sobre una línea recta creciente).
+  - $r=1$**:** Correlación lineal positiva perfecta (todos los puntos están sobre una línea recta creciente).
 
-  - r=−1**:** Correlación lineal negativa perfecta (puntos sobre una recta decreciente).
+  - $r=−1$**:** Correlación lineal negativa perfecta (puntos sobre una recta decreciente).
 
-  - r=0**:** No existe relación lineal entre las variables.
+  - $r=0$**:** No existe relación lineal entre las variables.
 
 ```{r}
 #| message: false
 #| warning: false
-#| fig-width: 10
+#| fig-width: 9
 #| fig-height: 8
 
 library(ggplot2)
@@ -739,7 +739,7 @@ g4 <- ggplot(df4, aes(x = x, y = y)) +
                   theme = theme(plot.title = element_text(face = "bold", size = 16)))
 ```
 
-- **Coeficiente de determinación (**$r^2$): Es el cuadrado del coeficiente de correlación y representa la proporción de la variabilidad de una variable que es explicada por la otra a través de la relación lineal. Por ejemplo, un r=0.6 implica que el 36% (0.62) de la variación total es explicada por el modelo.
+- **Coeficiente de determinación (**$r^2$): Es el cuadrado del coeficiente de correlación y representa la proporción de la variabilidad de una variable que es explicada por la otra a través de la relación lineal. Por ejemplo, un $r=0.6$ implica que el $36%$ ($0.62$) de la variación total es explicada por el modelo.
 
 | Característica | Coeficiente de Pearson ($r$) | Coeficiente de Determinación ($R^2$) |
 |:-----------------------|:-----------------------|:-----------------------|
@@ -752,7 +752,7 @@ g4 <- ggplot(df4, aes(x = x, y = y)) +
 En conclusión, mientras el **diagrama de dispersión** ofrece una visión intuitiva y la **covarianza** el sentido de la relación, el **coeficiente de correlación** proporciona una medida exacta y comparable de la fuerza y dirección del vínculo lineal entre dos variables.
 
 ```{r}
-#| fig-width: 12
+#| fig-width: 9
 #| fig-height: 9
 #| echo: false
 #| warning: false
@@ -908,13 +908,20 @@ El Teorema de la Probabilidad Total va hacia adelante: une las causas para encon
 
 $$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$$
 
-Donde cada parte tiene un nombre técnico y un significado muy intuitivo: \* $P(A|B)$ (Probabilidad Posterior): La probabilidad de que ocurra $A$ (Resfriado) **dado que** ya observamos $B$ (Tos). Esto es lo que queremos descubrir. \* $P(A)$ (Probabilidad Prior / A Priori): Tu creencia inicial antes de ver la evidencia. ¿Qué tan común es tener un resfriado en la población? \* $P(B|A)$ (Verosimilitud / Likelihood): Si asumimos que efectivamente tienes un resfriado ($A$), ¿qué tan probable es que cause tos ($B$)? \* $P(B)$ (Probabilidad Marginal): La probabilidad total de tener tos en el mundo, por cualquier causa (alergias, fumar, frío, etc.). Funciona como un factor de normalización.
+Donde cada parte tiene un nombre técnico y un significado muy intuitivo: \* $P(A|B)$ (Probabilidad Posterior): La probabilidad de que ocurra $A$ (Resfriado) **dado que** ya observamos $B$ (Tos). Esto es lo que queremos descubrir.
+
+$P(A)$ (Probabilidad Prior / A Priori): Tu creencia inicial antes de ver la evidencia.
+
+¿Qué tan común es tener un resfriado en la población?
+
+- $P(B|A)$ (Verosimilitud / Likelihood): Si asumimos que efectivamente tienes un resfriado ($A$), ¿qué tan probable es que cause tos ($B$)?
+- $P(B)$ (Probabilidad Marginal): La probabilidad total de tener tos en el mundo, por cualquier causa (alergias, fumar, frío, etc.). Funciona como un factor de normalización.
 
 ## Conteo de eventos (Combinatoria)
 
 Para aplicar la definición clásica de probabilidad, es esencial saber contar casos. El **Principio General de Recuento** establece que si un experimento tiene n formas y otro tiene m, juntos tienen $n × m$ formas. Las técnicas principales incluyen:
 
-- **Variaciones:** Importa el orden. Pueden ser **ordinarias** (sin repetición) o **con repetición** ($n^k$).El Teorema de la Probabilidad Total va hacia adelante: une las causas para encontrar la probabilidad del resultado final ($P(\text{Defectuosa})$).El Teorema de Bayes va hacia atrás: sabe el resultado final y quiere averiguar la causa original
+- **Variaciones:** Importa el orden. Pueden ser **ordinarias** (sin repetición) o **con repetición** ($n^k$).
 
 - **Permutaciones:** Son variaciones donde intervienen todos los elementos del conjunto ($n!$).
 
@@ -1818,12 +1825,17 @@ El procedimiento compara una hipótesis nula ($H_0: \mu = \mu_0$), que represent
 Significa que tu promedio de $195\text{ ml}$ está a casi 3 desviaciones estándar por debajo de lo que el fabricante prometió. - Si la máquina estuviera bien calibrada ($H_0$ verdadera), por azar las muestras de 35 tazas deberían dar promedios muy cercanos a $200\text{ ml}$ (quizás $199\text{ ml}$, o $201\text{ ml}$). Que te haya dado $195\text{ ml}$ ($t = -2.95$) en el mundo de la probabilidad es el equivalente a que lances una moneda 10 veces y las 10 veces salga cara: es teóricamente posible por azar, pero es tan ridículamente improbable que prefieres no creer en esa coincidencia. \> - Al calcular el estadístico de prueba $t$, si el resultado es un número muy negativo (por ejemplo, $-2.95$), significa que obtener un promedio de $195\text{ ml}$ de forma pura y natural por azar es extremadamente improbable. Por lo tanto, **rechazas** $H_0$ y concluyes que la máquina está descalibrada.
 
 - Para buscar en la tabla $t$, se necesitan calcular los grados de libertad, que para este caso es simplemente el tamaño de la muestra menos uno: $$gl = n - 1 = 35 - 1 = 34$$.
+
 - Buscar en la tabla (El "Punto de Corte") Antes del experimento, tú decides un nivel de exigencia llamado nivel de significancia ($\alpha$), que casi siempre se fija en el $5\%$ ($0.05$). Esto significa: "Solo creeré que la máquina está rota si la probabilidad de que sea un error por azar sea menor al 5%".
+
 - Vas a la tabla t de Student, buscas la fila de $34$ grados de libertad bajo la columna de una sola cola de $0.05$, y la tabla te dará un número llamado Valor Crítico:
+
 - El valor crítico en la tabla es $-1.691$ (negativo porque estamos evaluando si sirve de menos).
+
 - La regla de decisión: Las tablas dividen el mundo en dos zonas: la Zona de Aceptación (lo normal por azar) y la Zona de Rechazo (lo estadísticamente imposible de creer).
 
 - Si $t$ cae antes del valor crítico (hacia el 0): La diferencia es pequeña, se la perdonamos al azar. No se rechaza $H_0$.
+
 - Si tu $t$ cae más allá del valor crítico (más a la izquierda): El resultado es demasiado extremo. Se rechaza $H_0$. Como $t = -2.95$ es mucho menor (más extremo) que el $-1.691$ de la tabla, cayó profundamente en la Zona de Rechazo.
 
 ```{r}
@@ -1890,7 +1902,6 @@ Paso 3: El Cálculo Matemático - Pasamos nuestros datos por la fórmula de la t
 Calculamos la $t$: $$t = \frac{5 - 0}{1.265} = 3.95$$ Este $3.95$ positivo significa que la mejora de tus alumnos está a casi 4 desviaciones estándar por encima de la hipótesis del "no hace nada". - El uso de la Tabla (La decisión final)
 
 Para saber si ese $3.95$ es suficiente para cantar victoria, vamos a la tabla t de Student: - Grados de libertad: $gl = n - 1 = 10 - 1 = 9$. - Nivel de exigencia ($\alpha$): $5\%$ ($0.05$). - Buscamos en la tabla en la fila de 9 grados de libertad y columna de una cola para $0.05$. La tabla nos devuelve el Valor Crítico = $1.833$. - La Regla del Juego: Como tu resultado calculado ($t = 3.95$) es mayor que el valor de la tabla ($1.833$), tu resultado cayó en la Zona de Rechazo.
-
 
 ```{r}
 #| fig-width: 6
@@ -1991,8 +2002,7 @@ La regla para una función constante establece que si $f(x) = c$, donde $c$ es u
 La derivada del producto de dos funciones derivables no es simplemente el producto de sus derivadas. La regla correcta indica que la derivada de un producto es igual a la primera función por la derivada de la segunda, más la segunda función por la derivada de la primera.
 
 - **Fórmula:** $$\frac{d}{dx}[f(x) \cdot g(x)] = f(x) \cdot g'(x) + g(x) \cdot f'(x)$$
-- **Ejemplo:** Para derivar $f(x) = x \cdot e^x$, se aplica la regla obteniendo 
-$$x(e^x) + e^x(1)$$, lo que se simplifica a $e^x(x + 1)$.
+- **Ejemplo:** Para derivar $f(x) = x \cdot e^x$, se aplica la regla obteniendo $$x(e^x) + e^x(1)$$, lo que se simplifica a $e^x(x + 1)$.
 
 ### Derivada de funciones exponenciales
 
@@ -2003,9 +2013,7 @@ El cálculo varía dependiendo de si la base es el número natural $e$ o una con
   - **Con regla de la cadena:** Si el exponente es una función $g(x)$, la derivada es: $$\frac{d}{dx}\left[e^{g(x)}\right] = e^{g(x)} \cdot g'(x)$$
 - **Función exponencial general (**$a^x$): Cuando la base $a$ es una constante positiva diferente de 1, la derivada incluye el logaritmo natural de la base.
   - **Fórmula básica:** $$\frac{d}{dx}(a^x) = a^x \ln(a)$$
-  - **Ejemplo:** La derivada de $2^x$ es $2^x \ln(2)$.
-    $$a^x = e^{x \ln(a)}$$
-    **Con regla de la cadena:** $$\frac{d}{dx}\left[a^{g(x)}\right] = a^{g(x)} \ln(a) \cdot g'(x)$$
+  - **Ejemplo:** La derivada de $2^x$ es $2^x \ln(2)$. $$a^x = e^{x \ln(a)}$$ **Con regla de la cadena:** $$\frac{d}{dx}\left[a^{g(x)}\right] = a^{g(x)} \ln(a) \cdot g'(x)$$
 
 ------------------------------------------------------------------------
 
@@ -2022,9 +2030,7 @@ El cálculo varía dependiendo de si la base es el número natural $e$ o una con
 
 $$\frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)$$ Ejemplo:
 
-Imagina que quieres derivar la función: $$y = \ln(x^2 + 5)$$ Aquí tenemos dos capas: 
-- Función externa $f(u)$: $\ln(u)$ → (Su derivada es $\frac{1}{u}$) 
-- Función interna $g(x)$: $x^2 + 5$ → (Su derivada es $2x$)
+Imagina que quieres derivar la función: $$y = \ln(x^2 + 5)$$ Aquí tenemos dos capas: - Función externa $f(u)$: $\ln(u)$ → (Su derivada es $\frac{1}{u}$) - Función interna $g(x)$: $x^2 + 5$ → (Su derivada es $2x$)
 
 Aplicamos la regla de la cadena: - Derivamos la parte externa manteniendo intacto el centro:$$\frac{1}{x^2 + 5}$$ - Multiplicamos por la derivada del centro:$$\frac{1}{x^2 + 5} \cdot (2x)$$ - Resultado final:$$\frac{d}{dx}[\ln(x^2 + 5)] = \frac{2x}{x^2 + 5}$$
 
