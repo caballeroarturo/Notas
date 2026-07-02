@@ -146,6 +146,88 @@ Estas medidas describen cómo se distribuyen las observaciones en relación con 
 
 - **Nota sobre el término "Sesgo":** Es importante distinguir entre el sesgo de una forma de distribución (asimetría) y el **sesgo de un estimador**, que ocurre cuando el valor esperado de un estadístico no coincide con el parámetro poblacional (sobreestima o subestima de forma consistente).
 
+```{r}
+#| message: false
+#| warning: false
+#| fig-width: 10
+#| fig-height: 8
+
+# Instala los paquetes si no los tienes:
+# install.packages(c("ggplot2", "patchwork", "sn"))
+
+library(ggplot2)
+library(patchwork)
+library(sn) # Paquete excelente para simular distribuciones con sesgo real
+
+set.seed(123)
+
+# ==============================================================================
+# 1. VISUALIZACIÓN DEL SESGO (SKEWNESS)
+# ==============================================================================
+
+# Generamos datos con asimetría usando la distribución Normal Sesgada (sn)
+n_datos <- 10000
+datos_simétricos <- rsn(n_datos, xi = 0, omega = 1, alpha = 0)
+datos_sesgo_der  <- rsn(n_datos, xi = 0, omega = 1, alpha = 5)  # Sesgo positivo
+datos_sesgo_izq  <- rsn(n_datos, xi = 0, omega = 1, alpha = -5) # Sesgo negativo
+
+df_sesgo <- data.frame(
+  valores = c(datos_sesgo_izq, datos_simétricos, datos_sesgo_der),
+  Tipo = factor(rep(c("Sesgo a la Izquierda\n(Negativo)", "Simétrica\n(Normal)", "Sesgo a la Derecha\n(Positivo)"), each = n_datos),
+                levels = c("Sesgo a la Izquierda\n(Negativo)", "Simétrica\n(Normal)", "Sesgo a la Derecha\n(Positivo)"))
+)
+
+g_sesgo <- ggplot(df_sesgo, aes(x = valores, fill = Tipo)) +
+  geom_density(alpha = 0.6, color = "black", size = 0.3) +
+  facet_wrap(~Tipo, scales = "free_x") +
+  scale_fill_manual(values = c("#d95f02", "#7570b3", "#1b9e77")) +
+  labs(
+    title = "El Sesgo (Asimetría)",
+    subtitle = "Mide hacia qué lado de la media se agrupan los datos y la longitud de las colas.",
+    x = "Valores", y = "Densidad"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none", plot.title = element_text(face = "bold", size = 14))
+
+
+# ==============================================================================
+# 2. VISUALIZACIÓN DE LA CURTOSIS (KURTOSIS)
+# ==============================================================================
+
+# Para la curtosis comparamos distribuciones con distintas colas/picos:
+# Leptocúrtica: t-Student con pocos grados de libertad (colas pesadas, pico alto)
+# Mesocúrtica: Normal estándar
+# Platicúrtica: Uniforme (sin colas, chata)
+
+x <- seq(-4, 4, length.out = 1000)
+
+df_curtosis <- data.frame(
+  x = rep(x, 3),
+  y = c(dt(x, df = 3.5), dnorm(x), dunif(x, min = -2, max = 2)),
+  Tipo = factor(rep(c("Leptocúrtica\n(Alta / Colas pesadas)", "Mesocúrtica\n(Normal / Moderada)", "Platicúrtica\n(Chata / Colas ligeras)"), each = 1000),
+                levels = c("Leptocúrtica\n(Alta / Colas pesadas)", "Mesocúrtica\n(Normal / Moderada)", "Platicúrtica\n(Chata / Colas ligeras)"))
+)
+
+g_curtosis <- ggplot(df_curtosis, aes(x = x, y = y, fill = Tipo)) +
+  geom_area(alpha = 0.6, color = "black", size = 0.3) +
+  facet_wrap(~Tipo) +
+  scale_fill_manual(values = c("#e41a1c", "#377eb8", "#4daf4a")) +
+  labs(
+    title = "La Curtosis (Apuntamiento)",
+    subtitle = "Mide la concentración de datos en el centro vs la probabilidad de valores extremos (colas).",
+    x = "Valores", y = "Densidad"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none", plot.title = element_text(face = "bold", size = 14))
+
+
+# ==============================================================================
+# DESPLIEGUE DEL PANEL COMPLETO
+# ==============================================================================
+g_sesgo / plot_spacer() / g_curtosis + plot_layout(heights = c(1, 0.1, 1))
+```
+
+
 ### Interpretación de histogramas y diagramas de caja
 
 Estas herramientas proporcionan una visión visual rápida de las características elementales de una distribución.
