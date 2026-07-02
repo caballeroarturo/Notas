@@ -1039,7 +1039,7 @@ A continuación se detallan sus principales diferencias y su relación matemáti
 
 ### 1. Definición y Representación
 
-* **Función de Densidad (PDF):** Se utiliza primordialmente para variables aleatorias continuas. Es una función no negativa cuya integral sobre un intervalo $[a, b]$ representa la probabilidad de que la variable tome un valor en ese rango: 
+***Función de Densidad (PDF):** Se utiliza primordialmente para variables aleatorias continuas. Es una función no negativa cuya integral sobre un intervalo $[a, b]$ representa la probabilidad de que la variable tome un valor en ese rango: 
   $$P(a \leq X \leq b) = \int_a^b f(x) \, dx$$
   Gráficamente, se visualiza como una curva (como la "campana de Gauss") donde la probabilidad es el área bajo la curva.
   
@@ -1157,7 +1157,9 @@ El **valor esperado** $E(X)$ o $μ$ es el promedio ponderado de todos los valore
 
 - **Cálculo:** En el caso discreto es $\sum x \cdot f(x)$, y en el continuo es $$\int x \cdot f(x) \, dx$$.
 
-- **Propiedades:** Es un operador lineal, lo que significa que $$E(aX+b)=aE(X)+b y E(X+Y)=E(X)+E(Y)$$.
+- **Propiedades:** Es un operador lineal, lo que significa que 
+  $$E(aX + b) = aE(X) + b$$
+  $$E(X + Y) = E(X) + E(Y)$$
 
 - **Interpretación:** Actúa como el **punto de equilibrio** o centro de gravedad de la distribución de probabilidad.
 

@@ -1223,9 +1223,10 @@ window.Quarto = {
 <p>A continuación se detallan sus principales diferencias y su relación matemática:</p>
 <hr></section></section><section id="definición-y-representación" class="level3" data-number="13.2.2"><h3 data-number="13.2.2" class="anchored" data-anchor-id="definición-y-representación">
 <span class="header-section-number">13.2.2</span> 1. Definición y Representación</h3>
+<p>*<strong>Función de Densidad (PDF):</strong> Se utiliza primordialmente para variables aleatorias continuas. Es una función no negativa cuya integral sobre un intervalo <span class="math inline">\([a, b]\)</span> representa la probabilidad de que la variable tome un valor en ese rango: <span class="math display">\[P(a \leq X \leq b) = \int_a^b f(x) \, dx\]</span> Gráficamente, se visualiza como una curva (como la “campana de Gauss”) donde la probabilidad es el área bajo la curva.</p>
 <ul>
-<li><p><strong>Función de Densidad (PDF):</strong> Se utiliza primordialmente para variables aleatorias continuas. Es una función no negativa cuya integral sobre un intervalo <span class="math inline">\([a, b]\)</span> representa la probabilidad de que la variable tome un valor en ese rango: <span class="math display">\[P(a \leq X \leq b) = \int_a^b f(x) \, dx\]</span> Gráficamente, se visualiza como una curva (como la “campana de Gauss”) donde la probabilidad es el área bajo la curva.</p></li>
-<li><p><strong>Función de Distribución Acumulativa (CDF):</strong> Se define para cualquier tipo de variable aleatoria (discreta o continua). Evalúa la probabilidad de que la variable tome un valor menor o igual a un número dado <span class="math inline">\(x\)</span>: <span class="math display">\[F(x) = P(X \leq x)\]</span> Gráficamente, es una función no decreciente que siempre oscila entre 0 y 1.</p></li>
+<li>
+<strong>Función de Distribución Acumulativa (CDF):</strong> Se define para cualquier tipo de variable aleatoria (discreta o continua). Evalúa la probabilidad de que la variable tome un valor menor o igual a un número dado <span class="math inline">\(x\)</span>: <span class="math display">\[F(x) = P(X \leq x)\]</span> Gráficamente, es una función no decreciente que siempre oscila entre 0 y 1.</li>
 </ul>
 <hr></section><section id="forma-de-calcular-probabilidades" class="level3" data-number="13.2.3"><h3 data-number="13.2.3" class="anchored" data-anchor-id="forma-de-calcular-probabilidades">
 <span class="header-section-number">13.2.3</span> 2. Forma de calcular probabilidades</h3>
@@ -1356,7 +1357,7 @@ window.Quarto = {
 <p>El <strong>valor esperado</strong> <span class="math inline">\(E(X)\)</span> o <span class="math inline">\(μ\)</span> es el promedio ponderado de todos los valores posibles de una variable aleatoria. Representa el valor que se esperaría obtener “a largo plazo” si el experimento se repitiera muchas veces.</p>
 <ul>
 <li><p><strong>Cálculo:</strong> En el caso discreto es <span class="math inline">\(\sum x \cdot f(x)\)</span>, y en el continuo es <span class="math display">\[\int x \cdot f(x) \, dx\]</span>.</p></li>
-<li><p><strong>Propiedades:</strong> Es un operador lineal, lo que significa que <span class="math display">\[E(aX+b)=aE(X)+b y E(X+Y)=E(X)+E(Y)\]</span>.</p></li>
+<li><p><strong>Propiedades:</strong> Es un operador lineal, lo que significa que <span class="math display">\[E(aX + b) = aE(X) + b\]</span> <span class="math display">\[E(X + Y) = E(X) + E(Y)\]</span></p></li>
 <li><p><strong>Interpretación:</strong> Actúa como el <strong>punto de equilibrio</strong> o centro de gravedad de la distribución de probabilidad.</p></li>
 </ul></section></section></section><section id="distribuciones-de-probabilidad" class="level2" data-number="13.3"><h2 data-number="13.3" class="anchored" data-anchor-id="distribuciones-de-probabilidad">
 <span class="header-section-number">13.3</span> Distribuciones de probabilidad</h2>
