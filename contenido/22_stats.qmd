@@ -719,7 +719,7 @@ Para aplicar la definición clásica de probabilidad, es esencial saber contar c
 - **Combinaciones:** El orden **no importa**. Se utilizan para seleccionar subconjuntos. Su fórmula es \textbf{Combinaciones:} El orden \textbf{no importa}. Se utilizan para seleccionar subconjuntos. Su fórmula es: $$C_{n,k} = \binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 
 | ¿Importa el orden? | ¿Se pueden repetir? | Nombre Técnico | Operación Matemática | Razonamiento: ¿Cuándo usar? |
-|:--:|:--:|:---|:---|:---|
+|:-------------:|:-------------:|:--------------|:--------------|:--------------|
 | **SÍ** | **SÍ** | Variación con repetición | **Potencia**<br>$$n^k$$ | Cuando estás **armando códigos o secuencias** donde las posiciones importan y los elementos pueden reaparecer (ej. contraseñas, lanzar monedas o dados varias veces). |
 | **SÍ** | **NO** | Permutación (o Variación) | **Factorial / Permutaciones**<br>$$\frac{n!}{(n-k)!}$$ | Cuando estás **repartiendo puestos únicos, premios escalonados o filas** donde el rol de cada quien cambia el resultado y nadie puede duplicarse (ej. podios de carreras, elecciones de presidente/secretario). |
 | **NO** | **NO** | Combinación estándar | **Coeficiente Binomial**<br>$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$ | Cuando estás **armando equipos, comités o subconjuntos** donde lo único que te importa es quiénes integran el grupo final, sin importar el orden en que los llamaste (ej. manos de cartas, elegir delegados). |
@@ -1499,7 +1499,7 @@ cat("El p-valor es:", prueba_prop$p.value, "\n")
 ```
 
 | Si el Estadístico Calculado... | El valor $P$ será... | Decisión sobre $H_0$ | Conclusión |
-|:---|:--:|:--:|:---|
+|:-----------------|:----------------:|:----------------:|:-----------------|
 | Cae **dentro** de las zonas rojas críticas | Menor que $\alpha$ ($< 0.05$) | **Rechazar** $H_0$ | Hay suficiente evidencia a favor de tu teoría ($H_1$). |
 | Cae **fuera** de las zonas rojas críticas | Mayor que $\alpha$ ($\geq 0.05$) | **No rechazar** $H_0$ | No hay pruebas suficientes para cambiar el estándar actual. |
 
