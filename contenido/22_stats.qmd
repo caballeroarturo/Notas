@@ -1895,7 +1895,48 @@ Este análisis permite comparar dos poblaciones distintas para ver si difieren s
 
 ##### Ejemplo sencillo (Curso de preparación):
 
-> Quieres saber si un nuevo curso en línea mejora las calificaciones en un examen. Tomas a $10$ alumnos y registras su calificación antes de tomar el curso y después de tomarlo. Esto es una muestra pareada. - $H_0: \mu_d = 0$ (El curso no tiene ningún efecto; las calificaciones promedio siguen iguales). - $H_1: \mu_d > 0$ (Las calificaciones aumentaron después del curso). - Si el promedio de las diferencias individuales da positivo y lo suficientemente alto, la prueba te dirá que rechaces $H_0$, lo que demuestra científicamente que el curso funciona.
+> Quieres saber si un nuevo curso en línea mejora las calificaciones en un examen. Tomas a $10$ alumnos y registras su calificación antes de tomar el curso y después de tomarlo. Esto es una muestra pareada (cada dato del "Antes" está amarrado o emparejado exactamente con el mismo alumno en el "Después"). 
+- $H_0: \mu_d = 0$ (El curso no tiene ningún efecto; las calificaciones promedio siguen iguales). 
+- $H_1: \mu_d > 0$ (Las calificaciones aumentaron después del curso). 
+- Si el promedio de las diferencias individuales da positivo y lo suficientemente alto, la prueba te dirá que rechaces $H_0$, lo que demuestra científicamente que el curso funciona.
+
+  - La media de las diferencias ($\bar{d}$): Supongamos que el promedio de mejora fue de $+5\text{ puntos}$.
+  - La desviación estándar de las diferencias ($s_d$): Qué tanto variaron esas mejoras entre alumnos. Supongamos que dio $4\text{ puntos}$.
+
+- El Juicio (Las Hipótesis)
+
+Aquí planteamos qué significa matemáticamente que el curso funcione o no usando la media poblacional de las diferencias ($\mu_d$):
+- $H_0$ (Hipótesis Nula - El curso es una estafa): $\mu_d = 0$. Dice que si promediaras a millones de alumnos, la mejora real sería cero. Si tus 10 alumnos mejoraron 5 puntos en promedio, $H_0$ dice que fue por pura "suerte en el examen", no por el curso.
+- $H_1$ (Hipótesis Alternativa - Tu sospecha): $\mu_d > 0$. El curso sí aporta. La verdadera media de mejora es mayor que cero (por eso es una prueba de una sola cola, nos interesa ver si aumentaron).
+
+Paso 3: El Cálculo Matemático
+- Pasamos nuestros datos por la fórmula de la t pareada:
+$$t = \frac{\bar{d} - \mu_d}{\frac{s_d}{\sqrt{n}}}$$
+Calculamos el Error Estándar abajo: 
+$$\frac{4}{\sqrt{10}} = \frac{4}{3.162} = 1.265$$
+
+Calculamos la $t$:
+$$t = \frac{5 - 0}{1.265} = 3.95$$
+Este $3.95$ positivo significa que la mejora de tus alumnos está a casi 4 desviaciones estándar por encima de la hipótesis del "no hace nada".
+- El uso de la Tabla (La decisión final)
+
+Para saber si ese $3.95$ es suficiente para cantar victoria, vamos a la tabla t de Student:
+- Grados de libertad: $gl = n - 1 = 10 - 1 = 9$.
+- Nivel de exigencia ($\alpha$): $5\%$ ($0.05$).
+- Buscamos en la tabla en la fila de 9 grados de libertad y columna de una cola para $0.05$. La tabla nos devuelve el Valor Crítico = $1.833$.
+- La Regla del Juego: Como tu resultado calculado ($t = 3.95$) es mayor que el valor de la tabla ($1.833$), tu resultado cayó en la Zona de Rechazo.
+
+│       ZONA DE RECHAZO
+              ZONA DE ACEPTACIÓN         │   (El curso es un éxito)
+       (La mejora es una casualidad)     │
+─────────────────────────────────────────┼───────────────────────────────
+      0                                1.833
+                                  (Valor Crítico)
+                                                 ▲
+                                                 │
+                                                3.95
+                                         (Tu resultado "t")
+
 
 ```{r}
 #| fig-width: 6
@@ -1936,8 +1977,55 @@ La estimación puntual es $\hat{p} = \frac{x}{n}$. Para muestras grandes ($n\hat
 
 Para contrastar $H_0: p = p_0$ en muestras grandes, se utiliza el estadístico $Z$:$$Z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1 - p_0)}{n}}}$$
 
-💡 Ejemplo sencillo (Lanzamiento de un nuevo producto): \> Históricamente, el porcentaje de clientes satisfechos con la versión anterior de una app es del $p_0 = 70\%$ ($0.70$). Lanzas una nueva actualización y quieres probar si la satisfacción aumentó. Encuestas a $n = 100$ usuarios y descubres que $80$ están contentos ($\hat{p} = 0.80$). - $H_0: p = 0.70$ (La satisfacción sigue exactamente igual que antes). - $H_1: p > 0.70$ (La nueva actualización incrementó la proporción de clientes felices). - Si al resolver la ecuación del estadístico $Z$ el resultado supera el valor crítico (típicamente $1.645$ para una cola), se concluye con bases estadísticas sólidas que la actualización fue un éxito rotundo.
+>💡 Ejemplo sencillo (Lanzamiento de un nuevo producto): 
+> Históricamente, el porcentaje de clientes satisfechos con la versión anterior de una app es del $p_0 = 70\%$ ($0.70$). 
 
+> Lanzas una nueva actualización y quieres probar si la satisfacción aumentó. Encuestas a $n = 100$ usuarios y descubres que $80$ están contentos ($\hat{p} = 0.80$). 
+- $H_0: p = 0.70$ (La satisfacción sigue exactamente igual que antes). 
+- $H_1: p > 0.70$ (La nueva actualización incrementó la proporción de clientes felices). 
+- Si al resolver la ecuación del estadístico $Z$ el resultado supera el valor crítico (típicamente $1.645$ para una cola), se concluye con bases estadísticas sólidas que la actualización fue un éxito rotundo.
+
+Antes de tocar cualquier fórmula, anotamos lo que sabemos: 
+- $p_0 = 0.70$ (Proporción histórica): El $70\%$ tradicional de satisfacción.
+- $q_0 = 1 - p_0 = 0.30$: El porcentaje histórico de clientes no satisfechos ($30\%$).
+- $n = 100$: El tamaño de la muestra (usuarios encuestados).
+- $x = 80$: El número de usuarios felices en la muestra.
+- $\hat{p}$ (Proporción muestral): El porcentaje de éxito en tu experimento. Se calcula dividiendo los éxitos entre el total:
+$$\hat{p} = \frac{x}{n} = \frac{80}{100} = 0.80 \quad (80\%)$$
+
+
+¿Cómo se saca el Estadístico $Z$?
+La fórmula para calcular el estadístico $Z$ en una prueba de proporciones es la siguiente:
+
+$$Z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0 \cdot q_0}{n}}}$$
+
+- Calculamos el denominador (El Error Estándar de la proporción): Nos dice cuánto suele variar por puro azar el porcentaje de satisfacción al encuestar grupos de 100 personas bajo el esquema viejo.
+$$\text{Error Estándar} = \sqrt{\frac{0.70 \cdot 0.30}{100}} = \sqrt{\frac{0.21}{100}} = \sqrt{0.0021} \approx 0.0458$$
+- Calculamos el valor de $Z$ completo: Restamos nuestra muestra menos el dato histórico y lo dividimos entre el error estándar:$$Z = \frac{0.80 - 0.70}{0.0458} = \frac{0.10}{0.0458} \approx 2.18$$
+- El estadístico $Z$ calculado es $2.18$.
+
+¿Cómo se interpreta este $2.18$?
+
+El valor de $Z$ representa unidades de desviación estándar. Obtener un $Z = 2.18$ significa que el $80\%$ de usuarios felices que encontraste en tu encuesta se ubica a 2.18 desviaciones estándar por encima de lo que dictaría el comportamiento histórico.
+
+En términos sencillos: si la actualización no hubiera hecho ningún cambio real y la app siguiera igual que antes ($H_0$), obtener un salto de satisfacción del $70\%$ al $80\%$ con 100 encuestados estaría ridículamente lejos de lo normal por puro azar.
+
+- La regla de decisión con el $1.645$
+
+Para tomar la decisión final, acudimos a la tabla de la Distribución Normal Estándar ($Z$). Como definimos un nivel de significancia común del $5\%$ ($\alpha = 0.05$) para una sola cola (solo nos importa si la app mejoró), la tabla nos da el Valor Crítico = $1.645$.
+
+El $1.645$ es la frontera invisible. Cualquier resultado que de una $Z$ más grande que eso entra en la "Zona de Rechazo".
+
+ZONA DE ACEPTACIÓN         │       ZONA DE RECHAZO
+          (La app sigue igual que antes)  │     (La app es un éxito)
+──────────────────────────────────────────┼───────────────────────────────
+                                        1.645
+                                   (Valor Crítico)
+                                                  ▲
+                                                  │
+                                                 2.18
+                                          (Tu resultado "Z")
+                                          
 ```{r}
 # Ejecutar una prueba real de proporción con los datos del ejemplo
 # n = 100 usuarios, éxitos = 80, hipótesis nula p_0 = 0.70
