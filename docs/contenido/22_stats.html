@@ -1842,6 +1842,7 @@ window.Quarto = {
 </ul>
 <blockquote class="blockquote">
 <p><strong>Ejemplo sencillo (La máquina de café):</strong> &gt; Una máquina automática sirve tazas de café que teóricamente deben promediar <span class="math inline">\(\mu_0 = 200\text{ ml}\)</span>. Sospechas que la máquina está sirviendo menos cantidad. Tomas una muestra de <span class="math inline">\(n = 35\)</span> tazas y calculas la media de tu muestra (<span class="math inline">\(\bar{X} = 195\text{ ml}\)</span>) con una desviación estándar <span class="math inline">\(s = 10\text{ ml}\)</span>.</p>
+</blockquote>
 <ul>
 <li>
 <span class="math inline">\(H_0: \mu = 200\text{ ml}\)</span> (La máquina funciona perfectamente).</li>
@@ -1853,44 +1854,18 @@ window.Quarto = {
 </li>
 <li>¿Qué significa que <span class="math inline">\(t = -2.95\)</span>?</li>
 </ul>
-<p>Significa que tu promedio de <span class="math inline">\(195\text{ ml}\)</span> está a casi 3 desviaciones estándar por debajo de lo que el fabricante prometió. - Si la máquina estuviera bien calibrada (<span class="math inline">\(H_0\)</span> verdadera), por azar las muestras de 35 tazas deberían dar promedios muy cercanos a <span class="math inline">\(200\text{ ml}\)</span> (quizás <span class="math inline">\(199\text{ ml}\)</span>, o <span class="math inline">\(201\text{ ml}\)</span>). Que te haya dado <span class="math inline">\(195\text{ ml}\)</span> (<span class="math inline">\(t = -2.95\)</span>) en el mundo de la probabilidad es el equivalente a que lances una moneda 10 veces y las 10 veces salga cara: es teóricamente posible por azar, pero es tan ridículamente improbable que prefieres no creer en esa coincidencia. &gt; - Al calcular el estadístico de prueba <span class="math inline">\(t\)</span>, si el resultado es un número muy negativo (por ejemplo, <span class="math inline">\(-2.95\)</span>), significa que obtener un promedio de <span class="math inline">\(195\text{ ml}\)</span> de forma pura y natural por azar es extremadamente improbable. Por lo tanto, <strong>rechazas</strong> <span class="math inline">\(H_0\)</span> y concluyes que la máquina está descalibrada.</p>
-</blockquote>
+<p>Significa que tu promedio de <span class="math inline">\(195\text{ ml}\)</span> está a casi 3 desviaciones estándar por debajo de lo que el fabricante prometió.</p>
 <ul>
-<li><div>
-<blockquote class="blockquote">
-<p>Para buscar en la tabla <span class="math inline">\(t\)</span>, se necesitan calcular los grados de libertad, que para este caso es simplemente el tamaño de la muestra menos uno: <span class="math display">\[gl = n - 1 = 35 - 1 = 34\]</span></p>
-</blockquote>
-</div></li>
-<li><div>
-<blockquote class="blockquote">
-<p>Buscar en la tabla (El “Punto de Corte”) Antes del experimento, tú decides un nivel de exigencia llamado nivel de significancia (<span class="math inline">\(\alpha\)</span>), que casi siempre se fija en el <span class="math inline">\(5\%\)</span> (<span class="math inline">\(0.05\)</span>). Esto significa: “Solo creeré que la máquina está rota si la probabilidad de que sea un error por azar sea menor al 5%”.</p>
-</blockquote>
-</div></li>
-<li><div>
-<blockquote class="blockquote">
-<p>Vas a la tabla t de Student, buscas la fila de <span class="math inline">\(34\)</span> grados de libertad bajo la columna de una sola cola de <span class="math inline">\(0.05\)</span>, y la tabla te dará un número llamado Valor Crítico:</p>
-</blockquote>
-</div></li>
-<li><div>
-<blockquote class="blockquote">
-<p>El valor crítico en la tabla es <span class="math inline">\(-1.691\)</span> (negativo porque estamos evaluando si sirve de menos).</p>
-</blockquote>
-</div></li>
-<li><div>
-<blockquote class="blockquote">
-<p>La regla de decisión: Las tablas dividen el mundo en dos zonas: la Zona de Aceptación (lo normal por azar) y la Zona de Rechazo (lo estadísticamente imposible de creer).</p>
-</blockquote>
-</div></li>
-<li><div>
-<blockquote class="blockquote">
-<p>Si <span class="math inline">\(t\)</span> cae antes del valor crítico (hacia el 0): La diferencia es pequeña, se la perdonamos al azar. No se rechaza <span class="math inline">\(H_0\)</span>.</p>
-</blockquote>
-</div></li>
-<li><div>
-<blockquote class="blockquote">
-<p>Si tu <span class="math inline">\(t\)</span> cae más allá del valor crítico (más a la izquierda): El resultado es demasiado extremo. Se rechaza <span class="math inline">\(H_0\)</span>. Como <span class="math inline">\(t = -2.95\)</span> es mucho menor (más extremo) que el <span class="math inline">\(-1.691\)</span> de la tabla, cayó profundamente en la Zona de Rechazo.</p>
-</blockquote>
-</div></li>
+<li>Si la máquina estuviera bien calibrada (<span class="math inline">\(H_0\)</span> verdadera), por azar las muestras de 35 tazas deberían dar promedios muy cercanos a <span class="math inline">\(200\text{ ml}\)</span> (quizás <span class="math inline">\(199\text{ ml}\)</span>, o <span class="math inline">\(201\text{ ml}\)</span>). Que te haya dado <span class="math inline">\(195\text{ ml}\)</span> (<span class="math inline">\(t = -2.95\)</span>) en el mundo de la probabilidad es el equivalente a que lances una moneda 10 veces y las 10 veces salga cara: es teóricamente posible por azar, pero es tan ridículamente improbable que prefieres no creer en esa coincidencia.</li>
+<li>Al calcular el estadístico de prueba <span class="math inline">\(t\)</span>, si el resultado es un número muy negativo (por ejemplo, <span class="math inline">\(-2.95\)</span>), significa que obtener un promedio de <span class="math inline">\(195\text{ ml}\)</span> de forma pura y natural por azar es extremadamente improbable. Por lo tanto, <strong>rechazas</strong> <span class="math inline">\(H_0\)</span> y concluyes que la máquina está descalibrada.</li>
+<li>Para buscar en la tabla <span class="math inline">\(t\)</span>, se necesitan calcular los grados de libertad, que para este caso es simplemente el tamaño de la muestra menos uno: <span class="math display">\[gl = n - 1 = 35 - 1 = 34\]</span>
+</li>
+<li>Buscar en la tabla (El “Punto de Corte”) Antes del experimento, tú decides un nivel de exigencia llamado nivel de significancia (<span class="math inline">\(\alpha\)</span>), que casi siempre se fija en el <span class="math inline">\(5\%\)</span> (<span class="math inline">\(0.05\)</span>). Esto significa: “Solo creeré que la máquina está rota si la probabilidad de que sea un error por azar sea menor al 5%”.</li>
+<li>Vas a la tabla t de Student, buscas la fila de <span class="math inline">\(34\)</span> grados de libertad bajo la columna de una sola cola de <span class="math inline">\(0.05\)</span>, y la tabla te dará un número llamado Valor Crítico:</li>
+<li>El valor crítico en la tabla es <span class="math inline">\(-1.691\)</span> (negativo porque estamos evaluando si sirve de menos).</li>
+<li>La regla de decisión: Las tablas dividen el mundo en dos zonas: la Zona de Aceptación (lo normal por azar) y la Zona de Rechazo (lo estadísticamente imposible de creer).</li>
+<li>Si <span class="math inline">\(t\)</span> cae antes del valor crítico (hacia el 0): La diferencia es pequeña, se la perdonamos al azar. No se rechaza <span class="math inline">\(H_0\)</span>.</li>
+<li>Si tu <span class="math inline">\(t\)</span> cae más allá del valor crítico (más a la izquierda): El resultado es demasiado extremo. Se rechaza <span class="math inline">\(H_0\)</span>. Como <span class="math inline">\(t = -2.95\)</span> es mucho menor (más extremo) que el <span class="math inline">\(-1.691\)</span> de la tabla, cayó profundamente en la Zona de Rechazo.</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -1913,18 +1888,27 @@ window.Quarto = {
 </li>
 </ul>
 <section id="ejemplo-sencillo-curso-de-preparación" class="level5"><h5 class="anchored" data-anchor-id="ejemplo-sencillo-curso-de-preparación">Ejemplo sencillo (Curso de preparación):</h5>
-<blockquote class="blockquote">
-<p>Quieres saber si un nuevo curso en línea mejora las calificaciones en un examen. Tomas a <span class="math inline">\(10\)</span> alumnos y registras su calificación antes de tomar el curso y después de tomarlo. Esto es una muestra pareada (cada dato del “Antes” está amarrado o emparejado exactamente con el mismo alumno en el “Después”). - <span class="math inline">\(H_0: \mu_d = 0\)</span> (El curso no tiene ningún efecto; las calificaciones promedio siguen iguales). - <span class="math inline">\(H_1: \mu_d &gt; 0\)</span> (Las calificaciones aumentaron después del curso). - Si el promedio de las diferencias individuales da positivo y lo suficientemente alto, la prueba te dirá que rechaces <span class="math inline">\(H_0\)</span>, lo que demuestra científicamente que el curso funciona.</p>
-</blockquote>
+<p>Quieres saber si un nuevo curso en línea mejora las calificaciones en un examen. Tomas a <span class="math inline">\(10\)</span> alumnos y registras su calificación antes de tomar el curso y después de tomarlo. Esto es una muestra pareada (cada dato del “Antes” está amarrado o emparejado exactamente con el mismo alumno en el “Después”).</p>
 <ul>
-<li><p>La media de las diferencias (<span class="math inline">\(\bar{d}\)</span>): Supongamos que el promedio de mejora fue de <span class="math inline">\(+5\text{ puntos}\)</span>.</p></li>
-<li><p>La desviación estándar de las diferencias (<span class="math inline">\(s_d\)</span>): Qué tanto variaron esas mejoras entre alumnos. Supongamos que dio <span class="math inline">\(4\text{ puntos}\)</span>.</p></li>
-<li><p>El Juicio (Las Hipótesis)</p></li>
+<li>
+<span class="math inline">\(H_0: \mu_d = 0\)</span> (El curso no tiene ningún efecto; las calificaciones promedio siguen iguales).</li>
+<li>
+<span class="math inline">\(H_1: \mu_d &gt; 0\)</span> (Las calificaciones aumentaron después del curso).</li>
+<li>Si el promedio de las diferencias individuales da positivo y lo suficientemente alto, la prueba te dirá que rechaces <span class="math inline">\(H_0\)</span>, lo que demuestra científicamente que el curso funciona.</li>
+<li>La media de las diferencias (<span class="math inline">\(\bar{d}\)</span>): Supongamos que el promedio de mejora fue de <span class="math inline">\(+5\text{ puntos}\)</span>.</li>
+<li>La desviación estándar de las diferencias (<span class="math inline">\(s_d\)</span>): Qué tanto variaron esas mejoras entre alumnos. Supongamos que dio <span class="math inline">\(4\text{ puntos}\)</span>.</li>
+<li>El Juicio (Las Hipótesis)</li>
 </ul>
 <p>Aquí planteamos qué significa matemáticamente que el curso funcione o no usando la media poblacional de las diferencias (<span class="math inline">\(\mu_d\)</span>): - <span class="math inline">\(H_0\)</span> (Hipótesis Nula - El curso es una estafa): <span class="math inline">\(\mu_d = 0\)</span>. Dice que si promediaras a millones de alumnos, la mejora real sería cero. Si tus 10 alumnos mejoraron 5 puntos en promedio, <span class="math inline">\(H_0\)</span> dice que fue por pura “suerte en el examen”, no por el curso. - <span class="math inline">\(H_1\)</span> (Hipótesis Alternativa - Tu sospecha): <span class="math inline">\(\mu_d &gt; 0\)</span>. El curso sí aporta. La verdadera media de mejora es mayor que cero (por eso es una prueba de una sola cola, nos interesa ver si aumentaron).</p>
 <p>Paso 3: El Cálculo Matemático - Pasamos nuestros datos por la fórmula de la t pareada: <span class="math display">\[t = \frac{\bar{d} - \mu_d}{\frac{s_d}{\sqrt{n}}}\]</span> Calculamos el Error Estándar abajo: <span class="math display">\[\frac{4}{\sqrt{10}} = \frac{4}{3.162} = 1.265\]</span></p>
 <p>Calculamos la <span class="math inline">\(t\)</span>: <span class="math display">\[t = \frac{5 - 0}{1.265} = 3.95\]</span> Este <span class="math inline">\(3.95\)</span> positivo significa que la mejora de tus alumnos está a casi 4 desviaciones estándar por encima de la hipótesis del “no hace nada”. - El uso de la Tabla (La decisión final)</p>
-<p>Para saber si ese <span class="math inline">\(3.95\)</span> es suficiente para cantar victoria, vamos a la tabla t de Student: - Grados de libertad: <span class="math inline">\(gl = n - 1 = 10 - 1 = 9\)</span>. - Nivel de exigencia (<span class="math inline">\(\alpha\)</span>): <span class="math inline">\(5\%\)</span> (<span class="math inline">\(0.05\)</span>). - Buscamos en la tabla en la fila de 9 grados de libertad y columna de una cola para <span class="math inline">\(0.05\)</span>. La tabla nos devuelve el Valor Crítico = <span class="math inline">\(1.833\)</span>. - La Regla del Juego: Como tu resultado calculado (<span class="math inline">\(t = 3.95\)</span>) es mayor que el valor de la tabla (<span class="math inline">\(1.833\)</span>), tu resultado cayó en la Zona de Rechazo.</p>
+<p>Para saber si ese <span class="math inline">\(3.95\)</span> es suficiente para cantar victoria, vamos a la tabla t de Student:</p>
+<ul>
+<li>Grados de libertad: <span class="math inline">\(gl = n - 1 = 10 - 1 = 9\)</span>.</li>
+<li>Nivel de exigencia (<span class="math inline">\(\alpha\)</span>): <span class="math inline">\(5\%\)</span> (<span class="math inline">\(0.05\)</span>).</li>
+<li>Buscamos en la tabla en la fila de 9 grados de libertad y columna de una cola para <span class="math inline">\(0.05\)</span>. La tabla nos devuelve el Valor Crítico = <span class="math inline">\(1.833\)</span>.</li>
+<li>La Regla del Juego: Como tu resultado calculado (<span class="math inline">\(t = 3.95\)</span>) es mayor que el valor de la tabla (<span class="math inline">\(1.833\)</span>), tu resultado cayó en la Zona de Rechazo.</li>
+</ul>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -1940,13 +1924,27 @@ window.Quarto = {
 <p>La estimación puntual es <span class="math inline">\(\hat{p} = \frac{x}{n}\)</span>. Para muestras grandes (<span class="math inline">\(n\hat{p} \geq 5\)</span> y <span class="math inline">\(n(1-\hat{p}) \geq 5\)</span>), el intervalo aproximado es:<span class="math display">\[\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}}\]</span></p>
 </section><section id="pruebas-de-hipótesis-2" class="level4"><h4 class="anchored" data-anchor-id="pruebas-de-hipótesis-2">Pruebas de hipótesis</h4>
 <p>Para contrastar <span class="math inline">\(H_0: p = p_0\)</span> en muestras grandes, se utiliza el estadístico <span class="math inline">\(Z\)</span>:<span class="math display">\[Z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1 - p_0)}{n}}}\]</span></p>
-<blockquote class="blockquote">
-<p>💡 Ejemplo sencillo (Lanzamiento de un nuevo producto): Históricamente, el porcentaje de clientes satisfechos con la versión anterior de una app es del <span class="math inline">\(p_0 = 70\%\)</span> (<span class="math inline">\(0.70\)</span>).</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Lanzas una nueva actualización y quieres probar si la satisfacción aumentó. Encuestas a <span class="math inline">\(n = 100\)</span> usuarios y descubres que <span class="math inline">\(80\)</span> están contentos (<span class="math inline">\(\hat{p} = 0.80\)</span>). - <span class="math inline">\(H_0: p = 0.70\)</span> (La satisfacción sigue exactamente igual que antes). - <span class="math inline">\(H_1: p &gt; 0.70\)</span> (La nueva actualización incrementó la proporción de clientes felices). - Si al resolver la ecuación del estadístico <span class="math inline">\(Z\)</span> el resultado supera el valor crítico (típicamente <span class="math inline">\(1.645\)</span> para una cola), se concluye con bases estadísticas sólidas que la actualización fue un éxito rotundo.</p>
-</blockquote>
-<p>Antes de tocar cualquier fórmula, anotamos lo que sabemos: - <span class="math inline">\(p_0 = 0.70\)</span> (Proporción histórica): El <span class="math inline">\(70\%\)</span> tradicional de satisfacción. - <span class="math inline">\(q_0 = 1 - p_0 = 0.30\)</span>: El porcentaje histórico de clientes no satisfechos (<span class="math inline">\(30\%\)</span>). - <span class="math inline">\(n = 100\)</span>: El tamaño de la muestra (usuarios encuestados). - <span class="math inline">\(x = 80\)</span>: El número de usuarios felices en la muestra. - <span class="math inline">\(\hat{p}\)</span> (Proporción muestral): El porcentaje de éxito en tu experimento. Se calcula dividiendo los éxitos entre el total: <span class="math display">\[\hat{p} = \frac{x}{n} = \frac{80}{100} = 0.80 \quad (80\%)\]</span></p>
+<p>Ejemplo sencillo (Lanzamiento de un nuevo producto): Históricamente, el porcentaje de clientes satisfechos con la versión anterior de una app es del <span class="math inline">\(p_0 = 70\%\)</span> (<span class="math inline">\(0.70\)</span>).</p>
+<p>Lanzas una nueva actualización y quieres probar si la satisfacción aumentó. Encuestas a <span class="math inline">\(n = 100\)</span> usuarios y descubres que <span class="math inline">\(80\)</span> están contentos (<span class="math inline">\(\hat{p} = 0.80\)</span>). - <span class="math inline">\(H_0: p = 0.70\)</span> (La satisfacción sigue exactamente igual que antes).</p>
+<ul>
+<li>
+<span class="math inline">\(H_1: p &gt; 0.70\)</span> (La nueva actualización incrementó la proporción de clientes felices).</li>
+<li>Si al resolver la ecuación del estadístico <span class="math inline">\(Z\)</span> el resultado supera el valor crítico (típicamente <span class="math inline">\(1.645\)</span> para una cola), se concluye con bases estadísticas sólidas que la actualización fue un éxito rotundo.</li>
+</ul>
+<p>Antes de tocar cualquier fórmula, anotamos lo que sabemos:</p>
+<ul>
+<li>
+<span class="math inline">\(p_0 = 0.70\)</span> (Proporción histórica): El <span class="math inline">\(70\%\)</span> tradicional de satisfacción.</li>
+<li>
+<span class="math inline">\(q_0 = 1 - p_0 = 0.30\)</span>: El porcentaje histórico de clientes no satisfechos (<span class="math inline">\(30\%\)</span>).</li>
+<li>
+<span class="math inline">\(n = 100\)</span>: El tamaño de la muestra (usuarios encuestados).</li>
+<li>
+<span class="math inline">\(x = 80\)</span>: El número de usuarios felices en la muestra.</li>
+<li>
+<span class="math inline">\(\hat{p}\)</span> (Proporción muestral): El porcentaje de éxito en tu experimento. Se calcula dividiendo los éxitos entre el total: <span class="math display">\[\hat{p} = \frac{x}{n} = \frac{80}{100} = 0.80 \quad (80\%)\]</span>
+</li>
+</ul>
 <p>¿Cómo se saca el Estadístico <span class="math inline">\(Z\)</span>? La fórmula para calcular el estadístico <span class="math inline">\(Z\)</span> en una prueba de proporciones es la siguiente:</p>
 <p><span class="math display">\[Z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0 \cdot q_0}{n}}}\]</span></p>
 <ul>
