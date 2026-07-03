@@ -742,7 +742,7 @@ g4 <- ggplot(df4, aes(x = x, y = y)) +
 - **Coeficiente de determinación (**$r^2$): Es el cuadrado del coeficiente de correlación y representa la proporción de la variabilidad de una variable que es explicada por la otra a través de la relación lineal. Por ejemplo, un $r=0.6$ implica que el $36%$ ($0.62$) de la variación total es explicada por el modelo.
 
 | Característica | Coeficiente de Pearson ($r$) | Coeficiente de Determinación ($R^2$) |
-|:---|:---|:---|
+|:-----------------------|:-----------------------|:-----------------------|
 | **¿Qué mide?** | Dirección y fuerza de la relación lineal entre dos variables. | El éxito predictivo / proporción de variabilidad explicada por el modelo. |
 | **Escala / Rango** | De $-1$ a $+1$ | De $0$ a $1$ (o de $0\%$ a $100\%$) |
 | **¿Importa el signo?** | **Sí.** Indica si la relación es directa ($+$) o inversa ($-$). | **No.** Al ser un término cuadrático, siempre es positivo (no indica dirección). |
@@ -928,7 +928,7 @@ Para aplicar la definición clásica de probabilidad, es esencial saber contar c
 - **Combinaciones:** El orden \textbf{no importa}. Se utilizan para seleccionar subconjuntos. Su fórmula es: $$C_{n,k} = \binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 
 | ¿Importa el orden? | ¿Se pueden repetir? | Nombre Técnico | Operación Matemática | Razonamiento: ¿Cuándo usar? |
-|:--:|:--:|:---|:---|:---|
+|:------------:|:------------:|:-------------|:-------------|:---------------|
 | **SÍ** | **SÍ** | Variación con repetición | **Potencia**<br>$$n^k$$ | Cuando estás **armando códigos o secuencias** donde las posiciones importan y los elementos pueden reaparecer (ej. contraseñas, lanzar monedas o dados varias veces). |
 | **SÍ** | **NO** | Permutación (o Variación) | **Factorial / Permutaciones**<br>$$\frac{n!}{(n-k)!}$$ | Cuando estás **repartiendo puestos únicos, premios escalonados o filas** donde el rol de cada quien cambia el resultado y nadie puede duplicarse (ej. podios de carreras, elecciones de presidente/secretario). |
 | **NO** | **NO** | Combinación estándar | **Coeficiente Binomial**<br>$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$ | Cuando estás **armando equipos, comités o subconjuntos** donde lo único que te importa es quiénes integran el grupo final, sin importar el orden en que los llamaste (ej. manos de cartas, elegir delegados). |
@@ -1071,7 +1071,7 @@ Ambas funciones están íntimamente ligadas mediante el cálculo:
 ### Resumen Comparativo
 
 | Característica | Función de Densidad ($f(x)$) | Función de Distribución ($F(x)$) |
-|:---|:---|:---|
+|:-----------------------|:-----------------------|:-----------------------|
 | **Concepto clave** | Distribución de la probabilidad (concentración). | Acumulación de la probabilidad. |
 | **Probabilidad** | Es el área bajo la curva en un intervalo. | Es la altura o valor de la función en un punto dado. |
 | **Rango de valores** | Debe ser no negativa $f(x) \geq 0$ y su área total bajo la curva debe ser 1. | Su resultado siempre va de 0 a 1 y es una función no decreciente. |
@@ -1166,7 +1166,7 @@ El **valor esperado** $E(X)$ o $μ$ es el promedio ponderado de todos los valore
 ### Distribuciones Discretas
 
 | Distribución | Función de Masa ($p(x)$) | Función Acumulativa ($F(x)$) | Propiedades / Momentos | Uso Común / ¿Cuándo usar? |
-|:---|:---|:---|:--:|:---|
+|:------------|:------------|:------------|:-----------:|:---------------------|
 | **Bernoulli** | $p^x(1-p)^{1-x}$ <br> para $x \in \{0, 1\}$ | $\begin{cases} 0 & x < 0 \\ 1-p & 0 \leq x < 1 \\ 1 & x \geq 1 \end{cases}$ | $E(X)$: $p$ <br> <br> $\sigma$: $\sqrt{p(1-p)}$ | Experimentos de un solo ensayo con respuesta dicotómica (Éxito/Fracaso, Sí/No). |
 | **Binomial** | $\binom{n}{x} p^x(1-p)^{n-x}$ <br> para $x \in \{0, 1, \dots, n\}$ | $\sum_{k=0}^{x} \binom{n}{k} p^k(1-p)^{n-k}$ | $E(X)$: $n \cdot p$ <br> <br>$\sigma$: $\sqrt{n \cdot p(1-p)}$ | Contar el número de "éxitos" al repetir $n$ veces un experimento Bernoulli idéntico e independiente. |
 | **Poisson** | $\frac{\lambda^x e^{-\lambda}}{x!}$ <br> para $x \in \{0, 1, 2, \dots\}$ | $\sum_{k=0}^{x} \frac{\lambda^k e^{-\lambda}}{k!}$ | $E(X)$: $\lambda$ <br><br> $\sigma$: $\sqrt{\lambda}$ | Modelar el número de eventos que ocurren en un intervalo fijo de tiempo o espacio (ej. llamadas por hora). |
@@ -1177,7 +1177,7 @@ El **valor esperado** $E(X)$ o $μ$ es el promedio ponderado de todos los valore
 ### Distribuciones Continuas
 
 | Distribución | Función de Densidad ($f(x)$) | Función Acumulativa ($F(x)$) | Propiedades / Momentos | Uso Común / ¿Cuándo usar? |
-|:---|:---|:---|:--:|:---|
+|:------------|:------------|:------------|:--------------:|:----------------|
 | **Uniforme** | $\frac{1}{b-a}$ <br> para $x \in [a, b]$ | $\frac{x-a}{b-a}$ <br> para $x \in [a, b]$ | $E(X)$: $\frac{a+b}{2}$ <br><br> $\sigma$: $\frac{b-a}{\sqrt{12}}$ | Situaciones donde todos los intervalos de igual longitud dentro del rango tienen exactamente la misma probabilidad. |
 | **Normal** | $\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | No tiene forma cerrada. <br> Se usa $\Phi\left(\frac{x-\mu}{\sigma}\right)$ | $E(X)$: $\mu$ <br><br> $\sigma$: $\sigma$ | Modelar fenómenos naturales, características biológicas, errores de medición y por el Teorema del Límite Central. |
 | **Exponencial** | $\lambda e^{-\lambda x}$ <br> para $x \geq 0$ | $1 - e^{-\lambda x}$ | $E(X)$: $\frac{1}{\lambda}$ <br><br> $\sigma$: $\frac{1}{\lambda}$ | Modelar el tiempo de espera continuo que transcurre entre dos eventos consecutivos de un proceso de Poisson. |
@@ -1195,6 +1195,7 @@ la Exponencial es la versión continua de la Geométrica: Ambas miden exactament
   - Si tomas la fórmula de la distribución Geométrica y haces que los intervalos de tiempo entre cada intento se vuelvan infinitesimalmente pequeños (es decir, aplicas un límite cuando el tiempo tiende a ser continuo), la fórmula discreta se transforma matemáticamente en la ecuación de la distribución Exponencial.
 
 Por eso, en el diseño de modelos: Si cuentas tus esperas en pasos enteros ($1, 2, 3 \dots$), usas la Geométrica. Si mides tu espera con un cronómetro ($1.45\text{ s}, 2.3\text{ min} \dots$), usas la Exponencial.
+
 
 #### Distribución binomial
 
@@ -1267,8 +1268,8 @@ En la distribución binomial, tres conceptos clave se visualizan de inmediato:
 - El soporte discreto: Las barras están separadas porque no puedes tener "2.5 éxitos"; o tienes 2 o tienes 3.
 
 ```{r}
-#| fig-width: 12
-#| fig-height: 14
+#| fig-width: 11
+#| fig-height: 9
 #| echo: false
 #| warning: false
 #| message: false
@@ -1480,7 +1481,7 @@ A continuación se detalla su contenido y aplicación:
 
 ------------------------------------------------------------------------
 
-### 1. Enunciado del Teorema
+### Enunciado del Teorema
 
 El teorema indica que si se tiene una sucesión infinita de ensayos independientes (como lanzar una moneda) donde un evento $A$ ocurre con probabilidad $p$, y $n_A$ es el número de veces que ocurre ese evento en $n$ ensayos, entonces la variable estandarizada tiende a una distribución normal estándar $N(0,1)$ cuando $n$ tiende a infinito.
 
@@ -1492,7 +1493,7 @@ Donde: \* $np$ es la media ($\mu$) de la distribución binomial. \* $\sqrt{np(1-
 
 ------------------------------------------------------------------------
 
-### 2. Condiciones para la aproximación
+### Condiciones para la aproximación
 
 Para que el uso de la curva normal sea válido y proporcione resultados de calidad al aproximar una binomial $B(n,p)$, se deben cumplir simultáneamente las siguientes condiciones prácticas:
 
@@ -1502,7 +1503,7 @@ La sencillez de estas condiciones y el ahorro operacional que supone (al evitar 
 
 ------------------------------------------------------------------------
 
-### 3. Corrección por Continuidad (Corrección de Yates)
+### Corrección por Continuidad (Corrección de Yates)
 
 Debido a que se está utilizando una distribución continua (la normal) para *modelar una variable que es inherentemente discreta (la binomial)*, es necesario aplicar un ajuste llamado **corrección por continuidad** o *corrección de Yates*.
 
@@ -1512,7 +1513,7 @@ Este procedimiento consiste en sumar o restar $0.5$ a los valores de la variable
 
 ------------------------------------------------------------------------
 
-### 4. Importancia Histórica
+### Importancia Histórica
 
 El matemático francés **Abraham de Moivre** desarrolló por primera vez la ecuación de la curva normal en 1733 precisamente como un atajo para aproximar probabilidades binomiales complejas. Posteriormente, **Pierre-Simon Laplace** profundizó y generalizó estos estudios, sentando las bases de la estadística inductiva moderna.
 
@@ -1561,7 +1562,7 @@ La base teórica de esta aproximación es el **Teorema Central del Límite**, el
 
 ## Distribución $t$ the Student
 
-La **distribución t de Student** es una *distribución de probabilidad continua que surge del problema de estimar la media de una población con distribución normal cuando el tamaño de la muestra es pequeño y la desviación estándar poblacional (*$σ$) es desconocida.
+La **distribución $t$ de Student** es una *distribución de probabilidad continua que surge del problema de estimar la media de una población con distribución normal cuando el tamaño de la muestra es pequeño y la desviación estándar poblacional (*$σ$) es desconocida.
 
 A continuación se detallan sus características, propiedades y aplicaciones principales:
 
@@ -1604,7 +1605,7 @@ Es la herramienta fundamental para realizar inferencias sobre la media poblacion
 
 ------------------------------------------------------------------------
 
-### 5. Consideraciones Importantes
+### Consideraciones Importantes
 
 - **Robustez:** Aunque su derivación formal supone que la muestra proviene de una población estrictamente normal, la prueba $t$ es robusta. Esto significa que proporciona resultados confiables incluso si la población se desvía moderadamente de la normalidad, siempre que el tamaño de la muestra sea aceptable y la distribución original sea aproximadamente en forma de campana.
 
@@ -1690,7 +1691,7 @@ El **Teorema del Límite Central (TLC)** es considerado el resultado más import
 
 A continuación se desglosan sus características fundamentales, propiedades y aplicaciones:
 
-### 1. Definición matemática
+### Definición matemática
 
 Si $X_1, X_2, \dots, X_n$ es una sucesión de variables aleatorias independientes e idénticamente distribuidas (i.i.d.), con media $\mu$ y varianza finita $\sigma^2$, entonces la función de distribución de la variable estandarizada $Z_n$ tiende a la distribución normal estándar $\mathcal{N}(0,1)$ conforme el tamaño de la muestra ($n$) tiende a infinito:
 
@@ -1698,20 +1699,20 @@ $$Z_n = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}}$$
 
 Donde $\bar{X}$ es la media muestral, calculada como $\bar{X} = \frac{1}{n}\sum_{i=1}^{n}X_i$.
 
-### 2. Propiedades de la distribución muestral de medias
+### Propiedades de la distribución muestral de medias
 
 De acuerdo con el teorema, la distribución de las medias muestrales de tamaño $n$ posee las siguientes características:
 
 - **Media:** La media de las medias muestrales es igual a la media de la población original ($\mu_{\bar{X}} = \mu$).
 - **Varianza y Desviación Típica:** La varianza de la media muestral es $\sigma^2 / n$, y su desviación típica (conocida como *error estándar*) es: $$\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}$$ Esto implica que a medida que aumenta el tamaño de la muestra, la dispersión de las medias muestrales disminuye.
 
-### 3. Condiciones y tamaño de la muestra
+### Condiciones y tamaño de la muestra
 
 - **Poblaciones normales:** Si se sabe que la población de partida es normal, la distribución de las medias muestrales será normal para cualquier tamaño de muestra.
 - **Poblaciones no normales:** Si la población original no es normal, la aproximación a la normalidad suele considerarse válida y con "ciertas garantías" cuando el tamaño muestral es $n \geq 30$.
 - **Afinación de la aproximación:** La suposición de normalidad se vuelve más precisa a medida que $n$ crece. Incluso para poblaciones moderadamente sesgadas, una muestra de 30 suele ser suficiente, aunque si la población es aproximadamente simétrica, la aproximación puede ser buena incluso con muestras más pequeñas.
 
-### 4. Importancia y aplicaciones
+### Importancia y aplicaciones
 
 - **Inferencia estadística:** Es la base para determinar valores razonables de la media poblacional mediante pruebas de hipótesis e intervalos de confianza.
 - **Simplificación de cálculos:** Permite aproximar probabilidades de eventos que involucran sumas de variables aleatorias complejas utilizando únicamente las tablas de la normal estándar.
@@ -1984,7 +1985,7 @@ cat("El p-valor es:", prueba_prop$p.value, "\n")
 ```
 
 | Si el Estadístico Calculado... | El valor $P$ será... | Decisión sobre $H_0$ | Conclusión |
-|:---|:--:|:--:|:---|
+|:-----------------|:----------------:|:----------------:|:-----------------|
 | Cae **dentro** de las zonas rojas críticas | Menor que $\alpha$ ($< 0.05$) | **Rechazar** $H_0$ | Hay suficiente evidencia a favor de tu teoría ($H_1$). |
 | Cae **fuera** de las zonas rojas críticas | Mayor que $\alpha$ ($\geq 0.05$) | **No rechazar** $H_0$ | No hay pruebas suficientes para cambiar el estándar actual. |
 
