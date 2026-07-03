@@ -499,9 +499,9 @@ window.Quarto = {
 <a href="#conteo-de-eventos-combinatoria" id="toc-conteo-de-eventos-combinatoria" class="nav-link" data-scroll-target="#conteo-de-eventos-combinatoria"><span class="header-section-number">14.2</span> Conteo de eventos (Combinatoria)</a>
   <ul class="collapse">
 <li><a href="#ordenamientos-con-reemplazo-importa-el-orden-y-s%C3%AD-se-puede-repetir" id="toc-ordenamientos-con-reemplazo-importa-el-orden-y-sí-se-puede-repetir" class="nav-link" data-scroll-target="#ordenamientos-con-reemplazo-importa-el-orden-y-s%C3%AD-se-puede-repetir"><span class="header-section-number">14.2.1</span> Ordenamientos CON Reemplazo (Importa el orden y SÍ se puede repetir)</a></li>
-  <li><a href="#definici%C3%B3n-y-representaci%C3%B3n" id="toc-definición-y-representación" class="nav-link" data-scroll-target="#definici%C3%B3n-y-representaci%C3%B3n"><span class="header-section-number">14.2.2</span> 1. Definición y Representación</a></li>
-  <li><a href="#forma-de-calcular-probabilidades" id="toc-forma-de-calcular-probabilidades" class="nav-link" data-scroll-target="#forma-de-calcular-probabilidades"><span class="header-section-number">14.2.3</span> 2. Forma de calcular probabilidades</a></li>
-  <li><a href="#relaci%C3%B3n-matem%C3%A1tica" id="toc-relación-matemática" class="nav-link" data-scroll-target="#relaci%C3%B3n-matem%C3%A1tica"><span class="header-section-number">14.2.4</span> 3. Relación Matemática</a></li>
+  <li><a href="#definici%C3%B3n-y-representaci%C3%B3n" id="toc-definición-y-representación" class="nav-link" data-scroll-target="#definici%C3%B3n-y-representaci%C3%B3n"><span class="header-section-number">14.2.2</span> Definición y Representación</a></li>
+  <li><a href="#forma-de-calcular-probabilidades" id="toc-forma-de-calcular-probabilidades" class="nav-link" data-scroll-target="#forma-de-calcular-probabilidades"><span class="header-section-number">14.2.3</span> Forma de calcular probabilidades</a></li>
+  <li><a href="#relaci%C3%B3n-matem%C3%A1tica" id="toc-relación-matemática" class="nav-link" data-scroll-target="#relaci%C3%B3n-matem%C3%A1tica"><span class="header-section-number">14.2.4</span> Relación Matemática</a></li>
   <li><a href="#resumen-comparativo" id="toc-resumen-comparativo" class="nav-link" data-scroll-target="#resumen-comparativo"><span class="header-section-number">14.2.5</span> Resumen Comparativo</a></li>
   </ul>
 </li>
@@ -1110,7 +1110,7 @@ window.Quarto = {
 <ul>
 <li><p><strong>Variaciones:</strong> Importa el orden. Pueden ser <strong>ordinarias</strong> (sin repetición) o <strong>con repetición</strong> (<span class="math inline">\(n^k\)</span>).</p></li>
 <li><p><strong>Permutaciones:</strong> Son variaciones donde intervienen todos los elementos del conjunto (<span class="math inline">\(n!\)</span>).</p></li>
-<li><p><strong>Combinaciones:</strong> El orden <strong>no importa</strong>. Se utilizan para seleccionar subconjuntos. Su fórmula es El orden . Se utilizan para seleccionar subconjuntos. Su fórmula es: <span class="math display">\[C_{n,k} = \binom{n}{k} = \frac{n!}{k!(n-k)!}\]</span></p></li>
+<li><p><strong>Combinaciones:</strong> El orden . Se utilizan para seleccionar subconjuntos. Su fórmula es: <span class="math display">\[C_{n,k} = \binom{n}{k} = \frac{n!}{k!(n-k)!}\]</span></p></li>
 </ul>
 <table class="caption-top table">
 <colgroup>
@@ -1170,7 +1170,9 @@ window.Quarto = {
 <span class="header-section-number">14.2.1</span> Ordenamientos CON Reemplazo (Importa el orden y SÍ se puede repetir)</h3>
 <p>Aquí los elementos se pueden volver a usar. Cada vez que eliges uno, el abanico de opciones sigue siendo el mismo.</p>
 <ul>
-<li><p><strong>El Ejemplo Clásico:</strong> Crear una contraseña de 4 dígitos usando los números del 0 al 9.</p></li>
+<li>
+<p><strong>El Ejemplo Clásico:</strong> Crear una contraseña de 4 dígitos usando los números del 0 al 9.</p>
+<ul>
 <li><p><strong>Por qué aplica:</strong> El orden importa (no es lo mismo la contraseña <code>1-2-3-4</code> que <code>4-3-2-1</code>) y puedes repetir números (la contraseña puede ser <code>7-7-7-7</code>).</p></li>
 <li><p><strong>La Fórmula:</strong></p></li>
 </ul>
@@ -1179,6 +1181,8 @@ window.Quarto = {
 <li><strong>Cálculo:</strong></li>
 </ul>
 <p><span class="math inline">\(10^4 = 10,000\)</span> contraseñas posibles.</p>
+</li>
+</ul>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 10000</code></pre>
@@ -1193,12 +1197,20 @@ window.Quarto = {
 [6,]    0    0    0    5</code></pre>
 </div>
 </div>
-<section id="ordenamientos-sin-reemplazo-importa-el-orden-pero-no-se-puede-repetir" class="level5"><h5 class="anchored" data-anchor-id="ordenamientos-sin-reemplazo-importa-el-orden-pero-no-se-puede-repetir">2. Ordenamientos SIN Reemplazo (Importa el orden pero NO se puede repetir)</h5>
+<section id="ordenamientos-sin-reemplazo-importa-el-orden-pero-no-se-puede-repetir" class="level5"><h5 class="anchored" data-anchor-id="ordenamientos-sin-reemplazo-importa-el-orden-pero-no-se-puede-repetir">Ordenamientos SIN Reemplazo (Importa el orden pero NO se puede repetir)</h5>
 <p>También conocidos como Permutaciones. Una vez que eliges un elemento, este queda descartado para la siguiente posición.</p>
-<section id="el-ejemplo-clásico" class="level6"><h6 class="anchored" data-anchor-id="el-ejemplo-clásico">El Ejemplo Clásico:</h6>
-<p>Una carrera donde compiten 8 atletas y queremos saber de cuántas formas se pueden repartir las medallas de Oro, Plata y Bronce.Por qué aplica: El orden importa por completo (no es lo mismo ganar Oro que Bronce) y no hay reemplazo (un mismo atleta no puede ganar Oro y Plata a la vez). - La Fórmula:<span class="math display">\[P(n, k) = \frac{n!}{(n-k)!}\]</span> - - Cálculo: Para el primer puesto hay 8 opciones, para el segundo quedan 7, y para el tercero quedan 6.</p>
+<blockquote class="blockquote">
+<p>El Ejemplo Clásico:</p>
+</blockquote>
+<p>Una carrera donde compiten 8 atletas y queremos saber de cuántas formas se pueden repartir las medallas de Oro, Plata y Bronce. Por qué aplica: El orden importa por completo (no es lo mismo ganar Oro que Bronce) y no hay reemplazo (un mismo atleta no puede ganar Oro y Plata a la vez).</p>
+<ul>
+<li><p>La Fórmula: <span class="math display">\[P(n, k) = \frac{n!}{(n-k)!}\]</span></p></li>
+<li>
+<p>Cálculo: Para el primer puesto hay 8 opciones, para el segundo quedan 7, y para el tercero quedan 6.</p>
 <p><span class="math display">\[P(8, 3) = \frac{8 \times 7 \times 6 \times (5 \times 4 \times 3 \times 2 \times 1)}{5 \times 4 \times 3 \times 2 \times 1}\]</span></p>
 <p><span class="math display">\[8 \times 7 \times 6 = 336 \text{ formas distintas.}\]</span></p>
+</li>
+</ul>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 336</code></pre>
@@ -1213,12 +1225,13 @@ window.Quarto = {
 [6,] "Ana" "Ben" "Hugo"  </code></pre>
 </div>
 </div>
-</section></section><section id="opciones-que-no-necesitan-orden-sin-reemplazo-y-no-importa-el-orden" class="level5"><h5 class="anchored" data-anchor-id="opciones-que-no-necesitan-orden-sin-reemplazo-y-no-importa-el-orden">3. Opciones que NO necesitan orden (Sin reemplazo y NO importa el orden)</h5>
+</section><section id="opciones-que-no-necesitan-orden-sin-reemplazo-y-no-importa-el-orden" class="level5"><h5 class="anchored" data-anchor-id="opciones-que-no-necesitan-orden-sin-reemplazo-y-no-importa-el-orden">Opciones que NO necesitan orden (Sin reemplazo y NO importa el orden)</h5>
 <p>También conocidas como Combinaciones. Aquí lo único que te importa es quiénes forman el grupo, no en qué orden fueron elegidos.</p>
+<blockquote class="blockquote">
 <p>El Ejemplo Clásico: De un grupo de 10 amigos, vas a elegir a 3 para que vayan contigo en el auto a comprar pizzas.</p>
+</blockquote>
 <ul>
-<li><p>Por qué aplica: No importa el orden (si elijo a Ana, Ben y Carlos, es exactamente el mismo grupo de viaje que si elijo a Carlos, Ben y Ana).</p></li>
-<li><p>Tampoco hay reemplazo (no puedes clonar a un amigo).</p></li>
+<li><p>Por qué aplica: No importa el orden (si elijo a Ana, Ben y Carlos, es exactamente el mismo grupo de viaje que si elijo a Carlos, Ben y Ana). Tampoco hay reemplazo (no puedes clonar a un amigo).</p></li>
 <li><p>La Fórmula <span class="math display">\[\binom{n}{k} = \frac{n!}{k!(n-k)!}\]</span></p></li>
 <li><p>Sustituyendo (<span class="math inline">\(n=10\)</span> y <span class="math inline">\(k=3\)</span>): <span class="math display">\[\binom{10}{3} = \frac{10!}{3!(10-3)!} = \frac{10!}{3! \times 7!}\]</span></p></li>
 <li><p>El <span class="math inline">\(10!\)</span> del numerador se descompone hasta llegar al <span class="math inline">\(7!\)</span>, para poder cancelarlo con el del denominador:</p></li>
@@ -1248,20 +1261,20 @@ window.Quarto = {
 <p>La diferencia fundamental entre la <strong>Función de Densidad</strong> (<span class="math inline">\(f(x)\)</span>) y la <strong>Función de Distribución Acumulativa</strong> (<span class="math inline">\(F(x)\)</span>) radica en que la primera describe cómo se distribuye la probabilidad a lo largo de los posibles valores de una variable, mientras que la segunda representa la probabilidad acumulada hasta un valor específico.</p>
 <p>A continuación se detallan sus principales diferencias y su relación matemática:</p>
 <hr></section></section><section id="definición-y-representación" class="level3" data-number="14.2.2"><h3 data-number="14.2.2" class="anchored" data-anchor-id="definición-y-representación">
-<span class="header-section-number">14.2.2</span> 1. Definición y Representación</h3>
+<span class="header-section-number">14.2.2</span> Definición y Representación</h3>
 <p>*<strong>Función de Densidad (PDF):</strong> Se utiliza primordialmente para variables aleatorias continuas. Es una función no negativa cuya integral sobre un intervalo <span class="math inline">\([a, b]\)</span> representa la probabilidad de que la variable tome un valor en ese rango: <span class="math display">\[P(a \leq X \leq b) = \int_a^b f(x) \, dx\]</span> Gráficamente, se visualiza como una curva (como la “campana de Gauss”) donde la probabilidad es el área bajo la curva.</p>
 <ul>
 <li>
 <strong>Función de Distribución Acumulativa (CDF):</strong> Se define para cualquier tipo de variable aleatoria (discreta o continua). Evalúa la probabilidad de que la variable tome un valor menor o igual a un número dado <span class="math inline">\(x\)</span>: <span class="math display">\[F(x) = P(X \leq x)\]</span> Gráficamente, es una función no decreciente que siempre oscila entre 0 y 1.</li>
 </ul>
 <hr></section><section id="forma-de-calcular-probabilidades" class="level3" data-number="14.2.3"><h3 data-number="14.2.3" class="anchored" data-anchor-id="forma-de-calcular-probabilidades">
-<span class="header-section-number">14.2.3</span> 2. Forma de calcular probabilidades</h3>
+<span class="header-section-number">14.2.3</span> Forma de calcular probabilidades</h3>
 <ul>
-<li>En la <strong>Función de Densidad</strong>, la probabilidad de un punto exacto en una variable continua es siempre cero (<span class="math inline">\(P(X = x) = 0\)</span>); la probabilidad solo tiene sentido para intervalos.</li>
-<li>En la <strong>Función de Distribución</strong>, el valor de la función en un punto <span class="math inline">\(x\)</span> es directamente una probabilidad (<span class="math inline">\(P(X \leq x)\)</span>). Para variables discretas, la CDF presenta saltos en los valores que la variable puede tomar, y el tamaño de ese salto es la probabilidad puntual.</li>
+<li>En la <strong>Función de Densidad</strong>, la probabilidad de un punto exacto en una variable continua es siempre cero, <span class="math inline">\(P(X = x) = 0\)</span>; la probabilidad solo tiene sentido para intervalos.</li>
+<li>En la <strong>Función de Distribución</strong>, el valor de la función en un punto <span class="math inline">\(x\)</span> es directamente una probabilidad, <span class="math inline">\(P(X \leq x)\)</span>. Para variables discretas, la CDF presenta saltos en los valores que la variable puede tomar, y el tamaño de ese salto es la probabilidad puntual.</li>
 </ul>
 <hr></section><section id="relación-matemática" class="level3" data-number="14.2.4"><h3 data-number="14.2.4" class="anchored" data-anchor-id="relación-matemática">
-<span class="header-section-number">14.2.4</span> 3. Relación Matemática</h3>
+<span class="header-section-number">14.2.4</span> Relación Matemática</h3>
 <p>Ambas funciones están íntimamente ligadas mediante el cálculo:</p>
 <ul>
 <li>
@@ -1297,12 +1310,12 @@ window.Quarto = {
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Rango de valores</strong></td>
-<td style="text-align: left;">Debe ser no negativa (<span class="math inline">\(f(x) \geq 0\)</span>) y su área total bajo la curva debe ser 1.</td>
+<td style="text-align: left;">Debe ser no negativa <span class="math inline">\(f(x) \geq 0\)</span> y su área total bajo la curva debe ser 1.</td>
 <td style="text-align: left;">Su resultado siempre va de 0 a 1 y es una función no decreciente.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Uso en discretas</strong></td>
-<td style="text-align: left;">Se le suele llamar “función de probabilidad” o “de masa” (<span class="math inline">\(p(x)\)</span>).</td>
+<td style="text-align: left;">Se le suele llamar “función de probabilidad” o “de masa” <span class="math inline">\(p(x)\)</span>.</td>
 <td style="text-align: left;">Se aplica igual, sumando las probabilidades puntuales anteriores.</td>
 </tr>
 </tbody>
@@ -1415,7 +1428,7 @@ window.Quarto = {
 </td>
 <td style="text-align: left;"><span class="math inline">\(\begin{cases} 0 &amp; x &lt; 0 \\ 1-p &amp; 0 \leq x &lt; 1 \\ 1 &amp; x \geq 1 \end{cases}\)</span></td>
 <td style="text-align: center;">
-<span class="math inline">\(E(X)\)</span>: <span class="math inline">\(p\)</span> <br><span class="math inline">\(\sigma\)</span>: <span class="math inline">\(\sqrt{p(1-p)}\)</span>
+<span class="math inline">\(E(X)\)</span>: <span class="math inline">\(p\)</span> <br><br><span class="math inline">\(\sigma\)</span>: <span class="math inline">\(\sqrt{p(1-p)}\)</span>
 </td>
 <td style="text-align: left;">Experimentos de un solo ensayo con respuesta dicotómica (Éxito/Fracaso, Sí/No).</td>
 </tr>
@@ -1426,7 +1439,7 @@ window.Quarto = {
 </td>
 <td style="text-align: left;"><span class="math inline">\(\sum_{k=0}^{x} \binom{n}{k} p^k(1-p)^{n-k}\)</span></td>
 <td style="text-align: center;">
-<span class="math inline">\(E(X)\)</span>: <span class="math inline">\(n \cdot p\)</span> <br><span class="math inline">\(\sigma\)</span>: <span class="math inline">\(\sqrt{n \cdot p(1-p)}\)</span>
+<span class="math inline">\(E(X)\)</span>: <span class="math inline">\(n \cdot p\)</span> <br><br><span class="math inline">\(\sigma\)</span>: <span class="math inline">\(\sqrt{n \cdot p(1-p)}\)</span>
 </td>
 <td style="text-align: left;">Contar el número de “éxitos” al repetir <span class="math inline">\(n\)</span> veces un experimento Bernoulli idéntico e independiente.</td>
 </tr>
@@ -1437,7 +1450,7 @@ window.Quarto = {
 </td>
 <td style="text-align: left;"><span class="math inline">\(\sum_{k=0}^{x} \frac{\lambda^k e^{-\lambda}}{k!}\)</span></td>
 <td style="text-align: center;">
-<span class="math inline">\(E(X)\)</span>: <span class="math inline">\(\lambda\)</span> <br><span class="math inline">\(\sigma\)</span>: <span class="math inline">\(\sqrt{\lambda}\)</span>
+<span class="math inline">\(E(X)\)</span>: <span class="math inline">\(\lambda\)</span> <br><br><span class="math inline">\(\sigma\)</span>: <span class="math inline">\(\sqrt{\lambda}\)</span>
 </td>
 <td style="text-align: left;">Modelar el número de eventos que ocurren en un intervalo fijo de tiempo o espacio (ej. llamadas por hora).</td>
 </tr>
@@ -1448,7 +1461,7 @@ window.Quarto = {
 </td>
 <td style="text-align: left;"><span class="math inline">\(1 - (1-p)^x\)</span></td>
 <td style="text-align: center;">
-<span class="math inline">\(E(X)\)</span>: <span class="math inline">\(\frac{1}{p}\)</span> <br><span class="math inline">\(\sigma\)</span>: <span class="math inline">\(\frac{\sqrt{1-p}}{p}\)</span>
+<span class="math inline">\(E(X)\)</span>: <span class="math inline">\(\frac{1}{p}\)</span> <br><br><span class="math inline">\(\sigma\)</span>: <span class="math inline">\(\frac{\sqrt{1-p}}{p}\)</span>
 </td>
 <td style="text-align: left;">Calcular el número de ensayos necesarios o intentos requeridos hasta que ocurra el primer éxito.</td>
 </tr>

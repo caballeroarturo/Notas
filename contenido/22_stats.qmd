@@ -742,7 +742,7 @@ g4 <- ggplot(df4, aes(x = x, y = y)) +
 - **Coeficiente de determinación (**$r^2$): Es el cuadrado del coeficiente de correlación y representa la proporción de la variabilidad de una variable que es explicada por la otra a través de la relación lineal. Por ejemplo, un $r=0.6$ implica que el $36%$ ($0.62$) de la variación total es explicada por el modelo.
 
 | Característica | Coeficiente de Pearson ($r$) | Coeficiente de Determinación ($R^2$) |
-|:-----------------------|:-----------------------|:-----------------------|
+|:---|:---|:---|
 | **¿Qué mide?** | Dirección y fuerza de la relación lineal entre dos variables. | El éxito predictivo / proporción de variabilidad explicada por el modelo. |
 | **Escala / Rango** | De $-1$ a $+1$ | De $0$ a $1$ (o de $0\%$ a $100\%$) |
 | **¿Importa el signo?** | **Sí.** Indica si la relación es directa ($+$) o inversa ($-$). | **No.** Al ser un término cuadrático, siempre es positivo (no indica dirección). |
@@ -925,10 +925,10 @@ Para aplicar la definición clásica de probabilidad, es esencial saber contar c
 
 - **Permutaciones:** Son variaciones donde intervienen todos los elementos del conjunto ($n!$).
 
-- **Combinaciones:** El orden **no importa**. Se utilizan para seleccionar subconjuntos. Su fórmula es \textbf{Combinaciones:} El orden \textbf{no importa}. Se utilizan para seleccionar subconjuntos. Su fórmula es: $$C_{n,k} = \binom{n}{k} = \frac{n!}{k!(n-k)!}$$
+- **Combinaciones:** El orden \textbf{no importa}. Se utilizan para seleccionar subconjuntos. Su fórmula es: $$C_{n,k} = \binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 
 | ¿Importa el orden? | ¿Se pueden repetir? | Nombre Técnico | Operación Matemática | Razonamiento: ¿Cuándo usar? |
-|:-------------:|:-------------:|:--------------|:--------------|:--------------|
+|:--:|:--:|:---|:---|:---|
 | **SÍ** | **SÍ** | Variación con repetición | **Potencia**<br>$$n^k$$ | Cuando estás **armando códigos o secuencias** donde las posiciones importan y los elementos pueden reaparecer (ej. contraseñas, lanzar monedas o dados varias veces). |
 | **SÍ** | **NO** | Permutación (o Variación) | **Factorial / Permutaciones**<br>$$\frac{n!}{(n-k)!}$$ | Cuando estás **repartiendo puestos únicos, premios escalonados o filas** donde el rol de cada quien cambia el resultado y nadie puede duplicarse (ej. podios de carreras, elecciones de presidente/secretario). |
 | **NO** | **NO** | Combinación estándar | **Coeficiente Binomial**<br>$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$ | Cuando estás **armando equipos, comités o subconjuntos** donde lo único que te importa es quiénes integran el grupo final, sin importar el orden en que los llamaste (ej. manos de cartas, elegir delegados). |
@@ -940,15 +940,15 @@ Aquí los elementos se pueden volver a usar. Cada vez que eliges uno, el abanico
 
 - **El Ejemplo Clásico:** Crear una contraseña de 4 dígitos usando los números del 0 al 9.
 
-- **Por qué aplica:** El orden importa (no es lo mismo la contraseña `1-2-3-4` que `4-3-2-1`) y puedes repetir números (la contraseña puede ser `7-7-7-7`).
+  - **Por qué aplica:** El orden importa (no es lo mismo la contraseña `1-2-3-4` que `4-3-2-1`) y puedes repetir números (la contraseña puede ser `7-7-7-7`).
 
-- **La Fórmula:**
+  - **La Fórmula:**
 
-$n^k$ (donde $n$ son las opciones totales y $k$ los espacios a llenar).
+  $n^k$ (donde $n$ son las opciones totales y $k$ los espacios a llenar).
 
-- **Cálculo:**
+  - **Cálculo:**
 
-$10^4 = 10,000$ contraseñas posibles.
+  $10^4 = 10,000$ contraseñas posibles.
 
 ```{r}
 #| echo: false
@@ -966,17 +966,21 @@ combinaciones <- permutations(n = 10, r = 4, v = 0:9, repeats.allowed = TRUE)
 head(combinaciones) # Muestra las primeras opciones
 ```
 
-##### 2. Ordenamientos SIN Reemplazo (Importa el orden pero NO se puede repetir)
+##### Ordenamientos SIN Reemplazo (Importa el orden pero NO se puede repetir)
 
 También conocidos como Permutaciones. Una vez que eliges un elemento, este queda descartado para la siguiente posición.
 
-###### El Ejemplo Clásico:
+> El Ejemplo Clásico:
 
-Una carrera donde compiten 8 atletas y queremos saber de cuántas formas se pueden repartir las medallas de Oro, Plata y Bronce.Por qué aplica: El orden importa por completo (no es lo mismo ganar Oro que Bronce) y no hay reemplazo (un mismo atleta no puede ganar Oro y Plata a la vez). - La Fórmula:$$P(n, k) = \frac{n!}{(n-k)!}$$ - - Cálculo: Para el primer puesto hay 8 opciones, para el segundo quedan 7, y para el tercero quedan 6.
+Una carrera donde compiten 8 atletas y queremos saber de cuántas formas se pueden repartir las medallas de Oro, Plata y Bronce. Por qué aplica: El orden importa por completo (no es lo mismo ganar Oro que Bronce) y no hay reemplazo (un mismo atleta no puede ganar Oro y Plata a la vez).
 
-$$P(8, 3) = \frac{8 \times 7 \times 6 \times (5 \times 4 \times 3 \times 2 \times 1)}{5 \times 4 \times 3 \times 2 \times 1}$$
+- La Fórmula: $$P(n, k) = \frac{n!}{(n-k)!}$$
 
-$$8 \times 7 \times 6 = 336 \text{ formas distintas.}$$
+- Cálculo: Para el primer puesto hay 8 opciones, para el segundo quedan 7, y para el tercero quedan 6.
+
+  $$P(8, 3) = \frac{8 \times 7 \times 6 \times (5 \times 4 \times 3 \times 2 \times 1)}{5 \times 4 \times 3 \times 2 \times 1}$$
+
+  $$8 \times 7 \times 6 = 336 \text{ formas distintas.}$$
 
 ```{r}
 #| echo: false
@@ -993,15 +997,13 @@ podios <- permutations(n = 8, r = 3, v = atletas, repeats.allowed = FALSE)
 head(podios)
 ```
 
-##### 3. Opciones que NO necesitan orden (Sin reemplazo y NO importa el orden)
+##### Opciones que NO necesitan orden (Sin reemplazo y NO importa el orden)
 
 También conocidas como Combinaciones. Aquí lo único que te importa es quiénes forman el grupo, no en qué orden fueron elegidos.
 
-El Ejemplo Clásico: De un grupo de 10 amigos, vas a elegir a 3 para que vayan contigo en el auto a comprar pizzas.
+> El Ejemplo Clásico: De un grupo de 10 amigos, vas a elegir a 3 para que vayan contigo en el auto a comprar pizzas.
 
-- Por qué aplica: No importa el orden (si elijo a Ana, Ben y Carlos, es exactamente el mismo grupo de viaje que si elijo a Carlos, Ben y Ana).
-
-- Tampoco hay reemplazo (no puedes clonar a un amigo).
+- Por qué aplica: No importa el orden (si elijo a Ana, Ben y Carlos, es exactamente el mismo grupo de viaje que si elijo a Carlos, Ben y Ana). Tampoco hay reemplazo (no puedes clonar a un amigo).
 
 - La Fórmula $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 
@@ -1042,7 +1044,7 @@ A continuación se detallan sus principales diferencias y su relación matemáti
 
 ------------------------------------------------------------------------
 
-### 1. Definición y Representación
+### Definición y Representación
 
 \***Función de Densidad (PDF):** Se utiliza primordialmente para variables aleatorias continuas. Es una función no negativa cuya integral sobre un intervalo $[a, b]$ representa la probabilidad de que la variable tome un valor en ese rango: $$P(a \leq X \leq b) = \int_a^b f(x) \, dx$$ Gráficamente, se visualiza como una curva (como la "campana de Gauss") donde la probabilidad es el área bajo la curva.
 
@@ -1050,14 +1052,14 @@ A continuación se detallan sus principales diferencias y su relación matemáti
 
 ------------------------------------------------------------------------
 
-### 2. Forma de calcular probabilidades
+### Forma de calcular probabilidades
 
-- En la **Función de Densidad**, la probabilidad de un punto exacto en una variable continua es siempre cero ($P(X = x) = 0$); la probabilidad solo tiene sentido para intervalos.
-- En la **Función de Distribución**, el valor de la función en un punto $x$ es directamente una probabilidad ($P(X \leq x)$). Para variables discretas, la CDF presenta saltos en los valores que la variable puede tomar, y el tamaño de ese salto es la probabilidad puntual.
+- En la **Función de Densidad**, la probabilidad de un punto exacto en una variable continua es siempre cero, $P(X = x) = 0$; la probabilidad solo tiene sentido para intervalos.
+- En la **Función de Distribución**, el valor de la función en un punto $x$ es directamente una probabilidad, $P(X \leq x)$. Para variables discretas, la CDF presenta saltos en los valores que la variable puede tomar, y el tamaño de ese salto es la probabilidad puntual.
 
 ------------------------------------------------------------------------
 
-### 3. Relación Matemática
+### Relación Matemática
 
 Ambas funciones están íntimamente ligadas mediante el cálculo:
 
@@ -1069,11 +1071,11 @@ Ambas funciones están íntimamente ligadas mediante el cálculo:
 ### Resumen Comparativo
 
 | Característica | Función de Densidad ($f(x)$) | Función de Distribución ($F(x)$) |
-|:-----------------------|:-----------------------|:-----------------------|
+|:---|:---|:---|
 | **Concepto clave** | Distribución de la probabilidad (concentración). | Acumulación de la probabilidad. |
 | **Probabilidad** | Es el área bajo la curva en un intervalo. | Es la altura o valor de la función en un punto dado. |
-| **Rango de valores** | Debe ser no negativa ($f(x) \geq 0$) y su área total bajo la curva debe ser 1. | Su resultado siempre va de 0 a 1 y es una función no decreciente. |
-| **Uso en discretas** | Se le suele llamar "función de probabilidad" o "de masa" ($p(x)$). | Se aplica igual, sumando las probabilidades puntuales anteriores. |
+| **Rango de valores** | Debe ser no negativa $f(x) \geq 0$ y su área total bajo la curva debe ser 1. | Su resultado siempre va de 0 a 1 y es una función no decreciente. |
+| **Uso en discretas** | Se le suele llamar "función de probabilidad" o "de masa" $p(x)$. | Se aplica igual, sumando las probabilidades puntuales anteriores. |
 
 ```{r}
 #| message: false
@@ -1164,18 +1166,18 @@ El **valor esperado** $E(X)$ o $μ$ es el promedio ponderado de todos los valore
 ### Distribuciones Discretas
 
 | Distribución | Función de Masa ($p(x)$) | Función Acumulativa ($F(x)$) | Propiedades / Momentos | Uso Común / ¿Cuándo usar? |
-|:--------------|:--------------|:--------------|:-------------:|:--------------|
-| **Bernoulli** | $p^x(1-p)^{1-x}$ <br> para $x \in \{0, 1\}$ | $\begin{cases} 0 & x < 0 \\ 1-p & 0 \leq x < 1 \\ 1 & x \geq 1 \end{cases}$ | $E(X)$: $p$ <br> $\sigma$: $\sqrt{p(1-p)}$ | Experimentos de un solo ensayo con respuesta dicotómica (Éxito/Fracaso, Sí/No). |
-| **Binomial** | $\binom{n}{x} p^x(1-p)^{n-x}$ <br> para $x \in \{0, 1, \dots, n\}$ | $\sum_{k=0}^{x} \binom{n}{k} p^k(1-p)^{n-k}$ | $E(X)$: $n \cdot p$ <br> $\sigma$: $\sqrt{n \cdot p(1-p)}$ | Contar el número de "éxitos" al repetir $n$ veces un experimento Bernoulli idéntico e independiente. |
-| **Poisson** | $\frac{\lambda^x e^{-\lambda}}{x!}$ <br> para $x \in \{0, 1, 2, \dots\}$ | $\sum_{k=0}^{x} \frac{\lambda^k e^{-\lambda}}{k!}$ | $E(X)$: $\lambda$ <br> $\sigma$: $\sqrt{\lambda}$ | Modelar el número de eventos que ocurren en un intervalo fijo de tiempo o espacio (ej. llamadas por hora). |
-| **Geométrica** | $(1-p)^{x-1}p$ <br> para $x \in \{1, 2, 3, \dots\}$ | $1 - (1-p)^x$ | $E(X)$: $\frac{1}{p}$ <br> $\sigma$: $\frac{\sqrt{1-p}}{p}$ | Calcular el número de ensayos necesarios o intentos requeridos hasta que ocurra el primer éxito. |
+|:---|:---|:---|:--:|:---|
+| **Bernoulli** | $p^x(1-p)^{1-x}$ <br> para $x \in \{0, 1\}$ | $\begin{cases} 0 & x < 0 \\ 1-p & 0 \leq x < 1 \\ 1 & x \geq 1 \end{cases}$ | $E(X)$: $p$ <br> <br> $\sigma$: $\sqrt{p(1-p)}$ | Experimentos de un solo ensayo con respuesta dicotómica (Éxito/Fracaso, Sí/No). |
+| **Binomial** | $\binom{n}{x} p^x(1-p)^{n-x}$ <br> para $x \in \{0, 1, \dots, n\}$ | $\sum_{k=0}^{x} \binom{n}{k} p^k(1-p)^{n-k}$ | $E(X)$: $n \cdot p$ <br> <br>$\sigma$: $\sqrt{n \cdot p(1-p)}$ | Contar el número de "éxitos" al repetir $n$ veces un experimento Bernoulli idéntico e independiente. |
+| **Poisson** | $\frac{\lambda^x e^{-\lambda}}{x!}$ <br> para $x \in \{0, 1, 2, \dots\}$ | $\sum_{k=0}^{x} \frac{\lambda^k e^{-\lambda}}{k!}$ | $E(X)$: $\lambda$ <br><br> $\sigma$: $\sqrt{\lambda}$ | Modelar el número de eventos que ocurren en un intervalo fijo de tiempo o espacio (ej. llamadas por hora). |
+| **Geométrica** | $(1-p)^{x-1}p$ <br> para $x \in \{1, 2, 3, \dots\}$ | $1 - (1-p)^x$ | $E(X)$: $\frac{1}{p}$ <br><br> $\sigma$: $\frac{\sqrt{1-p}}{p}$ | Calcular el número de ensayos necesarios o intentos requeridos hasta que ocurra el primer éxito. |
 
 - Distribuciones continuas
 
 ### Distribuciones Continuas
 
 | Distribución | Función de Densidad ($f(x)$) | Función Acumulativa ($F(x)$) | Propiedades / Momentos | Uso Común / ¿Cuándo usar? |
-|:--------------|:--------------|:--------------|:-------------:|:--------------|
+|:---|:---|:---|:--:|:---|
 | **Uniforme** | $\frac{1}{b-a}$ <br> para $x \in [a, b]$ | $\frac{x-a}{b-a}$ <br> para $x \in [a, b]$ | $E(X)$: $\frac{a+b}{2}$ <br><br> $\sigma$: $\frac{b-a}{\sqrt{12}}$ | Situaciones donde todos los intervalos de igual longitud dentro del rango tienen exactamente la misma probabilidad. |
 | **Normal** | $\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | No tiene forma cerrada. <br> Se usa $\Phi\left(\frac{x-\mu}{\sigma}\right)$ | $E(X)$: $\mu$ <br><br> $\sigma$: $\sigma$ | Modelar fenómenos naturales, características biológicas, errores de medición y por el Teorema del Límite Central. |
 | **Exponencial** | $\lambda e^{-\lambda x}$ <br> para $x \geq 0$ | $1 - e^{-\lambda x}$ | $E(X)$: $\frac{1}{\lambda}$ <br><br> $\sigma$: $\frac{1}{\lambda}$ | Modelar el tiempo de espera continuo que transcurre entre dos eventos consecutivos de un proceso de Poisson. |
@@ -1982,7 +1984,7 @@ cat("El p-valor es:", prueba_prop$p.value, "\n")
 ```
 
 | Si el Estadístico Calculado... | El valor $P$ será... | Decisión sobre $H_0$ | Conclusión |
-|:-----------------|:----------------:|:----------------:|:-----------------|
+|:---|:--:|:--:|:---|
 | Cae **dentro** de las zonas rojas críticas | Menor que $\alpha$ ($< 0.05$) | **Rechazar** $H_0$ | Hay suficiente evidencia a favor de tu teoría ($H_1$). |
 | Cae **fuera** de las zonas rojas críticas | Mayor que $\alpha$ ($\geq 0.05$) | **No rechazar** $H_0$ | No hay pruebas suficientes para cambiar el estándar actual. |
 
