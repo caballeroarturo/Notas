@@ -1114,11 +1114,11 @@ window.Quarto = {
 </ul>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 19%">
-<col style="width: 19%">
-<col style="width: 19%">
-<col style="width: 19%">
-<col style="width: 22%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead><tr class="header">
 <th style="text-align: center;">¿Importa el orden?</th>
@@ -1407,11 +1407,11 @@ window.Quarto = {
 <span class="header-section-number">14.3.1</span> Distribuciones Discretas</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 17%">
-<col style="width: 29%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 23%">
 </colgroup>
 <thead><tr class="header">
 <th style="text-align: left;">Distribución</th>
@@ -1473,11 +1473,11 @@ window.Quarto = {
 <span class="header-section-number">14.3.2</span> Distribuciones Continuas</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 22%">
-<col style="width: 23%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
 </colgroup>
 <thead><tr class="header">
 <th style="text-align: left;">Distribución</th>
@@ -1711,7 +1711,7 @@ window.Quarto = {
 <p>La base teórica de esta aproximación es el <strong>Teorema Central del Límite</strong>, el cual establece que la suma de un gran número de variables independientes e idénticamente distribuidas (como los ensayos de Bernoulli en una binomial) tiende a distribuirse de forma normal, independientemente de la forma de la distribución original. En este contexto, la proporción de éxitos <span class="math inline">\(X/n\)</span> también se aproxima a una normal con media <span class="math inline">\(p\)</span> y varianza <span class="math inline">\(pq/n\)</span> si <span class="math inline">\(n\)</span> es suficientemente grande.</p>
 </section></section></section><section id="distribución-t-the-student" class="level2" data-number="14.5"><h2 data-number="14.5" class="anchored" data-anchor-id="distribución-t-the-student">
 <span class="header-section-number">14.5</span> Distribución <span class="math inline">\(t\)</span> the Student</h2>
-<p>La <strong>distribución <span class="math inline">\(t\)</span> de Student</strong> es una <em>distribución de probabilidad continua que surge del problema de estimar la media de una población con distribución normal cuando el tamaño de la muestra es pequeño y la desviación estándar poblacional (</em><span class="math inline">\(σ\)</span>) es desconocida.</p>
+<p>La <strong>distribución</strong> <span class="math inline">\(t\)</span> de Student es una <em>distribución de probabilidad continua que surge del problema de estimar la media de una población con distribución normal cuando el tamaño de la muestra es pequeño y la desviación estándar poblacional (</em><span class="math inline">\(σ\)</span>) es desconocida.</p>
 <p>A continuación se detallan sus características, propiedades y aplicaciones principales:</p>
 <section id="origen-e-historia" class="level3" data-number="14.5.1"><h3 data-number="14.5.1" class="anchored" data-anchor-id="origen-e-historia">
 <span class="header-section-number">14.5.1</span> Origen e Historia</h3>
@@ -1853,16 +1853,44 @@ window.Quarto = {
 </li>
 <li>¿Qué significa que <span class="math inline">\(t = -2.95\)</span>?</li>
 </ul>
-</blockquote>
 <p>Significa que tu promedio de <span class="math inline">\(195\text{ ml}\)</span> está a casi 3 desviaciones estándar por debajo de lo que el fabricante prometió. - Si la máquina estuviera bien calibrada (<span class="math inline">\(H_0\)</span> verdadera), por azar las muestras de 35 tazas deberían dar promedios muy cercanos a <span class="math inline">\(200\text{ ml}\)</span> (quizás <span class="math inline">\(199\text{ ml}\)</span>, o <span class="math inline">\(201\text{ ml}\)</span>). Que te haya dado <span class="math inline">\(195\text{ ml}\)</span> (<span class="math inline">\(t = -2.95\)</span>) en el mundo de la probabilidad es el equivalente a que lances una moneda 10 veces y las 10 veces salga cara: es teóricamente posible por azar, pero es tan ridículamente improbable que prefieres no creer en esa coincidencia. &gt; - Al calcular el estadístico de prueba <span class="math inline">\(t\)</span>, si el resultado es un número muy negativo (por ejemplo, <span class="math inline">\(-2.95\)</span>), significa que obtener un promedio de <span class="math inline">\(195\text{ ml}\)</span> de forma pura y natural por azar es extremadamente improbable. Por lo tanto, <strong>rechazas</strong> <span class="math inline">\(H_0\)</span> y concluyes que la máquina está descalibrada.</p>
+</blockquote>
 <ul>
-<li><p>Para buscar en la tabla <span class="math inline">\(t\)</span>, se necesitan calcular los grados de libertad, que para este caso es simplemente el tamaño de la muestra menos uno: <span class="math display">\[gl = n - 1 = 35 - 1 = 34\]</span>.</p></li>
-<li><p>Buscar en la tabla (El “Punto de Corte”) Antes del experimento, tú decides un nivel de exigencia llamado nivel de significancia (<span class="math inline">\(\alpha\)</span>), que casi siempre se fija en el <span class="math inline">\(5\%\)</span> (<span class="math inline">\(0.05\)</span>). Esto significa: “Solo creeré que la máquina está rota si la probabilidad de que sea un error por azar sea menor al 5%”.</p></li>
-<li><p>Vas a la tabla t de Student, buscas la fila de <span class="math inline">\(34\)</span> grados de libertad bajo la columna de una sola cola de <span class="math inline">\(0.05\)</span>, y la tabla te dará un número llamado Valor Crítico:</p></li>
-<li><p>El valor crítico en la tabla es <span class="math inline">\(-1.691\)</span> (negativo porque estamos evaluando si sirve de menos).</p></li>
-<li><p>La regla de decisión: Las tablas dividen el mundo en dos zonas: la Zona de Aceptación (lo normal por azar) y la Zona de Rechazo (lo estadísticamente imposible de creer).</p></li>
-<li><p>Si <span class="math inline">\(t\)</span> cae antes del valor crítico (hacia el 0): La diferencia es pequeña, se la perdonamos al azar. No se rechaza <span class="math inline">\(H_0\)</span>.</p></li>
-<li><p>Si tu <span class="math inline">\(t\)</span> cae más allá del valor crítico (más a la izquierda): El resultado es demasiado extremo. Se rechaza <span class="math inline">\(H_0\)</span>. Como <span class="math inline">\(t = -2.95\)</span> es mucho menor (más extremo) que el <span class="math inline">\(-1.691\)</span> de la tabla, cayó profundamente en la Zona de Rechazo.</p></li>
+<li><div>
+<blockquote class="blockquote">
+<p>Para buscar en la tabla <span class="math inline">\(t\)</span>, se necesitan calcular los grados de libertad, que para este caso es simplemente el tamaño de la muestra menos uno: <span class="math display">\[gl = n - 1 = 35 - 1 = 34\]</span></p>
+</blockquote>
+</div></li>
+<li><div>
+<blockquote class="blockquote">
+<p>Buscar en la tabla (El “Punto de Corte”) Antes del experimento, tú decides un nivel de exigencia llamado nivel de significancia (<span class="math inline">\(\alpha\)</span>), que casi siempre se fija en el <span class="math inline">\(5\%\)</span> (<span class="math inline">\(0.05\)</span>). Esto significa: “Solo creeré que la máquina está rota si la probabilidad de que sea un error por azar sea menor al 5%”.</p>
+</blockquote>
+</div></li>
+<li><div>
+<blockquote class="blockquote">
+<p>Vas a la tabla t de Student, buscas la fila de <span class="math inline">\(34\)</span> grados de libertad bajo la columna de una sola cola de <span class="math inline">\(0.05\)</span>, y la tabla te dará un número llamado Valor Crítico:</p>
+</blockquote>
+</div></li>
+<li><div>
+<blockquote class="blockquote">
+<p>El valor crítico en la tabla es <span class="math inline">\(-1.691\)</span> (negativo porque estamos evaluando si sirve de menos).</p>
+</blockquote>
+</div></li>
+<li><div>
+<blockquote class="blockquote">
+<p>La regla de decisión: Las tablas dividen el mundo en dos zonas: la Zona de Aceptación (lo normal por azar) y la Zona de Rechazo (lo estadísticamente imposible de creer).</p>
+</blockquote>
+</div></li>
+<li><div>
+<blockquote class="blockquote">
+<p>Si <span class="math inline">\(t\)</span> cae antes del valor crítico (hacia el 0): La diferencia es pequeña, se la perdonamos al azar. No se rechaza <span class="math inline">\(H_0\)</span>.</p>
+</blockquote>
+</div></li>
+<li><div>
+<blockquote class="blockquote">
+<p>Si tu <span class="math inline">\(t\)</span> cae más allá del valor crítico (más a la izquierda): El resultado es demasiado extremo. Se rechaza <span class="math inline">\(H_0\)</span>. Como <span class="math inline">\(t = -2.95\)</span> es mucho menor (más extremo) que el <span class="math inline">\(-1.691\)</span> de la tabla, cayó profundamente en la Zona de Rechazo.</p>
+</blockquote>
+</div></li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -1881,7 +1909,8 @@ window.Quarto = {
 </li>
 <li>Varianzas desconocidas pero iguales: Se utiliza una varianza agrupada (<span class="math inline">\(s_p^2\)</span>) y la distribución <span class="math inline">\(t\)</span> con <span class="math inline">\(n_1 + n_2 - 2\)</span> grados de libertad.</li>
 <li>Varianzas desconocidas y distintas: Se emplea la aproximación de Satterthwaite para calcular grados de libertad corregidos.</li>
-<li>Observaciones pareadas: Cuando las muestras no son independientes (ej. el mismo sujeto “antes y después”), se analiza la media de las diferencias individuales (<span class="math inline">\(\bar{d}\)</span>):<span class="math display">\[\bar{d} \pm t_{\alpha/2, n-1} \frac{s_d}{\sqrt{n}}\]</span>💡</li>
+<li>Observaciones pareadas: Cuando las muestras no son independientes (ej. el mismo sujeto “antes y después”), se analiza la media de las diferencias individuales (<span class="math inline">\(\bar{d}\)</span>):<span class="math display">\[\bar{d} \pm t_{\alpha/2, n-1} \frac{s_d}{\sqrt{n}}\]</span>
+</li>
 </ul>
 <section id="ejemplo-sencillo-curso-de-preparación" class="level5"><h5 class="anchored" data-anchor-id="ejemplo-sencillo-curso-de-preparación">Ejemplo sencillo (Curso de preparación):</h5>
 <blockquote class="blockquote">

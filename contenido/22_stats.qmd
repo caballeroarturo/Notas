@@ -928,7 +928,7 @@ Para aplicar la definición clásica de probabilidad, es esencial saber contar c
 - **Combinaciones:** El orden \textbf{no importa}. Se utilizan para seleccionar subconjuntos. Su fórmula es: $$C_{n,k} = \binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 
 | ¿Importa el orden? | ¿Se pueden repetir? | Nombre Técnico | Operación Matemática | Razonamiento: ¿Cuándo usar? |
-|:------------:|:------------:|:-------------|:-------------|:---------------|
+|:-------------:|:-------------:|:--------------|:--------------|:--------------|
 | **SÍ** | **SÍ** | Variación con repetición | **Potencia**<br>$$n^k$$ | Cuando estás **armando códigos o secuencias** donde las posiciones importan y los elementos pueden reaparecer (ej. contraseñas, lanzar monedas o dados varias veces). |
 | **SÍ** | **NO** | Permutación (o Variación) | **Factorial / Permutaciones**<br>$$\frac{n!}{(n-k)!}$$ | Cuando estás **repartiendo puestos únicos, premios escalonados o filas** donde el rol de cada quien cambia el resultado y nadie puede duplicarse (ej. podios de carreras, elecciones de presidente/secretario). |
 | **NO** | **NO** | Combinación estándar | **Coeficiente Binomial**<br>$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$ | Cuando estás **armando equipos, comités o subconjuntos** donde lo único que te importa es quiénes integran el grupo final, sin importar el orden en que los llamaste (ej. manos de cartas, elegir delegados). |
@@ -1166,7 +1166,7 @@ El **valor esperado** $E(X)$ o $μ$ es el promedio ponderado de todos los valore
 ### Distribuciones Discretas
 
 | Distribución | Función de Masa ($p(x)$) | Función Acumulativa ($F(x)$) | Propiedades / Momentos | Uso Común / ¿Cuándo usar? |
-|:------------|:------------|:------------|:-----------:|:---------------------|
+|:-------------|:-------------|:-------------|:------------:|:----------------|
 | **Bernoulli** | $p^x(1-p)^{1-x}$ <br> para $x \in \{0, 1\}$ | $\begin{cases} 0 & x < 0 \\ 1-p & 0 \leq x < 1 \\ 1 & x \geq 1 \end{cases}$ | $E(X)$: $p$ <br> <br> $\sigma$: $\sqrt{p(1-p)}$ | Experimentos de un solo ensayo con respuesta dicotómica (Éxito/Fracaso, Sí/No). |
 | **Binomial** | $\binom{n}{x} p^x(1-p)^{n-x}$ <br> para $x \in \{0, 1, \dots, n\}$ | $\sum_{k=0}^{x} \binom{n}{k} p^k(1-p)^{n-k}$ | $E(X)$: $n \cdot p$ <br> <br>$\sigma$: $\sqrt{n \cdot p(1-p)}$ | Contar el número de "éxitos" al repetir $n$ veces un experimento Bernoulli idéntico e independiente. |
 | **Poisson** | $\frac{\lambda^x e^{-\lambda}}{x!}$ <br> para $x \in \{0, 1, 2, \dots\}$ | $\sum_{k=0}^{x} \frac{\lambda^k e^{-\lambda}}{k!}$ | $E(X)$: $\lambda$ <br><br> $\sigma$: $\sqrt{\lambda}$ | Modelar el número de eventos que ocurren en un intervalo fijo de tiempo o espacio (ej. llamadas por hora). |
@@ -1177,7 +1177,7 @@ El **valor esperado** $E(X)$ o $μ$ es el promedio ponderado de todos los valore
 ### Distribuciones Continuas
 
 | Distribución | Función de Densidad ($f(x)$) | Función Acumulativa ($F(x)$) | Propiedades / Momentos | Uso Común / ¿Cuándo usar? |
-|:------------|:------------|:------------|:--------------:|:----------------|
+|:--------------|:--------------|:--------------|:-------------:|:--------------|
 | **Uniforme** | $\frac{1}{b-a}$ <br> para $x \in [a, b]$ | $\frac{x-a}{b-a}$ <br> para $x \in [a, b]$ | $E(X)$: $\frac{a+b}{2}$ <br><br> $\sigma$: $\frac{b-a}{\sqrt{12}}$ | Situaciones donde todos los intervalos de igual longitud dentro del rango tienen exactamente la misma probabilidad. |
 | **Normal** | $\frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ | No tiene forma cerrada. <br> Se usa $\Phi\left(\frac{x-\mu}{\sigma}\right)$ | $E(X)$: $\mu$ <br><br> $\sigma$: $\sigma$ | Modelar fenómenos naturales, características biológicas, errores de medición y por el Teorema del Límite Central. |
 | **Exponencial** | $\lambda e^{-\lambda x}$ <br> para $x \geq 0$ | $1 - e^{-\lambda x}$ | $E(X)$: $\frac{1}{\lambda}$ <br><br> $\sigma$: $\frac{1}{\lambda}$ | Modelar el tiempo de espera continuo que transcurre entre dos eventos consecutivos de un proceso de Poisson. |
@@ -1195,7 +1195,6 @@ la Exponencial es la versión continua de la Geométrica: Ambas miden exactament
   - Si tomas la fórmula de la distribución Geométrica y haces que los intervalos de tiempo entre cada intento se vuelvan infinitesimalmente pequeños (es decir, aplicas un límite cuando el tiempo tiende a ser continuo), la fórmula discreta se transforma matemáticamente en la ecuación de la distribución Exponencial.
 
 Por eso, en el diseño de modelos: Si cuentas tus esperas en pasos enteros ($1, 2, 3 \dots$), usas la Geométrica. Si mides tu espera con un cronómetro ($1.45\text{ s}, 2.3\text{ min} \dots$), usas la Exponencial.
-
 
 #### Distribución binomial
 
@@ -1562,7 +1561,7 @@ La base teórica de esta aproximación es el **Teorema Central del Límite**, el
 
 ## Distribución $t$ the Student
 
-La **distribución $t$ de Student** es una *distribución de probabilidad continua que surge del problema de estimar la media de una población con distribución normal cuando el tamaño de la muestra es pequeño y la desviación estándar poblacional (*$σ$) es desconocida.
+La **distribución** $t$ de Student es una *distribución de probabilidad continua que surge del problema de estimar la media de una población con distribución normal cuando el tamaño de la muestra es pequeño y la desviación estándar poblacional (*$σ$) es desconocida.
 
 A continuación se detallan sus características, propiedades y aplicaciones principales:
 
@@ -1824,22 +1823,40 @@ El procedimiento compara una hipótesis nula ($H_0: \mu = \mu_0$), que represent
 > - Esto significa que, por pura fluctuación normal de la máquina, un grupo de 35 tazas suele variar de arriba a abajo unos $1.69\text{ ml}$ respecto al promedio real.
 > - Calculamos la $t$ completa:$$t = \frac{195 - 200}{1.69} = \frac{-5}{1.69} = -2.95$$
 > - ¿Qué significa que $t = -2.95$?
+>
+> Significa que tu promedio de $195\text{ ml}$ está a casi 3 desviaciones estándar por debajo de lo que el fabricante prometió.
+>
+> \- Si la máquina estuviera bien calibrada ($H_0$ verdadera), por azar las muestras de 35 tazas deberían dar promedios muy cercanos a $200\text{ ml}$ (quizás $199\text{ ml}$, o $201\text{ ml}$). Que te haya dado $195\text{ ml}$ ($t = -2.95$) en el mundo de la probabilidad es el equivalente a que lances una moneda 10 veces y las 10 veces salga cara: es teóricamente posible por azar, pero es tan ridículamente improbable que prefieres no creer en esa coincidencia.
+>
+> \- Al calcular el estadístico de prueba $t$, si el resultado es un número muy negativo (por ejemplo, $-2.95$), significa que obtener un promedio de $195\text{ ml}$ de forma pura y natural por azar es extremadamente improbable. Por lo tanto, **rechazas** $H_0$ y concluyes que la máquina está descalibrada.
 
-Significa que tu promedio de $195\text{ ml}$ está a casi 3 desviaciones estándar por debajo de lo que el fabricante prometió. - Si la máquina estuviera bien calibrada ($H_0$ verdadera), por azar las muestras de 35 tazas deberían dar promedios muy cercanos a $200\text{ ml}$ (quizás $199\text{ ml}$, o $201\text{ ml}$). Que te haya dado $195\text{ ml}$ ($t = -2.95$) en el mundo de la probabilidad es el equivalente a que lances una moneda 10 veces y las 10 veces salga cara: es teóricamente posible por azar, pero es tan ridículamente improbable que prefieres no creer en esa coincidencia. \> - Al calcular el estadístico de prueba $t$, si el resultado es un número muy negativo (por ejemplo, $-2.95$), significa que obtener un promedio de $195\text{ ml}$ de forma pura y natural por azar es extremadamente improbable. Por lo tanto, **rechazas** $H_0$ y concluyes que la máquina está descalibrada.
+- ::: {}
+  > Para buscar en la tabla $t$, se necesitan calcular los grados de libertad, que para este caso es simplemente el tamaño de la muestra menos uno: $$gl = n - 1 = 35 - 1 = 34$$
+  :::
 
-- Para buscar en la tabla $t$, se necesitan calcular los grados de libertad, que para este caso es simplemente el tamaño de la muestra menos uno: $$gl = n - 1 = 35 - 1 = 34$$.
+- ::: {}
+  > Buscar en la tabla (El "Punto de Corte") Antes del experimento, tú decides un nivel de exigencia llamado nivel de significancia ($\alpha$), que casi siempre se fija en el $5\%$ ($0.05$). Esto significa: "Solo creeré que la máquina está rota si la probabilidad de que sea un error por azar sea menor al 5%".
+  :::
 
-- Buscar en la tabla (El "Punto de Corte") Antes del experimento, tú decides un nivel de exigencia llamado nivel de significancia ($\alpha$), que casi siempre se fija en el $5\%$ ($0.05$). Esto significa: "Solo creeré que la máquina está rota si la probabilidad de que sea un error por azar sea menor al 5%".
+- ::: {}
+  > Vas a la tabla t de Student, buscas la fila de $34$ grados de libertad bajo la columna de una sola cola de $0.05$, y la tabla te dará un número llamado Valor Crítico:
+  :::
 
-- Vas a la tabla t de Student, buscas la fila de $34$ grados de libertad bajo la columna de una sola cola de $0.05$, y la tabla te dará un número llamado Valor Crítico:
+- ::: {}
+  > El valor crítico en la tabla es $-1.691$ (negativo porque estamos evaluando si sirve de menos).
+  :::
 
-- El valor crítico en la tabla es $-1.691$ (negativo porque estamos evaluando si sirve de menos).
+- ::: {}
+  > La regla de decisión: Las tablas dividen el mundo en dos zonas: la Zona de Aceptación (lo normal por azar) y la Zona de Rechazo (lo estadísticamente imposible de creer).
+  :::
 
-- La regla de decisión: Las tablas dividen el mundo en dos zonas: la Zona de Aceptación (lo normal por azar) y la Zona de Rechazo (lo estadísticamente imposible de creer).
+- ::: {}
+  > Si $t$ cae antes del valor crítico (hacia el 0): La diferencia es pequeña, se la perdonamos al azar. No se rechaza $H_0$.
+  :::
 
-- Si $t$ cae antes del valor crítico (hacia el 0): La diferencia es pequeña, se la perdonamos al azar. No se rechaza $H_0$.
-
-- Si tu $t$ cae más allá del valor crítico (más a la izquierda): El resultado es demasiado extremo. Se rechaza $H_0$. Como $t = -2.95$ es mucho menor (más extremo) que el $-1.691$ de la tabla, cayó profundamente en la Zona de Rechazo.
+- ::: {}
+  > Si tu $t$ cae más allá del valor crítico (más a la izquierda): El resultado es demasiado extremo. Se rechaza $H_0$. Como $t = -2.95$ es mucho menor (más extremo) que el $-1.691$ de la tabla, cayó profundamente en la Zona de Rechazo.
+  :::
 
 ```{r}
 #| fig-width: 6
@@ -1886,7 +1903,7 @@ Este análisis permite comparar dos poblaciones distintas para ver si difieren s
 - Muestras independientes con varianzas conocidas: Se utiliza la distribución normal para el intervalo:$$(\bar{X}_1 - \bar{X}_2) \pm z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}$$
 - Varianzas desconocidas pero iguales: Se utiliza una varianza agrupada ($s_p^2$) y la distribución $t$ con $n_1 + n_2 - 2$ grados de libertad.
 - Varianzas desconocidas y distintas: Se emplea la aproximación de Satterthwaite para calcular grados de libertad corregidos.
-- Observaciones pareadas: Cuando las muestras no son independientes (ej. el mismo sujeto "antes y después"), se analiza la media de las diferencias individuales ($\bar{d}$):$$\bar{d} \pm t_{\alpha/2, n-1} \frac{s_d}{\sqrt{n}}$$💡
+- Observaciones pareadas: Cuando las muestras no son independientes (ej. el mismo sujeto "antes y después"), se analiza la media de las diferencias individuales ($\bar{d}$):$$\bar{d} \pm t_{\alpha/2, n-1} \frac{s_d}{\sqrt{n}}$$
 
 ##### Ejemplo sencillo (Curso de preparación):
 
