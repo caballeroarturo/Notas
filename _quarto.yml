@@ -48,6 +48,7 @@ book:
         - contenido/07_ClasePolitica.qmd
         - contenido/08_Poliarquia.qmd
         - contenido/09_Ing_social.qmd
+        - contenido/10_Platformisation.qmd
     - part: 10_CieSol.qmd
       chapters: 
         - contenido/11_Totalidad_CS.qmd
