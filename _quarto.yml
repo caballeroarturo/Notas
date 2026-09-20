@@ -39,23 +39,23 @@ book:
     - index.qmd
     - part: 00_CiePol.qmd
       chapters: 
-        - contenido/01_CapitalismoConsumista.qmd
-        - contenido/02_Contemporaneos.qmd
-        - contenido/03_Concepciones.qmd
-        - contenido/04_Comunitarismo.qmd
-        - contenido/05_Pragmatismo.qmd
-        - contenido/06_Paradojas.qmd
-        - contenido/07_ClasePolitica.qmd
-        - contenido/08_Poliarquia.qmd
-        - contenido/09_Ing_social.qmd
-        - contenido/10_Platformisation.qmd
+        - contenido/001_CapitalismoConsumista.qmd
+        - contenido/002_Contemporaneos.qmd
+        - contenido/003_Concepciones.qmd
+        - contenido/004_Comunitarismo.qmd
+        - contenido/005_Pragmatismo.qmd
+        - contenido/006_Paradojas.qmd
+        - contenido/007_ClasePolitica.qmd
+        - contenido/008_Poliarquia.qmd
+        - contenido/009_Ing_social.qmd
+        - contenido/010_Platformisation.qmd
+        - contenido/011_Emociones.qmd
     - part: 10_CieSol.qmd
       chapters: 
-        - contenido/11_Totalidad_CS.qmd
-        - contenido/12_Dialectica_C.qmd
-        - contenido/13_1_Coyuntura.qmd
+        - contenido/111_Totalidad_CS.qmd
+        - contenido/112_Dialectica_C.qmd
+        - contenido/113_Coyuntura.qmd
         - contenido/21_Def_espacial.qmd
-        - contenido/22_stats.qmd
     - 99_Tiempo.qmd
     - references.qmd
 bibliography: references.bib

@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Arturo Caballero">
 <meta name="description" content="Anotaciones aleatorias de clases y de cosas que veo o que leo.">
 
-<title>14&nbsp; Análisis geoespacial – Notas</title>
+<title>15&nbsp; Análisis geoespacial – Notas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -51,21 +51,20 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../contenido/22_stats.html" rel="next">
-<link href="../contenido/13_1_Coyuntura.html" rel="prev">
+<link href="../99_Tiempo.html" rel="next">
+<link href="../contenido/113_Coyuntura.html" rel="prev">
 <link href="../sch_leyendo.jpeg" rel="icon" type="image/jpeg">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-364982630eef5352dd1537128a8ed5cb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-9ac4c4d7723caba69398381a32a42326.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -99,167 +98,7 @@ div.csl-indent {
 <link rel="stylesheet" href="../custom.css">
 </head>
 
-<body class="nav-sidebar floating quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = true;
-    const darkModeDefault = authorPrefersDark;
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -268,7 +107,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../10_CieSol.html">Ciencias Sociales</a></li><li class="breadcrumb-item"><a href="../contenido/21_Def_espacial.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Análisis geoespacial</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../10_CieSol.html">Ciencias Sociales</a></li><li class="breadcrumb-item"><a href="../contenido/21_Def_espacial.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Análisis geoespacial</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -340,62 +179,68 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/01_CapitalismoConsumista.html" class="sidebar-item-text sidebar-link">
+  <a href="../contenido/001_CapitalismoConsumista.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Capitalismo, liberalismo y totalitarismo</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/02_Contemporaneos.html" class="sidebar-item-text sidebar-link">
+  <a href="../contenido/002_Contemporaneos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Contemporáneos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/03_Concepciones.html" class="sidebar-item-text sidebar-link">
+  <a href="../contenido/003_Concepciones.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Concepciones de lo político</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/04_Comunitarismo.html" class="sidebar-item-text sidebar-link">
+  <a href="../contenido/004_Comunitarismo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Comunitarismo</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/05_Pragmatismo.html" class="sidebar-item-text sidebar-link">
+  <a href="../contenido/005_Pragmatismo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Pragmatismo</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/06_Paradojas.html" class="sidebar-item-text sidebar-link">
+  <a href="../contenido/006_Paradojas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Libertad y republicanismo</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/07_ClasePolitica.html" class="sidebar-item-text sidebar-link">
+  <a href="../contenido/007_ClasePolitica.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">La Clase Política</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/08_Poliarquia.html" class="sidebar-item-text sidebar-link">
+  <a href="../contenido/008_Poliarquia.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">La poliarquía</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/09_Ing_social.html" class="sidebar-item-text sidebar-link">
+  <a href="../contenido/009_Ing_social.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Ingeniería social</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/10_Platformisation.html" class="sidebar-item-text sidebar-link">
+  <a href="../contenido/010_Platformisation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Platformisation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../contenido/011_Emociones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Emociones en la política</span></span></a>
   </div>
 </li>
       </ul>
@@ -411,32 +256,26 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/11_Totalidad_CS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">La noción de totalidad en las ciencias sociales</span></span></a>
+  <a href="../contenido/111_Totalidad_CS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">La noción de totalidad en las ciencias sociales</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/12_Dialectica_C.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">El mundo de la pseudoconcreción y su destrucción</span></span></a>
+  <a href="../contenido/112_Dialectica_C.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">El mundo de la pseudoconcreción y su destrucción</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../contenido/13_1_Coyuntura.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Coyuntura</span></span></a>
+  <a href="../contenido/113_Coyuntura.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Coyuntura</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../contenido/21_Def_espacial.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Análisis geoespacial</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../contenido/22_stats.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Resumen general</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Análisis geoespacial</span></span></a>
   </div>
 </li>
       </ul>
@@ -463,28 +302,27 @@ div.csl-indent {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#cartografía" id="toc-cartografía" class="nav-link active" data-scroll-target="#cartografía"><span class="header-section-number">14.1</span> Cartografía</a>
+  <li><a href="#cartografía" id="toc-cartografía" class="nav-link active" data-scroll-target="#cartografía"><span class="header-section-number">15.1</span> Cartografía</a>
   <ul class="collapse">
-  <li><a href="#conceptos-fundamentales" id="toc-conceptos-fundamentales" class="nav-link" data-scroll-target="#conceptos-fundamentales"><span class="header-section-number">14.1.1</span> Conceptos fundamentales</a></li>
-  <li><a href="#síntesis-histórica" id="toc-síntesis-histórica" class="nav-link" data-scroll-target="#síntesis-histórica"><span class="header-section-number">14.1.2</span> Síntesis histórica</a></li>
-  <li><a href="#el-programa-cartográfico-y-los-elementos-del-mapa" id="toc-el-programa-cartográfico-y-los-elementos-del-mapa" class="nav-link" data-scroll-target="#el-programa-cartográfico-y-los-elementos-del-mapa"><span class="header-section-number">14.1.3</span> El programa cartográfico y los elementos del mapa</a></li>
-  <li><a href="#simbología-cartográfica" id="toc-simbología-cartográfica" class="nav-link" data-scroll-target="#simbología-cartográfica"><span class="header-section-number">14.1.4</span> Simbología cartográfica</a></li>
-  <li><a href="#manejo-de-la-escala-numérica" id="toc-manejo-de-la-escala-numérica" class="nav-link" data-scroll-target="#manejo-de-la-escala-numérica"><span class="header-section-number">14.1.5</span> Manejo de la escala numérica</a></li>
-  <li><a href="#proyecciones-cartográficas" id="toc-proyecciones-cartográficas" class="nav-link" data-scroll-target="#proyecciones-cartográficas"><span class="header-section-number">14.1.6</span> Proyecciones cartográficas</a></li>
-  <li><a href="#pensamiento-espacial" id="toc-pensamiento-espacial" class="nav-link" data-scroll-target="#pensamiento-espacial"><span class="header-section-number">14.1.7</span> Pensamiento espacial</a></li>
-  <li><a href="#interpretación-del-territorio" id="toc-interpretación-del-territorio" class="nav-link" data-scroll-target="#interpretación-del-territorio"><span class="header-section-number">14.1.8</span> Interpretación del territorio</a></li>
+  <li><a href="#conceptos-fundamentales" id="toc-conceptos-fundamentales" class="nav-link" data-scroll-target="#conceptos-fundamentales"><span class="header-section-number">15.1.1</span> Conceptos fundamentales</a></li>
+  <li><a href="#síntesis-histórica" id="toc-síntesis-histórica" class="nav-link" data-scroll-target="#síntesis-histórica"><span class="header-section-number">15.1.2</span> Síntesis histórica</a></li>
+  <li><a href="#el-programa-cartográfico-y-los-elementos-del-mapa" id="toc-el-programa-cartográfico-y-los-elementos-del-mapa" class="nav-link" data-scroll-target="#el-programa-cartográfico-y-los-elementos-del-mapa"><span class="header-section-number">15.1.3</span> El programa cartográfico y los elementos del mapa</a></li>
+  <li><a href="#simbología-cartográfica" id="toc-simbología-cartográfica" class="nav-link" data-scroll-target="#simbología-cartográfica"><span class="header-section-number">15.1.4</span> Simbología cartográfica</a></li>
+  <li><a href="#manejo-de-la-escala-numérica" id="toc-manejo-de-la-escala-numérica" class="nav-link" data-scroll-target="#manejo-de-la-escala-numérica"><span class="header-section-number">15.1.5</span> Manejo de la escala numérica</a></li>
+  <li><a href="#proyecciones-cartográficas" id="toc-proyecciones-cartográficas" class="nav-link" data-scroll-target="#proyecciones-cartográficas"><span class="header-section-number">15.1.6</span> Proyecciones cartográficas</a></li>
+  <li><a href="#pensamiento-espacial" id="toc-pensamiento-espacial" class="nav-link" data-scroll-target="#pensamiento-espacial"><span class="header-section-number">15.1.7</span> Pensamiento espacial</a></li>
+  <li><a href="#interpretación-del-territorio" id="toc-interpretación-del-territorio" class="nav-link" data-scroll-target="#interpretación-del-territorio"><span class="header-section-number">15.1.8</span> Interpretación del territorio</a></li>
   </ul></li>
-  <li><a href="#metadatos" id="toc-metadatos" class="nav-link" data-scroll-target="#metadatos"><span class="header-section-number">14.2</span> Metadatos</a></li>
+  <li><a href="#metadatos" id="toc-metadatos" class="nav-link" data-scroll-target="#metadatos"><span class="header-section-number">15.2</span> Metadatos</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../10_CieSol.html">Ciencias Sociales</a></li><li class="breadcrumb-item"><a href="../contenido/21_Def_espacial.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Análisis geoespacial</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../10_CieSol.html">Ciencias Sociales</a></li><li class="breadcrumb-item"><a href="../contenido/21_Def_espacial.html"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Análisis geoespacial</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Análisis geoespacial</span></h1>
+<h1 class="title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Análisis geoespacial</span></h1>
 </div>
 
 
@@ -501,15 +339,15 @@ div.csl-indent {
 </header>
 
 
-<p>El espacio no es un área vacía donde suceden cosas, sino que es producido a partir de las relaciones sociales de producción, las cuales se reconfiguran y reconstituyen permanentemente de forma dialéctica <span class="citation" data-cites="lefebvre2013">(<a href="../references.html#ref-lefebvre2013" role="doc-biblioref">Lefebvre 2013</a>)</span>.</p>
-<p>Podemos pensar en el espacio como producto de las relaciones sociales, pero también como productor de esas relaciones sociales que lo originan. Desde este punto de vista, las relaciones sociales no simplemente se producen en el espacio, sino que producen espacio <span class="citation" data-cites="castillofarjat2026">(<a href="../references.html#ref-castillofarjat2026" role="doc-biblioref">Castillo Farjat 2026</a>)</span>.</p>
+<p>El espacio no es un área vacía donde suceden cosas, sino que es producido a partir de las relaciones sociales de producción, las cuales se reconfiguran y reconstituyen permanentemente de forma dialéctica <span class="citation" data-cites="lefebvre2013">(<a href="#ref-lefebvre2013" role="doc-biblioref">Lefebvre 2013</a>)</span>.</p>
+<p>Podemos pensar en el espacio como producto de las relaciones sociales, pero también como productor de esas relaciones sociales que lo originan. Desde este punto de vista, las relaciones sociales no simplemente se producen en el espacio, sino que producen espacio <span class="citation" data-cites="castillofarjat2026">(<a href="#ref-castillofarjat2026" role="doc-biblioref">Castillo Farjat 2026</a>)</span>.</p>
 <ol type="1">
 <li><p>El Espacio como “Socionaturaleza”</p>
-<p>La sociedad y la naturaleza no pueden analizarse de forma separada ya que son dialécticamente coproducidas <span class="citation" data-cites="bear2017">(<a href="../references.html#ref-bear2017" role="doc-biblioref">Bear 2017</a>)</span>. El análisis socioespacial debe abordar cómo el capitalismo actúa como una <strong>manera de organizar la naturaleza</strong>, convirtiendo elementos vitales (como el agua) en mercancías mediante infraestructura y discursos de poder.</p></li>
+<p>La sociedad y la naturaleza no pueden analizarse de forma separada ya que son dialécticamente coproducidas <span class="citation" data-cites="bear2017">(<a href="#ref-bear2017" role="doc-biblioref">Bear 2017</a>)</span>. El análisis socioespacial debe abordar cómo el capitalismo actúa como una <strong>manera de organizar la naturaleza</strong>, convirtiendo elementos vitales (como el agua) en mercancías mediante infraestructura y discursos de poder.</p></li>
 <li><p>Noción de “Rugosidades”</p>
-<p>Basándose en Milton Santos, Castillo propone que el espacio es <strong>historia acumulada</strong>. El análisis socioespacial debe identificar las <strong>“rugosidades”</strong>, que son lo que permanece del pasado como forma, espacio construido, paisaje, lo que resta del proceso de supresión, acumulación, superposición, a través del cual las cosas se sustituyen y acumulan en todos los lugares” <span class="citation" data-cites="santos2005a">(<a href="../references.html#ref-santos2005a" role="doc-biblioref">Santos 2005</a>)</span>. Estas rugosidades alimentan una <strong>memoria geográfica</strong> que las comunidades utilizan como defensa política frente a nuevas amenazas de despojo <span class="citation" data-cites="castillofarjat2023">(<a href="../references.html#ref-castillofarjat2023" role="doc-biblioref">Castillo Farjat 2023a</a>)</span>.</p></li>
+<p>Basándose en Milton Santos, Castillo propone que el espacio es <strong>historia acumulada</strong>. El análisis socioespacial debe identificar las <strong>“rugosidades”</strong>, que son lo que permanece del pasado como forma, espacio construido, paisaje, lo que resta del proceso de supresión, acumulación, superposición, a través del cual las cosas se sustituyen y acumulan en todos los lugares” <span class="citation" data-cites="santos2005a">(<a href="#ref-santos2005a" role="doc-biblioref">Santos 2005</a>)</span>. Estas rugosidades alimentan una <strong>memoria geográfica</strong> que las comunidades utilizan como defensa política frente a nuevas amenazas de despojo <span class="citation" data-cites="castillofarjat2023">(<a href="#ref-castillofarjat2023" role="doc-biblioref">Castillo Farjat 2023a</a>)</span>.</p></li>
 <li><p>Memoria geográfica</p>
-<p>Producción social de carácter político que las poblaciones esgrimen ante una propuesta o proyecto que amenaza reproducir un proceso previo de despojo por parte del gobierno o de alguna dependencia, proceso que ha dejado un sentimiento de valoración negativa en la comunidad <span class="citation" data-cites="peñagarcía2019">(<a href="../references.html#ref-peñagarcía2019" role="doc-biblioref">Peña García 2019, 38</a>)</span>. Ello sugiere la existencia de una suerte de memoria de los agravios que deriva en distintas prácticas espaciales de resistencia o contrahegemónicas <span class="citation" data-cites="castillofarjat2023a">(<a href="../references.html#ref-castillofarjat2023a" role="doc-biblioref">Castillo Farjat 2023b</a>)</span>.</p></li>
+<p>Producción social de carácter político que las poblaciones esgrimen ante una propuesta o proyecto que amenaza reproducir un proceso previo de despojo por parte del gobierno o de alguna dependencia, proceso que ha dejado un sentimiento de valoración negativa en la comunidad <span class="citation" data-cites="peñagarcía2019">(<a href="#ref-peñagarcía2019" role="doc-biblioref">Peña García 2019, 38</a>)</span>. Ello sugiere la existencia de una suerte de memoria de los agravios que deriva en distintas prácticas espaciales de resistencia o contrahegemónicas <span class="citation" data-cites="castillofarjat2023a">(<a href="#ref-castillofarjat2023a" role="doc-biblioref">Castillo Farjat 2023b</a>)</span>.</p></li>
 <li><p>La Colonialidad del Salario y el Trabajo</p>
 <p>Un aporte distintivo en su visión es el análisis de la <strong>división racial y de género del trabajo</strong> inscrita en el espacio. Acuña el concepto de <strong>“colonialidad del salario”</strong> para explicar cómo el sistema capitalista excluye a la población racializada y feminizada de las relaciones salariales formales, apropiándose de su trabajo no remunerado para sostener la acumulación de capital en los centros de poder.</p></li>
 <li><p>Territorios Autónomos y Autogestión</p></li>
@@ -518,10 +356,10 @@ div.csl-indent {
 <p>• <strong>Autogestionarse y autogobernarse</strong> sin jerarquías institucionalizadas.</p>
 <p>• Poner la <strong>reproducción de la vida</strong> y el bien común por encima de la acumulación de capital.</p>
 <p>• Generar una <strong>espacialidad contrahegemónica</strong> mediante el trabajo colectivo (como el tequio) y la búsqueda de autosuficiencia.</p>
-<section id="cartografía" class="level2" data-number="14.1">
-<h2 data-number="14.1" class="anchored" data-anchor-id="cartografía"><span class="header-section-number">14.1</span> Cartografía</h2>
-<section id="conceptos-fundamentales" class="level3" data-number="14.1.1">
-<h3 data-number="14.1.1" class="anchored" data-anchor-id="conceptos-fundamentales"><span class="header-section-number">14.1.1</span> Conceptos fundamentales</h3>
+<section id="cartografía" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="cartografía"><span class="header-section-number">15.1</span> Cartografía</h2>
+<section id="conceptos-fundamentales" class="level3" data-number="15.1.1">
+<h3 data-number="15.1.1" class="anchored" data-anchor-id="conceptos-fundamentales"><span class="header-section-number">15.1.1</span> Conceptos fundamentales</h3>
 <p>La cartografía se define como el arte, la ciencia y la técnica de confeccionar y estudiar los mapas en todos sus aspectos. Un mapa es una representación gráfica de un aspecto del mundo real, tradicionalmente visto como una “ventana transparente”, aunque también puede entenderse como una construcción social cargada de intenciones. Existen conceptos clave para evaluar la calidad de la información cartográfica:</p>
 <ul>
 <li>Exactitud: El grado de cercanía entre la posición de un objeto en el mapa y su ubicación real en la superficie terrestre.</li>
@@ -530,8 +368,8 @@ div.csl-indent {
 <li>Entidades y Geometría: Los rasgos geográficos se representan mediante puntos (coordenadas X, Y), líneas (sucesión de puntos) y áreas (superficies cerradas), cada una asociada a atributos descriptivos en una base de datos.</li>
 </ul>
 </section>
-<section id="síntesis-histórica" class="level3" data-number="14.1.2">
-<h3 data-number="14.1.2" class="anchored" data-anchor-id="síntesis-histórica"><span class="header-section-number">14.1.2</span> Síntesis histórica</h3>
+<section id="síntesis-histórica" class="level3" data-number="15.1.2">
+<h3 data-number="15.1.2" class="anchored" data-anchor-id="síntesis-histórica"><span class="header-section-number">15.1.2</span> Síntesis histórica</h3>
 <p>La historia de la cartografía ha evolucionado de ser una “ciencia de príncipes” utilizada para administrar el poder, la guerra y el imperio, hacia una disciplina científica y tecnológica moderna</p>
 <ul>
 <li>Poder y Control: Históricamente, los mapas fueron herramientas del imperialismo para legitimar conquistas y del Estado-nación para delimitar fronteras y derechos de propiedad.</li>
@@ -539,8 +377,8 @@ div.csl-indent {
 <li>Automatización: A partir de 1930, el racionalismo y el cuantitativismo prepararon el camino para la Geografía Automatizada de los años 60, que culminó en los actuales Sistemas de Información Geográfica (SIG).</li>
 </ul>
 </section>
-<section id="el-programa-cartográfico-y-los-elementos-del-mapa" class="level3" data-number="14.1.3">
-<h3 data-number="14.1.3" class="anchored" data-anchor-id="el-programa-cartográfico-y-los-elementos-del-mapa"><span class="header-section-number">14.1.3</span> El programa cartográfico y los elementos del mapa</h3>
+<section id="el-programa-cartográfico-y-los-elementos-del-mapa" class="level3" data-number="15.1.3">
+<h3 data-number="15.1.3" class="anchored" data-anchor-id="el-programa-cartográfico-y-los-elementos-del-mapa"><span class="header-section-number">15.1.3</span> El programa cartográfico y los elementos del mapa</h3>
 <p>La producción cartográfica profesional implica el ensamblaje de diversos elementos para comunicar información de manera efectiva:</p>
 <ul>
 <li>Cuerpo del mapa: La parte más importante, que contiene la información geográfica</li>
@@ -551,8 +389,8 @@ div.csl-indent {
 <li>Otros: Fuente de datos, nombre de la proyección, recuadros (inset maps) e información de calidad.</li>
 </ul>
 </section>
-<section id="simbología-cartográfica" class="level3" data-number="14.1.4">
-<h3 data-number="14.1.4" class="anchored" data-anchor-id="simbología-cartográfica"><span class="header-section-number">14.1.4</span> Simbología cartográfica</h3>
+<section id="simbología-cartográfica" class="level3" data-number="15.1.4">
+<h3 data-number="15.1.4" class="anchored" data-anchor-id="simbología-cartográfica"><span class="header-section-number">15.1.4</span> Simbología cartográfica</h3>
 <p>La simbología permite representar características de localización y atributos mediante el uso de variables visuales aplicadas a puntos, líneas y áreas</p>
 <ul>
 <li>Variables visuales principales: Incluyen el tono (hue), valor (claridad/oscuridad), croma (intensidad), tamaño, forma, textura y patrón</li>
@@ -560,8 +398,8 @@ div.csl-indent {
 <li>Clasificación de datos: Los datos cuantitativos se agrupan mediante métodos como intervalos iguales, cuantiles, cortes naturales (Jenks) o desviación estándar para facilitar su interpretación visual</li>
 </ul>
 </section>
-<section id="manejo-de-la-escala-numérica" class="level3" data-number="14.1.5">
-<h3 data-number="14.1.5" class="anchored" data-anchor-id="manejo-de-la-escala-numérica"><span class="header-section-number">14.1.5</span> Manejo de la escala numérica</h3>
+<section id="manejo-de-la-escala-numérica" class="level3" data-number="15.1.5">
+<h3 data-number="15.1.5" class="anchored" data-anchor-id="manejo-de-la-escala-numérica"><span class="header-section-number">15.1.5</span> Manejo de la escala numérica</h3>
 <p>La escala es la relación matemática de proporción entre una distancia medida en el mapa y su correspondiente distancia en el terreno</p>
 <ul>
 <li>Representación: Se expresa como una fracción (ej. 1:50,000, donde 1 cm equivale a 50,000 cm o 500 m en la realidad).</li>
@@ -569,8 +407,8 @@ div.csl-indent {
 <li>Implicaciones: La elección de la escala no es neutral; es una herramienta que determina qué nivel de agregación, simplificación y límites tendrá el objeto de estudio.</li>
 </ul>
 </section>
-<section id="proyecciones-cartográficas" class="level3" data-number="14.1.6">
-<h3 data-number="14.1.6" class="anchored" data-anchor-id="proyecciones-cartográficas"><span class="header-section-number">14.1.6</span> Proyecciones cartográficas</h3>
+<section id="proyecciones-cartográficas" class="level3" data-number="15.1.6">
+<h3 data-number="15.1.6" class="anchored" data-anchor-id="proyecciones-cartográficas"><span class="header-section-number">15.1.6</span> Proyecciones cartográficas</h3>
 <p>Una proyección es el proceso sistemático de transformar la superficie curva de la Tierra (elipsoide o esfera) en un plano bidimensional, lo cual siempre genera distorsiones</p>
 <ul>
 <li>Por superficie de proyección: Se clasifican en cilíndricas, cónicas y azimitales (planas) Por propiedad preservada:</li>
@@ -580,8 +418,8 @@ div.csl-indent {
 <li>Datum: Es fundamental referenciar la proyección a un Datum (como WGS84 o NAD83), que define el tamaño, forma y posición del elipsoide respecto al centro de la Tierra.</li>
 </ul>
 </section>
-<section id="pensamiento-espacial" class="level3" data-number="14.1.7">
-<h3 data-number="14.1.7" class="anchored" data-anchor-id="pensamiento-espacial"><span class="header-section-number">14.1.7</span> Pensamiento espacial</h3>
+<section id="pensamiento-espacial" class="level3" data-number="15.1.7">
+<h3 data-number="15.1.7" class="anchored" data-anchor-id="pensamiento-espacial"><span class="header-section-number">15.1.7</span> Pensamiento espacial</h3>
 <p>Se refiere al desarrollo de una inteligencia espacial y a la capacidad de conceptualizar la realidad a través de componentes espaciales. Es el conocimiento que un individuo utiliza para resolver problemas espaciales o de imágenes espaciales. De acuerdo a Piaget, el espacio práctico y socio-motor genera intuiciones espaciales básicas, permitiendo que los niños representen mejor los espacios que ya conocen.</p>
 <ul>
 <li>Conceptos base: Incluyen la localización, distribución espacial, asociación, interacción y evolución.</li>
@@ -589,8 +427,8 @@ div.csl-indent {
 <li>Utilidad: Permite resolver problemas complejos, desde encontrar una ruta óptima hasta la planificación urbana.</li>
 </ul>
 </section>
-<section id="interpretación-del-territorio" class="level3" data-number="14.1.8">
-<h3 data-number="14.1.8" class="anchored" data-anchor-id="interpretación-del-territorio"><span class="header-section-number">14.1.8</span> Interpretación del territorio</h3>
+<section id="interpretación-del-territorio" class="level3" data-number="15.1.8">
+<h3 data-number="15.1.8" class="anchored" data-anchor-id="interpretación-del-territorio"><span class="header-section-number">15.1.8</span> Interpretación del territorio</h3>
 <p>Interpretar el territorio a través de la cartografía va más allá de observar “accidentes geográficos”; implica entender el mapa como un discurso persuasivo y retórico</p>
 <ul>
 <li>Análisis socioespacial: Utiliza los mapas para analizar la eficiencia, equidad y diferencias socioespaciales con el fin de mejorar la calidad de vida.</li>
@@ -599,8 +437,8 @@ div.csl-indent {
 </ul>
 </section>
 </section>
-<section id="metadatos" class="level2" data-number="14.2">
-<h2 data-number="14.2" class="anchored" data-anchor-id="metadatos"><span class="header-section-number">14.2</span> Metadatos</h2>
+<section id="metadatos" class="level2" data-number="15.2">
+<h2 data-number="15.2" class="anchored" data-anchor-id="metadatos"><span class="header-section-number">15.2</span> Metadatos</h2>
 <p>En el análisis espacial, los metadatos se definen fundamentalmente como “datos sobre los datos”; es decir, información estructurada que describe el contenido, la calidad, la condición y otras características de un conjunto de datos para facilitar su búsqueda, recuperación y gestión.</p>
 <ul>
 <li>Dublin Core: Es un estándar de metadatos interoperable diseñado específicamente para la descripción y recuperación de recursos en red (Internet)</li>
@@ -609,7 +447,7 @@ div.csl-indent {
 </ul>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-bear2017" class="csl-entry" role="listitem">
 Bear, Christopher. 2017. <em>Socio<span>-</span>Nature</em>. 1.ª ed. Editado por Douglas Richardson, Noel Castree, Michael F. Goodchild, Audrey Kobayashi, Weidong Liu, y Richard A. Marston. Wiley, 2017. <a href="https://doi.org/10.1002/9781118786352.wbieg0212">https://doi.org/10.1002/9781118786352.wbieg0212</a>.
 </div>
@@ -636,255 +474,383 @@ Santos, Milton. 2005. <em>La Naturaleza del Espacio</em>. España: Editorial Ari
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
     }
-    setColorSchemeToggle(hasAlternateSentinel())
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
         }
       }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
       return false;
     }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copiado");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copiado");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = true;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
       }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
     }
-    const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
-        }
-        return codeEl.innerText;
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
     }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
         }
       }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
     }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
     }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
       } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
         }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
       }
     }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
           }
         } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
+          // See if we can fetch this
+          fetch(url.split('#')[0])
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
+            const note = htmlDoc.getElementById(id);
             if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
+              const html = processXRef(id, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -892,170 +858,194 @@ Santos, Milton. 2005. <em>La Naturaleza del Espacio</em>. España: Editorial Ari
             instance.show();
           });
         }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
       } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
             }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
         });
       }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
     }
-  });
-  </script>
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../contenido/13_1_Coyuntura.html" class="pagination-link" aria-label="Coyuntura">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Coyuntura</span></span>
+      <a href="../contenido/113_Coyuntura.html" class="pagination-link" aria-label="Coyuntura">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Coyuntura</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../contenido/22_stats.html" class="pagination-link" aria-label="Resumen general">
-        <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Resumen general</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../99_Tiempo.html" class="pagination-link" aria-label="Línea de tiempo">
+        <span class="nav-page-text">Línea de tiempo</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
